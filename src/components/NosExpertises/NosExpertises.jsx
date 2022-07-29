@@ -16,11 +16,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function NotreExpertise() {
   return (
     <div className="NosServices_Container">
-      <Container fluid className="NosServicesTitle">
+      <div class="container" fluid className="NosServicesTitle">
         <Row>
           <Col><h1>NOS EXPERTISES</h1></Col>
         </Row>
-      </Container>
+      </div>
 
       <Container className="ServiceAI">
 
