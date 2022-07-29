@@ -47,10 +47,6 @@ function NosOffres(props) {
                     </Col>
                     <Col><Button variant="outline-dark" id="NosOffres_button">voir l'offre</Button></Col>
                 </Row>
-
-
-
-
                 <Row>
                     <Col className="col_img"><img src={img_offre2} alt="img_offre2" className='img_offre' /></Col>
                     <Col>
