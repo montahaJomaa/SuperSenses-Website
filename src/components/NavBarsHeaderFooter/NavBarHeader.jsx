@@ -11,7 +11,7 @@ import ProgressBar from 'react-progressbar-on-scroll';
 function NavBarHeader() {
   return (
     <div className="nav-header">
-      <Navbar expand="lg" >
+      <Navbar expand="lg"  >
         <Container>
 
           <Navbar.Brand href="#home"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
