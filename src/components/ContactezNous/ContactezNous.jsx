@@ -31,12 +31,14 @@ function ContactezNous(props) {
   const validateForm = () => {
     const { nomPrenom, email,message } = form
     const newErrors = {}
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if (nomPrenom === '') newErrors.nomPrenom = 'Veuillez entrer votre prénom et votre nom! !'
+    if (nomPrenom === '') newErrors.nomPrenom = 'Veuillez entrer votre prénom et votre nom !';
+      else if (nomPrenom.length >30) newErrors.nomPrenom = 'Merci de ne pas dépasser la longueur de 30 lettres!'; 
 
-    else if (email === '') newErrors.email = 'Veuillez entrer une adresse email correcte !';
+    else if (email === ''|| !(email.match(regexEmail))) newErrors.email = 'Veuillez entrer une adresse email correcte !';
 
-    else if (message === '') newErrors.message = 'Veuillez saisir votre message';
+    else if (message === '' ) newErrors.message = 'Veuillez saisir votre message';
     return newErrors
   }
 
