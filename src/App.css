@@ -232,7 +232,7 @@
 /***********************IACestQuoi*******************************/
 
 .bloc_intro_AI {
-  width: 10Opx;
+  width: 90%;
   margin-top: 160px;
 
 }
@@ -251,21 +251,21 @@
 inline styling } */
 
 .AI_slogan {
-  margin-top: 110px;
-  margin-bottom: -10px;
+  margin-top: 7%;
+  margin-bottom: 3%;
   text-align: center;
   color: #25ACDE;
   font-size: 25px;
 }
 
 .bloc_etapes_AI {
-  margin-top: 90px;
+  margin-top: 10%;
 }
 
 .bloc_etapes_AI_title {
   text-align: center;
-  margin-top: 150px;
-  margin-bottom: 60px;
+  margin-top: 10%;
+  margin-bottom: 4%;
   font-size: 20px;
 }
 
@@ -278,8 +278,8 @@ inline styling } */
 }
 
 #etape_AI {
-  width: 540px;
-  height: 330px;
+  width: 86%;
+  height: 94%;
   text-align: center;
   margin-bottom: 30px;
   padding: 40px;
@@ -319,14 +319,16 @@ inline styling } */
 /***********************ContactezNous*******************************/
 
 .ContactezNous_container {
-  margin-left: 20%;
-  margin-right: 20%;
+width: 80%;
+
+margin-left: 10%;
 }
 
 .bloc_welcoming_phrases {
   margin-top: 80px;
   margin-bottom: 40px;
   padding-top: 100px;
+  
 
 }
 
@@ -363,8 +365,7 @@ inline styling } */
 #NosOffres {
   box-shadow: inset 0 0 15px 0 #c7c7c7;
   border-radius: 30px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-top: 6%;
 }
 
 #NosOffres_title {
