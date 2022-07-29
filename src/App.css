@@ -1,427 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
 
 @font-face {
   font-family: "CaviarDreams";
   src: local("CaviarDreams"),
     url("./fonts/CaviarDreams_Bold.ttf") format("truetype");
   font-weight: bold;
-}
-
-* {
-  width: 100%
-}
-.App {
-  background-color: white;
-}
-
-
-/***********************NavBarHeader**************/
-
-.nav-header {
-  z-index: 2;
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  margin-top: -85px;
-}
-
-#bg_img_header {
-  background-image: url("./components/images/bg_img_header.png");
-  background-size: 1053px 286px;
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
-.logo_supersenses {
-  width: 107px;
-  height: 76.42px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.me-auto {
-  margin-left: 300px;
-}
-
-.Nav_item {
-  text-transform: uppercase;
-  margin-right: 0px;
-  margin-left: 25px;
-  padding-right: 0px;
-  font-size: 15px;
-}
-#languageIcon{
-  display: inline;
-}
-#selectLangue{
-  
-  border-radius:10px;
-  margin-left: 12px;
-}
-#NavText_other {
-  color: black;
-}
-
-/***************ProgessBar**************/
-
-/***************NavBarFooter******************/
-
-#bg_img_footer {
-  background-image: url('./components/images/bg_img_footer1.png');
-  background-size: 1060px 390px;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-}
-
-
-#nav-footer {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-
-.contact_info_FooterNavBar {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 150px;
-}
-
-.logo_supersenses_white {
-  width: 164px;
-  height: 109px;
-}
-
-#NavText {
-  color: white;
-}
-
-/* bouton_inscription{ inline styling } */
-
-
-#media_contact {
-  margin-top: 85px;
-  display: flex;
-}
-
-.media_text {
-  margin-right: 20px;
-  margin-left: 70px;
-  float: left;
-
-}
-
-.media_icons {
-  margin-left: 5px;
-}
-
-.copyrights {
-  margin-top: -20px;
-  text-align: center;
-  padding-bottom: 4px;
-}
-
-/*******************HomPage*********************/
-
-.Nav_itemHomeInterface {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 0px;
-  margin-left: 25px;
-  padding-right: 0px;
-  font-size: 15px;
-}
-
-.Description_supersenses {
-  margin-top: 200px;
-  margin-left: 120px;
-}
-
-.title_references {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
-}
-
-.novationCity_logo {
-  width: 205px;
-  height: 204px;
-  margin-left: 20px;
-}
-
-.smartLogger_logo {
-  width: 205px;
-  height: 204px;
-}
-
-.logoBox_Reference {
-  margin-right: 10px;
-}
-
-
-.ref-img {
-  margin-top: -60px;
-  width: 204px;
-  height: 204px;
-  margin-right: 30px;
-}
-
-
-/*************************************Notre Expertise *********************************/
-
-.NosServices_Container {
-  margin-top: 80px;
-  margin-bottom: 100px;
-}
-
-.NosServicesTitle {
-  text-align: center;
-  margin-bottom: 60px;
-  font-size: 40px;
-  padding-top: 150px;
-}
-
-.ServiceDigital_data>h5 {
-  font-weight: bold;
-}
-
-.ServiceAI_data>h5 {
-  font-weight: bold;
-}
-
-.paragraph_ServiceAI {
-  margin-top: 20px;
-  text-align: justify;
-}
-
-.paragraph_ServiceDigital {
-  margin-top: 20px;
-  text-align: justify;
-}
-
-.paragraph_ServiceDigital>i {
-  margin-left: -10px;
-}
-
-.ServiceDigital {
-  margin-top: 40px;
-}
-
-.ServiceAI_data {
-  padding: 30px;
-  background-color: rgba(224, 240, 253);
-  box-shadow: 0px 0px 15px rgba(224, 240, 253);
-  border-radius: 10px;
-}
-
-.ServiceDigital_data {
-  padding: 30px;
-  background-color: rgba(224, 240, 253);
-  box-shadow: 0px 0px 15px rgba(224, 240, 253);
-  border-radius: 10px;
-}
-
-.img_service_AI {
-  margin-left: 70px;
-  border-radius: 30px;
-}
-
-.img_service_digital {
-  margin-top: 20px;
-}
-
-/***********************IACestQuoi*******************************/
-
-.bloc_intro_AI {
-  width: 90%;
-  margin-top: 160px;
-
-}
-
-.intro_AI_data {
-  text-align: justify;
-  background-color: rgba(224, 240, 253);
-  box-shadow: 0px 0px 15px rgba(224, 240, 253, 0.5);
-  border-radius: 10px;
-  padding: 30px;
-  padding-top: 60px;
-  width: 200px;
-}
-
-/* .img_cerlce_AI{  
-inline styling } */
-
-.AI_slogan {
-  margin-top: 7%;
-  margin-bottom: 3%;
-  text-align: center;
-  color: #25ACDE;
-  font-size: 25px;
-}
-
-.bloc_etapes_AI {
-  margin-top: 10%;
-}
-
-.bloc_etapes_AI_title {
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: 4%;
-  font-size: 20px;
-}
-
-#etape_AI_title {
-  margin-bottom: 25px;
-  margin-top: 15px;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 10px;
-}
-
-#etape_AI {
-  width: 86%;
-  height: 94%;
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 40px;
-  box-shadow: 0 0 45px 0 #c7c7c7;
-  border-radius: 10px;
-  transition: box-shadow .3s;
-}
-
-#etape_AI:hover {
-  box-shadow: 0 0 17px rgba(33, 33, 33, .2);
-
-}
-
-.icon_etapes_AI {
-  width: 20px;
-  height: 30px;
-
-}
-
-
-#blocBD_header:hover {
-  color: #25ACDE;
-}
-
-#blocEntrainement_header:hover {
-  color: #25ACDE;
-}
-
-#blocIterations_header:hover {
-  color: #25ACDE;
-}
-
-#blocMiseEnProduction_header:hover {
-  color: #25ACDE;
-}
-
-/***********************ContactezNous*******************************/
-
-.ContactezNous_container {
-width: 80%;
-
-margin-left: 10%;
-}
-
-.bloc_welcoming_phrases {
-  margin-top: 80px;
-  margin-bottom: 40px;
-  padding-top: 100px;
-  
-
-}
-
-.welcoming_phrase {
-  text-align: center;
-
-}
-
-#SeSoumettre_btn {
-  text-align: center;
-  width: 100%;
-  border-radius: 10px;
-  background-color: #25ACDE;
-}
-
-.Contact_form {
-  padding-top: 50px;
-  box-shadow: inset 0 0 15px 0 #c7c7c7;
-  border-radius: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
-
-}
-
-#Contact_input {
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-
-/*****************************NosOffres**************************/
-
-#NosOffres {
-  box-shadow: inset 0 0 15px 0 #c7c7c7;
-  border-radius: 30px;
-  margin-top: 6%;
-}
-
-#NosOffres_title {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 25px;
-
-}
-
-#NosOffres_data {
-  padding-bottom: 30px;
-  padding-left: -200px;
-}
-
-#NosOffres_button {
-  border-radius: 25px;
-  width: 100PX;
-  margin-top: 13px;
-}
-
-.offre-titre {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.offre_info_glimpse {
-  font-size: 11px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.img_offre {
-  width: 76px;
-  height: 71px;
-  place-items: right;
-  float: right;
-}
-
-
-/**********************ProgessBar************************/
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-@font-face {
-  font-family: "CaviarDreams";
-  src: local("CaviarDreams"),
-    url("./fonts/CaviarDreams_Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-* {
-  width: 100%
 }
 
 
@@ -541,7 +124,7 @@ margin-left: 10%;
   
 }
 .bgSolutionImg {
-  background-image: url('./components//images/bannière supersenses@2x.png');
+  background-image: url('./components/images/bannière supersenses@2x.png');
   background-repeat: no-repeat;
   background-size: 100% 90%;
   height: 487px;
@@ -835,3 +418,407 @@ margin-left: 10%;
 #CarouselPicture {
   width: 200px;
 }
+
+
+
+
+
+
+.App {
+  background-color: white;
+}
+
+
+/***********************NavBarHeader**************/
+
+.nav-header {
+  z-index: 2;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  
+  margin-top: -85px;
+}
+
+#bg_img_header {
+  background-image: url("./components/images/bg_img_header.png");
+  background-size: 1053px 286px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.logo_supersenses {
+  width: 107px;
+  height: 76.42px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.me-auto {
+  margin-left: 300px;
+}
+
+.Nav_item {
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 25px;
+  padding-right: 0px;
+  font-size: 15px;
+}
+#languageIcon{
+  display: inline;
+}
+#selectLangue{
+  
+  border-radius:10px;
+  margin-left: 12px;
+}
+#NavText_other {
+  color: black;
+}
+
+/***************ProgessBar**************/
+
+/***************NavBarFooter******************/
+
+ #bg_img_footer {
+  background-image: url('./components/images/bg_img_footer1.png');
+  background-size: 1060px 390px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+
+#nav-footer {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+.contact_info_FooterNavBar {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 150px;
+}
+
+.logo_supersenses_white {
+  width: 164px;
+  height: 109px;
+}
+
+#NavText {
+  color: white;
+}
+
+/* bouton_inscription{ inline styling } */
+
+
+#media_contact {
+  margin-top: 85px;
+  display: flex;
+}
+
+.media_text {
+  margin-right: 20px;
+  margin-left: 70px;
+  float: left;
+
+}
+
+.media_icons {
+  margin-left: 5px;
+}
+
+.copyrights {
+  margin-top: -20px;
+  text-align: center;
+  padding-bottom: 4px;
+} 
+
+/*******************HomPage*********************/
+
+.Nav_itemHomeInterface {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 25px;
+  padding-right: 0px;
+  font-size: 15px;
+}
+
+.Description_supersenses {
+  margin-top: 200px;
+  margin-left: 120px;
+}
+
+.title_references {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.novationCity_logo {
+  width: 205px;
+  height: 204px;
+  margin-left: 20px;
+}
+
+.smartLogger_logo {
+  width: 205px;
+  height: 204px;
+}
+
+.logoBox_Reference {
+  margin-right: 10px;
+}
+
+
+.ref-img {
+  margin-top: -60px;
+  width: 204px;
+  height: 204px;
+  margin-right: 30px;
+}
+
+
+/*************************************Notre Expertise *********************************/
+
+.NosServices_Container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.NosServicesTitle {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 40px;
+  padding-top: 150px;
+}
+
+.ServiceDigital_data>h5 {
+  font-weight: bold;
+}
+
+.ServiceAI_data>h5 {
+  font-weight: bold;
+}
+
+.paragraph_ServiceAI {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.paragraph_ServiceDigital {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.paragraph_ServiceDigital>i {
+  margin-left: -10px;
+}
+
+.ServiceDigital {
+  margin-top: 40px;
+}
+
+.ServiceAI_data {
+  padding: 30px;
+  background-color: rgba(224, 240, 253);
+  box-shadow: 0px 0px 15px rgba(224, 240, 253);
+  border-radius: 10px;
+}
+
+.ServiceDigital_data {
+  padding: 30px;
+  background-color: rgba(224, 240, 253);
+  box-shadow: 0px 0px 15px rgba(224, 240, 253);
+  border-radius: 10px;
+}
+
+.img_service_AI {
+  margin-left: 70px;
+  border-radius: 30px;
+}
+
+.img_service_digital {
+  margin-top: 20px;
+}
+
+/***********************IACestQuoi*******************************/
+
+.bloc_intro_AI {
+  width: 10Opx;
+  margin-top: 160px;
+
+}
+
+.intro_AI_data {
+  text-align: justify;
+  background-color: rgba(224, 240, 253);
+  box-shadow: 0px 0px 15px rgba(224, 240, 253, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+  padding-top: 60px;
+  width: 200px;
+}
+
+/* .img_cerlce_AI{  
+inline styling } */
+
+.AI_slogan {
+  margin-top: 110px;
+  margin-bottom: -10px;
+  text-align: center;
+  color: #25ACDE;
+  font-size: 25px;
+}
+
+.bloc_etapes_AI {
+  margin-top: 90px;
+}
+
+.bloc_etapes_AI_title {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+#etape_AI_title {
+  margin-bottom: 25px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#etape_AI {
+  width: 540px;
+  height: 330px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 40px;
+  box-shadow: 0 0 45px 0 #c7c7c7;
+  border-radius: 10px;
+  transition: box-shadow .3s;
+}
+
+#etape_AI:hover {
+  box-shadow: 0 0 17px rgba(33, 33, 33, .2);
+
+}
+
+.icon_etapes_AI {
+  width: 20px;
+  height: 30px;
+
+}
+
+
+#blocBD_header:hover {
+  color: #25ACDE;
+}
+
+#blocEntrainement_header:hover {
+  color: #25ACDE;
+}
+
+#blocIterations_header:hover {
+  color: #25ACDE;
+}
+
+#blocMiseEnProduction_header:hover {
+  color: #25ACDE;
+}
+
+/***********************ContactezNous*******************************/
+
+.ContactezNous_container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.bloc_welcoming_phrases {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  padding-top: 100px;
+
+}
+
+.welcoming_phrase {
+  text-align: center;
+
+}
+
+#SeSoumettre_btn {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #25ACDE;
+}
+
+.Contact_form {
+  padding-top: 50px;
+  box-shadow: inset 0 0 15px 0 #c7c7c7;
+  border-radius: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+
+}
+
+#Contact_input {
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/*****************************NosOffres**************************/
+
+#NosOffres {
+  box-shadow: inset 0 0 15px 0 #c7c7c7;
+  border-radius: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#NosOffres_title {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+
+}
+
+#NosOffres_data {
+  padding-bottom: 30px;
+  padding-left: -200px;
+}
+
+#NosOffres_button {
+  border-radius: 25px;
+  width: 100PX;
+  margin-top: 13px;
+}
+
+.offre-titre {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.offre_info_glimpse {
+  font-size: 11px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.img_offre {
+  width: 76px;
+  height: 71px;
+  place-items: right;
+  float: right;
+}
+
+
+/**********************ProgessBar************************/
