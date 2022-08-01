@@ -364,10 +364,10 @@ body {
   margin-top: 3%;
 }
 
-#expertise {
-  background-image: url('./components/images/Capture d’écran 2022-07-07 152424.png');
-  background-repeat: no-repeat;
-  background-size: 1535px 674px;
+#expertisets {
+ width: 119.7%;
+ margin-left: -10%;
+ margin-top: 10%;
 }
 
 #expertiseTitle {
@@ -381,32 +381,11 @@ body {
   color: #000;
 }
 
-#expertiseBox {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 3px 6px #888992;
-  border-radius: 21px;
-  opacity: 1;
-  backdrop-filter: blur(7px);
-  width: 30%;
-  height: 378px;
-  margin-top: 3%;
-  margin-left: 48%;
-}
+
 
 .expertiseList {
   list-style: none;
 
-}
-
-#expertiseItem {
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  line-height: 22px;
-  color: #000;
-  opacity: 1;
 }
 
 
@@ -500,7 +479,6 @@ body {
   width: 100%;
   margin-top: -85px;
 }
-
 #bg_img_header {
   background-image: url("./components/images/bg_img_header.png");
   background-size: 1053px 286px;
@@ -602,6 +580,7 @@ body {
 /*******************HomPage*********************/
 .part2 {
   margin-top: 15%;
+  width: 100%;
 }
 
 .Nav_itemHomeInterface {
@@ -616,6 +595,7 @@ body {
 .Description_supersenses {
   margin-top: 200px;
   margin-left: 120px;
+  
 }
 
 .title_references {
