@@ -6,7 +6,7 @@ import img4 from '../images/Group14483.png';
 const NosSolutionPa = () => {
 
   return (
-    <div>
+    <div className="container ">
       <div class="row p-3">
         
         <h2 class="d-flex justify-content-center" id="TitleHodhod">Hodhod:Devenez acteurs de votre Communes </h2>

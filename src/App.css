@@ -7,6 +7,10 @@
   font-weight: bold;
 }
 
+body{
+  height: 100%;
+  width: 100%;
+}
 
 
 /******Espace Carriere ********/
@@ -116,8 +120,12 @@
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   margin-bottom: 6%;
 }
+
 #NosSolutionVideo{
   margin-left: 26%;
+}
+.NosSolution{
+  margin-top: 5%;
 }
 #TitleHodhod{
   margin-top: 4%;
@@ -140,6 +148,9 @@
 
   height: 250px;
   border-radius: 20px;
+}
+.Apropos{
+  margin-top: 6%;
 }
 
 #AproposParag {
@@ -432,8 +443,8 @@
 /***********************NavBarHeader**************/
 
 .nav-header {
-  z-index: 2;
-  position: fixed;
+  
+  position:fixed;
   background-color: white;
   width: 100%;
   
@@ -582,17 +593,24 @@
 
 
 /*************************************Notre Expertise *********************************/
-
+#NosExpertiseTitre{
+margin-top: 3%;
+}
 .NosServices_Container {
   margin-top: 80px;
   margin-bottom: 100px;
+  width: 100%;
+  
+}
+.ServiceAI{
+  width: 80%;
 }
 
 .NosServicesTitle {
   text-align: center;
   margin-bottom: 60px;
   font-size: 40px;
-  padding-top: 150px;
+  
 }
 
 .ServiceDigital_data>h5 {
@@ -636,8 +654,9 @@
 }
 
 .img_service_AI {
-  margin-left: 70px;
+  margin-left: 10%;
   border-radius: 30px;
+  width: 75%;
 }
 
 .img_service_digital {
@@ -647,7 +666,7 @@
 /***********************IACestQuoi*******************************/
 
 .bloc_intro_AI {
-  width: 10Opx;
+  width: 20%;
   margin-top: 160px;
 
 }

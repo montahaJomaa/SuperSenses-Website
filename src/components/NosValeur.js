@@ -10,7 +10,7 @@ import img2Solution from './images/Group 14382.png';
 const NosValeur = () => {
 
   return (
-    <div className="part2">
+    <div className="part2 container">
       <div class="col">
         <div class="row">
           <h1 class="text-center" id="title1">Nos valeurs & engagements </h1>

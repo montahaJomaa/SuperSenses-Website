@@ -2,7 +2,7 @@
 const Apropos=() => {
 
     return (
-        <div id="AproposHeader">
+        <div id="AproposHeader" className="Apropos">
             <div class="text-center" >
                 <h1>A propos nous</h1>
             </div>
