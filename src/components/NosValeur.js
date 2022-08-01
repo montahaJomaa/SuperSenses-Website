@@ -4,6 +4,8 @@ import img3 from './images/Component17–6.png';
 
 import img1Solution from './images/MaskGroup10115@2x.png';
 import img2Solution from './images/Group 14382.png';
+import img3Solution from './images/senses_IA.png';
+
 
 
 
@@ -55,21 +57,23 @@ const NosValeur = () => {
             <div class="row">
               <h2 class="text-center text-sm-left" id="title2">Découvrir les solutions techniques</h2>
             </div>
-            <div class="col">
 
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="container">
+      <div className="container" id="boxs">
         <div class="row">
           <div class="col">
-            <img className="bgSolution" src={img1Solution} alt="img1" />
+            <img className="bgSolution img-thumbnail shadow rounded" src={img1Solution} alt="img1" />
             <div className="box">
               <p>
                 <div class="col">
+                  <div className='row'>
+                    <img src={img2Solution} alt="hodhod" id="chatSize" />
+                  </div>
                   <div class="row">
+
                     <h1 class="text-center" id="hodhodTitle">HODHOD</h1>
                     <div class="row text-center" id="hodhodparagraph" >
 
@@ -82,10 +86,14 @@ const NosValeur = () => {
             </div>
 
           </div>
-          <div class="col">
-            <img className="chatLogo" src={img2Solution} alt="img1" />
+          <div className="col">
+            <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
+            <div className='img3Box'>
+            <img src={img2Solution} alt="hodhod" id="chatSize2" />
+            <h1 id="hodhodTitle">Senses IA</h1>
+            <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
+            </div>
           </div>
-
         </div>
 
       </div>
