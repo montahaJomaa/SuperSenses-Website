@@ -391,7 +391,11 @@ body {
   width: 31%;
   height: 70%;
   margin-left: 65%;
-  
+  padding-top: 2.5%;
+  line-height: 3em;
+}
+.expertiseBox ul {
+  list-style: none;
 }
 
 #expertiseTitle {

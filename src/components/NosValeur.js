@@ -103,12 +103,12 @@ const NosValeur = () => {
       <div className="expertisets">
         <div className='expertiseBox'>
           <ul>
-            <li><h1>Machine Learning</h1></li>
-            <li>Internet des Objets</li>
-            <li>Intelligence Artificielle</li>
-            <li>Formation technologique</li>
-            <li>Développement web/mobile</li>
-            <li>Conception et layout des cartes électroniques</li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Machine Learning</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Internet des Objets</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Intelligence Artificielle</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Formation technologique</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Développement web/mobile</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Conception et layout des cartes électroniques</h5></li>
           </ul>
         </div>
 
