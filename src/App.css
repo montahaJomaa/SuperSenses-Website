@@ -255,29 +255,34 @@ body {
 
 .solution {
   padding-top: 5%;
-  
+
 }
-#boxs{
+
+#boxs {
   margin-top: 6%;
   margin-left: 6%;
   width: 98%;
 }
+
 .bgSolution {
   width: 73%;
   height: 322px;
-  
+
 }
-#chatSize{
+
+#chatSize {
   width: 20%;
   margin-left: 40%;
   margin-top: -5%;
 }
-#chatSize2{
+
+#chatSize2 {
   width: 15%;
   margin-left: 38%;
   margin-top: -6%;
 }
-#SensiaP{
+
+#SensiaP {
   font-size: 16px;
   text-align: center;
   font-style: normal;
@@ -286,8 +291,9 @@ body {
   font-family: 'Roboto';
   line-height: 22px;
   color: #000;
-  
+
 }
+
 .box {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0px 3px 6px #888992;
@@ -300,7 +306,8 @@ body {
   margin-left: 7%;
 
 }
-.img3Box{
+
+.img3Box {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0px 3px 6px #888992;
   border-radius: 21px;
@@ -311,7 +318,8 @@ body {
   margin-top: -20%;
   margin-left: 6.25%;
 }
-#img3Solution{
+
+#img3Solution {
   width: 70%;
   height: 326px;
 }
@@ -350,12 +358,12 @@ body {
   position: relative;
 }
 
-#dotDesign{
+#dotDesign {
   border-style: solid;
   border-radius: 50%;
   width: 20%;
   height: 40px;
-  margin-left:45%;
+  margin-left: 45%;
   background-color: white;
 }
 
@@ -364,10 +372,26 @@ body {
   margin-top: 3%;
 }
 
-#expertisets {
- width: 119.7%;
- margin-left: -10%;
- margin-top: 10%;
+.expertisets {
+  background-image: url('./components/images/Groupe_19186.png');
+  width: 119.7%;
+  margin-left: -10%;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 487px;
+  padding-top: 8%;
+
+}
+.expertiseBox{
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px #888992;
+  border-radius: 21px;
+  opacity: 1;
+  backdrop-filter: blur(7px);
+  width: 31%;
+  height: 70%;
+  margin-left: 65%;
+  
 }
 
 #expertiseTitle {
@@ -379,6 +403,7 @@ body {
   font-family: 'Roboto';
   line-height: 30px;
   color: #000;
+  margin-top: 10%;
 }
 
 
@@ -479,6 +504,7 @@ body {
   width: 100%;
   margin-top: -85px;
 }
+
 #bg_img_header {
   background-image: url("./components/images/bg_img_header.png");
   background-size: 1053px 286px;
@@ -595,7 +621,7 @@ body {
 .Description_supersenses {
   margin-top: 200px;
   margin-left: 120px;
-  
+
 }
 
 .title_references {

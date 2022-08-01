@@ -90,18 +90,28 @@ const NosValeur = () => {
           <div className="col">
             <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
             <div className='img3Box'>
-            <img src={img2Solution} alt="hodhod" id="chatSize2" />
-            <h1 id="hodhodTitle">Senses IA</h1>
-            <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
+              <img src={img2Solution} alt="hodhod" id="chatSize2" />
+              <h1 id="hodhodTitle">Senses IA</h1>
+              <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
             </div>
           </div>
         </div>
 
       </div>
-    
 
-      <div id="" >
-        <img className='bg-img ' src={backgroundImg} id="expertisets"/>
+      <h1 id="expertiseTitle">Nos expertises</h1><br></br><br></br>
+      <div className="expertisets">
+        <div className='expertiseBox'>
+          <ul>
+            <li><h1>Machine Learning</h1></li>
+            <li>Internet des Objets</li>
+            <li>Intelligence Artificielle</li>
+            <li>Formation technologique</li>
+            <li>Développement web/mobile</li>
+            <li>Conception et layout des cartes électroniques</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   );
