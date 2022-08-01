@@ -27,7 +27,7 @@ function NavBarHeader() {
               <Nav.Link to="/Apropos" className='Nav_item' id='NavText_other'>A propos</Nav.Link>
               <Nav.Link id='selectLangue'>
                 <img src={language} alt="languageIcon"  id='languageIcon'/>
-                <select>
+                <select className='selectStyle'>
                   <option>Francais</option>
                   <option>Arabe</option>
                 </select></Nav.Link>

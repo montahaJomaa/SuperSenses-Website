@@ -441,7 +441,9 @@ body{
 
 
 /***********************NavBarHeader**************/
-
+.selectStyle{
+  border-radius: 15px;
+}
 .nav-header {
   
   position:fixed;
@@ -547,7 +549,9 @@ body{
 } 
 
 /*******************HomPage*********************/
-
+.part2{
+  margin-top: 15%;
+}
 .Nav_itemHomeInterface {
   font-weight: bold;
   text-transform: uppercase;

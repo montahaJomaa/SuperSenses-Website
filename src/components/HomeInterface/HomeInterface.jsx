@@ -17,6 +17,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import logo_supersenses from '../images/logo_supersenses.png';
+import NosValeur from "../NosValeur";
 
 
 
@@ -57,6 +58,7 @@ function HomeInterface() {
             </div>
           </Col>
         </Row>
+        <NosValeur/>
       </Container>
 
     </div>
