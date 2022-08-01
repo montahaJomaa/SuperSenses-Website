@@ -5,6 +5,7 @@ import img3 from './images/Component17–6.png';
 import img1Solution from './images/MaskGroup10115@2x.png';
 import img2Solution from './images/Group 14382.png';
 import img3Solution from './images/senses_IA.png';
+import backgroundImg from './images/Groupe_19186.png';
 
 
 
@@ -97,30 +98,10 @@ const NosValeur = () => {
         </div>
 
       </div>
-      <div class="text-center">
-        <button type="button" class="btn btn-outline-dark" id="savoirplusbtn">Savoir plus</button>
-      </div>
+    
 
-      <div class="mt-5" id="expertise" >
-        <div class="bg-image">
-
-          <h1 class="pt-5" id="expertiseTitle">Notre expertise</h1>
-
-          <div id="expertiseBox" >
-            <div class="flex-column" id="expertiseItem">
-              <ul class="expertiseList pt-5 ">
-                <li ><i class="bi bi-check-circle-fill mx-2 p-2 " ></i>Impression 3D</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2 " ></i>Machine Learning</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2 "></i>Internet des Objets</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>Intelligence Artificielle</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>Formation Technologique</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>développement Web/Mobile</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>Conception et layout de carte  électroniques</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
+      <div id="" >
+        <img className='bg-img ' src={backgroundImg} id="expertisets"/>
       </div>
     </div>
   );

@@ -42,7 +42,7 @@ function HomeInterface() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container className="Description_supersenses">
+      <div className="Description_supersenses container">
         <Row>
           <Col>
             <h2>Bienvenue à</h2>
@@ -59,7 +59,7 @@ function HomeInterface() {
           </Col>
         </Row>
         <NosValeur/>
-      </Container>
+      </div>
 
     </div>
   );
