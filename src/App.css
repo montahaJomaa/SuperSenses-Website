@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 @font-face {
   font-family: "CaviarDreams";
@@ -7,7 +7,7 @@
   font-weight: bold;
 }
 
-body{
+body {
   height: 100%;
   width: 100%;
 }
@@ -99,38 +99,44 @@ body{
   height: 60%;
 
 }
-#PicturesPadding{
+
+#PicturesPadding {
   margin-left: 15%;
   width: 80%;
 }
-#imageSize{
+
+#imageSize {
   width: 450px;
   height: 250px;
 }
+
 .CarouselPict div {
   padding: 6px;
 
 }
 
-#NosSolutionParag1{
+#NosSolutionParag1 {
   margin-left: 13%;
   margin-top: 4%;
   text-align: justify;
-  background-color:#E0F0FD;
+  background-color: #E0F0FD;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
   margin-bottom: 6%;
 }
 
-#NosSolutionVideo{
+#NosSolutionVideo {
   margin-left: 26%;
 }
-.NosSolution{
+
+.NosSolution {
   margin-top: 5%;
 }
-#TitleHodhod{
+
+#TitleHodhod {
   margin-top: 4%;
-  
+
 }
+
 .bgSolutionImg {
   background-image: url('./components/images/bannière supersenses@2x.png');
   background-repeat: no-repeat;
@@ -149,7 +155,8 @@ body{
   height: 250px;
   border-radius: 20px;
 }
-.Apropos{
+
+.Apropos {
   margin-top: 6%;
 }
 
@@ -227,7 +234,8 @@ body{
   width: 327px;
   height: 267px;
 }
-#hoverImg1 :hover{
+
+#hoverImg1 :hover {
   transform: scale(1.3);
   z-index: 2;
 
@@ -238,13 +246,13 @@ body{
 
 
 
-#hoverImg2 :hover{
+#hoverImg2 :hover {
   transform: scale(1.3);
   z-index: 2;
 
 }
 
-#hoverImg3 :hover{
+#hoverImg3 :hover {
   transform: scale(1.3);
   z-index: 2;
 
@@ -430,26 +438,21 @@ body{
   width: 200px;
 }
 
-
-
-
-
-
 .App {
   background-color: white;
 }
 
 
 /***********************NavBarHeader**************/
-.selectStyle{
+.selectStyle {
   border-radius: 15px;
 }
+
 .nav-header {
-  
-  position:fixed;
+
+  position: fixed;
   background-color: white;
   width: 100%;
-  
   margin-top: -85px;
 }
 
@@ -478,14 +481,17 @@ body{
   padding-right: 0px;
   font-size: 15px;
 }
-#languageIcon{
+
+#languageIcon {
   display: inline;
 }
-#selectLangue{
-  
-  border-radius:10px;
+
+#selectLangue {
+
+  border-radius: 10px;
   margin-left: 12px;
 }
+
 #NavText_other {
   color: black;
 }
@@ -494,7 +500,7 @@ body{
 
 /***************NavBarFooter******************/
 
- #bg_img_footer {
+#bg_img_footer {
   background-image: url('./components/images/bg_img_footer1.png');
   background-size: 1060px 390px;
   background-repeat: no-repeat;
@@ -546,12 +552,13 @@ body{
   margin-top: -20px;
   text-align: center;
   padding-bottom: 4px;
-} 
+}
 
 /*******************HomPage*********************/
-.part2{
+.part2 {
   margin-top: 15%;
 }
+
 .Nav_itemHomeInterface {
   font-weight: bold;
   text-transform: uppercase;
@@ -597,16 +604,18 @@ body{
 
 
 /*************************************Notre Expertise *********************************/
-#NosExpertiseTitre{
-margin-top: 3%;
+#NosExpertiseTitre {
+  margin-top: 3%;
 }
+
 .NosServices_Container {
   margin-top: 80px;
   margin-bottom: 100px;
   width: 100%;
-  
+
 }
-.ServiceAI{
+
+.ServiceAI {
   width: 80%;
 }
 
@@ -614,7 +623,7 @@ margin-top: 3%;
   text-align: center;
   margin-bottom: 60px;
   font-size: 40px;
-  
+
 }
 
 .ServiceDigital_data>h5 {
@@ -665,6 +674,7 @@ margin-top: 3%;
 
 .img_service_digital {
   margin-top: 20px;
+  width: 70%;
 }
 
 /***********************IACestQuoi*******************************/
@@ -698,6 +708,7 @@ inline styling } */
 
 .bloc_etapes_AI {
   margin-top: 90px;
+  width: 70%;
 }
 
 .bloc_etapes_AI_title {
