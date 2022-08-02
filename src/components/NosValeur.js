@@ -120,13 +120,13 @@ const NosValeur = () => {
         <h1 className='text-center'>Portfolio </h1>
         <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br><br></br>
         <div className='col mt-5'>
-          <img src={port1} alt="portfolio"/>
+          <img src={port1} alt="portfolio" id="portfolio1"/>
         </div>
         <div className='col mt-5'>
-        <img src={port2} alt='portfolio'/>
+        <img src={port2} alt='portfolio' id="portfolio1"/>
         </div>
         <div className='col mt-5'>
-        <img src={port3} alt='portfolio'/>
+        <img src={port3} alt='portfolio' id="portfolio1"/>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const NosSolutionPa = () => {
 
   return (
     <div className="container ">
-      <h1 className="text-center">Nos Solutions</h1>
+
       <div className="row mt-5">
         <div className="col">
           <h1>Hodhod</h1>
@@ -89,29 +89,29 @@ const NosSolutionPa = () => {
       <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
       <div id="PicturesPadding">
         <div class="row p-3">
-          <div class="col">
-            <img class="w-75 img-thumbnail " src={img1} id="imageSize" />
-            <p>Préserver l’environnement.</p>
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <img class="w-100" src={img1} id="imageSize" />
+            <h6 className="text-center">Préserver l’environnement.</h6>
           </div>
-          <div class="col">
-            <img class="w-75 img-thumbnail" src={img2} id="imageSize" />
-            <p>Lutter contre la pollution.</p>
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <img class="w-100" src={img2} id="imageSize" />
+            <h6 className="text-center">Lutter contre la pollution.</h6>
           </div>
-          <div class="col">
-            <img class="w-75 img-thumbnail" src={img3} id="imageSize" />
-            <p>Intégrer les citoyens dans l’amélioration de leurs villes</p>
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <img class="w-100" src={img3} id="imageSize" />
+            <h6 className="text-center">Intégrer les citoyens dans l’amélioration de leurs villes</h6>
           </div>
         </div>
         <div class="row p-3">
-          <div class="col">
-            <img class="w-75 img-thumbnail" src={img4} id="imageSize" />
-            <p>Informer les citoyens avec les nouveautés de leurs communes.</p>
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <img class="w-100" src={img4} id="imageSize" />
+            <h6 className="text-center">Informer les citoyens avec les nouveautés de leurs communes.</h6>
           </div>
-          <div class="col">
-            <img class="w-75 img-thumbnail" src={img1} id="imageSize" />
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <img class="w-100" src={img1} id="imageSize" />
           </div>
-          <div class="col">
-            <img class="w-75 img-thumbnail" src={img1} id="imageSize" />
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <img class="w-100" src={img1} id="imageSize" />
           </div>
         </div>
       </div>
