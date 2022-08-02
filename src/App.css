@@ -21,7 +21,9 @@ body {
   border: 15px;
   margin-top: -5%;
 }
-
+.espCarr{
+  width: 97%;
+}
 #CarriereButtomSauv {
   width: 20%;
   margin-left: 138.5%;

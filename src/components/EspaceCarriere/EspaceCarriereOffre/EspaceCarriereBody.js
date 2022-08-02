@@ -2,7 +2,7 @@
 const EspaceCarriereBody = () => {
 
     return (
-        <div >
+        <div className="espCarr" >
             <div class="row">
                 <div class="col">
                     <div class="img-thumbnail shadow " id="EspaceCarriereBody">

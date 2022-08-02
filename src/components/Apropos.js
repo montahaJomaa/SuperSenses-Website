@@ -1,4 +1,4 @@
-
+import imgSensia from "./images/Explainer-videos-for-SAAS.png";
 const Apropos=() => {
 
     return (
@@ -9,8 +9,8 @@ const Apropos=() => {
             <div class="container" id="AproposContent">
         <div class="row">
         
-    <div class="col img-thumbnail shadow " id="AproposImg">
-      image
+    <div class="col" id="AproposImg">
+      <img src={imgSensia} />
     </div>
     <div class="col-sm">
     <h2 id="AproposSuperText">Super Senses</h2>
