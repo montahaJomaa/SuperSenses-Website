@@ -72,10 +72,11 @@ body {
 #compBorder1{
   border-radius: 25px;
   height: 180px;
-  
-  
 }
 
+#testB{
+  margin-left: -10%;
+}
 #compBorder2{
   border-radius: 25px;
   height: 180px;

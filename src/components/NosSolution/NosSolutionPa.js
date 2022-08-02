@@ -28,7 +28,7 @@ const NosSolutionPa = () => {
         </div>
       </div>
 
-      <div className="row text-center" >
+      <div className="row text-center" id="testB" >
 
         <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
@@ -112,28 +112,6 @@ const NosSolutionPa = () => {
           </div>
           <div class="col">
             <img class="w-75 img-thumbnail" src={img1} id="imageSize" />
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="container">
-        <div class="row g-2">
-          <div class="col-6 img-thumbnail">
-            <img src={kitelectronique} className="kitelectronique text-center " />
-            <h6>Capteurs embarqués / kit électronique Collecte des datas.</h6>
-          </div>
-          <div class="col-6 im-thumbnail">
-            <div class="p-3 border bg-light"> <img src={kitelectronique} className="kitelectronique text-center " />
-              <h6>Capteurs embarqués / kit électronique Collecte des datas.</h6></div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border bg-light">Custom column padding</div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border bg-light">Custom column padding</div>
           </div>
         </div>
       </div>
