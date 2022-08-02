@@ -1,21 +1,11 @@
 import React from "react";
-
 import description_img from '../images/description_img.png';
 import Button from 'react-bootstrap/Button';
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
 import Container from 'react-bootstrap/Container';
-
-import smartLogger from '../images/smartLogger.png';
-import novationCity from '../images/novationCity.png';
-
-
-
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 import logo_supersenses from '../images/logo_supersenses.png';
 import NosValeur from "../NosValeur";
 
@@ -58,7 +48,7 @@ function HomeInterface() {
             </div>
           </Col>
         </Row>
-        <NosValeur/>
+        <NosValeur />
       </div>
 
     </div>

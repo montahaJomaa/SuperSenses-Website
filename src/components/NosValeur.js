@@ -6,6 +6,9 @@ import img1Solution from './images/MaskGroup10115@2x.png';
 import img2Solution from './images/Group 14382.png';
 import img3Solution from './images/senses_IA.png';
 import backgroundImg from './images/Groupe_19186.png';
+import port1 from './images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.png';
+import port2 from './images/scott-graham-5fNmWej4tAA-unsplash.png';
+import port3 from './images/sigmund-Im_cQ6hQo10-unsplash.png';
 
 
 
@@ -112,6 +115,19 @@ const NosValeur = () => {
           </ul>
         </div>
 
+      </div>
+      <div class="row">
+        <h1 className='text-center'>Portfolio </h1>
+        <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br><br></br>
+        <div className='col mt-5'>
+          <img src={port1} alt="portfolio"/>
+        </div>
+        <div className='col mt-5'>
+        <img src={port2} alt='portfolio'/>
+        </div>
+        <div className='col mt-5'>
+        <img src={port3} alt='portfolio'/>
+        </div>
       </div>
     </div>
   );
