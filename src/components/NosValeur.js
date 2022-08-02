@@ -6,6 +6,9 @@ import img1Solution from './images/MaskGroup10115@2x.png';
 import img2Solution from './images/Group 14382.png';
 import img3Solution from './images/senses_IA.png';
 import backgroundImg from './images/Groupe_19186.png';
+import port1 from './images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.png';
+import port2 from './images/scott-graham-5fNmWej4tAA-unsplash.png';
+import port3 from './images/sigmund-Im_cQ6hQo10-unsplash.png';
 
 
 
@@ -90,18 +93,41 @@ const NosValeur = () => {
           <div className="col">
             <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
             <div className='img3Box'>
-            <img src={img2Solution} alt="hodhod" id="chatSize2" />
-            <h1 id="hodhodTitle">Senses IA</h1>
-            <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
+              <img src={img2Solution} alt="hodhod" id="chatSize2" />
+              <h1 id="hodhodTitle">Senses IA</h1>
+              <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
             </div>
           </div>
         </div>
 
       </div>
-    
 
-      <div id="" >
-        <img className='bg-img ' src={backgroundImg} id="expertisets"/>
+      <h1 id="expertiseTitle">Nos expertises</h1><br></br><br></br>
+      <div className="expertisets">
+        <div className='expertiseBox'>
+          <ul>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Machine Learning</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Internet des Objets</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Intelligence Artificielle</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Formation technologique</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Développement web/mobile</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Conception et layout des cartes électroniques</h5></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row">
+        <h1 className='text-center'>Portfolio </h1>
+        <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br><br></br>
+        <div className='col mt-5'>
+          <img src={port1} alt="portfolio"/>
+        </div>
+        <div className='col mt-5'>
+        <img src={port2} alt='portfolio'/>
+        </div>
+        <div className='col mt-5'>
+        <img src={port3} alt='portfolio'/>
+        </div>
       </div>
     </div>
   );
