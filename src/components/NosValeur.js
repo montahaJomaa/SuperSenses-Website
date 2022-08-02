@@ -41,6 +41,11 @@ const NosValeur = () => {
           <div class="row">
             <div class="col" id="hoverImg1">
               <img className="img" src={img1} alt="img1" />
+              <div className="bgimgText">
+                <div className="imgText" >
+                  engagements
+                </div>
+              </div>
             </div>
             <div class="col" id="hoverImg2">
               <img className="img" src={img2} alt="img2" />
@@ -120,13 +125,13 @@ const NosValeur = () => {
         <h1 className='text-center'>Portfolio </h1>
         <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br><br></br>
         <div className='col mt-5'>
-          <img src={port1} alt="portfolio" id="portfolio1"/>
+          <img src={port1} alt="portfolio" id="portfolio1" />
         </div>
         <div className='col mt-5'>
-        <img src={port2} alt='portfolio' id="portfolio1"/>
+          <img src={port2} alt='portfolio' id="portfolio1" />
         </div>
         <div className='col mt-5'>
-        <img src={port3} alt='portfolio' id="portfolio1"/>
+          <img src={port3} alt='portfolio' id="portfolio1" />
         </div>
       </div>
     </div>
