@@ -30,24 +30,25 @@ const NosSolutionPa = () => {
 
       <div className="row text-center" >
 
-        <div className="col img-thumbnail shadow" id="compBorder1">
+        <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
           <img src={kitelectronique} className="kitelectronique text-center " />
           <h6>Capteurs embarqués / kit électronique Collecte des datas.</h6>
         </div>
 
 
-        <div className="col img-thumbnail shadow" id="compBorder2">
+        <div className="col-md-3 offset-1  img-thumbnail shadow " id="compBorder2">
 
 
           <img src={platform} className="platform text-center" />
           <h6>Plateforme intelligente interactive.</h6>
 
+
         </div>
 
 
 
-        <div className="col img-thumbnail shadow" id="compBorder3">
+        <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
 
 
           <img src={appmobile} className="appmobile text-center" />
@@ -60,7 +61,7 @@ const NosSolutionPa = () => {
       <div className="container text-center">
         <div className="row " id="mobSize">
           <div className="col">
-            <img src={mob}  />
+            <img src={mob} />
           </div>
           <div className="col">
             <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonter d’une manière efficace aux divers services de la municipalité.</h6>
@@ -114,6 +115,30 @@ const NosSolutionPa = () => {
           </div>
         </div>
       </div>
+
+
+
+
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-6 img-thumbnail">
+            <img src={kitelectronique} className="kitelectronique text-center " />
+            <h6>Capteurs embarqués / kit électronique Collecte des datas.</h6>
+          </div>
+          <div class="col-6 im-thumbnail">
+            <div class="p-3 border bg-light"> <img src={kitelectronique} className="kitelectronique text-center " />
+              <h6>Capteurs embarqués / kit électronique Collecte des datas.</h6></div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
 
