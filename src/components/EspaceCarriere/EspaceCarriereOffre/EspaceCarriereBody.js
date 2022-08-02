@@ -11,7 +11,6 @@ const EspaceCarriereBody = () => {
 
                 </div>
                 <div>
-
                 </div>
             </div>
             <br></br><button type="button" class="btn btn-info justify-content-center" style={{ width: "20%", marginLeft: "66.8%", marginTop: "3%", marginBottom: "1%" }}>Info</button>

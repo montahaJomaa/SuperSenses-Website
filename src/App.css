@@ -676,13 +676,16 @@ body {
   padding-bottom: 4px;
 }
 
-/*******************HomPage*********************/
+/*******************HomePage*********************/
 .part2 {
   margin-top: 15%;
   width: 100%;
   
 }
-
+#portfolio1:hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
 .Nav_itemHomeInterface {
   font-weight: bold;
   text-transform: uppercase;
