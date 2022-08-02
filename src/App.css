@@ -153,25 +153,28 @@ body {
 }
 
 #googlePlay {
-  width: 40%;
+  width: 35%;
   height: 70%;
   margin-left: 60%;
 }
 
 #appStore {
-  width: 40%;
+  width: 35%;
   height: 60%;
 
 }
 
 #PicturesPadding {
-  margin-left: 15%;
-  width: 80%;
+  margin-left: -3%;
+  width: 100%;
+  height: 100%;
 }
-
+#bgPsize{
+  border-radius: 25px;
+}
 #imageSize {
-  width: 450px;
-  height: 250px;
+  width: 100%;
+  height: 80%;
 }
 
 .CarouselPict div {
