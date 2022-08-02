@@ -85,22 +85,26 @@ body {
 }
 .appmobile{
   
-  margin-top:22%;
+  margin-top:8%;
 }
 .kitelectronique{
-  margin-top: 20%;
+  margin-top: 8%;
 }
 .platform{
   
-  margin-top: 20%;
+  margin-top: 8%;
 }
 #mobSize{
-  margin-top: 15%;
+  margin-top: 18%;
 }
 #deveneztitle{
   margin-top: 4%;
   margin-bottom: 4%;
   color: white;
+}
+
+#mobPara{
+  margin-right: 4%;
 }
 #backgroundimg{
   background-image: url('./components/images/Groupe_de_masques_10117.png');
