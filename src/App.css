@@ -25,7 +25,7 @@ body {
 
 .Nav_item {
   text-transform: uppercase;
-  margin-right: 0px;
+  margin-right: 20px;
   margin-left: 20px;
   padding-right: 0px;
   font-size: 15px;
@@ -39,51 +39,60 @@ body {
   width: 80%;
   margin-left: 10%;
 }
-.videoBorder{
+
+.videoBorder {
   border-radius: 18px;
   height: 80%;
 }
 
-#compBorder1{
+#compBorder1 {
   border-radius: 25px;
   height: 180px;
 }
 
-#testB{
+#testB {
   margin-left: -10%;
 }
-#compBorder2{
+
+#compBorder2 {
   border-radius: 25px;
   height: 180px;
 }
-#compBorder3{
+
+#compBorder3 {
   border-radius: 25px;
   height: 180px;
 }
-.appmobile{
-  
-  margin-top:8%;
-}
-.kitelectronique{
+
+.appmobile {
+
   margin-top: 8%;
 }
-.platform{
-  
+
+.kitelectronique {
   margin-top: 8%;
 }
-#mobSize{
+
+.platform {
+
+  margin-top: 8%;
+}
+
+#mobSize {
   margin-top: 18%;
 }
-#deveneztitle{
+
+#deveneztitle {
   margin-top: 4%;
   margin-bottom: 4%;
   color: white;
 }
 
-#mobPara{
+#mobPara {
   margin-right: 4%;
 }
-#backgroundimg{
+
+#backgroundimg {
   background-image: url('./components/images/Groupe_de_masques_10117.png');
   background-size: 100% 100%;
   width: 117.6%;
@@ -91,19 +100,23 @@ body {
   margin-left: -9%;
   background-repeat: no-repeat;
   margin-top: 6%;
-  
+
 }
-#ImpactBox{
+
+#ImpactBox {
   margin-top: 10%;
 }
-#devenezParag{
+
+#devenezParag {
   padding-bottom: 5%;
-  color:white;
+  color: white;
 }
-#apptitle{
+
+#apptitle {
   margin-top: 7%;
   margin-left: 20%;
 }
+
 #CarouselBorder {
   border-radius: 15px;
 }
@@ -144,9 +157,11 @@ body {
   width: 100%;
   height: 100%;
 }
-#bgPsize{
+
+#bgPsize {
   border-radius: 25px;
 }
+
 #imageSize {
   width: 100%;
   height: 80%;
@@ -282,11 +297,13 @@ body {
   z-index: 2;
 
 }
-.imgText{
+
+.imgText {
   margin-top: -20%;
   margin-left: 25%;
   border-color: grey;
 }
+
 #hoverImg2 :hover {
   transform: scale(1.3);
   z-index: 2;
@@ -300,7 +317,7 @@ body {
 }
 
 .solution {
- margin-top: 19%;
+  margin-top: 19%;
 
 }
 
@@ -315,7 +332,8 @@ body {
   height: 322px;
 
 }
-#SoluBorder{
+
+#SoluBorder {
   border-radius: 25px;
 }
 
@@ -431,7 +449,8 @@ body {
   padding-top: 8%;
 
 }
-.expertiseBox{
+
+.expertiseBox {
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0px 3px 6px #888992;
   border-radius: 21px;
@@ -443,6 +462,7 @@ body {
   padding-top: 2.5%;
   line-height: 3em;
 }
+
 .expertiseBox ul {
   list-style: none;
 }
@@ -491,14 +511,11 @@ body {
 
 }
 
-.p3 p {
-
-
 /*****************************NosOffres**************************/
 
 
 /*******************************************/
-}
+
 
 .impactTitle {
   text-align: center;
@@ -550,6 +567,10 @@ body {
 
 
 /***********************NavBarHeader**************/
+#HomeNav {
+  margin-left: 28%;
+
+}
 
 .nav-header {
 
@@ -578,6 +599,7 @@ body {
 
 #languageIcon {
   display: inline;
+  margin-right: 6%;
 }
 
 #selectLangue {
@@ -588,6 +610,12 @@ body {
 
 #NavText_other {
   color: black;
+}
+
+.dpSolution {
+  font-size: 15px;
+  color: black;
+  margin-top: -6%;
 }
 
 /***************ProgessBar**************/
@@ -661,6 +689,7 @@ body {
 .CarouselPict div {
   padding: 6px;
 }
+
 #NavText {
   color: white;
 }
@@ -736,7 +765,7 @@ body {
   width: 10%;
   height: 35%;
   margin-bottom: 2%;
-  border-radius:10%;
+  border-radius: 10%;
 
 }
 
@@ -790,12 +819,14 @@ body {
 .part2 {
   margin-top: 15%;
   width: 100%;
-  
+
 }
-#portfolio1:hover{
+
+#portfolio1:hover {
   transform: scale(1.3);
   z-index: 2;
 }
+
 .Nav_itemHomeInterface {
   font-weight: bold;
   text-transform: uppercase;
@@ -851,6 +882,7 @@ body {
   transform: scale(1.3);
   z-index: 2;
 }
+
 .NosServices_Container {
   margin-top: 80px;
   margin-bottom: 100px;
@@ -882,6 +914,7 @@ body {
   transform: scale(1.3);
   z-index: 2;
 }
+
 .paragraph_ServiceAI {
   margin-top: 20px;
   text-align: justify;
@@ -898,6 +931,7 @@ body {
   transform: scale(1.3);
   z-index: 2;
 }
+
 .paragraph_ServiceDigital>i {
   margin-left: -10px;
 }
@@ -1063,14 +1097,17 @@ inline styling } */
 
 
 /*****************************NosOffres**************************/
-.NosOffres{
+.NosOffres {
   margin-top: 5%;
 }
-#boxF{
+
+#boxF {
   margin-top: 6%;
 }
-#boxM{
+
+#boxM {
   margin-top: 6%;
-  
+
 }
+
 /**********************ProgessBar************************/

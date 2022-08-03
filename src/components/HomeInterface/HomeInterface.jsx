@@ -9,6 +9,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo_supersenses from '../images/logo_supersenses.png';
 import NosValeur from "../NosValeur";
 import {LinkContainer} from "react-router-bootstrap";
+import language from '../images/language.png';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 function HomeInterface() {
@@ -23,11 +25,37 @@ function HomeInterface() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
 
-            <Nav className="me-auto" >
+            <Nav className="me-auto" id="HomeNav">
             <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
-              <LinkContainer to="/NosSolution"><Nav.Link  className='Nav_item' id='NavText_other'>Nos solutions</Nav.Link></LinkContainer>
+              <LinkContainer to="/NosSolution/#devenezParag"><Nav.Link className='Nav_item' id='NavText_other'>
+                <Dropdown>
+                  <Dropdown.Toggle variant="transparent" id="dropdown-basic" className='Nav_item'>
+                    <div className='dpSolution'> Nos solutions</div>
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Solution HodHod</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Solution Senses.IA</Dropdown.Item>
+
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Nav.Link></LinkContainer>
               <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link></LinkContainer>
-             <LinkContainer to="/Apropos"><Nav.Link  className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer> 
+              <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer>
+              <Nav.Link id='selectLangue'>
+                <Dropdown>
+                  <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>
+                    <div className='dpSolution'><img src={language} id="languageIcon" />Langue</div>
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Francais</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Arabe</Dropdown.Item>
+
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -40,7 +68,7 @@ function HomeInterface() {
             <p>Super Senses est une startup Tunisienne dévoilée par une <br />équipe d’ingénieurs
               multidisciplinaires. Notre vision est de <br />crée un outil technologique d’aide à la
               décision capable<br /> d’ajouter un 6ieme sens utilisant l’intelligence artificielle.</p>
-            <Button variant="outline-dark">Lire tout</Button>
+           <LinkContainer to="/Apropos"><Button variant="outline-dark">Lire tout</Button></LinkContainer>
           </Col>
           <Col>
             <div id="description_img">
