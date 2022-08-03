@@ -15,6 +15,7 @@ import logo_supersenses_white from '../images/logo_supersenses_white.png';
 import logo_linkedIn from '../images/logo_linkedIn.png';
 import logo_facebook from '../images/logo_facebook.png';
 import logo_instagram from '../images/logo_instagram.png';
+import {Link} from "react-router-dom";
 {/*import logo_twitter from './images/logo_twitter.png';*/ }
 
 
@@ -25,10 +26,10 @@ function NavFooter(props) {
             <div className="container">
 
                 <div className='contact_info_FooterNavBar'>
-                    <Row>
-                        <Col xs={{ order: 'first' }}><img src={logo_supersenses_white} alt="logo_supersenses_white" className='logo_supersenses_white' /></Col>
+                    <div className="row">
+                        <div xs={{ order: 'first' }}><img src={logo_supersenses_white} alt="logo_supersenses_white" className='col logo_supersenses_white' /></div>
 
-                        <Col xs>
+                        <div className="col" xs>
                             <p id='NavText'>
                                 Contactez nous<br />
                                 (216) 92 469 629<br />
@@ -41,7 +42,7 @@ function NavFooter(props) {
                                 <Button variant="primary" id="button-addon2" style={{ color: 'white', backgroundColor: '#1D4D90', borderColor: '#1D4D90' }} >S'inscrire </Button>
 
                             </InputGroup>
-                        </Col>
+                        </div>
 
                         <Col xs={{ order: 'last' }}>
 
@@ -50,17 +51,17 @@ function NavFooter(props) {
 
                                 <div>
 
-                                    <a href="#LinkedIn"><img src={logo_linkedIn}  className="media_icons"/></a>
-                                    <a href="#Facebook"><img src={logo_facebook} className="media_icons"/></a>
-                                    <a href="#Instagram"><img src={logo_instagram} className="media_icons"/></a>
-                                    {/*<Nav.Link href="#Twitter"><img src={logo_twitter} /></Nav.Link>*/}
+                                    <Link to="#LinkedIn"><img src={logo_linkedIn}  className="media_icons"/></Link>
+                                    <Link to="#Facebook"><img src={logo_facebook} className="media_icons"/></Link>
+                                    <Link to="#Instagram"><img src={logo_instagram} className="media_icons"/></Link>
+                                   
                                
                                 </div>
                             </div>
 
                         </Col>
 
-                    </Row>
+                    </div>
 
                 </div >
 
