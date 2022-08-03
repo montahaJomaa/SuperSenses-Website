@@ -13,7 +13,7 @@ const NosSolutionPa = () => {
     <div className="container ">
 
       <div className="row mt-5">
-        <div className="col">
+        <div className="col p-5">
           <h1>Hodhod</h1>
           <p>
             Super senses fournit ses solutions innovantes à impact afin de résoudre
@@ -24,11 +24,11 @@ const NosSolutionPa = () => {
           </p>
         </div>
         <div className="col">
-          <img src={video} alt="video" className="videoBorder" />
+          <img src={video} alt="video" className="videoBorder p-2 " />
         </div>
       </div>
 
-      <div className="row text-center" id="testB" >
+      <div className="row text-center" id="hodhodbox" >
 
         <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
