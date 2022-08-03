@@ -12,7 +12,7 @@ const NosSolutionHodhod = () => {
 
 
     <div>
-      <div class="container">
+      <div className="container NosSolutionPa">
         <div class="col">
           <div class="row">
             <img id="hodhodImage" class="img-thumbnail shadow " src={hodhod} alt="hodhod image " />

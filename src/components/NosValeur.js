@@ -4,13 +4,19 @@ import img3 from './images/Component17–6.png';
 
 import img1Solution from './images/MaskGroup10115@2x.png';
 import img2Solution from './images/Group 14382.png';
+import img3Solution from './images/senses_IA.png';
+import backgroundImg from './images/Groupe_19186.png';
+import port1 from './images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.png';
+import port2 from './images/scott-graham-5fNmWej4tAA-unsplash.png';
+import port3 from './images/sigmund-Im_cQ6hQo10-unsplash.png';
+
 
 
 
 const NosValeur = () => {
 
   return (
-    <div className="part2">
+    <div className="part2 container">
       <div class="col">
         <div class="row">
           <h1 class="text-center" id="title1">Nos valeurs & engagements </h1>
@@ -35,6 +41,11 @@ const NosValeur = () => {
           <div class="row">
             <div class="col" id="hoverImg1">
               <img className="img" src={img1} alt="img1" />
+              <div className="bgimgText">
+                <div className="imgText" >
+                  engagements
+                </div>
+              </div>
             </div>
             <div class="col" id="hoverImg2">
               <img className="img" src={img2} alt="img2" />
@@ -55,21 +66,23 @@ const NosValeur = () => {
             <div class="row">
               <h2 class="text-center text-sm-left" id="title2">Découvrir les solutions techniques</h2>
             </div>
-            <div class="col">
 
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="container">
+      <div className="container" id="boxs">
         <div class="row">
           <div class="col">
-            <img className="bgSolution" src={img1Solution} alt="img1" />
+            <img className="bgSolution img-thumbnail shadow rounded" src={img1Solution} alt="img1" />
             <div className="box">
               <p>
                 <div class="col">
+                  <div className='row'>
+                    <img src={img2Solution} alt="hodhod" id="chatSize" />
+                  </div>
                   <div class="row">
+
                     <h1 class="text-center" id="hodhodTitle">HODHOD</h1>
                     <div class="row text-center" id="hodhodparagraph" >
 
@@ -82,36 +95,43 @@ const NosValeur = () => {
             </div>
 
           </div>
-          <div class="col">
-            <img className="chatLogo" src={img2Solution} alt="img1" />
+          <div className="col">
+            <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
+            <div className='img3Box'>
+              <img src={img2Solution} alt="hodhod" id="chatSize2" />
+              <h1 id="hodhodTitle">Senses IA</h1>
+              <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
+            </div>
           </div>
-
         </div>
 
       </div>
-      <div class="text-center">
-        <button type="button" class="btn btn-outline-dark" id="savoirplusbtn">Savoir plus</button>
+
+      <h1 id="expertiseTitle">Nos expertises</h1><br></br><br></br>
+      <div className="expertisets">
+        <div className='expertiseBox'>
+          <ul>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Machine Learning</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Internet des Objets</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Intelligence Artificielle</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Formation technologique</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Développement web/mobile</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>Conception et layout des cartes électroniques</h5></li>
+          </ul>
+        </div>
+
       </div>
-
-      <div class="mt-5" id="expertise" >
-        <div class="bg-image">
-
-          <h1 class="pt-5" id="expertiseTitle">Notre expertise</h1>
-
-          <div id="expertiseBox" >
-            <div class="flex-column" id="expertiseItem">
-              <ul class="expertiseList pt-5 ">
-                <li ><i class="bi bi-check-circle-fill mx-2 p-2 " ></i>Impression 3D</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2 " ></i>Machine Learning</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2 "></i>Internet des Objets</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>Intelligence Artificielle</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>Formation Technologique</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>développement Web/Mobile</li>
-                <li><i class="bi bi-check-circle-fill mx-2 p-2" ></i>Conception et layout de carte  électroniques</li>
-              </ul>
-            </div>
-
-          </div>
+      <div class="row">
+        <h1 className='text-center'>Portfolio </h1>
+        <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br><br></br>
+        <div className='col mt-5'>
+          <img src={port1} alt="portfolio" id="portfolio1" />
+        </div>
+        <div className='col mt-5'>
+          <img src={port2} alt='portfolio' id="portfolio1" />
+        </div>
+        <div className='col mt-5'>
+          <img src={port3} alt='portfolio' id="portfolio1" />
         </div>
       </div>
     </div>

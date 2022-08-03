@@ -45,13 +45,12 @@ class App extends React.Component {
                     <div className="content">
 
                         <Routes>
-                            <Route path="/HomeInterface" element={<HomeInterface />} />
+                            <Route path="/" element={<HomeInterface />} />
                             <Route path="/NosExpertises" element={<><NavBarHeader /> <NosExpertises style={{ marginTop: '390px' }} /></>} />
                             <Route path="/NosOffres" element={<> <NavBarHeader /><NosOffres /></>} />
                             <Route path="/ContactezNous" element={<><NavBarHeader /> <ContactezNous /></>} />
-                            <Route path="/3" element={<><NavBarHeader /><NosValeur/></>} />
-                            <Route path="/4" element={<><NavBarHeader /><NosSolution /></>} />
-                            <Route path="/6" element={<><NavBarHeader /><Apropos /></>} />
+                            <Route path="/NosSolution" element={<><NavBarHeader /><NosSolution /></>} />
+                            <Route path="/Apropos" element={<><NavBarHeader /><Apropos /></>} />
                             <Route path="/7" element={<><NavBarHeader />< EspaceCarriereForm /></>} />
                             <Route path="/8" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
                             <Route path="/9" element={<><NavBarHeader /><NosSolutionSensesIA/></>} />

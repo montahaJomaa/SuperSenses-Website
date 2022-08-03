@@ -7,9 +7,542 @@
   font-weight: bold;
 }
 
-* {
-  width: 100%
+body {
+  height: 100%;
+  width: 100%;
 }
+
+/******Espace Carriere ********/
+
+
+
+
+
+
+.me-auto {
+  margin-left: 190px;
+}
+
+.Nav_item {
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 20px;
+  padding-right: 0px;
+  font-size: 15px;
+}
+
+
+/*****************************/
+
+/*********Nos Solutions **********/
+.PictureContent {
+  width: 80%;
+  margin-left: 10%;
+}
+.videoBorder{
+  border-radius: 18px;
+  height: 80%;
+}
+
+#compBorder1{
+  border-radius: 25px;
+  height: 180px;
+}
+
+#testB{
+  margin-left: -10%;
+}
+#compBorder2{
+  border-radius: 25px;
+  height: 180px;
+}
+#compBorder3{
+  border-radius: 25px;
+  height: 180px;
+}
+.appmobile{
+  
+  margin-top:8%;
+}
+.kitelectronique{
+  margin-top: 8%;
+}
+.platform{
+  
+  margin-top: 8%;
+}
+#mobSize{
+  margin-top: 18%;
+}
+#deveneztitle{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: white;
+}
+
+#mobPara{
+  margin-right: 4%;
+}
+#backgroundimg{
+  background-image: url('./components/images/Groupe_de_masques_10117.png');
+  background-size: 100% 100%;
+  width: 117.6%;
+  height: 100%;
+  margin-left: -9%;
+  background-repeat: no-repeat;
+  margin-top: 6%;
+  
+}
+#ImpactBox{
+  margin-top: 10%;
+}
+#devenezParag{
+  padding-bottom: 5%;
+  color:white;
+}
+#apptitle{
+  margin-top: 7%;
+  margin-left: 20%;
+}
+#CarouselBorder {
+  border-radius: 15px;
+}
+
+#hodhodImage {
+  width: 226px;
+  height: 166px;
+  margin-top: 10%;
+  margin-left: 40%;
+  border-radius: 20px;
+}
+
+#hodhodStatement {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+#googlePlay {
+  width: 35%;
+  height: 70%;
+  margin-left: 60%;
+}
+
+#appStore {
+  width: 35%;
+  height: 60%;
+
+}
+
+#PicturesPadding {
+  margin-left: -3%;
+  width: 100%;
+  height: 100%;
+}
+#bgPsize{
+  border-radius: 25px;
+}
+#imageSize {
+  width: 100%;
+  height: 80%;
+}
+
+.CarouselPict div {
+  padding: 6px;
+
+}
+
+#NosSolutionParag1 {
+  margin-left: 13%;
+  margin-top: 4%;
+  text-align: justify;
+  background-color: #E0F0FD;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  margin-bottom: 6%;
+}
+
+#NosSolutionVideo {
+  margin-left: 26%;
+}
+
+.NosSolution {
+  margin-top: 5%;
+}
+
+#TitleHodhod {
+  margin-top: 4%;
+
+}
+
+.bgSolutionImg {
+  background-image: url('./components/images/bannière supersenses@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 487px;
+
+}
+
+/*********************************/
+
+/********A PROPOS ****************/
+#AproposImg {
+  margin-top: 4%;
+  margin-right: 2%;
+
+  height: 250px;
+  border-radius: 20px;
+}
+
+.Apropos {
+  margin-top: 5%;
+}
+
+#AproposParag {
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 3%;
+}
+
+#AproposContent {
+  margin-top: 10%;
+
+}
+
+#AproposSuperText {
+  text-decoration: underline #25ACDE;
+
+}
+
+#AproposHeader {
+  padding-top: 8%;
+  padding-bottom: 15%;
+}
+
+
+/*********************************/
+
+/***** Nos Valeurs ***************/
+#title1 {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  font-size: 30px;
+
+}
+
+#title2 {
+
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.p1 {
+  display: flex;
+  justify-content: center;
+}
+
+.p1 p {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.images {
+
+  padding-top: 5%;
+}
+
+.img {
+  width: 327px;
+  height: 267px;
+}
+
+#hoverImg1 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
+}
+.imgText{
+  margin-top: -20%;
+  margin-left: 25%;
+  border-color: grey;
+}
+#hoverImg2 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
+}
+
+#hoverImg3 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
+}
+
+.solution {
+ margin-top: 19%;
+
+}
+
+#boxs {
+  margin-top: 6%;
+  margin-left: 6%;
+  width: 98%;
+}
+
+.bgSolution {
+  width: 73%;
+  height: 322px;
+
+}
+#SoluBorder{
+  border-radius: 25px;
+}
+
+#chatSize {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: -5%;
+}
+
+#chatSize2 {
+  width: 15%;
+  margin-left: 38%;
+  margin-top: -6%;
+}
+
+#SensiaP {
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  line-height: 22px;
+  color: #000;
+
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px #888992;
+  border-radius: 21px;
+  opacity: 1;
+  backdrop-filter: blur(7px);
+  width: 58%;
+  height: 40%;
+  margin-top: -20%;
+  margin-left: 7%;
+
+}
+
+.img3Box {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px #888992;
+  border-radius: 21px;
+  opacity: 1;
+  backdrop-filter: blur(7px);
+  width: 58%;
+  height: 40%;
+  margin-top: -20%;
+  margin-left: 6.25%;
+}
+
+#img3Solution {
+  width: 70%;
+  height: 326px;
+}
+
+#hodhodTitle {
+  font-size: 25px;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  line-height: 30px;
+  margin-top: -1%;
+  color: #494B58;
+  padding-top: 6%;
+
+}
+
+#hodhodparagraph {
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  line-height: 22px;
+  color: #000;
+  padding-left: 15%;
+}
+
+.chatLogo {
+  width: 10%;
+  height: 20%;
+  margin-top: 27%;
+  margin-left: -73%;
+  position: relative;
+}
+
+#dotDesign {
+  border-style: solid;
+  border-radius: 50%;
+  width: 20%;
+  height: 40px;
+  margin-left: 45%;
+  background-color: white;
+}
+
+#savoirplusbtn {
+  width: 10%;
+  margin-top: 3%;
+}
+
+.expertisets {
+  background-image: url('./components/images/Groupe_19186.png');
+  width: 119.7%;
+  margin-left: -10%;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 487px;
+  padding-top: 8%;
+
+}
+.expertiseBox{
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px #888992;
+  border-radius: 21px;
+  opacity: 1;
+  backdrop-filter: blur(7px);
+  width: 31%;
+  height: 70%;
+  margin-left: 65%;
+  padding-top: 2.5%;
+  line-height: 3em;
+}
+.expertiseBox ul {
+  list-style: none;
+}
+
+#expertiseTitle {
+  font-size: 37px;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  line-height: 30px;
+  color: #000;
+  margin-top: 14%;
+}
+
+
+
+.expertiseList {
+  list-style: none;
+
+}
+
+
+
+/*********************************/
+.p2 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.p2 p {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'CaviarDreams';
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.p3 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.p3 p {
+
+
+/*****************************NosOffres**************************/
+
+
+/*******************************************/
+}
+
+.impactTitle {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: 'Roboto';
+  font-size: 29px;
+  line-height: 38px;
+}
+
+.ImpactPictures {
+  width: 80%;
+
+  padding: 3%;
+  margin-left: 10%;
+
+}
+
+#img1 {
+  width: 25%;
+  margin: 0.1%;
+}
+
+#CarouselPosition {
+  margin-left: 35%;
+  width: 30%;
+  padding-top: 3%;
+
+}
+
+#sizeImg {
+  height: 100px;
+}
+
+#CarouselPicture {
+  width: 200px;
+}
+
+
+/**********************ProgessBar************************/
+
+/******Espace Carriere ********/
+
 
 .App {
   background-color: white;
@@ -19,7 +552,7 @@
 /***********************NavBarHeader**************/
 
 .nav-header {
-  z-index: 2;
+
   position: fixed;
   background-color: white;
   width: 100%;
@@ -40,21 +573,18 @@
   margin-right: 5px;
 }
 
-.me-auto {
-  margin-left: 190px;
-}
 
-.Nav_item {
-  text-transform: uppercase;
-  margin-right: 0px;
-  margin-left: 40px;
-  padding-right: 0px;
-  font-size: 15px;
-}
+
+
 #languageIcon {
   display: inline;
 }
 
+#selectLangue {
+
+  border-radius: 10px;
+  margin-left: 12px;
+}
 
 #NavText_other {
   color: black;
@@ -63,6 +593,28 @@
 /***************ProgessBar**************/
 
 /***************NavBarFooter******************/
+
+
+/*********Nos Solutions **********/
+.NosSolutionsTitle {
+  margin-top: 85px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+
+.PictureContent {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#blocSensesIA {
+  margin-top: 10%;
+}
+
+#CarouselBorder {
+  border-radius: 15px;
+}
 
 #bg_img_footer {
   background-image: url('./components/images/bg_img_footer1.png');
@@ -89,6 +641,26 @@
   height: 109px;
 }
 
+
+#appStore {
+  width: 40%;
+  height: 60%;
+
+}
+
+#PicturesPadding {
+  margin-left: 15%;
+  width: 80%;
+}
+
+#imageSize {
+  width: 450px;
+  height: 250px;
+}
+
+.CarouselPict div {
+  padding: 6px;
+}
 #NavText {
   color: white;
 }
@@ -96,9 +668,105 @@
 /* bouton_inscription{ inline styling } */
 
 
+#NosSolutionParag1 {
+  margin-left: 13%;
+  margin-top: 4%;
+  text-align: justify;
+  background-color: #E0F0FD;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  margin-bottom: 6%;
+}
+
+#NosSolutionVideo {
+  margin-left: 26%;
+}
+
+#TitleHodhod {
+  margin-top: 4%;
+
+}
+
+.bgSolutionImg {
+  background-image: url('./components//images/bannière supersenses@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 487px;
+}
+
+
 #media_contact {
   margin-top: 85px;
   display: flex;
+}
+
+
+/****************Solution SensesIA*******************/
+
+#ComposantsSensesIATitle {
+  margin-top: 10%;
+  text-align: center;
+}
+
+#img-descriptionSensesIA {
+  width: 80%;
+  height: 80%;
+  margin-left: 20%;
+}
+
+#p_descriptionSensesIA {
+  margin-top: 5%;
+}
+
+#ComposantsSensesIATitle {
+  margin-top: -2%;
+}
+
+#blocComposantsSensesIA {
+  margin-top: 2%;
+  padding-top: 2%;
+  text-align: center;
+}
+
+/* .ComposantSensesIA{ */
+/* box-shadow: inset 0 0 10px 0 #c7c7c7; */
+/* border-radius: 10px; */
+/* padding: 0; */
+/* } */
+.img-composant-sensesIA {
+  width: 10%;
+  height: 35%;
+  margin-bottom: 2%;
+  border-radius:10%;
+
+}
+
+#kitElectronique {
+  box-shadow: 0 0 10px 0 #c7c7c7;
+  border-radius: 10px;
+  padding-top: 2%;
+  margin-right: 1%;
+}
+
+#stockageCloud {
+  box-shadow: 0 0 10px 0 #c7c7c7;
+  border-radius: 10px;
+  padding-top: 2%;
+  margin-right: 1%;
+}
+
+#plateformeIntelligente {
+  box-shadow: 0 0 10px 0 #c7c7c7;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-top: 2%;
+}
+
+/*********************************/
+
+/********A PROPOS ****************/
+#AproposImg {
+  margin-top: 4%;
+  margin-right: 2%;
 }
 
 .media_text {
@@ -118,8 +786,16 @@
   padding-bottom: 4px;
 }
 
-/*******************HomPage*********************/
-
+/*******************HomePage*********************/
+.part2 {
+  margin-top: 15%;
+  width: 100%;
+  
+}
+#portfolio1:hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
 .Nav_itemHomeInterface {
   font-weight: bold;
   text-transform: uppercase;
@@ -132,6 +808,7 @@
 .Description_supersenses {
   margin-top: 200px;
   margin-left: 120px;
+
 }
 
 .title_references {
@@ -165,17 +842,31 @@
 
 
 /*************************************Notre Expertise *********************************/
+#NosExpertiseTitre {
+  margin-top: 3%;
+}
 
+
+#hoverImg1 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
 .NosServices_Container {
   margin-top: 80px;
   margin-bottom: 100px;
+  width: 100%;
+
+}
+
+.ServiceAI {
+  width: 80%;
 }
 
 .NosServicesTitle {
   text-align: center;
   margin-bottom: 60px;
   font-size: 40px;
-  padding-top: 150px;
+
 }
 
 .ServiceDigital_data>h5 {
@@ -186,19 +877,31 @@
   font-weight: bold;
 }
 
+
+#hoverImg2 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
 .paragraph_ServiceAI {
   margin-top: 20px;
   text-align: justify;
 }
+
 
 .paragraph_ServiceDigital {
   margin-top: 20px;
   text-align: justify;
 }
 
+
+#hoverImg3 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
 .paragraph_ServiceDigital>i {
   margin-left: -10px;
 }
+
 
 .ServiceDigital {
   margin-top: 40px;
@@ -219,18 +922,20 @@
 }
 
 .img_service_AI {
-  margin-left: 70px;
+  margin-left: 10%;
   border-radius: 30px;
+  width: 75%;
 }
 
 .img_service_digital {
   margin-top: 20px;
+  width: 70%;
 }
 
 /***********************IACestQuoi*******************************/
 
 .bloc_intro_AI {
-  width: 10Opx;
+  width: 20%;
   margin-top: 160px;
 
 }
@@ -258,6 +963,7 @@ inline styling } */
 
 .bloc_etapes_AI {
   margin-top: 90px;
+  width: 70%;
 }
 
 .bloc_etapes_AI_title {
@@ -357,540 +1063,14 @@ inline styling } */
 
 
 /*****************************NosOffres**************************/
-
-#NosOffres {
-  box-shadow: inset 0 0 15px 0 #c7c7c7;
-  border-radius: 30px;
-  margin-left: 50%;
-  margin-right: 50%;
-}
-
-#NosOffres_title {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 25px;
-
-}
-
-#NosOffres_data {
-  padding-bottom: 30px;
-  padding-left: -200px;
-}
-
-#NosOffres_button {
-  border-radius: 25px;
-  width: 100PX;
-  margin-top: 13px;
-}
-
-.offre-titre {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.offre_info_glimpse {
-  font-size: 11px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.img_offre {
-  width: 76px;
-  height: 71px;
-  place-items: right;
-  float: right;
-}
-
-
-/**********************ProgessBar************************/
-
-/******Espace Carriere ********/
-#EspaceCarriereBody {
-  width: 78%;
-  height: 909px;
-  margin-left: 11%;
-  border: 15px;
-  margin-top: -5%;
-}
-
-#CarriereButtomSauv {
-  width: 20%;
-  margin-left: 138.5%;
-}
-
-#CarriereButtomPart {
-  width: 20%;
-  margin-left: 57%;
-}
-
-.EspaceHeader {
-  padding: 10%;
-}
-
-#boxImg {
-  width: 184px;
-  height: 209px;
-  border: 15px;
-}
-
-#boxTable {
-  width: 480px;
-  height: 201px;
-  border: 15px;
-
-}
-
-.formContent {
-  width: 80%;
-  margin-left: 10%;
-  padding-bottom: 10%;
-  padding-top: 10%;
-}
-
-
-/*****************************/
-
-/*********Nos Solutions **********/
-.NosSolutionsTitle {
-  margin-top: 85px;
-  text-align: center;
-  padding-top: 80px;
-}
-
-
-.PictureContent {
-  width: 80%;
-  margin-left: 10%;
-}
-
-#blocSensesIA {
-  margin-top: 10%;
-}
-
-#CarouselBorder {
-  border-radius: 15px;
-}
-
-#hodhodImage {
-  width: 226px;
-  height: 166px;
-  margin-top: 10%;
-  margin-left: 40%;
-  border-radius: 20px;
-}
-
-#hodhodStatement {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  color: #000000;
-  font-size: 22px;
-  line-height: 29px;
-}
-
-#googlePlay {
-  width: 40%;
-  height: 70%;
-  margin-left: 60%;
-}
-
-#appStore {
-  width: 40%;
-  height: 60%;
-
-}
-
-#PicturesPadding {
-  margin-left: 15%;
-  width: 80%;
-}
-
-#imageSize {
-  width: 450px;
-  height: 250px;
-}
-
-.CarouselPict div {
-  padding: 6px;
-
-}
-
-#NosSolutionParag1 {
-  margin-left: 13%;
-  margin-top: 4%;
-  text-align: justify;
-  background-color: #E0F0FD;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  margin-bottom: 6%;
-}
-
-#NosSolutionVideo {
-  margin-left: 26%;
-}
-
-#TitleHodhod {
-  margin-top: 4%;
-
-}
-
-.bgSolutionImg {
-  background-image: url('./components//images/bannière supersenses@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100% 90%;
-  height: 487px;
-
-}
-
-/****************Solution SensesIA*******************/
-
-#ComposantsSensesIATitle {
-  margin-top: 10%;
-  text-align: center;
-}
-
-#img-descriptionSensesIA {
-  width: 80%;
-  height: 80%;
-  margin-left: 20%;
-}
-
-#p_descriptionSensesIA {
+.NosOffres{
   margin-top: 5%;
 }
-
-#ComposantsSensesIATitle {
-  margin-top: -2%;
+#boxF{
+  margin-top: 6%;
 }
-
-#blocComposantsSensesIA {
-  margin-top: 2%;
-  padding-top: 2%;
-  text-align: center;
+#boxM{
+  margin-top: 6%;
+  
 }
-
-/* .ComposantSensesIA{ */
-/* box-shadow: inset 0 0 10px 0 #c7c7c7; */
-/* border-radius: 10px; */
-/* padding: 0; */
-/* } */
-.img-composant-sensesIA {
-  width: 10%;
-  height: 35%;
-  margin-bottom: 2%;
-  border-radius:10%;
-
-}
-
-#kitElectronique {
-  box-shadow: 0 0 10px 0 #c7c7c7;
-  border-radius: 10px;
-  padding-top: 2%;
-  margin-right: 1%;
-}
-
-#stockageCloud {
-  box-shadow: 0 0 10px 0 #c7c7c7;
-  border-radius: 10px;
-  padding-top: 2%;
-  margin-right: 1%;
-}
-
-#plateformeIntelligente {
-  box-shadow: 0 0 10px 0 #c7c7c7;
-  border-radius: 10px;
-  padding-left: 1%;
-  padding-top: 2%;
-}
-
-/*********************************/
-
-/********A PROPOS ****************/
-#AproposImg {
-  margin-top: 4%;
-  margin-right: 2%;
-
-  height: 250px;
-  border-radius: 20px;
-}
-
-#AproposParag {
-  text-align: left;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  color: #000000;
-  font-size: 14px;
-  line-height: 22px;
-  margin-top: 3%;
-}
-
-#AproposContent {
-  margin-top: 10%;
-
-}
-
-#AproposSuperText {
-  text-decoration: underline #25ACDE;
-
-}
-
-#AproposHeader {
-  padding-top: 8%;
-  padding-bottom: 15%;
-}
-
-
-/*********************************/
-
-/***** Nos Valeurs ***************/
-#title1 {
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  font-size: 30px;
-
-}
-
-#title2 {
-
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.p1 {
-  display: flex;
-  justify-content: center;
-}
-
-.p1 p {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.images {
-
-  padding-top: 5%;
-}
-
-.img {
-  width: 327px;
-  height: 267px;
-}
-
-#hoverImg1 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-
-}
-
-
-
-
-
-
-#hoverImg2 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-
-}
-
-#hoverImg3 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-
-}
-
-.solution {
-  padding-top: 5%;
-}
-
-.bgSolution {
-  width: 446px;
-  height: 322px;
-}
-
-.box {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 3px 6px #888992;
-  border-radius: 21px;
-  opacity: 1;
-  backdrop-filter: blur(7px);
-  width: 355px;
-  height: 152px;
-  margin-top: -20%;
-  margin-left: 7%;
-
-}
-
-#hodhodTitle {
-  font-size: 25px;
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  line-height: 30px;
-  margin-top: 10%;
-  color: #494B58;
-  padding-top: 6%;
-
-}
-
-#hodhodparagraph {
-  font-size: 16px;
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  line-height: 22px;
-  color: #000;
-  padding-left: 15%;
-}
-
-.chatLogo {
-  width: 10%;
-  height: 20%;
-  margin-top: 27%;
-  margin-left: -73%;
-  position: relative;
-}
-
-#savoirplusbtn {
-  width: 10%;
-  margin-top: 3%;
-}
-
-#expertise {
-  background-image: url('./components/images/Capture d’écran 2022-07-07 152424.png');
-  background-repeat: no-repeat;
-  background-size: 1535px 674px;
-}
-
-#expertiseTitle {
-  font-size: 37px;
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  line-height: 30px;
-  color: #000;
-}
-
-#expertiseBox {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 3px 6px #888992;
-  border-radius: 21px;
-  opacity: 1;
-  backdrop-filter: blur(7px);
-  width: 30%;
-  height: 378px;
-  margin-top: 3%;
-  margin-left: 48%;
-}
-
-.expertiseList {
-  list-style: none;
-
-}
-
-#expertiseItem {
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  line-height: 22px;
-  color: #000;
-  opacity: 1;
-}
-
-
-
-/*********************************/
-.p2 {
-  display: flex;
-  justify-content: center;
-
-}
-
-.p2 p {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'CaviarDreams';
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.p3 {
-  display: flex;
-  justify-content: center;
-
-}
-
-.p3 p {
-
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.impactTitle {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  font-size: 29px;
-  line-height: 38px;
-}
-
-.ImpactPictures {
-  width: 80%;
-
-  padding: 3%;
-  margin-left: 10%;
-
-}
-
-#img1 {
-  width: 25%;
-  margin: 0.1%;
-}
-
-#CarouselPosition {
-  margin-left: 35%;
-  width: 30%;
-  padding-top: 3%;
-
-}
-
-#sizeImg {
-  height: 100px;
-}
-
-#CarouselPicture {
-  width: 200px;
-}
+/**********************ProgessBar************************/

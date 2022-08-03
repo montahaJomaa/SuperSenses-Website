@@ -16,16 +16,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function NotreExpertise() {
   return (
     <div className="NosServices_Container">
-      <Container fluid className="NosServicesTitle">
-        <Row>
-          <Col><h1>NOS EXPERTISES</h1></Col>
-        </Row>
-      </Container>
+      <div className="NosServicesTitle container">
+        <div className="row">
+          <div className="col"><h1 id="NosExpertiseTitre">NOS EXPERTISES</h1></div>
+        </div>
+      </div>
 
-      <Container className="ServiceAI">
+      <div className="ServiceAI container">
 
-        <Row>
-          <Col className="ServiceAI_data">
+        <div className="row">
+          <div className="ServiceAI_data col">
             <h5>Embarqué/ IOT / IA:</h5>
             <p className="paragraph_ServiceAI">
               L’IOT (Internet des Objets) est un enjeu majeur de la transformation digitale des
@@ -37,18 +37,18 @@ function NotreExpertise() {
               de communications, la conception des cartes électroniques, le développement des
               plateformes… Super SENSES se charge de réussir ses projets de la phase
               conception Hardware et prototypage jusqu’à <br />la détection des anomalies et la
-              visualisation des grandeurs physique. </p></Col>
+              visualisation des grandeurs physique. </p></div>
 
-          <Col><img src={img_service_AI} alt="img_service_AI" className="img_service_AI" /></Col>
-        </Row>
+          <div className="col"><img src={img_service_AI} alt="img_service_AI" className="img_service_AI" /></div>
+        </div>
 
-      </Container>
+      </div>
 
-      <Container className="ServiceDigital">
-        <Row>
-          <Col><img src={img_service_digital} alt="img_service_digital" className="img_service_digital" /></Col>
+      <div className="ServiceDigital container">
+        <div className="row">
+          <div className="col"><img src={img_service_digital} alt="img_service_digital" className="img_service_digital" /></div>
 
-          <Col className="ServiceDigital_data">
+          <div className="ServiceDigital_data col">
             <h5>Le digital:</h5>
             <p className="paragraph_ServiceDigital">
 
@@ -67,9 +67,9 @@ function NotreExpertise() {
                   ouvelles approches méthodologiques et technologiques.</i>
               </ul>
             </p>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
       <div  className="AI_slogan">
         <span > Nous créons de l’intelligence artificielle sur mesure</span>
       </div>

@@ -16,10 +16,10 @@ import icon_entrainement_onHover from '../images/icon_entrainement_onHover.jpg';
 function IACestQuoi(props) {
   return (
     <div>
-      <Container className="bloc_intro_AI">
+      <div className="bloc_intro_AI container">
 
-        <Row>
-          <Col className="intro_AI_data">
+        <div className="row">
+          <div className="intro_AI_data col">
             <h5>L’IA, QU’EST-CE QUE C’EST ?</h5>
             <p >Une IA est un programme qui repose sur des algorithmes exécutés capable de
               traiter un grand volume de données rapidement dans un environnement
@@ -28,20 +28,20 @@ function IACestQuoi(props) {
               optimisations.<br /><br />
 
             </p>
-          </Col>
+          </div>
 
-          <Col><img src={img_cercle_AI} alt="img_cercle_AI" className="img_cercle_AI" style={{ width: "100%", height: "100%" }} /></Col>
-        </Row>
-      </Container>
+          <div className="col"><img src={img_cercle_AI} alt="img_cercle_AI" className="img_cercle_AI" style={{ width: "100%", height: "100%" }} /></div>
+        </div>
+      </div>
 
 
-      <Container className="bloc_etapes_AI">
+      <div className="bloc_etapes_AI container">
 
         <h6 className="bloc_etapes_AI_title">Quelles sont les grandes étapes pour réussir un projet en IA ?</h6>
 
-        <Row xs={1} md={2}>
+        <div className="row" xs={1} md={2}>
 
-          <Col >
+          <div className="col" >
             <div id="etape_AI">
               <div id="blocBD_header">
                 <img src={icon_BD} alt="icon_BD" className="icon_etapes_AI"  />
@@ -53,9 +53,9 @@ function IACestQuoi(props) {
                 nettoyées et annotées avant d’être exploitées par un algorithme.
               </p>
             </div>
-          </Col>
+          </div>
 
-          <Col >
+          <div className="col" >
             <div id="etape_AI">
               <div id="blocEntrainement_header">
                 <img src={icon_entrainement} alt="icon_entrainement" className="icon_etapes_AI" />
@@ -67,9 +67,9 @@ function IACestQuoi(props) {
                 l’algorithme sera entraîné sur les données préparées précédemment.
               </p>
             </div>
-          </Col>
+          </div>
 
-          <Col >
+          <div className="col">
             <div id="etape_AI">
               <div id="blocIterations_header">
                 <img src={icon_iterations} alt="icon_iterations" className="icon_etapes_AI" />
@@ -82,9 +82,9 @@ function IACestQuoi(props) {
                 satisfaisants, il faudra retravailler les jeux de données et ré-entraîner les modèles.
               </p>
             </div>
-          </Col>
+          </div>
 
-          <Col>
+          <div className="col">
             <div id="etape_AI">
               <div id="blocMiseEnProduction_header">
                 <img src={icon_miseEnProduction} alt="icon_miseEnProduction" className="icon_etapes_AI" />
@@ -97,11 +97,11 @@ function IACestQuoi(props) {
                 logicielle avec le système informatique en place chez le client.
               </p>
             </div>
-          </Col>
+          </div>
 
-        </Row>
+        </div>
 
-      </Container>
+      </div>
 
     </div>
   );
