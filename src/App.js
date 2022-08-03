@@ -43,7 +43,7 @@ class App extends React.Component {
                     <div className="content">
 
                         <Routes>
-                            <Route path="/HomeInterface" element={<HomeInterface />} />
+                            <Route path="/" element={<HomeInterface />} />
                             <Route path="/NosExpertises" element={<><NavBarHeader /> <NosExpertises style={{ marginTop: '390px' }} /></>} />
                             <Route path="/NosOffres" element={<> <NavBarHeader /><NosOffres /></>} />
                             <Route path="/ContactezNous" element={<><NavBarHeader /> <ContactezNous /></>} />
