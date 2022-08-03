@@ -3,30 +3,34 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
-
-import logo_supersenses from '../images/logo_supersenses.png';
 import language from '../images/language.png';
 
+import {LinkContainer} from 'react-router-bootstrap'
+import logo_supersenses from '../images/logo_supersenses.png';
+
 import ProgressBar from 'react-progressbar-on-scroll';
+
+
 
 function NavBarHeader() {
   return (
     <div className="nav-header">
-      <Navbar expand="lg" >
+      <Navbar expand="lg"  >
         <Container>
-
+         
           <Navbar.Brand href="#home"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-
+              
             <Nav className="me-auto" >
 
-              <Nav.Link to="/HomeInterface" className='Nav_item' id='NavText_other'>Acceuil</Nav.Link>
-              
-              <Nav.Link to="/Nos solutions" className='Nav_item' id='NavText_other'>
-                <Dropdown>
+             
+
+            <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
+              <LinkContainer to="/NosSolution"><Nav.Link  className='Nav_item' id='NavText_other'>
+                 <Dropdown>
                   <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>
                     Nos solutions
                   </Dropdown.Toggle>
@@ -37,12 +41,10 @@ function NavBarHeader() {
 
                   </Dropdown.Menu>
                 </Dropdown>
-              </Nav.Link>
-
-              <Nav.Link to="/NosExpertises" className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link>
-              <Nav.Link to="/Apropos" className='Nav_item' id='NavText_other'>A propos</Nav.Link>
-
-              <Nav.Link id='selectLangue'>
+                </Nav.Link></LinkContainer>
+              <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link></LinkContainer>
+             <LinkContainer to="/Apropos"><Nav.Link  className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer> 
+             <Nav.Link id='selectLangue'>
                 <Dropdown>
                   <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>
                     Langue
@@ -55,6 +57,7 @@ function NavBarHeader() {
                   </Dropdown.Menu>
                 </Dropdown>
               </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>

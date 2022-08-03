@@ -1,16 +1,16 @@
-
+import imgSensia from "./images/Explainer-videos-for-SAAS.png";
 const Apropos=() => {
 
     return (
-        <div id="AproposHeader">
+        <div id="AproposHeader" className="Apropos">
             <div class="text-center" >
                 <h1>A propos nous</h1>
             </div>
             <div class="container" id="AproposContent">
         <div class="row">
         
-    <div class="col img-thumbnail shadow " id="AproposImg">
-      image
+    <div class="col" id="AproposImg">
+      <img src={imgSensia} />
     </div>
     <div class="col-sm">
     <h2 id="AproposSuperText">Super Senses</h2>
