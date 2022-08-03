@@ -7,8 +7,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import { Message } from "@material-ui/icons";
-
 
 function ContactezNous(props) {
   const [form, setForm] = useState({})
@@ -29,16 +27,23 @@ function ContactezNous(props) {
   }
 
   const validateForm = () => {
-    const { nomPrenom, email,message } = form
+    const { nomPrenom, email, message } = form
     const newErrors = {}
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if (nomPrenom === '') newErrors.nomPrenom = 'Veuillez entrer votre prénom et votre nom !';
-      else if (nomPrenom.length >30) newErrors.nomPrenom = 'Merci de ne pas dépasser la longueur de 30 lettres!'; 
+    if (nomPrenom === '') newErrors.nomPrenom =
+      'Veuillez entrer votre prénom et votre nom !';
+    else if (nomPrenom.length > 30) newErrors.nomPrenom =
+      'Merci de ne pas dépasser la longueur de 30 lettres!';
 
-    else if (email === ''|| !(email.match(regexEmail))) newErrors.email = 'Veuillez entrer une adresse email correcte !';
+    else if (email === '' || !(email.match(regexEmail))) newErrors.email =
+      'Veuillez entrer une adresse email correcte !';
 
-    else if (message === '' ) newErrors.message = 'Veuillez saisir votre message';
+    else if (message === '') newErrors.message =
+      'Veuillez saisir votre message';
+    
+    else if (message.length < 10) newErrors.message = 'Message trop court !'
+    
     return newErrors
   }
 
@@ -122,8 +127,10 @@ function ContactezNous(props) {
 
           <Form.Label>Message :</Form.Label>
 
-          <Form.Control as="textarea" style={{ height: '100px' }} className="Contact_input" controlId="message"
-            
+          <Form.Control
+            style={{ height: '100px' }} className="Contact_input" controlId="message"
+            as="textarea"
+            type="textarea"
             value={form.message}
             onChange={(e) => setField('message', e.target.value)}
             isInvalid={!!errors.message}
