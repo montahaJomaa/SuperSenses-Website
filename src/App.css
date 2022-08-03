@@ -142,14 +142,14 @@ body {
 }
 
 #googlePlay {
-  width: 35%;
-  height: 70%;
-  margin-left: 60%;
+  width: 15%;
+  height: 60%;
+  margin-left: 80%;
 }
 
 #appStore {
-  width: 35%;
-  height: 60%;
+  width: 20%;
+  height: 65%;
 
 }
 
@@ -665,11 +665,7 @@ body {
 }
 
 
-#appStore {
-  width: 40%;
-  height: 60%;
 
-}
 
 #PicturesPadding {
   margin-left: 5%;
