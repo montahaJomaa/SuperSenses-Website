@@ -1,7 +1,7 @@
 
 
-import googlePlay from '../images/GooglePLay.png';
-import applestore from '../images/télécharger.png';
+import googlePlay from '../images/playstore.png';
+import applestore from '../images/app-store.png';
 import hodhod from '../images/Mask Group 10114.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
