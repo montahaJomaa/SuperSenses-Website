@@ -821,6 +821,10 @@ body {
   width: 100%;
 
 }
+#LinkHome{
+  text-decoration: none;
+
+}
 
 #portfolio1:hover {
   transform: scale(1.3);

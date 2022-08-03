@@ -9,6 +9,7 @@ import backgroundImg from './images/Groupe_19186.png';
 import port1 from './images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.png';
 import port2 from './images/scott-graham-5fNmWej4tAA-unsplash.png';
 import port3 from './images/sigmund-Im_cQ6hQo10-unsplash.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -83,7 +84,7 @@ const NosValeur = () => {
                   </div>
                   <div class="row">
 
-                    <h1 class="text-center" id="hodhodTitle">HODHOD</h1>
+                    <Link to="/Hodhod" id="LinkHome"><h1 class="text-center" id="hodhodTitle">HODHOD</h1></Link>
                     <div class="row text-center" id="hodhodparagraph" >
 
                       <p>Une application mobile pour<br></br> la municipalité et les citoyens.</p>
@@ -99,7 +100,7 @@ const NosValeur = () => {
             <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
             <div className='img3Box'>
               <img src={img2Solution} alt="hodhod" id="chatSize2" />
-              <h1 id="hodhodTitle">Senses IA</h1>
+              <Link to="/SensesIA" id="LinkHome"><h1 id="hodhodTitle">Senses IA</h1></Link>
               <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
             </div>
           </div>
