@@ -22,7 +22,7 @@ function NavFooter(props) {
 
     return (
         <div id="nav-footer" >
-            <Container>
+            <div className="container">
 
                 <div className='contact_info_FooterNavBar'>
                     <Row>
@@ -64,7 +64,7 @@ function NavFooter(props) {
 
                 </div >
 
-            </Container>
+            </div>
 
             <div className='copyrights'>
 

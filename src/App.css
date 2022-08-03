@@ -335,6 +335,7 @@ body {
   z-index: 2;
   width: 327px;
   height: 267px;
+  
 }
 
 .contenuS:hover .middle {
@@ -845,10 +846,6 @@ body {
 /*********************************/
 
 /********A PROPOS ****************/
-#AproposImg {
-  margin-top: 4%;
-  margin-right: 2%;
-}
 
 .media_text {
   margin-right: 20px;
