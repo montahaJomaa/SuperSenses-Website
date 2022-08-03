@@ -4,7 +4,7 @@ const Apropos = () => {
   return (
     <div id="AproposHeader" className="Apropos">
       <div class="text-center" >
-        <h1>A propos nous</h1>
+        <h1>A PROPOS NOUS</h1>
       </div>
       <div class="container" id="AproposContent">
         <div class="row">
