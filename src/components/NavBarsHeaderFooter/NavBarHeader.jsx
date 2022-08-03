@@ -31,8 +31,8 @@ function NavBarHeader() {
               <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
               <LinkContainer to="/NosSolution/#devenezParag"><Nav.Link className='Nav_item' id='NavText_other'>
                 <Dropdown>
-                  <Dropdown.Toggle  variant="transparent" id="dropdown-basic" className='Nav_item'>
-                   <div className='dpSolution'> Nos solutions</div>
+                  <Dropdown.Toggle variant="transparent" id="dropdown-basic" className='Nav_item'>
+                    <div className='dpSolution'> Nos solutions</div>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
@@ -47,7 +47,7 @@ function NavBarHeader() {
               <Nav.Link id='selectLangue'>
                 <Dropdown>
                   <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>
-                    <div className='dpSolution'><img src={language} id="languageIcon"/>Langue</div>
+                    <div className='dpSolution'><img src={language} id="languageIcon" />Langue</div>
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
