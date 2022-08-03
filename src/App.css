@@ -25,7 +25,7 @@ body {
 
 .Nav_item {
   text-transform: uppercase;
-  margin-right: 0px;
+  margin-right: 20px;
   margin-left: 20px;
   padding-right: 0px;
   font-size: 15px;
@@ -491,14 +491,11 @@ body {
 
 }
 
-.p3 p {
-
-
 /*****************************NosOffres**************************/
 
 
 /*******************************************/
-}
+
 
 .impactTitle {
   text-align: center;
@@ -578,6 +575,7 @@ body {
 
 #languageIcon {
   display: inline;
+  margin-right: 6%;
 }
 
 #selectLangue {
@@ -588,6 +586,11 @@ body {
 
 #NavText_other {
   color: black;
+}
+.dpSolution{
+  font-size: 15px;
+  color: black;
+  margin-top: -6%;
 }
 
 /***************ProgessBar**************/
