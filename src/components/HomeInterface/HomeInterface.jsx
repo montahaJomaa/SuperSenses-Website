@@ -8,7 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo_supersenses from '../images/logo_supersenses.png';
 import NosValeur from "../NosValeur";
-
+import {LinkContainer} from "react-router-bootstrap";
 
 
 function HomeInterface() {
@@ -24,10 +24,10 @@ function HomeInterface() {
           <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="me-auto" >
-              <Nav.Link to="/Home" className='Nav_itemHomeInterface' id='NavText'>Acceuil</Nav.Link>
-              <Nav.Link to="/Nos solutions" className='Nav_itemHomeInterface' id='NavText'>Nos solutions</Nav.Link>
-              <Nav.Link to="/NosServices" className='Nav_itemHomeInterface' id='NavText'>Notre expertise</Nav.Link>
-              <Nav.Link to="/Apropos" className='Nav_itemHomeInterface' id='NavText'>A propos</Nav.Link>
+            <LinkContainer to="/HomeInterface"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
+              <LinkContainer to="/NosSolution"><Nav.Link  className='Nav_item' id='NavText_other'>Nos solutions</Nav.Link></LinkContainer>
+              <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link></LinkContainer>
+             <LinkContainer to="/Apropos"><Nav.Link  className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer> 
             </Nav>
           </Navbar.Collapse>
         </Container>
