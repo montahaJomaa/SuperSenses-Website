@@ -18,6 +18,8 @@ import Apropos from './components/Apropos';
 import EspaceCarriereForm from "./components/EspaceCarriere/EspaceCarriereFom/EspaceCarriereForm";
 import EspaceCarriereOffre from "./components/EspaceCarriere/EspaceCarriereOffre/EspaceCarriereOffre";
 
+import NosSolutionSensesIA from './components/NosSolution/NosSolutionSensesIA';
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -51,7 +53,7 @@ class App extends React.Component {
                             <Route path="/Apropos" element={<><NavBarHeader /><Apropos /></>} />
                             <Route path="/7" element={<><NavBarHeader />< EspaceCarriereForm /></>} />
                             <Route path="/8" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
-
+                            <Route path="/9" element={<><NavBarHeader /><NosSolutionSensesIA/></>} />
                         </Routes>
 
 

@@ -1,10 +1,13 @@
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Dropdown from 'react-bootstrap/Dropdown';
+import language from '../images/language.png';
+
 import {LinkContainer} from 'react-router-bootstrap'
 import logo_supersenses from '../images/logo_supersenses.png';
-import language from '../images/language.png';
-import React from 'react';
+
 import ProgressBar from 'react-progressbar-on-scroll';
 
 
@@ -22,16 +25,39 @@ function NavBarHeader() {
           <Navbar.Collapse id="basic-navbar-nav">
               
             <Nav className="me-auto" >
+
+             
+
             <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
-              <LinkContainer to="/NosSolution"><Nav.Link  className='Nav_item' id='NavText_other'>Nos solutions</Nav.Link></LinkContainer>
+              <LinkContainer to="/NosSolution"><Nav.Link  className='Nav_item' id='NavText_other'>
+                 <Dropdown>
+                  <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>
+                    Nos solutions
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Solution HodHod</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Solution Senses.IA</Dropdown.Item>
+
+                  </Dropdown.Menu>
+                </Dropdown>
+                </Nav.Link></LinkContainer>
               <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link></LinkContainer>
              <LinkContainer to="/Apropos"><Nav.Link  className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer> 
-              <Nav.Link id='selectLangue'>
-                <img src={language} alt="languageIcon"  id='languageIcon'/>
-                <select className='selectStyle'>
-                  <option>Francais</option>
-                  <option>Arabe</option>
-                </select></Nav.Link>
+             <Nav.Link id='selectLangue'>
+                <Dropdown>
+                  <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>
+                    Langue
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Francais</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Arabe</Dropdown.Item>
+
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -45,7 +71,7 @@ function NavBarHeader() {
         position="relative"
         gradient={true}
         gradientColor="#eee"
-        
+
       />
 
     </div>

@@ -12,50 +12,23 @@ body {
   width: 100%;
 }
 
-
 /******Espace Carriere ********/
-#EspaceCarriereBody {
-  width: 78%;
-  height: 909px;
-  margin-left: 11%;
-  border: 15px;
-  margin-top: -5%;
-}
-.espCarr{
-  width: 97%;
-}
-#CarriereButtomSauv {
-  width: 20%;
-  margin-left: 138.5%;
+
+
+
+
+
+
+.me-auto {
+  margin-left: 190px;
 }
 
-#CarriereButtomPart {
-  width: 20%;
-  margin-left: 57%;
-}
-
-.EspaceHeader {
-  padding: 10%;
-}
-
-#boxImg {
-  width: 184px;
-  height: 209px;
-  border: 15px;
-}
-
-#boxTable {
-  width: 480px;
-  height: 201px;
-  border: 15px;
-
-}
-
-.formContent {
-  width: 80%;
-  margin-left: 10%;
-  padding-bottom: 10%;
-  padding-top: 10%;
+.Nav_item {
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 20px;
+  padding-right: 0px;
+  font-size: 15px;
 }
 
 
@@ -520,13 +493,11 @@ body {
 
 .p3 p {
 
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  font-size: 16px;
-  line-height: 26px;
+
+/*****************************NosOffres**************************/
+
+
+/*******************************************/
 }
 
 .impactTitle {
@@ -567,15 +538,18 @@ body {
   width: 200px;
 }
 
+
+/**********************ProgessBar************************/
+
+/******Espace Carriere ********/
+
+
 .App {
   background-color: white;
 }
 
 
 /***********************NavBarHeader**************/
-.selectStyle {
-  border-radius: 15px;
-}
 
 .nav-header {
 
@@ -599,17 +573,8 @@ body {
   margin-right: 5px;
 }
 
-.me-auto {
-  margin-left: 300px;
-}
 
-.Nav_item {
-  text-transform: uppercase;
-  margin-right: 0px;
-  margin-left: 25px;
-  padding-right: 0px;
-  font-size: 15px;
-}
+
 
 #languageIcon {
   display: inline;
@@ -628,6 +593,28 @@ body {
 /***************ProgessBar**************/
 
 /***************NavBarFooter******************/
+
+
+/*********Nos Solutions **********/
+.NosSolutionsTitle {
+  margin-top: 85px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+
+.PictureContent {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#blocSensesIA {
+  margin-top: 10%;
+}
+
+#CarouselBorder {
+  border-radius: 15px;
+}
 
 #bg_img_footer {
   background-image: url('./components/images/bg_img_footer1.png');
@@ -654,6 +641,26 @@ body {
   height: 109px;
 }
 
+
+#appStore {
+  width: 40%;
+  height: 60%;
+
+}
+
+#PicturesPadding {
+  margin-left: 15%;
+  width: 80%;
+}
+
+#imageSize {
+  width: 450px;
+  height: 250px;
+}
+
+.CarouselPict div {
+  padding: 6px;
+
 #NavText {
   color: white;
 }
@@ -661,11 +668,106 @@ body {
 /* bouton_inscription{ inline styling } */
 
 
+#NosSolutionParag1 {
+  margin-left: 13%;
+  margin-top: 4%;
+  text-align: justify;
+  background-color: #E0F0FD;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  margin-bottom: 6%;
+}
+
+#NosSolutionVideo {
+  margin-left: 26%;
+}
+
+#TitleHodhod {
+  margin-top: 4%;
+
+}
+
+.bgSolutionImg {
+  background-image: url('./components//images/bannière supersenses@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 487px;
+
+
+
 #media_contact {
   margin-top: 85px;
   display: flex;
 }
 
+
+/****************Solution SensesIA*******************/
+
+#ComposantsSensesIATitle {
+  margin-top: 10%;
+  text-align: center;
+}
+
+#img-descriptionSensesIA {
+  width: 80%;
+  height: 80%;
+  margin-left: 20%;
+}
+
+#p_descriptionSensesIA {
+  margin-top: 5%;
+}
+
+#ComposantsSensesIATitle {
+  margin-top: -2%;
+}
+
+#blocComposantsSensesIA {
+  margin-top: 2%;
+  padding-top: 2%;
+  text-align: center;
+}
+
+/* .ComposantSensesIA{ */
+/* box-shadow: inset 0 0 10px 0 #c7c7c7; */
+/* border-radius: 10px; */
+/* padding: 0; */
+/* } */
+.img-composant-sensesIA {
+  width: 10%;
+  height: 35%;
+  margin-bottom: 2%;
+  border-radius:10%;
+
+}
+
+#kitElectronique {
+  box-shadow: 0 0 10px 0 #c7c7c7;
+  border-radius: 10px;
+  padding-top: 2%;
+  margin-right: 1%;
+}
+
+#stockageCloud {
+  box-shadow: 0 0 10px 0 #c7c7c7;
+  border-radius: 10px;
+  padding-top: 2%;
+  margin-right: 1%;
+}
+
+#plateformeIntelligente {
+  box-shadow: 0 0 10px 0 #c7c7c7;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-top: 2%;
+}
+
+/*********************************/
+
+/********A PROPOS ****************/
+#AproposImg {
+  margin-top: 4%;
+  margin-right: 2%;
+=======
 .media_text {
   margin-right: 20px;
   margin-left: 70px;
@@ -743,6 +845,11 @@ body {
   margin-top: 3%;
 }
 
+
+#hoverImg1 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
 .NosServices_Container {
   margin-top: 80px;
   margin-bottom: 100px;
@@ -769,19 +876,30 @@ body {
   font-weight: bold;
 }
 
+
+#hoverImg2 :hover {
+  transform: scale(1.3);
+  z-index: 2;
 .paragraph_ServiceAI {
   margin-top: 20px;
   text-align: justify;
 }
+
 
 .paragraph_ServiceDigital {
   margin-top: 20px;
   text-align: justify;
 }
 
+
+#hoverImg3 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
 .paragraph_ServiceDigital>i {
   margin-left: -10px;
 }
+
 
 .ServiceDigital {
   margin-top: 40px;
