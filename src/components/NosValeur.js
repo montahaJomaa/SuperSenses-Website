@@ -40,19 +40,29 @@ const NosValeur = () => {
 
         <div class="container">
           <div class="row">
-            <div class="col" id="hoverImg1">
-              <img className="img" src={img1} alt="img1" />
-              <div className="bgimgText">
-                <div className="imgText" >
-                  engagements
+            <div class="col" >
+              <div class="contenuS">
+                <img src={img1} alt="Avatar" class="image" />
+                <div class="middle">
+                  <div class="text">Engagements</div>
                 </div>
               </div>
             </div>
-            <div class="col" id="hoverImg2">
-              <img className="img" src={img2} alt="img2" />
+            <div class="col" >
+              <div class="contenuS">
+                <img src={img3} alt="Avatar" class="image" />
+                <div class="middle">
+                  <div class="text">Savoir-Faire</div>
+                </div>
+              </div>
             </div>
-            <div class="col" id="hoverImg1">
-              <img className="img" src={img3} alt="img3" />
+            <div class="col">
+              <div class="contenuS">
+                <img src={img2} alt="Avatar" class="image" />
+                <div class="middle">
+                  <div class="text">Engagements</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -135,6 +145,7 @@ const NosValeur = () => {
           <img src={port3} alt='portfolio' id="portfolio1" />
         </div>
       </div>
+
     </div>
   );
 
