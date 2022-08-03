@@ -660,7 +660,7 @@ body {
 
 .CarouselPict div {
   padding: 6px;
-
+}
 #NavText {
   color: white;
 }
@@ -691,7 +691,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 90%;
   height: 487px;
-
+}
 
 
 #media_contact {
@@ -767,7 +767,8 @@ body {
 #AproposImg {
   margin-top: 4%;
   margin-right: 2%;
-=======
+}
+
 .media_text {
   margin-right: 20px;
   margin-left: 70px;
@@ -849,7 +850,7 @@ body {
 #hoverImg1 :hover {
   transform: scale(1.3);
   z-index: 2;
-
+}
 .NosServices_Container {
   margin-top: 80px;
   margin-bottom: 100px;
@@ -880,6 +881,7 @@ body {
 #hoverImg2 :hover {
   transform: scale(1.3);
   z-index: 2;
+}
 .paragraph_ServiceAI {
   margin-top: 20px;
   text-align: justify;
@@ -895,7 +897,7 @@ body {
 #hoverImg3 :hover {
   transform: scale(1.3);
   z-index: 2;
-
+}
 .paragraph_ServiceDigital>i {
   margin-left: -10px;
 }
