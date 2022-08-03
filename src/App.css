@@ -298,6 +298,9 @@ body {
   margin-left: 25%;
   border-color: grey;
 }
+.imgText :hover{
+  z-index: 3;
+}
 
 #hoverImg2 :hover {
   transform: scale(1.3);

@@ -8,7 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo_supersenses from '../images/logo_supersenses.png';
 import NosValeur from "../NosValeur";
-import {LinkContainer} from "react-router-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 import language from '../images/language.png';
 import Dropdown from 'react-bootstrap/Dropdown';
 
@@ -26,7 +26,7 @@ function HomeInterface() {
           <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="me-auto" id="HomeNav">
-            <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
+              <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
               <LinkContainer to="/NosSolution/#devenezParag"><Nav.Link className='Nav_item' id='NavText_other'>
                 <Dropdown>
                   <Dropdown.Toggle variant="transparent" id="dropdown-basic" className='Nav_item'>
@@ -68,7 +68,7 @@ function HomeInterface() {
             <p>Super Senses est une startup Tunisienne dévoilée par une <br />équipe d’ingénieurs
               multidisciplinaires. Notre vision est de <br />crée un outil technologique d’aide à la
               décision capable<br /> d’ajouter un 6ieme sens utilisant l’intelligence artificielle.</p>
-           <LinkContainer to="/Apropos"><Button variant="outline-dark">Lire tout</Button></LinkContainer>
+            <LinkContainer to="/Apropos"><Button variant="outline-dark">Lire tout</Button></LinkContainer>
           </Col>
           <Col>
             <div id="description_img">
