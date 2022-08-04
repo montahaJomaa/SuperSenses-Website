@@ -1,5 +1,5 @@
 import React from "react";
-import SensesIA from '../images/SenseIA.png';
+import SensesIA from '../images/Groupe 19747.png';
 
 
 import plateformeIntelligente from "../images/plateformeIntelligente.png";

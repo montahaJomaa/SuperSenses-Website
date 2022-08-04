@@ -11,7 +11,9 @@ import Form from 'react-bootstrap/Form';
 
 import Dropdown from 'react-bootstrap/Dropdown';
 
-//import {useDispatch} from 'react-redux';
+
+import { useDispatch } from 'react-redux';
+
 
 //import { registerUser } from '../actions/userActions.js';
 
@@ -22,13 +24,13 @@ function ContactezNous(props) {
   //const dispatch = useDispatch()
   const [color, setColor] = useState("#F0F8FF");
   const [radioValue, setRadioValue] = useState('1');
-  
+
   const radios = [
     { name: 'Embauche', value: '1' },
     { name: 'Stage', value: '2' },
 
   ];
-  
+
   const [form, setForm] = useState({})
   const [errors, setErrors] = useState({})
 
@@ -47,7 +49,7 @@ function ContactezNous(props) {
   }
 
   const validateForm = () => {
-   const { nomPrenomCandidat, email, numTelephoneCandidat, CVCandidat, LettreMotivationCandidat } = form
+    const { nomPrenomCandidat, email, numTelephoneCandidat, CVCandidat, LettreMotivationCandidat } = form
     // get new errors
     const newErrors = {}
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -59,8 +61,8 @@ function ContactezNous(props) {
       'Merci de ne pas dépasser la longueur de 30 lettres!';
     else if (email === '' || !(email.match(regexEmail))) newErrors.email =
       'Veuillez entrer votre adresse email!';
-      else if (!(email.match(regexEmail))) newErrors.email =
-  'Veuillez entrer une adresse email correcte !';
+    else if (!(email.match(regexEmail))) newErrors.email =
+      'Veuillez entrer une adresse email correcte !';
     //else if (numTelephoneCandidat === '' || !(numTelephoneCandidat.match(formatTel)))
     // newErrors.numTelephoneCandidat = 'Merci d entrer un num tel valide !';
 
@@ -84,12 +86,12 @@ function ContactezNous(props) {
       console.log(form)
       //no errors found ! submit the form
 
-     //dispatch(registerUser(form))
+      //dispatch(registerUser(form))
 
     }
   }
 
- 
+
 
   return (
     <div className="ContactezNous_container">
@@ -138,7 +140,7 @@ function ContactezNous(props) {
                 required="required"
                 value={form.nomPrenomCandidat}
                 onChange={(e) => setField('nomPrenomCandidat', e.target.value)}
-                isInvalid={!!errors.nomPrenomCandidat} 
+                isInvalid={!!errors.nomPrenomCandidat}
               />
 
               <Form.Control.Feedback type="invalid">
