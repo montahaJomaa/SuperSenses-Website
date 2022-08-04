@@ -21,47 +21,47 @@ import EspaceCarriereOffre from "./components/EspaceCarriere/EspaceCarriereOffre
 import NosSolutionSensesIA from './components/NosSolution/NosSolutionSensesIA';
 
 function App() {
-    
-        return (
-            <Router>
-                <div className="App">
 
-                    <div className="content">
+    return (
+        <Router>
+            <div className="App">
 
-                        <Routes>
-                            <Route path="/" element={<HomeInterface />} />
-                            <Route path="/NosExpertises" element={<><NavBarHeader /> <NosExpertises style={{ marginTop: '390px' }} /></>} />
-                            <Route path="/NosOffres" element={<> <NavBarHeader /><NosOffres /></>} />
-                            <Route path="/ContactezNous" element={<><NavBarHeader /> <ContactezNous /></>} />
-                            <Route path="/Hodhod" element={<><NavBarHeader /><NosSolution /></>} />
-                            <Route path="/Apropos" element={<><NavBarHeader /><Apropos /></>} />
-                            <Route path="/7" element={<><NavBarHeader />< EspaceCarriereForm /></>} />
-                            <Route path="/InformationOffre" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
-                            <Route path="/SensesIA" element={<><NavBarHeader /><NosSolutionSensesIA/></>} />
-                        </Routes>
+                <div className="content">
 
-
+                    <Routes>
+                        <Route path="/" element={<HomeInterface />} />
+                        <Route path="/NosExpertises" element={<><NavBarHeader /> <NosExpertises style={{ marginTop: '390px' }} /></>} />
+                        <Route path="/NosOffres" element={<> <NavBarHeader /><NosOffres /></>} />
+                        <Route path="/ContactezNous" element={<><NavBarHeader /> <ContactezNous /></>} />
+                        <Route path="/Hodhod" element={<><NavBarHeader /><NosSolution /></>} />
+                        <Route path="/Apropos" element={<><NavBarHeader /><Apropos /></>} />
+                        <Route path="/EspaceCarriere" element={<><NavBarHeader />< EspaceCarriereForm /></>} />
+                        <Route path="/InformationOffre" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
+                        <Route path="/SensesIA" element={<><NavBarHeader /><NosSolutionSensesIA /></>} />
+                    </Routes>
 
 
-                        {/*<Route path="/NosSolutions">
+
+
+                    {/*<Route path="/NosSolutions">
                                <NosSolutions/>
                             </Route>*/}
 
 
-                        { /*<Route path="/Apropos">
+                    { /*<Route path="/Apropos">
                                 <NosServices/>
                               </Route>*/}
 
 
 
 
-                        <div className="bg-img" id="bg_img_footer">
-                            <NavBarFooter />
-                        </div>
+                    <div className="bg-img" id="bg_img_footer">
+                        <NavBarFooter />
                     </div>
+                </div>
 
-                </div >
-            </Router >
-        );
-    }
+            </div >
+        </Router >
+    );
+}
 export default App;

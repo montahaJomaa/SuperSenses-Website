@@ -2,6 +2,7 @@ import logo_supersenses from "../images/logo_supersenses_white copy.png";
 import logo_facebook from "../images/logo_facebook.png";
 import logo_instagram from "../images/logo_instagram.png";
 import logo_linkedIn from "../images/logo_linkedIn.png";
+import { Link } from "react-router-dom";
 const NavbarFooter = () => {
 
     return (
@@ -11,12 +12,16 @@ const NavbarFooter = () => {
                     <img src={logo_supersenses} className="w-50 " id="logo_sup" />
                 </div>
                 <div className="col " id="col_nav">
-                    <div className="row">
-                        &nbsp;&nbsp; Espace carriere
-                    </div>
-                    <div className="row">
-                        &nbsp;&nbsp; Contactez nous
-                    </div>
+                    <Link to="EspaceCarriere" style={{textDecoration:"none",color:"white"}}>
+                        <div className="row">
+                            &nbsp;&nbsp; Espace carriere
+                        </div>
+                    </Link>
+                    <Link to="ContactezNous" style={{textDecoration:"none",color:"white"}}>
+                        <div className="row">
+                            &nbsp;&nbsp; Contactez nous
+                        </div>
+                    </Link>
                     <div className="row">
                         &nbsp;&nbsp; 92469629
 
@@ -31,6 +36,9 @@ const NavbarFooter = () => {
                                 <button class="btn btn-primary" type="button">S'inscrire</button>
                             </div>
                         </div>
+                    </div>
+                    <div className="row mt-5" id="w">
+                        Copyright &copy;2022 All rights reserved.
                     </div>
                 </div>
                 <div className="col" >
