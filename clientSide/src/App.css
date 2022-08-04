@@ -681,9 +681,35 @@ body {
 .navfooter{
   background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
   background-repeat: no-repeat;
-  width: 100%;
+  width: 99.236%;
   height: 400px;
   margin-left: 0%;
+  margin-top: 6%;
+}
+#logo_sup{
+  margin-left: 35%;
+  margin-top: 30%;
+}
+#col_nav{
+  margin-top: 12.2%;
+  color: white;
+}
+.fb_logo{
+  margin-left: -25%;
+}
+.insta_logo{
+ margin-left: -190%;
+}
+.linkedin_logo{
+  margin-left: -110%;
+}
+#findOn{
+  margin-left: 15%;
+  
+}
+#socialIcons{
+  margin-top: 58%;
+  color: white;
 }
 /********************************************/
 /*********Nos Solutions **********/
