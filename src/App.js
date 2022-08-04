@@ -33,11 +33,11 @@ function App() {
                             <Route path="/NosExpertises" element={<><NavBarHeader /> <NosExpertises style={{ marginTop: '390px' }} /></>} />
                             <Route path="/NosOffres" element={<> <NavBarHeader /><NosOffres /></>} />
                             <Route path="/ContactezNous" element={<><NavBarHeader /> <ContactezNous /></>} />
-                            <Route path="/NosSolution" element={<><NavBarHeader /><NosSolution /></>} />
+                            <Route path="/Hodhod" element={<><NavBarHeader /><NosSolution /></>} />
                             <Route path="/Apropos" element={<><NavBarHeader /><Apropos /></>} />
                             <Route path="/7" element={<><NavBarHeader />< EspaceCarriereForm /></>} />
-                            <Route path="/8" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
-                            <Route path="/9" element={<><NavBarHeader /><NosSolutionSensesIA/></>} />
+                            <Route path="/InformationOffre" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
+                            <Route path="/SensesIA" element={<><NavBarHeader /><NosSolutionSensesIA/></>} />
                         </Routes>
 
 

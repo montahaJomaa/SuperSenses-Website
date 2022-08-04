@@ -9,6 +9,7 @@ import backgroundImg from './images/Groupe_19186.png';
 import port1 from './images/christina-wocintechchat-com-faEfWCdOKIg-unsplash.png';
 import port2 from './images/scott-graham-5fNmWej4tAA-unsplash.png';
 import port3 from './images/sigmund-Im_cQ6hQo10-unsplash.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,19 +40,29 @@ const NosValeur = () => {
 
         <div class="container">
           <div class="row">
-            <div class="col" id="hoverImg1">
-              <img className="img" src={img1} alt="img1" />
-              <div className="bgimgText">
-                <div className="imgText" >
-                  engagements
+            <div class="col" >
+              <div class="contenuS">
+                <img src={img1} alt="Avatar" class="image" />
+                <div class="middle">
+                  <div class="text">Engagements</div>
                 </div>
               </div>
             </div>
-            <div class="col" id="hoverImg2">
-              <img className="img" src={img2} alt="img2" />
+            <div class="col" >
+              <div class="contenuS">
+                <img src={img3} alt="Avatar" class="image" />
+                <div class="middle">
+                  <div class="text">Savoir-Faire</div>
+                </div>
+              </div>
             </div>
-            <div class="col" id="hoverImg1">
-              <img className="img" src={img3} alt="img3" />
+            <div class="col">
+              <div class="contenuS">
+                <img src={img2} alt="Avatar" class="image" />
+                <div class="middle">
+                  <div class="text">Expertise </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -83,7 +94,7 @@ const NosValeur = () => {
                   </div>
                   <div class="row">
 
-                    <h1 class="text-center" id="hodhodTitle">HODHOD</h1>
+                    <Link to="/Hodhod" id="LinkHome"><h1 class="text-center" id="hodhodTitle">HODHOD</h1></Link>
                     <div class="row text-center" id="hodhodparagraph" >
 
                       <p>Une application mobile pour<br></br> la municipalité et les citoyens.</p>
@@ -99,7 +110,7 @@ const NosValeur = () => {
             <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
             <div className='img3Box'>
               <img src={img2Solution} alt="hodhod" id="chatSize2" />
-              <h1 id="hodhodTitle">Senses IA</h1>
+              <Link to="/SensesIA" id="LinkHome"><h1 id="hodhodTitle">Senses IA</h1></Link>
               <p id="SensiaP">Solution technologique permettant aux industriels la collection des données.</p>
             </div>
           </div>
@@ -111,12 +122,12 @@ const NosValeur = () => {
       <div className="expertisets">
         <div className='expertiseBox'>
           <ul>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Machine Learning</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Internet des Objets</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Intelligence Artificielle</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Formation technologique</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Développement web/mobile</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Conception et layout des cartes électroniques</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Machine Learning</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Internet des Objets</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Intelligence Artificielle</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Formation technologique</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Développement web/mobile</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;Conception et layout des cartes électroniques</h5></li>
           </ul>
         </div>
 
@@ -134,6 +145,7 @@ const NosValeur = () => {
           <img src={port3} alt='portfolio' id="portfolio1" />
         </div>
       </div>
+
     </div>
   );
 
