@@ -20,24 +20,8 @@ import EspaceCarriereOffre from "./components/EspaceCarriere/EspaceCarriereOffre
 
 import NosSolutionSensesIA from './components/NosSolution/NosSolutionSensesIA';
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { apiResponse: "" };
-    }
-
-    callAPI() {
-        fetch("http://localhost:9000/testAPI")
-            .then(res => res.text())
-            .then(res => this.setState({ apiResponse: res }))
-            .catch(err => err);
-    }
-
-    componentDidMount() {
-        this.callAPI();
-    }
-
-    render() {
+function App() {
+    
         return (
             <Router>
                 <div className="App">
@@ -80,6 +64,4 @@ class App extends React.Component {
             </Router >
         );
     }
-}
-
 export default App;
