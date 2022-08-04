@@ -52,7 +52,7 @@ class App extends React.Component {
                             <Route path="/Hodhod" element={<><NavBarHeader /><NosSolution /></>} />
                             <Route path="/Apropos" element={<><NavBarHeader /><Apropos /></>} />
                             <Route path="/7" element={<><NavBarHeader />< EspaceCarriereForm /></>} />
-                            <Route path="/8" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
+                            <Route path="/InformationOffre" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
                             <Route path="/SensesIA" element={<><NavBarHeader /><NosSolutionSensesIA/></>} />
                         </Routes>
 

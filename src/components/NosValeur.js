@@ -60,7 +60,7 @@ const NosValeur = () => {
               <div class="contenuS">
                 <img src={img2} alt="Avatar" class="image" />
                 <div class="middle">
-                  <div class="text">Engagements</div>
+                  <div class="text">Expertise </div>
                 </div>
               </div>
             </div>
@@ -122,12 +122,12 @@ const NosValeur = () => {
       <div className="expertisets">
         <div className='expertiseBox'>
           <ul>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Machine Learning</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Internet des Objets</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Intelligence Artificielle</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Formation technologique</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Développement web/mobile</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>Conception et layout des cartes électroniques</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Machine Learning</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Internet des Objets</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Intelligence Artificielle</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Formation technologique</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Développement web/mobile</h5></li>
+            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;Conception et layout des cartes électroniques</h5></li>
           </ul>
         </div>
 
