@@ -12,21 +12,21 @@ const NavbarFooter = () => {
                     <img src={logo_supersenses} className="w-50 " id="logo_sup" />
                 </div>
                 <div className="col " id="col_nav">
-                    <Link to="EspaceCarriere" style={{textDecoration:"none",color:"white"}}>
-                        <div className="row">
+                    <Link to="EspaceCarriere" style={{ textDecoration: "none", color: "white" }}>
+                        <div className="row" id="espCar">
                             &nbsp;&nbsp; Espace carriere
                         </div>
                     </Link>
-                    <Link to="ContactezNous" style={{textDecoration:"none",color:"white"}}>
-                        <div className="row">
+                    <Link to="ContactezNous" style={{ textDecoration: "none", color: "white" }}>
+                        <div className="row" id="espCar">
                             &nbsp;&nbsp; Contactez nous
                         </div>
                     </Link>
-                    <div className="row">
+                    <div className="row" id="espCar">
                         &nbsp;&nbsp; 92469629
 
                     </div>
-                    <div className="row">
+                    <div className="row" id="espCar">
                         &nbsp;&nbsp; contact@supersenses.tn
                     </div>
                     <div className="row">
@@ -37,7 +37,7 @@ const NavbarFooter = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-5" id="w">
+                    <div className="row mt-5" id="copyright_title">
                         Copyright &copy;2022 All rights reserved.
                     </div>
                 </div>
