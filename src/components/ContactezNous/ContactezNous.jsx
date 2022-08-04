@@ -8,6 +8,9 @@ import Form from 'react-bootstrap/Form';
 
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
+import axios from "axios";
+
+
 function ContactezNous(props) {
   const [form, setForm] = useState({})
   const [errors, setErrors] = useState({})
@@ -27,22 +30,22 @@ function ContactezNous(props) {
   }
 
   const validateForm = () => {
-    const { nomPrenom, email, message } = form
+    const { nomPrenomContact, emailContact, messageContact } = form
     const newErrors = {}
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if (nomPrenom === '') newErrors.nomPrenom =
+    if (nomPrenomContact === '') newErrors.nomPrenomContact =
       'Veuillez entrer votre prénom et votre nom !';
-    else if (nomPrenom.length > 30) newErrors.nomPrenom =
+    else if (nomPrenomContact.length > 30) newErrors.nomPrenomContact =
       'Merci de ne pas dépasser la longueur de 30 lettres!';
 
-    else if (email === '' || !(email.match(regexEmail))) newErrors.email =
+    else if (emailContact === '' || !(emailContact.match(regexEmail))) newErrors.emailContact =
       'Veuillez entrer une adresse email correcte !';
 
-    else if (message === '') newErrors.message =
+    else if (messageContact === '') newErrors.messageContact =
       'Veuillez saisir votre message';
     
-    else if (message.length < 10) newErrors.message = 'Message trop court !'
+    else if (messageContact.length < 10) newErrors.messageContact = 'Message trop court !'
     
     return newErrors
   }
@@ -56,10 +59,17 @@ function ContactezNous(props) {
       setErrors(formErrors)
     } else {
       console.log('Formulaire soumis');
-      console.log(form)
+      
+      const NewContact = {
+        nomPrenomContact: form.nomPrenomContact,
+        emailContact: form.emailContact,
+        messageContact: form.messageContact
+      }
+
+      axios.post('http://localhost:3001/ContactezNous', NewContact)
     }
 
-    console.log(form)
+   
   }
   return (
     <div className="ContactezNous_container">
@@ -86,15 +96,15 @@ function ContactezNous(props) {
 
               <Form.Label>Nom et Prenom :</Form.Label>
 
-              <Form.Control type="text" className="Contact_input" controlId="nomPrenom"
+              <Form.Control type="text" className="Contact_input" controlId="nomPrenomContact"
 
-                value={form.nomPrenom}
-                onChange={(e) => setField('nomPrenom', e.target.value)}
-                isInvalid={!!errors.nomPrenom}
+                value={form.nomPrenomContact}
+                onChange={(e) => setField('nomPrenomContact', e.target.value)}
+                isInvalid={!!errors.nomPrenomContact}
               />
 
               <Form.Control.Feedback type="invalid">
-                {errors.nomPrenom}
+                {errors.nomPrenomContact}
               </Form.Control.Feedback>
 
             </Form.Group>
@@ -109,13 +119,13 @@ function ContactezNous(props) {
 
               <Form.Label>Adresse email :</Form.Label>
 
-              <Form.Control type="email" className="Contact_input" controlId="email"
-                value={form.email}
-                onChange={(e) => setField('email', e.target.value)}
-                isInvalid={!!errors.email}
+              <Form.Control type="email" className="Contact_input" controlId="emailContact"
+                value={form.emailContact}
+                onChange={(e) => setField('emailContact', e.target.value)}
+                isInvalid={!!errors.emailContact}
               />
               <Form.Control.Feedback type="invalid">
-                {errors.email}
+                {errors.emailContact}
               </Form.Control.Feedback>
             </Form.Group>
           </Col>
@@ -128,15 +138,15 @@ function ContactezNous(props) {
           <Form.Label>Message :</Form.Label>
 
           <Form.Control
-            style={{ height: '100px' }} className="Contact_input" controlId="message"
+            style={{ height: '100px' }} className="Contact_input" controlId="messageContact"
             as="textarea"
             type="textarea"
-            value={form.message}
-            onChange={(e) => setField('message', e.target.value)}
-            isInvalid={!!errors.message}
+            value={form.messageContact}
+            onChange={(e) => setField('messageContact', e.target.value)}
+            isInvalid={!!errors.messageContact}
           />
           <Form.Control.Feedback type="invalid">
-            {errors.message}
+            {errors.messageContact}
           </Form.Control.Feedback>
 
         </FloatingLabel>
