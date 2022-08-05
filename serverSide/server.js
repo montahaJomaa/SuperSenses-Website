@@ -37,22 +37,27 @@ app.post("/ContactezNous", (req, res) => {
 
 app.post('/EspaceCarriere', (req, res) => {
 
-    const nomPrenomContact = req.body.nomPrenomContact;
-    const emailContact = req.body.emailContact;
-    const messageContact = req.body.messageContact;
-    console.log(nomPrenomContact)
-    console.log(messageContact)
+    const nomPrenomCandidat = req.body.nomPrenomCandidat;
+    const emailCandidat = req.body.emailCandidat;
+    const numTelephoneCandidat = req.body.numTelephoneCandidat;
+    const CVCandidat = req.body.cvcandidat;
+    const LettreMotivationCandidat = req.body.lettreMotivationCandidat;
+    
+    console.log(numTelephoneCandidat)
+    console.log(nomPrenomCandidat)
 
-    const NewContact = new SuperSenses({
-        nomPrenomContact,
-        emailContact,
-        messageContact
+    const NewCandidat = new SuperSenses({
+        nomPrenomCandidat,
+        emailCandidat,
+        numTelephoneCandidat,
+        CVCandidat,
+        LettreMotivationCandidat
     });
 
-    NewContact.save();
+    NewCandidat.save();
     res.status(200).send('success');
   
-    console.log(NewContact);
+    console.log(NewCandidat);
 });
 
 

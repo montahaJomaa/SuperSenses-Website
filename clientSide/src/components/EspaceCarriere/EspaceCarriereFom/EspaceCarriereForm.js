@@ -11,11 +11,7 @@ import Form from 'react-bootstrap/Form';
 
 import Dropdown from 'react-bootstrap/Dropdown';
 
-
-
 import axios from "axios";
-
-
 
 function ContactezNous(props) {
 
@@ -84,10 +80,10 @@ function ContactezNous(props) {
       console.log('Formulaire soumis');
 
       const NewCandidat = {
-        nomPrenomCandidat: form.nomPrenomCandidat,
-        emailContact: form.emailContact,
-        numTelephoneCandidat: form.numTelephoneCandidat,
-        CVCandidat: form.CVCandidat,
+        nomPrenomCandidat:        form.nomPrenomCandidat,
+        emailCandidat:             form.emailContact,
+        numTelephoneCandidat:     form.numTelephoneCandidat,
+        CVCandidat:               form.CVCandidat,
         LettreMotivationCandidat: form.LettreMotivationCandidat
       }
       console.log(NewCandidat)
