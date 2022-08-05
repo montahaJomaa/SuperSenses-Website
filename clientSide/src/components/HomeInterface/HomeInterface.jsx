@@ -12,6 +12,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import language from '../images/language.png';
 import Dropdown from 'react-bootstrap/Dropdown';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import { HashLink } from 'react-router-hash-link';
 
 
 function HomeInterface() {
@@ -30,12 +31,18 @@ function HomeInterface() {
               <LinkContainer to="/"><Nav.Link className='Nav_home' id='NavText_home'>Acceuil</Nav.Link></LinkContainer>
               <Nav.Link className='Nav_home' id='NavText_home'>
                 <Dropdown as={ButtonGroup} id="dropdown_Solution">
-                  <Button href="/#boxs" variant="transparent" id='NavText_home'>NOS SOLUTIONS</Button>
+                  {/* <Button href="/#boxs" variant="transparent" id='NavText_home'>NOS SOLUTIONS</Button> */}
+                  <Button variant='transparent'>
+                    <HashLink className="hashLinkNavBar" smooth to="/#boxs">NOS SOLUTIONS</HashLink>
+                  </Button>
                   <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
                   <Dropdown.Menu size="sm">
-                    <Dropdown.Item href="/Hodhod">Hodhod</Dropdown.Item>
-                    <Dropdown.Item href="/SensesIA">SensesIA</Dropdown.Item>
-
+                    <Dropdown.Item>
+                      <HashLink className="hashLinkNavBarDropDown" to="/Hodhod">Hodhod</HashLink>
+                    </Dropdown.Item>
+                    <Dropdown.Item href="/SensesIA">
+                      <HashLink className="hashLinkNavBarDropDown" to="/SensesIA">SensesIA</HashLink>
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Nav.Link>
@@ -59,7 +66,8 @@ function HomeInterface() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div className="Description_supersenses container">
+      <div className="Description_supersenses">
+        <Container>
         <Row>
           <Col>
             <h2>Bienvenue à</h2>
@@ -75,6 +83,8 @@ function HomeInterface() {
             </div>
           </Col>
         </Row>
+        </Container>
+        
         <NosValeur />
       </div>
 

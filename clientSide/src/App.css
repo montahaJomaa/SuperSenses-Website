@@ -640,14 +640,16 @@ body {
 }
 
 .expertisets {
+  width: 100%;
+  padding-right: 60px;
   background-image: url('./components/images/Groupe_19186.png');
-  width: 119.7%;
-  margin-left: -10%;
   background-repeat: no-repeat;
-  background-size: 100% 90%;
-  height: 487px;
-  padding-top: 8%;
-
+  background-size: cover;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 20px;
 }
 
 .expertiseBox {
@@ -656,10 +658,7 @@ body {
   border-radius: 21px;
   opacity: 1;
   backdrop-filter: blur(7px);
-  width: 31%;
-  height: 70%;
-  margin-left: 65%;
-  padding-top: 2.5%;
+  padding: 30px 10px;
   line-height: 3em;
 }
 
@@ -1152,11 +1151,29 @@ body {
   color: white;
 }
 
+.hashLinkNavBar {
+  text-decoration: none;
+  color: white;
+}
+
+.hashLinkNavBar:hover {
+  color: white;
+}
+
+.hashLinkNavBarDropDown {
+  text-decoration: none;
+  color: black;
+}
+
+.hashLinkNavBarDropDown:hover {
+  color: black;
+}
+
 /*************************/
 
 .Description_supersenses {
   margin-top: 200px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
 
 }
 

@@ -6,10 +6,11 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import language from '../images/language.png';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap';
 import logo_supersenses from '../images/logo_supersenses.png';
 
 import ProgressBar from 'react-progressbar-on-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -32,7 +33,8 @@ function NavBarHeader() {
               <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
 
               <Dropdown as={ButtonGroup}>
-                <Button href="/#boxs" variant="transparent">NOS SOLUTIONS</Button>
+                {/* <Button href="/#boxs" variant="transparent">NOS SOLUTIONS</Button> */}
+                <Button variant='transparent'><HashLink smooth to="/#boxs">NOS SOLUTIONS</HashLink></Button>
 
                 <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
                 <Dropdown.Menu size="sm">
