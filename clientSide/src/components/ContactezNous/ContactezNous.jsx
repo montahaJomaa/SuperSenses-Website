@@ -66,7 +66,9 @@ function ContactezNous(props) {
         messageContact: form.messageContact
       }
 
-      axios.post('http://localhost:3001/ContactezNous', NewContact)
+      axios.post('http://localhost:3001/ContactezNous', NewContact).then((res) => {
+        console.log(res);
+      });
     }
 
    
