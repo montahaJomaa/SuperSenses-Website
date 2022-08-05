@@ -12,28 +12,54 @@ mongoose.connect("mongodb+srv://SuperSensesAdmin:SuperSensesAdmin@supersenses.yp
 app.get('/', (req, res) => {
     res.status(200).send('Server is Running!');
 });
+
+
 app.post("/ContactezNous", (req, res) => {
 
-    const NomPrenomContact = req.body.NomPrenomCandidat;
-    const emailContact = req.body.EmailContact;
-    const messageContact = req.body.MessageContact;
-   
+    const nomPrenomContact = req.body.nomPrenomContact;
+    const emailContact = req.body.emailContact;
+    const messageContact = req.body.messageContact;
+    console.log(nomPrenomContact)
+    console.log(messageContact)
+
     const NewContact = new SuperSenses({
-        NomPrenomContact,
+        nomPrenomContact,
         emailContact,
         messageContact
     });
 
+    NewContact.save();
+    res.status(200).send('success');
+  
     console.log(NewContact);
+});
+
+
+app.post('/EspaceCarriere', (req, res) => {
+
+    const nomPrenomContact = req.body.nomPrenomContact;
+    const emailContact = req.body.emailContact;
+    const messageContact = req.body.messageContact;
+    console.log(nomPrenomContact)
+    console.log(messageContact)
+
+    const NewContact = new SuperSenses({
+        nomPrenomContact,
+        emailContact,
+        messageContact
+    });
 
     NewContact.save();
     res.status(200).send('success');
-
+  
+    console.log(NewContact);
 });
+
 
 app.listen(3001, function ()
 {
     console.log('express server is running on port 3001')
 }
 )
+
 

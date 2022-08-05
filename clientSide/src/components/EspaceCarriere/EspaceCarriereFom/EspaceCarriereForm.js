@@ -12,10 +12,8 @@ import Form from 'react-bootstrap/Form';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 
-import { useDispatch } from 'react-redux';
 
-
-//import { registerUser } from '../actions/userActions.js';
+import axios from "axios";
 
 
 
@@ -49,7 +47,7 @@ function ContactezNous(props) {
   }
 
   const validateForm = () => {
-    const { nomPrenomCandidat, email, numTelephoneCandidat, CVCandidat, LettreMotivationCandidat } = form
+    const { nomPrenomCandidat, emailCandidat, numTelephoneCandidat, CVCandidat, LettreMotivationCandidat } = form
     // get new errors
     const newErrors = {}
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -59,12 +57,12 @@ function ContactezNous(props) {
       'Veuillez entrer votre prénom et votre nom !';
     else if (nomPrenomCandidat.length > 30) newErrors.nomPrenomCandidat =
       'Merci de ne pas dépasser la longueur de 30 lettres!';
-    else if (email === '' || !(email.match(regexEmail))) newErrors.email =
+    else if (emailCandidat === '' || !(emailCandidat.match(regexEmail))) newErrors.emailCandidat =
       'Veuillez entrer votre adresse email!';
-    else if (!(email.match(regexEmail))) newErrors.email =
+    else if (!(emailCandidat.match(regexEmail))) newErrors.emailCandidat =
       'Veuillez entrer une adresse email correcte !';
-    //else if (numTelephoneCandidat === '' || !(numTelephoneCandidat.match(formatTel)))
-    // newErrors.numTelephoneCandidat = 'Merci d entrer un num tel valide !';
+    else if (numTelephoneCandidat === '')
+      newErrors.numTelephoneCandidat = 'Merci d entrer un num tel valide !';
 
     else if (CVCandidat === '') newErrors.CVCandidat = 'Veuillez entrer votre CV';
 
@@ -83,10 +81,21 @@ function ContactezNous(props) {
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors)
     } else {
-      console.log(form)
-      //no errors found ! submit the form
+      console.log('Formulaire soumis');
 
-      //dispatch(registerUser(form))
+      const NewCandidat = {
+        nomPrenomCandidat: form.nomPrenomCandidat,
+        emailContact: form.emailContact,
+        numTelephoneCandidat: form.numTelephoneCandidat,
+        CVCandidat: form.CVCandidat,
+        LettreMotivationCandidat: form.LettreMotivationCandidat
+      }
+      console.log(NewCandidat)
+      axios.post('http://localhost:3001/EspaceCarriere',
+        NewCandidat).then((res) => {
+          console.log(res);
+
+        });
 
     }
   }
@@ -122,7 +131,7 @@ function ContactezNous(props) {
                 value={radio.value}
                 checked={radioValue === radio.value}
                 onChange={(e) => setRadioValue(e.currentTarget.value)}
-                 >
+              >
                 {radio.name}
               </ToggleButton>
             ))}
@@ -156,13 +165,13 @@ function ContactezNous(props) {
 
               <Form.Label>Adresse email :</Form.Label>
 
-              <Form.Control type="email" className="Contact_input" controlId="email"
-                value={form.email}
+              <Form.Control type="email" className="Contact_input" controlId="emailCandidat"
+                value={form.emailCandidat}
                 onChange={(e) => setField('email', e.target.value)}
-                isInvalid={!!errors.email} required="required"
+                isInvalid={!!errors.emailCandidat} required="required"
               />
               <Form.Control.Feedback type="invalid">
-                {errors.email}
+                {errors.emailCandidat}
               </Form.Control.Feedback>
             </Form.Group>
           </Col>
