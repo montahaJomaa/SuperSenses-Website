@@ -19,7 +19,7 @@
 
   .expertisets {
     background-image: url('./components/images/Groupe_19186.png');
-    width: 124% !important;
+    width: 121% !important;
     margin-left: -15% !important;
     background-repeat: no-repeat;
     background-size: 100% 90%;
@@ -74,7 +74,7 @@
     font-size: 25px;
     width: 310px !important;
     height: 81px;
-    margin-left: 17.6% !important;
+    margin-left: 13% !important;
     margin-top: 26% !important;
     padding-top: 4%;
     border-radius: 0px 0px 25px 25px;
@@ -82,7 +82,7 @@
 
   #img3Solution {
     width: 70%;
-    height: 230px !important;
+    height: 266px !important;
   }
 
   .img3Box {
@@ -92,7 +92,7 @@
     opacity: 1;
     backdrop-filter: blur(7px);
     width: 58%;
-    height: 48% !important;
+    height: 50% !important;
     margin-top: -20%;
     margin-left: 6.25%;
   }
@@ -110,8 +110,47 @@
 
   }
 
-  #blocsIA{
-    margin-left: 20% !important;
+  #blocsIA {
+    margin-left: 24% !important;
+  }
+
+  #backgroundimg {
+    background-image: url('./components/images/Groupe_de_masques_10117.png');
+    background-size: 100% 100%;
+    width: 111.3% !important;
+    height: 100%;
+    margin-left: -6% !important;
+    background-repeat: no-repeat;
+    margin-top: 6%;
+
+  }
+
+  #findOn {
+    margin-left: 2% !important;
+    font-size: 15px !important;
+    margin-top: 38% !important;
+
+
+  }
+
+  .fb_logo {
+    margin-left: -3% !important;
+    margin-top: 35% !important;
+  }
+
+  .insta_logo {
+    margin-left: -160% !important;
+    margin-top: 35% !important;
+  }
+
+  .linkedin_logo {
+    margin-left: -80% !important;
+    margin-top: 35% !important;
+  }
+
+  #logo_sup {
+    margin-left: 35%;
+    margin-top: 38% !important;
   }
 
 }
