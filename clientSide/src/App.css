@@ -626,7 +626,7 @@ body {
 /***********************NavBarHeader**************/
 #HomeNav {
   margin-left: 28%;
-
+  
 }
 
 .nav-header {
@@ -635,6 +635,7 @@ body {
   background-color: white;
   width: 100%;
   margin-top: -85px;
+  z-index: 12;
 }
 
 #bg_img_header {
@@ -656,7 +657,9 @@ body {
 
 #languageIcon {
   display: inline;
-  margin-right: 6%;
+  margin-left: 150%;
+  margin-top: 380%;
+
 }
 
 #selectLangue {

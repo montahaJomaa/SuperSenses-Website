@@ -9,7 +9,7 @@ const NavbarFooter = () => {
         <div className="navfooter">
             <div className="row">
                 <div className="col">
-                    <img src={logo_supersenses} className="w-50 " id="logo_sup" />
+                    <img src={logo_supersenses} className="w-50 " id="logo_sup"/>
                 </div>
                 <div className="col " id="col_nav">
                     <Link to="EspaceCarriere" style={{ textDecoration: "none", color: "white" }}>
@@ -27,7 +27,7 @@ const NavbarFooter = () => {
 
                     </div>
                     <div className="row" id="espCar">
-                        &nbsp;&nbsp; contact@supersenses.tn
+                        &nbsp;&nbsp; info@supersenses.tn
                     </div>
                     <div className="row">
                         <div class="input-group">

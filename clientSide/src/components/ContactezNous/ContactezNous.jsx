@@ -132,10 +132,10 @@ function ContactezNous(props) {
 
         </Row>
 
-
+        <Form.Label>Message :</Form.Label>
         <FloatingLabel controlId="floatingTextarea2" >
 
-          <Form.Label>Message :</Form.Label>
+          
 
           <Form.Control
             style={{ height: '100px' }} className="Contact_input" controlId="messageContact"

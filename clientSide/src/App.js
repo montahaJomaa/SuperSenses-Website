@@ -39,22 +39,6 @@ function App() {
                         <Route path="/InformationOffre" element={<><NavBarHeader /><EspaceCarriereOffre /></>} />
                         <Route path="/SensesIA" element={<><NavBarHeader /><NosSolutionSensesIA /></>} />
                     </Routes>
-
-
-
-
-                    {/*<Route path="/NosSolutions">
-                               <NosSolutions/>
-                            </Route>*/}
-
-
-                    { /*<Route path="/Apropos">
-                                <NosServices/>
-                              </Route>*/}
-
-
-
-
                     <div className="bg-img" id="bg_img_footer">
                         <NavBarFooter />
                     </div>
