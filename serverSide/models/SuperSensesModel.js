@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const SuperSensesSchema = {
-    NomPrenomCandidat: String,
+    nomPrenomContact:String,
     emailContact:String,
     messageContact:String 
 }
@@ -9,3 +9,4 @@ const SuperSensesSchema = {
 const SuperSenses = mongoose.model('SuperSenses',SuperSensesSchema);
 
 module.exports = SuperSenses;
+
