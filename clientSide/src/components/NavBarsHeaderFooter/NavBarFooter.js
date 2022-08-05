@@ -39,7 +39,7 @@ const NavbarFooter = () => {
                         </div>
                     </div>
                     <div className="row mt-5" id="copyright_title">
-                        Copyright &copy;2022 All rights reserved.
+                        Copyright &copy;2022 All rights reserved
                     </div>
                 </div>
                 <div className="col" >
