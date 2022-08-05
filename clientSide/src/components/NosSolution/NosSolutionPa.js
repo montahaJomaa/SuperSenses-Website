@@ -1,4 +1,4 @@
-import video from "../images/video.png";
+import video from "../images/senses_IA.png";
 import img1 from '../images/Groupe 14672.png';
 import img2 from '../images/Carbo-arroser-terre.png';
 import img3 from '../images/Group14411.png';
@@ -20,14 +20,14 @@ const NosSolutionPa = () => {
             des problèmes environnemental et digitaliser les villes tunisiennes.
             La ‘Hodhod’ est une solution destinée à lutter contre la pollution citadine
             et elle permet aux municipalités d’avoir un canal de communication interactive avec
-            les citoyens en particulier et tout l'écosystème en général. Notre solution se compose de :
+            les citoyens en particulier et tout l'écosystème en général.
           </p>
         </div>
         <div className="col">
           <img src={video} alt="video" className="videoBorder p-2 " />
         </div>
       </div>
-
+      <h6> Notre solution se compose de :</h6>
       <div className="row text-center" id="hodhodbox" >
 
         <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
@@ -89,31 +89,29 @@ const NosSolutionPa = () => {
       <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
       <div id="PicturesPadding">
         <div class="row p-3">
-          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-            <img class="w-100" src={img1} id="imageSize" />
-            <h6 className="text-center">Préserver l’environnement.</h6>
+        <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <img class="w-100" src={img4} id="imageSize" />
+            <h6 className="text-center">Informer les citoyens avec les nouveautés de leurs communes.</h6>
           </div>
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img2} id="imageSize" />
             <h6 className="text-center">Lutter contre la pollution.</h6>
+            <h6 className="text-center">Préserver l’environnement.</h6>
           </div>
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img3} id="imageSize" />
             <h6 className="text-center">Intégrer les citoyens dans l’amélioration de leurs villes</h6>
           </div>
         </div>
-        <div class="row p-3">
-          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-            <img class="w-100" src={img4} id="imageSize" />
-            <h6 className="text-center">Informer les citoyens avec les nouveautés de leurs communes.</h6>
-          </div>
+        {/* <div class="row p-3">
+          
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img1} id="imageSize" />
           </div>
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img1} id="imageSize" />
           </div>
-        </div>
+        </div> */}
       </div>
 
 

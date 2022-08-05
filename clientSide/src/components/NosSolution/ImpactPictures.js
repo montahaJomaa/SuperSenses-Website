@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 const ImpactPictures = () => {
   var settings = {
     dots: false,
-    className:'CarouselPict',
+    className: 'CarouselPict',
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -44,23 +44,19 @@ const ImpactPictures = () => {
   };
   return (
     <div className='PictureContent'>
-        <h1 class="d-flex justify-content-center">Les Impacts de Hodhod</h1>
+      <h1 class="d-flex justify-content-center">Les Impacts de Hodhod</h1>
       <Slider {...settings}>
-        <div class="img-thumbnail shadow " style={{ width: "400px" , height:"120px" }}>
+        <div class="img-thumbnail shadow " style={{ width: "400px", height: "120px" }}>
           <img src={img1} />
         </div>
         <div class="img-thumbnail shadow " id="CarouselBorder" >
-          <img  src={img1} />
+          <img src={img1} />
         </div>
         <div class="img-thumbnail shadow " id="CarouselBorder" >
           <img src={img2} />
         </div>
-        <div class="img-thumbnail shadow " id="CarouselBorder">
-          <img  src={img3} />
-        </div>
-        <div class="img-thumbnail shadow " id="CarouselBorder">
-          <img  src={img4} />
-        </div>
+        
+        
 
       </Slider>
     </div>

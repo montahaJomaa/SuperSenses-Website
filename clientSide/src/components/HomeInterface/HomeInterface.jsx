@@ -42,7 +42,7 @@ function HomeInterface() {
               </Nav.Link></LinkContainer>
               <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link></LinkContainer>
               <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer>
-              <Nav.Link id='selectLangue'>
+              {/* <Nav.Link id='selectLangue'>
                 <Dropdown>
                   <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>
                     <div className='dpSolution'><img src={language} id="languageIcon" />Langue</div>
@@ -54,7 +54,7 @@ function HomeInterface() {
 
                   </Dropdown.Menu>
                 </Dropdown>
-              </Nav.Link>
+              </Nav.Link> */}
 
             </Nav>
           </Navbar.Collapse>
