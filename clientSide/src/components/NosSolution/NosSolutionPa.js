@@ -89,7 +89,7 @@ const NosSolutionPa = () => {
       <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
       <div id="PicturesPadding">
         <div class="row p-3">
-        <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img4} id="imageSize" />
             <h6 className="text-center">Informer les citoyens avec les nouveautés de leurs communes.</h6>
           </div>
