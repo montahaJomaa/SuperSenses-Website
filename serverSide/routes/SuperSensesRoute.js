@@ -4,12 +4,12 @@ const SuperSenses = require('../models/SuperSensesModel');
 
 router.post('/ContactezNous', (req, res) => {
     console.log(req.body);
-    const NomPrenomContact = req.body.NomPrenomCandidat;
-    const emailContact = req.body.EmailContact;
-    const messageContact = req.body.MessageContact;
+    const nomPrenomContact = req.body.nomPrenomCandidat;
+    const emailContact = req.body.emailContact;
+    const messageContact = req.body.messageContact;
    
     const NewContact = new SuperSenses({
-        NomPrenomContact,
+        nomPrenomContact,
         emailContact,
         messageContact
     });
@@ -19,17 +19,22 @@ router.post('/ContactezNous', (req, res) => {
 
 router.post('/EspaceCarriere', (req, res) => {
     console.log(req.body);
-    const NomPrenomContact = req.body.NomPrenomCandidat;
-    const emailContact = req.body.EmailContact;
-    const messageContact = req.body.MessageContact;
-   
-    const NewContact = new SuperSenses({
-        NomPrenomContact,
-        emailContact,
-        messageContact
+    
+    const nomPrenomCandidat = req.body.nomPrenomCandidat;
+    const emailCandidat = req.body.emailCandidat;
+    const numTelephoneCandidat = req.body.numTelephoneCandidat;
+    const CVCandidat = req.body.CVCandidat;
+    const LettreMotivationCandidat = req.body.LettreMotivationCandidat;
+    
+    const NewCandidat = new SuperSenses({
+        nomPrenomCandidat,
+        emailCandidat,
+        numTelephoneCandidat,
+        CVCandidat,
+        LettreMotivationCandidat
     });
 
-    NewContact.save();
+    NewCandidat.save();
 });
 
 module.exports = router;
