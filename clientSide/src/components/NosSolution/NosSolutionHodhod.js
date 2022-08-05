@@ -1,6 +1,6 @@
 
 
-import googlePlay from '../images/playstore.png';
+import googlePlay from '../images/GooglePLay.png';
 import applestore from '../images/app-store.png';
 import hodhod from '../images/Mask Group 10114.png';
 import Container from 'react-bootstrap/Container';
@@ -22,9 +22,9 @@ const NosSolutionHodhod = () => {
             <div class="col">
               <img id="googlePlay" src={googlePlay} alt="google store" />
             </div>
-            <div class="col">
+            {/* <div class="col">
               <img id="appStore" src={applestore} alt="apple store" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
