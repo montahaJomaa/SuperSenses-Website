@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const SuperSensesSchema = {
-    NomPrenomCandidat: string,
-    emailContact,
-    messageContact
+    NomPrenomCandidat: String,
+    emailContact:String,
+    messageContact:String 
 }
 
-const SuperSenses = mongoose.model('SuperSensesSchema');
+const SuperSenses = mongoose.model('SuperSenses',SuperSensesSchema);
 
 module.exports = SuperSenses;

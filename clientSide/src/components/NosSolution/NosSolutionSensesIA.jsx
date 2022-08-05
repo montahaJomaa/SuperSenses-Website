@@ -17,32 +17,44 @@ function NosSolutionSensesIA(props) {
                     </p>
                 </div>
                 <div className="col">
-                    <img src={SensesIA} alt="img-SensesIA" id="img-descriptionSensesIA"/>
+                    <img src={SensesIA} alt="img-SensesIA" id="img-descriptionSensesIA" />
                 </div>
             </div>
 
             <h4 id="ComposantsSensesIATitle">La solution senses.IA se compose de</h4>
-            <div id="blocComposantsSensesIA" class="row">
+            
 
-                <div id="kitElectronique" class="col" >
-                    <img src={kitElectronique} className="img-composant-sensesIA" />
 
-                    <p>Kit électronique <br />
-                        Collecte des datas en temps réelle.
-                    </p>
+                <div className="row text-center" id="blocComposantsSensesIA" >
+
+                    <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
+
+                        <img src={kitElectronique} id="kitElectronique" />
+                        <h6>kit électronique<br/> Collecte des datas en temps réel</h6>
+                    </div>
+
+
+                    <div className="col-md-3 offset-1  img-thumbnail shadow " id="compBorder2">
+
+
+                        <img src={stockageCloud} id="stockageCloud" />
+                        <h6>Stockage dans le cloud</h6>
+
+
+                    </div>
+
+
+
+                    <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
+
+
+                        <img src={plateformeIntelligente} id="plateformeIntelligente" />
+                        <h6>Plateforme intelligente de prédiction d'anomalie</h6>
+
+
+                    </div>
+
                 </div>
-
-                <div id="stockageCloud" class="col">
-                    <img src={stockageCloud} className="img-composant-sensesIA" />
-                    <p>Stockage en cloud</p>
-                </div>
-
-                <div id="plateformeIntelligente" class="col">
-                    <img src={plateformeIntelligente} className="img-composant-sensesIA" />
-                    <p>Plateforme intelligente de prédiction  d'anomalie</p>
-                </div>
-
-            </div>
         </div>
     )
 }
