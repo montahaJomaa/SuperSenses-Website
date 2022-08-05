@@ -1,13 +1,10 @@
 import React from 'react';
-
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import 'typeface-roboto';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
-
 import NavBarHeader from "./components/NavBarsHeaderFooter/NavBarHeader.jsx";
 import NavBarFooter from "./components/NavBarsHeaderFooter/NavBarFooter";
-
 import HomeInterface from "./components/HomeInterface/HomeInterface.jsx";
 import NosExpertises from "./components/NosExpertises/NosExpertises";
 import ContactezNous from "./components/ContactezNous/ContactezNous";
@@ -17,7 +14,6 @@ import NosSolution from "./components/NosSolution/NosSolution";
 import Apropos from './components/Apropos';
 import EspaceCarriereForm from "./components/EspaceCarriere/EspaceCarriereFom/EspaceCarriereForm";
 import EspaceCarriereOffre from "./components/EspaceCarriere/EspaceCarriereOffre/EspaceCarriereOffre";
-
 import NosSolutionSensesIA from './components/NosSolution/NosSolutionSensesIA';
 
 function App() {
