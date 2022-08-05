@@ -11,6 +11,7 @@ import NosValeur from "../NosValeur";
 import { LinkContainer } from "react-router-bootstrap";
 import language from '../images/language.png';
 import Dropdown from 'react-bootstrap/Dropdown';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 
 function HomeInterface() {
@@ -26,22 +27,20 @@ function HomeInterface() {
           <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="me-auto" id="HomeNav">
-              <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'>Acceuil</Nav.Link></LinkContainer>
-              <LinkContainer to="/NosSolution/#devenezParag"><Nav.Link className='Nav_item' id='NavText_other'>
-                <Dropdown>
-                  <Dropdown.Toggle variant="transparent" id="dropdown-basic" className='Nav_item'>
-                    <div className='dpSolution'> Nos solutions</div>
-                  </Dropdown.Toggle>
-
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Solution HodHod</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Solution Senses.IA</Dropdown.Item>
+              <LinkContainer to="/"><Nav.Link className='Nav_home' id='NavText_home'>Acceuil</Nav.Link></LinkContainer>
+              <Nav.Link className='Nav_home' id='NavText_home'>
+                <Dropdown as={ButtonGroup} id="dropdown_Solution">
+                  <Button href="/#boxs" variant="transparent" id='NavText_home'>NOS SOLUTIONS</Button>
+                  <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
+                  <Dropdown.Menu size="sm">
+                    <Dropdown.Item href="/Hodhod">Hodhod</Dropdown.Item>
+                    <Dropdown.Item href="/SensesIA">SensesIA</Dropdown.Item>
 
                   </Dropdown.Menu>
                 </Dropdown>
-              </Nav.Link></LinkContainer>
-              <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link></LinkContainer>
-              <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer>
+              </Nav.Link>
+              <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_home' id='NavText_home'>Notre expertise</Nav.Link></LinkContainer>
+              <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_home'>A propos</Nav.Link></LinkContainer>
               {/* <Nav.Link id='selectLangue'>
                 <Dropdown>
                   <Dropdown.Toggle variant="transparent" id="dropdown-basic" to="/Nos solutions" className='Nav_item'>

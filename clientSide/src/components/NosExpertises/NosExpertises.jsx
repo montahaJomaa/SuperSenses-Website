@@ -70,7 +70,7 @@ function NotreExpertise() {
           </div>
         </div>
       </div>
-      <div  className="AI_slogan">
+      <div className="AI_slogan">
         <span > Nous créons de l’intelligence artificielle sur mesure</span>
       </div>
       <IACestQuoi />
