@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const SuperSenses = require('../models/SuperSensesModel');
 
-router.route('/ContactezNous').post((req, res) => {
+router.post('/ContactezNous', (req, res) => {
+    console.log(req.body);
     const NomPrenomContact = req.body.NomPrenomCandidat;
     const emailContact = req.body.EmailContact;
     messageContact = req.body.MessageContact;

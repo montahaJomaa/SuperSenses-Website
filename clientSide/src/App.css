@@ -13,12 +13,6 @@ body {
 }
 
 /******Espace Carriere ********/
-
-
-
-
-
-
 .me-auto {
   margin-left: 190px;
 }
@@ -630,7 +624,7 @@ body {
 }
 
 .nav-header {
-
+  z-index:12;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -843,8 +837,8 @@ body {
 }
 
 #blocComposantsSensesIA {
-  margin-top: 2%;
-  padding-top: 2%;
+  margin-top:5%;
+  margin-left:-5%;
   text-align: center;
 }
 
@@ -862,24 +856,24 @@ body {
 }
 
 #kitElectronique {
-  box-shadow: 0 0 10px 0 #c7c7c7;
-  border-radius: 10px;
-  padding-top: 2%;
-  margin-right: 1%;
+  margin-top:15%;
+  margin-bottom: 2%;
+  height:62px;
+  width:62px;
 }
 
 #stockageCloud {
-  box-shadow: 0 0 10px 0 #c7c7c7;
-  border-radius: 10px;
-  padding-top: 2%;
-  margin-right: 1%;
+  margin-top:15%;
+  margin-bottom: 2%;
+  height:62px;
+  width:62px;
 }
 
-#plateformeIntelligente {
-  box-shadow: 0 0 10px 0 #c7c7c7;
-  border-radius: 10px;
-  padding-left: 1%;
-  padding-top: 2%;
+#plateformeIntelligente{
+  margin-top:15%;
+  margin-bottom: 2%;
+  height:62px;
+  width:62px;
 }
 
 /*********************************/
