@@ -33,7 +33,7 @@ const NosSolutionPa = () => {
         <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
           <img src={kitelectronique} className="kitelectronique text-center " />
-          <h6>Capteurs embarqués / kit électronique Collecte des datas.</h6>
+          <h6><br></br>Capteurs embarqués / kit électronique Collecte des datas.</h6>
         </div>
 
 
@@ -41,7 +41,7 @@ const NosSolutionPa = () => {
 
 
           <img src={platform} className="platform text-center" />
-          <h6>Plateforme intelligente interactive.</h6>
+          <h6><br></br>Plateforme intelligente interactive.</h6>
 
 
         </div>
@@ -52,7 +52,7 @@ const NosSolutionPa = () => {
 
 
           <img src={appmobile} className="appmobile text-center" />
-          <h6>Application mobile.</h6>
+          <h6><br></br>Application mobile.</h6>
 
 
         </div>
@@ -91,16 +91,16 @@ const NosSolutionPa = () => {
         <div class="row p-3">
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img4} id="imageSize" />
-            <h6 className="text-center">Informer les citoyens avec les nouveautés de leurs communes.</h6>
+            <h6 className="text-center"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
           </div>
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img2} id="imageSize" />
-            <h6 className="text-center">Lutter contre la pollution.</h6>
+            <h6 className="text-center"><br></br>Lutter contre la pollution.</h6>
             <h6 className="text-center">Préserver l’environnement.</h6>
           </div>
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img3} id="imageSize" />
-            <h6 className="text-center">Intégrer les citoyens dans l’amélioration de leurs villes</h6>
+            <h6 className="text-center"><br></br>Intégrer les citoyens dans l’amélioration de leurs villes</h6>
           </div>
         </div>
         {/* <div class="row p-3">
