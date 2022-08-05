@@ -72,7 +72,7 @@ const NosValeur = () => {
         <div class="container">
           <div class="col">
             <div class="row">
-              <h1 class="text-center" id="title1">Nos solutions</h1>
+              <h1 class="text-center" id="title1">NOS SOLUTIONS</h1>
             </div>
             <div class="row">
               <h2 class="text-center text-sm-left" id="title2">Découvrir les solutions techniques</h2>
@@ -118,7 +118,7 @@ const NosValeur = () => {
 
       </div>
 
-      <h1 id="expertiseTitle">Nos expertises</h1><br></br><br></br>
+      <h1 id="expertiseTitle">NOS EXPERTISE</h1><br></br><br></br>
       <div className="expertisets">
         <div className='expertiseBox'>
           <ul>
