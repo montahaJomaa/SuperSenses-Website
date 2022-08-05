@@ -39,7 +39,7 @@ function IACestQuoi(props) {
 
         <h6 className="bloc_etapes_AI_title">Quelles sont les grandes étapes pour réussir un projet en IA ?</h6>
 
-        <div className="row" xs={1} md={2}>
+        <div className="row" xs={1} md={2} id="blocsIA">
 
           <div className="col" >
             <div id="etape_AI">
