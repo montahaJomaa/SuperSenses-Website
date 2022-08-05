@@ -12,6 +12,7 @@ const NavbarFooter = () => {
                     <img src={logo_supersenses} className="w-50 " id="logo_sup" />
                 </div>
                 <div className="col " id="col_nav">
+                    <div className="row"></div>
                     <Link to="EspaceCarriere" style={{ textDecoration: "none", color: "white" }}>
                         <div className="row" id="espCar">
                             &nbsp;&nbsp; Espace carriere
@@ -23,7 +24,7 @@ const NavbarFooter = () => {
                         </div>
                     </Link>
                     <div className="row" id="espCar">
-                        &nbsp;&nbsp; 92469629
+                        &nbsp;&nbsp; +216 92 469 629
 
                     </div>
                     <div className="row" id="espCar">
@@ -47,10 +48,10 @@ const NavbarFooter = () => {
                             <h6 id="findOn">Find us on </h6>
                         </div>
                         <div className="col">
-                            <img src={logo_facebook} className="fb_logo" />
+                            <a href="https://www.facebook.com/SuperSenses.TN/"><img src={logo_facebook} className="fb_logo" /></a>
                         </div>
                         <div className="col">
-                            <img src={logo_linkedIn} className="linkedin_logo" />
+                            <a href="https://www.linkedin.com/company/super-senses-tn/"><img src={logo_linkedIn} className="linkedin_logo" /></a>
                         </div>
                         <div className="col">
                             <img src={logo_instagram} className="insta_logo" />
