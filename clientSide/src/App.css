@@ -7,6 +7,63 @@
   font-weight: bold;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 1280px) and (min-width: 1100px) {
+  body {
+    width: 100%;
+  }
+
+  #portfolio1 {
+    width: 90%;
+  }
+
+  .expertisets {
+    background-image: url('./components/images/Groupe_19186.png');
+    width: 124% !important;
+    margin-left: -15% !important;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    height: 487px;
+    padding-top: 8%;
+
+  }
+
+  .expertiseBox {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 21px;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+    width: 2%;
+    height: 70%;
+    margin-left: 40%;
+    padding-top: 2.5%;
+    line-height: 3em;
+  }
+
+  #navfooter {
+    background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
+    background-repeat: no-repeat;
+    width: 98% !important;
+    height: 400px;
+    margin-left: 0%;
+    margin-top: 6%;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 280px !important;
+    height: 267px;
+
+
+  }
+}
+
+/*****************/
+
 body {
   height: 100%;
   width: 100%;
@@ -330,7 +387,7 @@ body {
   z-index: 2;
   width: 327px;
   height: 267px;
-  
+
 }
 
 .contenuS:hover .middle {
@@ -338,7 +395,7 @@ body {
 }
 
 .text {
-  background-color:gray;
+  background-color: gray;
   opacity: 0.9;
   color: white;
   font-size: 25px;
@@ -620,11 +677,11 @@ body {
 /***********************NavBarHeader**************/
 #HomeNav {
   margin-left: 28%;
-  
+
 }
 
 .nav-header {
-  z-index:12;
+  z-index: 12;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -675,7 +732,7 @@ body {
 
 
 /***************NavBarFooter******************/
-.navfooter{
+#navfooter {
   background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
   background-repeat: no-repeat;
   width: 99.236%;
@@ -683,32 +740,40 @@ body {
   margin-left: 0%;
   margin-top: 6%;
 }
-#logo_sup{
+
+#logo_sup {
   margin-left: 35%;
   margin-top: 30%;
 }
-#col_nav{
+
+#col_nav {
   margin-top: 12.2%;
   color: white;
 }
-.fb_logo{
+
+.fb_logo {
   margin-left: -25%;
 }
-.insta_logo{
- margin-left: -190%;
+
+.insta_logo {
+  margin-left: -190%;
 }
-.linkedin_logo{
+
+.linkedin_logo {
   margin-left: -110%;
 }
-#findOn{
+
+#findOn {
   margin-left: 15%;
-  
+
 }
-#socialIcons{
+
+#socialIcons {
   margin-top: 59%;
   color: white;
 }
-#copyright_title{
+
+#copyright_title {
   margin-left: 25%;
 }
 
@@ -837,8 +902,8 @@ body {
 }
 
 #blocComposantsSensesIA {
-  margin-top:5%;
-  margin-left:-5%;
+  margin-top: 5%;
+  margin-left: -5%;
   text-align: center;
 }
 
@@ -856,24 +921,24 @@ body {
 }
 
 #kitElectronique {
-  margin-top:15%;
+  margin-top: 15%;
   margin-bottom: 2%;
-  height:62px;
-  width:62px;
+  height: 62px;
+  width: 62px;
 }
 
 #stockageCloud {
-  margin-top:15%;
+  margin-top: 15%;
   margin-bottom: 2%;
-  height:62px;
-  width:62px;
+  height: 62px;
+  width: 62px;
 }
 
-#plateformeIntelligente{
-  margin-top:15%;
+#plateformeIntelligente {
+  margin-top: 15%;
   margin-bottom: 2%;
-  height:62px;
-  width:62px;
+  height: 62px;
+  width: 62px;
 }
 
 /*********************************/
@@ -885,9 +950,11 @@ body {
   border: 15px;
   margin-top: -5%;
 }
-.espCarr{
+
+.espCarr {
   width: 97%;
 }
+
 #CarriereButtomSauv {
   width: 20%;
   margin-left: 138.5%;
@@ -1237,19 +1304,20 @@ inline styling } */
   margin-top: 6%;
   border-radius: 25px;
 }
-#buttonOffre{
+
+#buttonOffre {
   border-radius: 25px;
   margin-left: 100%;
-  margin-top:-22%;
+  margin-top: -22%;
   width: 40%;
   height: 2%;
   text-decoration: none;
 }
-#boxoffres{
+
+#boxoffres {
   margin-right: 25%;
 }
 
-#infoOffre{
+#infoOffre {
   width: 180%;
 }
-
