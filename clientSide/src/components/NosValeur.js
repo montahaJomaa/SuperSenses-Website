@@ -20,7 +20,7 @@ const NosValeur = () => {
     <div className="part2 container">
       <div class="col">
         <div class="row">
-          <h1 class="text-center" id="title1">Nos valeurs & engagements </h1>
+          <h1 class="text-center" id="title1">NOS VALEURS & ENGAGEMENTS</h1>
         </div>
         <div class="row">
           <h2 class="text-center text-sm-left" id="title2">Notre clé de réussite</h2>
