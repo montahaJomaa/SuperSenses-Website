@@ -44,8 +44,8 @@ function NavBarHeader() {
 
               <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'>Notre expertise</Nav.Link></LinkContainer>
               <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_other'>A propos</Nav.Link></LinkContainer>
-              <div className='dpSolution'><img src={language} id="languageIcon" /></div>
-              <Nav.Link id='selectLangue'>
+              {/* <div className='dpSolution'><img src={language} id="languageIcon" /></div> */}
+              {/* <Nav.Link id='selectLangue'>
 
                 <Dropdown as={ButtonGroup}>
 
@@ -58,7 +58,7 @@ function NavBarHeader() {
 
                   </Dropdown.Menu>
                 </Dropdown>
-              </Nav.Link>
+              </Nav.Link> */}
 
             </Nav>
           </Navbar.Collapse>
