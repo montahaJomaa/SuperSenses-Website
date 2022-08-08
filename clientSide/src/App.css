@@ -183,6 +183,11 @@
 }
 
 
+/****** for screen between 980 and 1099 *******/
+@media only screen and (min-width: 1100px) and (max-width:1300px)
+
+/************************/
+
 /*****************/
 
 body {
