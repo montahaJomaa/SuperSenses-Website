@@ -17,8 +17,8 @@ import { Link } from 'react-router-dom';
 const NosValeur = () => {
 
   return (
-    <div className="part2 container">
-      <div class="col">
+    <div className="part2">
+      <div class="container">
         <div class="row">
           <h1 class="text-center" id="title1">NOS VALEURS & ENGAGEMENTS</h1>
         </div>
@@ -130,8 +130,8 @@ const NosValeur = () => {
             <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;Conception et layout des cartes électroniques</h5></li>
           </ul>
         </div>
-
       </div>
+
       <div class="row">
         <h1 className='text-center'>Portfolio </h1>
         <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br>
