@@ -37,7 +37,7 @@ function HomeInterface() {
                   </Button>
                   <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
                   <Dropdown.Menu size="sm">
-                    <Dropdown.Item>
+                    <Dropdown.Item href="/Hodhod">
                       <HashLink className="hashLinkNavBarDropDown" to="/Hodhod">Hodhod</HashLink>
                     </Dropdown.Item>
                     <Dropdown.Item href="/SensesIA">

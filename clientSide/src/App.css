@@ -8,11 +8,8 @@
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1280px) and (min-width: 1100px) {
-  body {
-    width: 100%;
-  }
-
+@media only screen and (max-width: 1280px) and (min-width: 1185px) {
+  
   #portfolio1 {
     width: 90%;
   }
@@ -115,7 +112,7 @@
   #backgroundimg {
     background-image: url('./components/images/Groupe_de_masques_10117.png');
     background-size: 100% 100%;
-    width: 111.3% !important;
+    width: 111.3% !important; 
     height: 100%;
     margin-left: -6% !important;
     background-repeat: no-repeat;
@@ -159,6 +156,7 @@
 body {
   height: 100%;
   width: 100%;
+  
 }
 
 /******Espace Carriere ********/
