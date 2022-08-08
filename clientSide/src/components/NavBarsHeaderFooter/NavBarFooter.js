@@ -13,7 +13,7 @@ const NavbarFooter = () => {
                 </div>
                 <div className="col " id="col_nav">
                     <div className="row"></div>
-                    <Link to="EspaceCarriere" style={{ textDecoration: "none", color: "white" }}>
+                    <Link to="EspaceCarriere/" style={{ textDecoration: "none", color: "white" }}>
                         <div className="row" id="espCar">
                             &nbsp;&nbsp; Espace carriere
                         </div>

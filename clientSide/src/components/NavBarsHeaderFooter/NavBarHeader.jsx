@@ -20,7 +20,7 @@ function NavBarHeader() {
       <Navbar expand="lg"  >
         <Container>
 
-          <Navbar.Brand href="#home"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
+          <Navbar.Brand href="/"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
