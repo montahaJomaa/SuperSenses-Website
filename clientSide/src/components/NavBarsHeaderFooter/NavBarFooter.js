@@ -9,7 +9,7 @@ const NavbarFooter = () => {
         <div id="navfooter" >
             <div className="row">
                 <div className="col">
-                    <a href="/"><img src={logo_supersenses} className="w-50 "  id="logo_sup" /></a>
+                    <a href="/"><img src={logo_supersenses} className="w-50 " id="logo_sup" /></a>
                 </div>
                 <div className="col " id="col_nav">
                     <div className="row"></div>
@@ -39,7 +39,7 @@ const NavbarFooter = () => {
                         </div>
                     </div>
                     <div className="row mt-5" id="copyright_title">
-                        Copyright &copy;2022 All rights reserved
+                        SuperSenses &copy;2022 Tous droit réservés
                     </div>
                 </div>
                 <div className="col" >
