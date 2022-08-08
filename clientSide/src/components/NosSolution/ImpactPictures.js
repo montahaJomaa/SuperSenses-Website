@@ -55,7 +55,9 @@ const ImpactPictures = () => {
         <div class="img-thumbnail shadow " id="CarouselBorder" >
           <img src={img2} />
         </div>
-        
+        <div >
+          
+        </div>
         
 
       </Slider>
