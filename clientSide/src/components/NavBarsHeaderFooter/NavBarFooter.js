@@ -9,7 +9,7 @@ const NavbarFooter = () => {
         <div id="navfooter" >
             <div className="row">
                 <div className="col">
-                    <img src={logo_supersenses} className="w-50 " id="logo_sup" />
+                    <a href="/"><img src={logo_supersenses} className="w-50 "  id="logo_sup" /></a>
                 </div>
                 <div className="col " id="col_nav">
                     <div className="row"></div>
