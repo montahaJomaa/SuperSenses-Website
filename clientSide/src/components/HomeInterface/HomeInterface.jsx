@@ -22,7 +22,7 @@ function HomeInterface() {
 
       <Navbar bg="transparent" expand="lg" >
         <Container>
-          <Navbar.Brand href="#home"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
+          <Navbar.Brand href="/"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -37,7 +37,7 @@ function HomeInterface() {
                   </Button>
                   <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
                   <Dropdown.Menu size="sm">
-                    <Dropdown.Item>
+                    <Dropdown.Item href="/Hodhod">
                       <HashLink className="hashLinkNavBarDropDown" to="/Hodhod">Hodhod</HashLink>
                     </Dropdown.Item>
                     <Dropdown.Item href="/SensesIA">
