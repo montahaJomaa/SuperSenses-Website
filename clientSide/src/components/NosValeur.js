@@ -41,7 +41,7 @@ const NosValeur = () => {
         <div class="container">
           <div class="row">
             <div class="col" >
-              <div class="contenuS">
+              <div class="contenuS text-center">
                 <img src={img1} alt="Avatar" class="image" />
                 <div class="middle">
                   <div class="text">Engagements</div>
@@ -49,7 +49,7 @@ const NosValeur = () => {
               </div>
             </div>
             <div class="col" >
-              <div class="contenuS">
+              <div class="contenuS text-center">
                 <img src={img3} alt="Avatar" class="image" />
                 <div class="middle">
                   <div class="text">Savoir-Faire</div>
@@ -57,7 +57,7 @@ const NosValeur = () => {
               </div>
             </div>
             <div class="col">
-              <div class="contenuS">
+              <div class="contenuS text-center">
                 <img src={img2} alt="Avatar" class="image" />
                 <div class="middle">
                   <div class="text">Expertise </div>
@@ -85,7 +85,7 @@ const NosValeur = () => {
       <div className="container" id="boxs">
         <div class="row">
           <div class="col">
-            <img className="bgSolution img-thumbnail shadow rounded" src={img1Solution} alt="img1" />
+            <img className="bgSolution img-thumbnail shadow rounded" src={img1Solution} alt="img1" id="img3Solution" />
             <div className="box">
               <p>
                 <div class="col">
