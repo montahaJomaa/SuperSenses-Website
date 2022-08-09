@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 @font-face {
   font-family: "CaviarDreams";
   src: local("CaviarDreams"),
@@ -19,7 +18,7 @@
     width: 97% !important;
     margin-left: 25px !important;
   }
-
+ 
   .middle {
     transition: .5s ease;
     opacity: 0;
@@ -1034,19 +1033,20 @@
 }
 
 .fb_logo {
-  margin-left: -25%;
+  margin-left: 50%;
 }
 
 .insta_logo {
-  margin-left: -190%;
+  margin-left: -130%;
 }
 
 .linkedin_logo {
-  margin-left: -110%;
+  margin-left: -40%;
 }
 
 #findOn {
-  margin-left: 15%;
+  margin-left: 3%;
+  font-size: 14px;
 
 }
 
@@ -1301,6 +1301,7 @@
 
 #portfolioBox {
   width: 1530px;
+ 
 }
 #hodhod1{
   width: 488px;

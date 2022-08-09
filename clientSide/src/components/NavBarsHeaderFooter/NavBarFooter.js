@@ -45,7 +45,7 @@ const NavbarFooter = () => {
                 <div className="col" >
                     <div className="row w-100" id="socialIcons">
                         <div className="col">
-                            <h6 id="findOn">Find us on </h6>
+                            <h6 id="findOn">Trouver nous sur </h6>
                         </div>
                         <div className="col">
                             <a href="https://www.facebook.com/SuperSenses.TN/"><img src={logo_facebook} className="fb_logo" /></a>

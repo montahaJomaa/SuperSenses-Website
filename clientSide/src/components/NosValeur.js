@@ -146,7 +146,7 @@ const NosValeur = () => {
       </div>
 
       {/* <div class="row text-center" id="portfolioBox"> */}
-      <div className='row text-center' id="portfolioBox">
+      <div className='row text-center' id="portfolioBox" >
         <h1 className='text-center'>Portfolio </h1>
         <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br>
         <div className='col mt-5'>
