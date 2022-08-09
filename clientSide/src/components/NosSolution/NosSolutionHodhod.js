@@ -18,7 +18,7 @@ const NosSolutionHodhod = () => {
             <img id="hodhodImage" class="img-thumbnail shadow " src={hodhod} alt="hodhod image " />
           </div>
           <div class="row">
-            <p id="hodhodStatement"><br></br>Devenez actionnaires dans votre commune</p><br></br><br></br>
+            <p id="hodhodStatement"><br></br>Devenez acteurs dans votre commune</p><br></br><br></br>
             <div class="col">
               <img id="googlePlay" src={googlePlay} alt="google store" />
             </div>
