@@ -23,8 +23,8 @@ const NosSolutionPa = () => {
             les citoyens en particulier et tout l'écosystème en général.
           </p>
         </div>
-        <div className="col">
-          <img src={video} alt="video" className="videoBorder p-2 " />
+        <div className="col text-center">
+          <img src={video} alt="video" className="videoBorder p-2  " id="videoPicture" />
         </div>
       </div>
       <h6> Notre solution se compose de :</h6>
@@ -61,7 +61,7 @@ const NosSolutionPa = () => {
       <div className="container text-center">
         <div className="row " id="mobSize">
           <div className="col">
-            <img src={mob} />
+            <img src={mob} id="mobPicture"/>
           </div>
           <div className="col">
             <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonter d’une manière efficace aux divers services de la municipalité.</h6>
