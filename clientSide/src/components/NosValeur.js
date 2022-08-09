@@ -86,7 +86,7 @@ const NosValeur = () => {
       <div className='container text-center'>
         <div className='row'>
           <div className='col'>
-            <Link to="/Hodhod"><img src={hodhod1} id="hodhod1"/></Link>
+            <Link to="/Hodhod"><img src={hodhod1} id="hodhod1" /></Link>
           </div>
           <div className='col'>
             <Link to="/SensesIA"><img src={hodhod2} id="hodhod1" /></Link>
@@ -94,7 +94,7 @@ const NosValeur = () => {
         </div>
       </div>
 
-{/* 
+      {/* 
       <div className="container" id="boxs">
         <div class="row">
           <div class="col">
@@ -146,20 +146,21 @@ const NosValeur = () => {
       </div>
 
       {/* <div class="row text-center" id="portfolioBox"> */}
-      <div className='row text-center' id="portfolioBox" >
-        <h1 className='text-center'>Portfolio </h1>
-        <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br>
-        <div className='col mt-5'>
-          <img src={port1} alt="portfolio" id="portfolio1" />
-        </div>
-        <div className='col mt-5'>
-          <img src={port2} alt='portfolio' id="portfolio1" />
-        </div>
-        <div className='col mt-5'>
-          <img src={port3} alt='portfolio' id="portfolio1" />
+      <div className='container'>
+        <div className='row'  >
+          <h1 className='text-center'>Portfolio </h1>
+          <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br>
+          <div className='col mt-5'>
+            <img src={port1} alt="portfolio" id="portfolio1" />
+          </div>
+          <div className='col mt-5'>
+            <img src={port2} alt='portfolio' id="portfolio1" />
+          </div>
+          <div className='col mt-5'>
+            <img src={port3} alt='portfolio' id="portfolio1" />
+          </div>
         </div>
       </div>
-
     </div>
   );
 

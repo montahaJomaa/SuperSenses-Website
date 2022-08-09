@@ -24,7 +24,7 @@ const NosSolutionPa = () => {
           </p>
         </div>
         <div className="col">
-          <img src={video} alt="video" className="videoBorder p-2 " />
+          <img src={video} alt="video" className="videoBorder p-2 " id="videoPicture" />
         </div>
       </div>
       <h6> Notre solution se compose de :</h6>
