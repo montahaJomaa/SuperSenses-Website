@@ -408,8 +408,8 @@
   }
 
   #img-descriptionSensesIA {
-    width: 300px !important;
-    height: 80%;
+    width: 350px !important;
+    height: 90% !important;
 
   }
 
@@ -417,12 +417,13 @@
     margin-top: 5%;
     text-align: center;
     width: 350px !important;
+    
   }
 
   .img_service_AI {
     margin-left: 10%;
     border-radius: 30px;
-    width: 300px !important;
+    width: 350px !important;
   }
 
   .img_service_digital {
