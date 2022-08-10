@@ -582,10 +582,10 @@
   }
 
   #hodhodImage {
-    width: 226px;
-    height: 166px;
+    width: 120px !important;
+    height: 80px !important;
     margin-top: 10%;
-    margin-left: 15% !important;
+    margin-left: 35% !important;
     border-radius: 20px;
   }
 
@@ -594,6 +594,12 @@
     background-repeat: no-repeat;
     background-size: 100% 50% !important;
     height: 487px;
+  }
+
+  #googlePlay {
+    width: 100px !important;
+    height: 100%;
+    margin-left: 35% !important;
   }
 
   /*===================*/
