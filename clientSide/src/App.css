@@ -287,7 +287,18 @@
 
 /*********** mobile screen between 425px and 768px**************************/
 @media only screen and (min-width:425px) and (max-width:768px) {
-
+/** footer **/
+#socialIcons {
+  margin-left: 10% !important;
+  margin-top: -13% !important;
+}
+#copyright_title{
+  margin-left: -65% !important;
+}
+#navfooter {
+  padding-top: 15% !important;
+}
+/*=============*/
   /* Homeinterface*/
   .description_img {
     width: 300px !important;
@@ -476,6 +487,18 @@
 
 /*********** mobile screen between 320 px and 375px ***********/
 @media screen and (min-width:320px) and (max-width:375px) {
+/** footer **/
+#socialIcons {
+  margin-left: 4% !important;
+  margin-top: -25% !important;
+}
+#copyright_title{
+  margin-left: -65% !important;
+}
+#navfooter {
+  padding-top: 15% !important;
+}
+/*==========*/
 
   /**navbar **/
   .nav-header {
@@ -672,7 +695,20 @@
 
 /***** Screen for mobile between 375px and 425 px *****************/
 @media screen and (min-width:375px) and (max-width:425px) {
+  /** footer **/
+  #socialIcons {
+    margin-left: 6% !important;
+    margin-top: -20% !important;
+  }
 
+  #navfooter {
+    padding-top: 15% !important;
+  }
+  #copyright_title{
+    margin-left: -50% !important;
+    padding-top: 5%;
+  }
+  /**===========**/
   /*==Homeinterface==*/
   .description_img {
     width: 300px !important;
@@ -862,6 +898,20 @@
 /*================================================================*/
 /**** Tablets screen between 768px and 1024px ****/
 @media screen and (min-width:768px) and (max-width:1024px) {
+  /**footer **/
+  #socialIcons {
+    margin-left: -10% !important;
+    margin-top: 70% !important;
+  }
+  #copyright_title{
+    margin-left: -3% !important;
+    margin-top: 3% !important;
+  }
+  #navfooter {
+    padding-top: 15% !important;
+  }
+  /*============*/
+  
   /**Home Interface */
 
   .contenuS .image {
@@ -917,19 +967,23 @@
     margin-top: 4%;
     width: 650px !important;
   }
+
   #backgroundimg {
     width: 750px !important;
     margin-left: -30px !important;
   }
-#ImpactText{
-  font-size: 12px !important;
-  
-}
+
+  #ImpactText {
+    font-size: 12px !important;
+
+  }
+
   /*=================*/
   /**Nos expertise Interface **/
-  #etape_AI{
+  #etape_AI {
     margin-left: 120px !important;
   }
+
   /*==========================*/
 }
 
