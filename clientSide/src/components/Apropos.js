@@ -10,7 +10,7 @@ const Apropos = () => {
         <div class="row">
 
           <div class="col" id="AproposImg">
-            <img src={imgSensia} />
+            <img src={imgSensia} id="AproposImgSize"/>
           </div>
           <div class="col-sm">
             <h2 id="AproposSuperText">Super Senses</h2>
