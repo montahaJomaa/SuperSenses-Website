@@ -61,7 +61,7 @@ const NosSolutionPa = () => {
       <div className="container text-center">
         <div className="row " id="mobSize">
           <div className="col">
-            <img src={mob} id="mobPicture"/>
+            <img src={mob} id="mobPicture" />
           </div>
           <div className="col">
             <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonter d’une manière efficace aux divers services de la municipalité.</h6>
@@ -91,16 +91,16 @@ const NosSolutionPa = () => {
         <div class="row p-3">
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img4} id="imageSize" />
-            <h6 className="text-center"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
+            <h6 className="text-center" id="ImpactText"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
           </div>
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img2} id="imageSize" />
-            <h6 className="text-center"><br></br>Lutter contre la pollution.</h6>
-            <h6 className="text-center">Préserver l’environnement.</h6>
+            <h6 className="text-center" id="ImpactText"><br></br>Lutter contre la pollution.</h6>
+            <h6 className="text-center" id="ImpactText">Préserver l’environnement.</h6>
           </div>
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img3} id="imageSize" />
-            <h6 className="text-center"><br></br>Intégrer les citoyens dans l’amélioration de leurs villes</h6>
+            <h6 className="text-center" id="ImpactText"><br></br>Intégrer les citoyens dans l’amélioration de leurs villes</h6>
           </div>
         </div>
         {/* <div class="row p-3">
