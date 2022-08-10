@@ -417,7 +417,6 @@
     margin-top: 5%;
     text-align: center;
     width: 350px !important;
-
   }
 
   .img_service_AI {
@@ -588,6 +587,20 @@
   }
 
   /*===================*/
+  /* Senses IA interface */
+  #img-descriptionSensesIA {
+    width: 280px !important;
+    height: 90% !important;
+    margin-left: 5px !important;
+  }
+
+  #blocComposantsSensesIA {
+    margin-top: 5%;
+    text-align: center;
+    width: 280px !important;
+  }
+
+  /*==================*/
 }
 
 /*****************/
