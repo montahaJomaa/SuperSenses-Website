@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 @font-face {
   font-family: "CaviarDreams";
   src: local("CaviarDreams"),
@@ -7,8 +8,18 @@
 }
 
 /* Media Queries */
-/****** big screen ****/
-@media only screen and (min-width:1301px) and (max-width:2000px) {}
+/****** navbar ****/
+@media only screen and (max-width:971px) {
+  .btnNosSolution {
+    margin-left: 7px;
+  }
+
+  .btnNosSolutionHome {
+    margin-left: -15px;
+  }
+}
+
+/*====================*/
 
 /*********screen between 1100px and 1300px *************/
 @media only screen and (min-width: 1100px) and (max-width:1300px) {
@@ -291,7 +302,6 @@
     background-color: white;
     width: 99% !important;
     margin-top: -85px;
-
   }
 
   .NosSolution {
@@ -1310,7 +1320,7 @@
 
 .fb_logo {
   margin-left: 250px;
-  margin-top:-60px;
+  margin-top: -60px;
 
 }
 
@@ -1721,6 +1731,7 @@
 .ServiceAI_data>h5 {
   font-weight: bold;
 }
+
 .paragraph_ServiceAI {
   margin-top: 20px;
   text-align: justify;

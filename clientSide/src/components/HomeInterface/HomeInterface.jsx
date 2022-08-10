@@ -30,21 +30,23 @@ function HomeInterface() {
             <Nav className="me-auto" id="HomeNav">
               <LinkContainer to="/"><Nav.Link className='Nav_home' id='NavText_home'>Acceuil</Nav.Link></LinkContainer>
               <Nav.Link className='Nav_home' id='NavText_home'>
-                <Dropdown as={ButtonGroup} id="dropdown_Solution">
-                  {/* <Button href="/#boxs" variant="transparent" id='NavText_home'>NOS SOLUTIONS</Button> */}
-                  <Button variant='transparent'>
-                    <HashLink className="hashLinkNavBar" smooth to="/#boxs">NOS SOLUTIONS</HashLink>
-                  </Button>
-                  <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
-                  <Dropdown.Menu size="sm">
-                    <Dropdown.Item href="/Hodhod">
-                      <HashLink className="hashLinkNavBarDropDown" to="/Hodhod">Hodhod</HashLink>
-                    </Dropdown.Item>
-                    <Dropdown.Item href="/SensesIA">
-                      <HashLink className="hashLinkNavBarDropDown" to="/SensesIA">SensesIA</HashLink>
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
+                <div className="btnNosSolutionHome">
+                  <Dropdown as={ButtonGroup} id="dropdown_Solution">
+                    {/* <Button href="/#boxs" variant="transparent" id='NavText_home'>NOS SOLUTIONS</Button> */}
+                    <Button variant='transparent'>
+                      <HashLink className="hashLinkNavBar" smooth to="/#boxs">NOS SOLUTIONS</HashLink>
+                    </Button>
+                    <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
+                    <Dropdown.Menu size="sm">
+                      <Dropdown.Item href="/Hodhod">
+                        <HashLink className="hashLinkNavBarDropDown" to="/Hodhod">Hodhod</HashLink>
+                      </Dropdown.Item>
+                      <Dropdown.Item href="/SensesIA">
+                        <HashLink className="hashLinkNavBarDropDown" to="/SensesIA">SensesIA</HashLink>
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </div>
               </Nav.Link>
               <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_home' id='NavText_home'>Notre expertise</Nav.Link></LinkContainer>
               <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_home'>A propos</Nav.Link></LinkContainer>
@@ -68,23 +70,23 @@ function HomeInterface() {
       </Navbar>
       <div className="Description_supersenses">
         <Container>
-        <Row>
-          <Col>
-            <h2>Bienvenue à</h2>
-            <h1>Super Senses</h1>
-            <p>Super Senses est une startup Tunisienne dévoilée par une <br />équipe d’ingénieurs
-              multidisciplinaires. Notre vision est de <br />crée un outil technologique d’aide à la
-              décision capable<br /> d’ajouter un 6ieme sens utilisant l’intelligence artificielle.</p>
-            <LinkContainer to="/Apropos"><Button variant="outline-dark">Lire tout</Button></LinkContainer>
-          </Col>
-          <Col>
-            <div id="description_img">
-              <img src={description_img} alt="description_img" className="description_img" />
-            </div>
-          </Col>
-        </Row>
+          <Row>
+            <Col>
+              <h2>Bienvenue à</h2>
+              <h1>Super Senses</h1>
+              <p>Super Senses est une startup Tunisienne dévoilée par une <br />équipe d’ingénieurs
+                multidisciplinaires. Notre vision est de <br />crée un outil technologique d’aide à la
+                décision capable<br /> d’ajouter un 6ieme sens utilisant l’intelligence artificielle.</p>
+              <LinkContainer to="/Apropos"><Button variant="outline-dark">Lire tout</Button></LinkContainer>
+            </Col>
+            <Col>
+              <div id="description_img">
+                <img src={description_img} alt="description_img" className="description_img" />
+              </div>
+            </Col>
+          </Row>
         </Container>
-        
+
         <NosValeur />
       </div>
 
