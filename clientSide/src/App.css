@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 @font-face {
   font-family: "CaviarDreams";
   src: local("CaviarDreams"),
@@ -455,7 +454,7 @@
 /************************/
 
 /*********** mobile screen between 320 px and 479px ***********/
-@media screen and (min-width:320px) and (max-width:600px) {
+@media screen and (min-width:320px) and (max-width:479px) {
 
   /**navbar **/
   .nav-header {
@@ -1292,6 +1291,7 @@
 #navfooter {
   background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 99.236%;
   height: 400px;
   margin-left: 0%;
@@ -1309,15 +1309,19 @@
 }
 
 .fb_logo {
-  margin-left: 50%;
+  margin-left: 250px;
+  margin-top:-60px;
+
 }
 
 .insta_logo {
-  margin-left: -130%;
+  margin-left: 200px;
+  margin-top: -157px;
 }
 
 .linkedin_logo {
-  margin-left: -40%;
+  margin-left: 150px;
+  margin-top: -110px;
 }
 
 #findOn {
@@ -1717,10 +1721,6 @@
 .ServiceAI_data>h5 {
   font-weight: bold;
 }
-
-
-
-
 .paragraph_ServiceAI {
   margin-top: 20px;
   text-align: justify;
