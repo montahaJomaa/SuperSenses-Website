@@ -61,7 +61,7 @@ const NosSolutionPa = () => {
       <div className="container text-center">
         <div className="row " id="mobSize">
           <div className="col">
-            <img src={mob} id="mobPicture"/>
+            <img src={mob} id="mobPicture" />
           </div>
           <div className="col">
             <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonter d’une manière efficace aux divers services de la municipalité.</h6>
