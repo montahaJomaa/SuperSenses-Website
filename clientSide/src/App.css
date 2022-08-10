@@ -569,7 +569,7 @@
 
   #mobPicture {
     width: 280px !important;
-    
+
   }
 
   #hodhodImage {
@@ -599,6 +599,34 @@
     margin-top: 5%;
     text-align: center;
     width: 280px !important;
+  }
+
+  /*==================*/
+  /* Nos expertise Interface */
+  .img_service_AI {
+    margin-left: 10%;
+    border-radius: 30px;
+    width: 250px !important;
+  }
+
+  .img_service_digital {
+    margin-top: 20px;
+    width: 250px !important;
+  }
+
+  .img_cercle_AI {
+    width: 318px !important;
+  }
+
+  #etape_AI {
+    width: 280px !important;
+    height: 550px !important;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 40px;
+    box-shadow: 0 0 45px 0 #c7c7c7;
+    border-radius: 10px;
+    transition: box-shadow .3s;
   }
 
   /*==================*/
