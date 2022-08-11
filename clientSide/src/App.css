@@ -9,6 +9,13 @@
 
 
 /* Media Queries */
+@media screen and (max-width:991px){
+  .navbar-toggler {
+    border-color: rgb(255,102,203);
+    color:red;
+  } 
+}
+
 /****** navbar ****/
 @media only screen and (max-width:971px) {
   .btnNosSolution {
