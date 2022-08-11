@@ -10,7 +10,7 @@ import mob from "../images/Groupe 14747.png";
 const NosSolutionPa = () => {
 
   return (
-    <div className="container " id="hodhodP">
+    <div className="" id="hodhodP">
 
       <div className="row mt-5">
         <div className="col p-5">
@@ -49,12 +49,8 @@ const NosSolutionPa = () => {
 
 
         <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
-
-
           <img src={appmobile} className="appmobile text-center" />
           <h6><br></br>Application mobile.</h6>
-
-
         </div>
 
       </div>
@@ -69,7 +65,7 @@ const NosSolutionPa = () => {
         </div>
       </div>
 
-      <div className="row" id="backgroundimg">
+      <div className="row">
         <div className="row">
           <h3 className="text-center" id="deveneztitle">Devenez acteurs de votre Commune avec HODHOD</h3>
         </div>

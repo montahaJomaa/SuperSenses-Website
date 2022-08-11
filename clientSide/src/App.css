@@ -187,18 +187,6 @@
   }
 
 
-
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 109% !important;
-    height: 100%;
-    margin-left: -5% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-
-  }
-
   #findOn {
     margin-left: 2% !important;
     font-size: 15px !important;
@@ -464,15 +452,7 @@
     margin-left: 35% !important;
   }
 
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 420px !important;
-    height: 100%;
-    margin-left: -3% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-  }
+  
 
 
   /*======================*/
@@ -708,15 +688,7 @@
     margin-left: 35% !important;
   }
 
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 320px !important;
-    height: 100%;
-    margin-left: -3% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-  }
+
 
   /*===================*/
   /* Senses IA interface */
@@ -923,15 +895,7 @@
     margin-left: 35% !important;
   }
 
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 373px !important;
-    height: 100%;
-    margin-left: -5% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-  }
+
 
   /*==============*/
   /*** Senses IA Interface ***/
@@ -1075,11 +1039,7 @@
     width: 650px !important;
   }
 
-  #backgroundimg {
-    width: 750px !important;
-    margin-left: -30px !important;
-  }
-
+  
   #ImpactText {
     font-size: 12px !important;
 
@@ -1173,9 +1133,9 @@
 #backgroundimg {
   background-image: url('./components/images/Groupe_de_masques_10117.png');
   background-size: 100% 100%;
-  width: 117.6%;
+  width: 100%;
   height: 100%;
-  margin-left: -9%;
+  margin-left: 0%;
   background-repeat: no-repeat;
   margin-top: 6%;
 
