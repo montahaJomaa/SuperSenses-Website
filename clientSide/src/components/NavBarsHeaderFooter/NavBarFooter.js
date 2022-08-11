@@ -30,14 +30,14 @@ const NavbarFooter = () => {
                     <div className="row" id="espCar">
                         &nbsp;&nbsp; info@supersenses.tn
                     </div>
-                    <div className="row">
+                    {/* <div className="row">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2" />
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">S'inscrire</button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="row mt-5" id="copyright_title">
                         SuperSenses &copy;2022 Tous droit réservés
                     </div>

@@ -9,16 +9,22 @@
 
 
 /* Media Queries */
+@media screen and (min-width:980px) and (max-width:1098px){
+  .images{
+    margin-left: 380px !important;
+  }
+}
 @media screen and (max-width:991px) {
-  .bgTestImg{
+  .bgTestImg {
     content: url("./components/images/logo_supersenses_white.png") !important;
     width: 100px !important;
-    
+
   }
-  #HomeNav{
-    background-color: rgb(45,124,181);
+
+  #HomeNav {
+    background-color: rgb(45, 124, 181);
   }
-  
+
 }
 
 /****** navbar ****/
@@ -392,9 +398,9 @@
     border-radius: 21px;
     opacity: 1;
     backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: 5% !important;
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
@@ -410,8 +416,19 @@
 
   /*================*/
   /**Hodhod Interface **/
+  #bgPsize {
+    border-radius: 25px;
+    margin-top: 20px !important;
+  }
+  
+  #compBorder1{
+    margin-bottom: 50px !important;
+  }
+  #compBorder2{
+    margin-bottom: 50px !important;
+  }
   #videoPicture {
-    width: 300px !important;
+    width: 310px !important;
   }
 
   #hodhodbox {
@@ -461,10 +478,9 @@
   /*======================*/
   /**** Senses IA Interface***/
   #img-descriptionSensesIA {
-    width: 300px !important;
+    width: 400px !important;
     height: 90% !important;
     margin-left: 40px !important;
-
   }
 
   #blocComposantsSensesIA {
@@ -486,6 +502,8 @@
 
   .img_cercle_AI {
     width: 400px !important;
+    margin-top: 60px !important;
+    margin-left: 30px !important;
   }
 
   #etape_AI {
@@ -511,13 +529,21 @@
   }
 
   /*===========================*/
+  /** espace Carriere **/
+  .ContactezNous_container {
+    margin-left: 10% !important;
+    margin-right: 6% !important;
+  }
+
+  /*===================*/
+
 }
 
 
 /************************/
 
 /*********** mobile screen between 320 px and 375px ***********/
-@media screen and (min-width:320px) and (max-width:374px) {
+@media screen and (min-width:320px) and (max-width:375px) {
 
   /** footer **/
   #socialIcons {
@@ -609,15 +635,15 @@
     border-radius: 21px;
     opacity: 1;
     backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: 5% !important;
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
 
   #expertiseBoxItems {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   #portfolio1 {
@@ -635,6 +661,17 @@
   /**================**/
 
   /**Hodhod Interface **/
+  #bgPsize {
+    border-radius: 25px;
+    margin-top: 20px !important;
+  }
+  
+  #compBorder1{
+    margin-bottom: 50px !important;
+  }
+  #compBorder2{
+    margin-bottom: 50px !important;
+  }
   #videoPicture {
     width: 300px !important;
   }
@@ -674,9 +711,9 @@
   #backgroundimg {
     background-image: url('./components/images/Groupe_de_masques_10117.png');
     background-size: 100% 100%;
-    width: 310px !important;
+    width: 320px !important;
     height: 100%;
-    margin-left: -5% !important;
+    margin-left: -3% !important;
     background-repeat: no-repeat;
     margin-top: 6%;
   }
@@ -710,6 +747,7 @@
 
   .img_cercle_AI {
     width: 318px !important;
+    margin-top: 50px !important;
   }
 
   #etape_AI {
@@ -724,6 +762,13 @@
   }
 
   /*==================*/
+  /** Espace Carriere **/
+  .ContactezNous_container {
+    margin-left: 10% !important;
+    margin-right: 6% !important;
+  }
+
+  /*===================*/
 }
 
 /*****************/
@@ -810,9 +855,9 @@
     border-radius: 21px;
     opacity: 1;
     backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: 5% !important;
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
@@ -828,6 +873,19 @@
 
   /*=========*/
   /*Hodhod interface */
+  #bgPsize {
+    border-radius: 25px;
+    margin-top: 20px !important;
+  }
+  
+ 
+  
+  #compBorder1{
+    margin-bottom: 50px !important;
+  }
+  #compBorder2{
+    margin-bottom: 50px !important;
+  }
   #videoPicture {
     width: 300px !important;
   }
@@ -904,6 +962,7 @@
 
   .img_cercle_AI {
     width: 318px !important;
+    margin-top: 50px !important;
   }
 
   #etape_AI {
@@ -930,7 +989,13 @@
   }
 
   /*==================*/
+  /** espace carriere **/
+  .ContactezNous_container {
+    margin-left: 10% !important;
+    margin-right: 6% !important;
+  }
 
+  /*===================*/
 }
 
 /*================================================================*/
@@ -1992,10 +2057,12 @@
   margin-right: 5px;
   margin-top: -180%;
 }
-.bgTestImg{
+
+.bgTestImg {
   content: url("./components/images/logo_supersenses.png");
   width: 100px !important;
 }
+
 #dropdown_Solution {
   margin-top: -4%;
 

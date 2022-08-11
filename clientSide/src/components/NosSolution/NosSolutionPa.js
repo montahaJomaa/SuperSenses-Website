@@ -68,7 +68,6 @@ const NosSolutionPa = () => {
           </div>
         </div>
       </div>
-
       <div className="row" id="backgroundimg">
         <div className="row">
           <h3 className="text-center" id="deveneztitle">Devenez acteurs de votre Commune avec HODHOD</h3>
