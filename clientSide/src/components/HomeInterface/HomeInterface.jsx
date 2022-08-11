@@ -27,12 +27,13 @@ function HomeInterface() {
       <Navbar bg="transparent" expand="lg" id="navbarTestIcons">
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
+            {/* <img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" /> */}
+            <div className="bgTestImg"></div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" >
             <span>
               <FontAwesomeIcon
-                icon="bars" color="white" size="10px"  />
+                icon="bars" color="white" size="10px" />
             </span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
