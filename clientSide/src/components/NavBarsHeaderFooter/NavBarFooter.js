@@ -12,7 +12,7 @@ const NavbarFooter = () => {
                     <a href="/"><img src={logo_supersenses} className="w-50 " id="logo_sup" /></a>
                 </div>
                 <div className="col " id="col_nav">
-                    
+
                     <Link to="EspaceCarriere/" style={{ textDecoration: "none", color: "white" }}>
                         <div className="row" id="espCar">
                             &nbsp;&nbsp; Espace carriere
@@ -42,23 +42,21 @@ const NavbarFooter = () => {
                         SuperSenses &copy;2022 Tous droit réservés
                     </div>
                 </div>
-                <div className="col" >
-                    <div className="row w-100" id="socialIcons">
-                        <div className="">
-                            <h6 id="findOn">Trouver nous sur </h6>
-                        </div>
-                        <div className="">
-                            <a href="https://www.facebook.com/SuperSenses.TN/"><img src={logo_facebook} className="fb_logo" /></a>
-                        </div>
-                        <div className="">
-                            <a href="https://www.linkedin.com/company/super-senses-tn/"><img src={logo_linkedIn} className="linkedin_logo" /></a>
-                        </div>
-                        <div className="">
-                            <img src={logo_instagram} className="insta_logo" />
-                        </div>
-                    </div>
+                <div className="col" id="SocialMediaIcons">
+
+                    <ul>
+                        <li><h6>Trouver nous sur </h6></li>
+                        <li> <a href="https://www.facebook.com/SuperSenses.TN/"><img src={logo_facebook} className="" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/super-senses-tn/"><img src={logo_linkedIn}  /></a></li>
+                        <li><img src={logo_instagram} className="" /></li>
+                    </ul>
+
+
+
+
                 </div>
             </div>
+
         </div>
     );
 

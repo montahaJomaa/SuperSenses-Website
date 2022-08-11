@@ -7,7 +7,15 @@
   font-weight: bold;
 }
 
+
 /* Media Queries */
+@media screen and (max-width:991px){
+  .navbar-toggler {
+    border-color: rgb(255,102,203);
+    color:red;
+  } 
+}
+
 /****** navbar ****/
 @media only screen and (max-width:971px) {
   .btnNosSolution {
@@ -19,10 +27,24 @@
   }
 }
 
+/** homeinterface Navbar **/
+@media screen and (min-width:1700px) and (max-width:2100) {
+  #HomeNav {
+    padding-left: 190px !important;
+  }
+}
+
+@media only screen and (min-width:2100px) {
+  #HomeNav {
+    padding-left: 500px !important;
+  }
+}
+
 /*====================*/
 
-/*********screen between 1100px and 1300px *************/
-@media only screen and (min-width: 1100px) and (max-width:1300px) {
+/*********screen between 1024px and 1450px *************/
+@media only screen and (min-width: 1024px) and (max-width:1450px) {
+  
   #portfolioBox {
     width: 97% !important;
     margin-left: 25px !important;
@@ -286,19 +308,23 @@
 }
 
 /*********** mobile screen between 425px and 768px**************************/
-@media only screen and (min-width:425px) and (max-width:768px) {
-/** footer **/
-#socialIcons {
-  margin-left: 10% !important;
-  margin-top: -13% !important;
-}
-#copyright_title{
-  margin-left: -65% !important;
-}
-#navfooter {
-  padding-top: 15% !important;
-}
-/*=============*/
+@media only screen and (min-width:425px) and (max-width:767px) {
+
+  /** footer **/
+  #socialIcons {
+    margin-left: 10% !important;
+    margin-top: -13% !important;
+  }
+
+  #copyright_title {
+    margin-left: -65% !important;
+  }
+
+  #navfooter {
+    padding-top: 15% !important;
+  }
+
+  /*=============*/
   /* Homeinterface*/
   .description_img {
     width: 300px !important;
@@ -486,19 +512,23 @@
 /************************/
 
 /*********** mobile screen between 320 px and 375px ***********/
-@media screen and (min-width:320px) and (max-width:375px) {
-/** footer **/
-#socialIcons {
-  margin-left: 4% !important;
-  margin-top: -25% !important;
-}
-#copyright_title{
-  margin-left: -65% !important;
-}
-#navfooter {
-  padding-top: 15% !important;
-}
-/*==========*/
+@media screen and (min-width:320px) and (max-width:374px) {
+
+  /** footer **/
+  #socialIcons {
+    margin-left: 4% !important;
+    margin-top: -25% !important;
+  }
+
+  #copyright_title {
+    margin-left: -65% !important;
+  }
+
+  #navfooter {
+    padding-top: 15% !important;
+  }
+
+  /*==========*/
 
   /**navbar **/
   .nav-header {
@@ -694,7 +724,8 @@
 /*****************/
 
 /***** Screen for mobile between 375px and 425 px *****************/
-@media screen and (min-width:375px) and (max-width:425px) {
+@media screen and (min-width:375px) and (max-width:424px) {
+
   /** footer **/
   #socialIcons {
     margin-left: 6% !important;
@@ -704,10 +735,12 @@
   #navfooter {
     padding-top: 15% !important;
   }
-  #copyright_title{
+
+  #copyright_title {
     margin-left: -50% !important;
     padding-top: 5%;
   }
+
   /**===========**/
   /*==Homeinterface==*/
   .description_img {
@@ -897,21 +930,25 @@
 
 /*================================================================*/
 /**** Tablets screen between 768px and 1024px ****/
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
+
   /**footer **/
   #socialIcons {
     margin-left: -10% !important;
     margin-top: 70% !important;
   }
-  #copyright_title{
+
+  #copyright_title {
     margin-left: -3% !important;
     margin-top: 3% !important;
   }
+
   #navfooter {
     padding-top: 15% !important;
   }
+
   /*============*/
-  
+
   /**Home Interface */
 
   .contenuS .image {
@@ -1663,32 +1700,12 @@
   color: white;
 }
 
-.fb_logo {
-  margin-left: 250px;
-  margin-top: -60px;
-
-}
-
-.insta_logo {
-  margin-left: 200px;
-  margin-top: -157px;
-}
-
-.linkedin_logo {
-  margin-left: 150px;
-  margin-top: -110px;
-}
-
-#findOn {
-  margin-left: 3%;
-  font-size: 14px;
-
-}
-
-#socialIcons {
-  margin-top: 59%;
-  color: white;
-}
+#SocialMediaIcons ul li {
+  display: inline-block;
+  color:white;
+  margin-top: 63%;
+  justify-content: space-between;
+  }
 
 #copyright_title {
   margin-left: 25%;

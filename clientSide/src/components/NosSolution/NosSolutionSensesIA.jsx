@@ -38,5 +38,5 @@ function NosSolutionSensesIA(props) {
             </div>
         </div>
     )
-}   
+}
 export default NosSolutionSensesIA;

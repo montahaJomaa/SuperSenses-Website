@@ -20,12 +20,12 @@ function HomeInterface() {
   return (
     <div className="bg-img" id="bg_img_header">
 
-      <Navbar bg="transparent" expand="lg" >
+      <Navbar bg="transparent" expand="lg" id="navbarTestIcons">
         <Container>
           <Navbar.Brand href="/"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav"> 
 
             <Nav className="me-auto" id="HomeNav">
               <LinkContainer to="/"><Nav.Link className='Nav_home' id='NavText_home'>Acceuil</Nav.Link></LinkContainer>
