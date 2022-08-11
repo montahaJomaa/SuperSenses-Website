@@ -416,7 +416,7 @@
     margin-bottom: 50px !important;
   }
   #videoPicture {
-    width: 310px !important;
+    width: 485px !important;
   }
 
   #hodhodbox {
@@ -496,6 +496,7 @@
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 10px;
     transition: box-shadow .3s;
+    margin-left: 60px !important;
   }
 
   /***===============***/
@@ -733,6 +734,7 @@
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 10px;
     transition: box-shadow .3s;
+    margin-left: 35px !important;
   }
 
   /*==================*/
@@ -936,7 +938,7 @@
     height: 550px !important;
     text-align: center;
     margin-bottom: 30px;
-    margin-left: 30px !important;
+    margin-left: 55px !important;
     padding: 40px;
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 10px;
