@@ -37,9 +37,9 @@ const NosValeur = () => {
           Nous sommes engagés de digitaliser notre quotidien pour un avenir meilleur.</p>
       </div>
 
-      <div className="images">
+      <div className="images text-center">
 
-        <div class="container">
+        <div class="container text-center">
           <div class="row">
             <div class="col" >
               <div class="contenuS text-center">

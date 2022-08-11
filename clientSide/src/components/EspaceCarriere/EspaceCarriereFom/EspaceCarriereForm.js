@@ -80,10 +80,10 @@ function ContactezNous(props) {
       console.log('Formulaire soumis');
 
       const NewCandidat = {
-        nomPrenomCandidat:        form.nomPrenomCandidat,
-        emailCandidat:             form.emailContact,
-        numTelephoneCandidat:     form.numTelephoneCandidat,
-        CVCandidat:               form.CVCandidat,
+        nomPrenomCandidat: form.nomPrenomCandidat,
+        emailCandidat: form.emailContact,
+        numTelephoneCandidat: form.numTelephoneCandidat,
+        CVCandidat: form.CVCandidat,
         LettreMotivationCandidat: form.LettreMotivationCandidat
       }
       console.log(NewCandidat)
