@@ -392,9 +392,9 @@
     border-radius: 21px;
     opacity: 1;
     backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: 5% !important;
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
@@ -609,15 +609,15 @@
     border-radius: 21px;
     opacity: 1;
     backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: 5% !important;
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
 
   #expertiseBoxItems {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   #portfolio1 {
@@ -810,9 +810,9 @@
     border-radius: 21px;
     opacity: 1;
     backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: 5% !important;
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
