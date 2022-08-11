@@ -187,18 +187,6 @@
   }
 
 
-
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 109% !important;
-    height: 100%;
-    margin-left: -5% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-
-  }
-
   #findOn {
     margin-left: 2% !important;
     font-size: 15px !important;
@@ -428,7 +416,7 @@
     margin-bottom: 50px !important;
   }
   #videoPicture {
-    width: 310px !important;
+    width: 485px !important;
   }
 
   #hodhodbox {
@@ -464,15 +452,7 @@
     margin-left: 35% !important;
   }
 
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 420px !important;
-    height: 100%;
-    margin-left: -3% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-  }
+  
 
 
   /*======================*/
@@ -487,6 +467,7 @@
     margin-top: 5%;
     text-align: center;
     width: 350px !important;
+    margin-left: 20px !important;
   }
 
   .img_service_AI {
@@ -515,6 +496,7 @@
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 10px;
     transition: box-shadow .3s;
+    margin-left: 60px !important;
   }
 
   /***===============***/
@@ -708,15 +690,7 @@
     margin-left: 35% !important;
   }
 
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 320px !important;
-    height: 100%;
-    margin-left: -3% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-  }
+
 
   /*===================*/
   /* Senses IA interface */
@@ -730,6 +704,7 @@
     margin-top: 5%;
     text-align: center;
     width: 280px !important;
+    margin-left: 5px !important;
   }
 
   /*==================*/
@@ -759,6 +734,7 @@
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 10px;
     transition: box-shadow .3s;
+    margin-left: 35px !important;
   }
 
   /*==================*/
@@ -923,15 +899,7 @@
     margin-left: 35% !important;
   }
 
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 373px !important;
-    height: 100%;
-    margin-left: -5% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-  }
+
 
   /*==============*/
   /*** Senses IA Interface ***/
@@ -970,7 +938,7 @@
     height: 550px !important;
     text-align: center;
     margin-bottom: 30px;
-    margin-left: 30px !important;
+    margin-left: 55px !important;
     padding: 40px;
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 10px;
@@ -1075,11 +1043,7 @@
     width: 650px !important;
   }
 
-  #backgroundimg {
-    width: 750px !important;
-    margin-left: -30px !important;
-  }
-
+  
   #ImpactText {
     font-size: 12px !important;
 
@@ -1172,10 +1136,9 @@
 
 #backgroundimg {
   background-image: url('./components/images/Groupe_de_masques_10117.png');
-  background-size: 100% 100%;
-  width: 117.6%;
+  background-size: cover;
   height: 100%;
-  margin-left: -9%;
+  margin-left: 0%;
   background-repeat: no-repeat;
   margin-top: 6%;
 

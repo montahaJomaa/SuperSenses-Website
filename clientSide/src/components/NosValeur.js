@@ -150,13 +150,13 @@ const NosValeur = () => {
         <div className='row'  >
           <h1 className='text-center'>Portfolio </h1>
           <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br>
-          <div className='col mt-5'>
+          <div className='col mt-5 text-center'>
             <img src={port1} alt="portfolio" id="portfolio1" />
           </div>
-          <div className='col mt-5'>
+          <div className='col mt-5 text-center'>
             <img src={port2} alt='portfolio' id="portfolio1" />
           </div>
-          <div className='col mt-5'>
+          <div className='col mt-5 text-center'>
             <img src={port3} alt='portfolio' id="portfolio1" />
           </div>
         </div>
