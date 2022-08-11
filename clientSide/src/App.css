@@ -7,6 +7,7 @@
   font-weight: bold;
 }
 
+
 /* Media Queries */
 /****** navbar ****/
 @media only screen and (max-width:971px) {
@@ -34,8 +35,9 @@
 
 /*====================*/
 
-/*********screen between 1100px and 1300px *************/
+/*********screen between 1024px and 1450px *************/
 @media only screen and (min-width: 1024px) and (max-width:1450px) {
+  
   #portfolioBox {
     width: 97% !important;
     margin-left: 25px !important;
@@ -299,7 +301,7 @@
 }
 
 /*********** mobile screen between 425px and 768px**************************/
-@media only screen and (min-width:425px) and (max-width:768px) {
+@media only screen and (min-width:425px) and (max-width:767px) {
 
   /** footer **/
   #socialIcons {
@@ -503,7 +505,7 @@
 /************************/
 
 /*********** mobile screen between 320 px and 375px ***********/
-@media screen and (min-width:320px) and (max-width:375px) {
+@media screen and (min-width:320px) and (max-width:374px) {
 
   /** footer **/
   #socialIcons {
@@ -715,7 +717,7 @@
 /*****************/
 
 /***** Screen for mobile between 375px and 425 px *****************/
-@media screen and (min-width:375px) and (max-width:425px) {
+@media screen and (min-width:375px) and (max-width:424px) {
 
   /** footer **/
   #socialIcons {
@@ -1691,32 +1693,12 @@
   color: white;
 }
 
-.fb_logo {
-  margin-left: 250px;
-  margin-top: -60px;
-
-}
-
-.insta_logo {
-  margin-left: 200px;
-  margin-top: -157px;
-}
-
-.linkedin_logo {
-  margin-left: 150px;
-  margin-top: -110px;
-}
-
-#findOn {
-  margin-left: 3%;
-  font-size: 14px;
-
-}
-
-#socialIcons {
-  margin-top: 59%;
-  color: white;
-}
+#SocialMediaIcons ul li {
+  display: inline-block;
+  color:white;
+  margin-top: 63%;
+  justify-content: space-between;
+  }
 
 #copyright_title {
   margin-left: 25%;
