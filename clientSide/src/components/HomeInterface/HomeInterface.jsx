@@ -13,19 +13,29 @@ import language from '../images/language.png';
 import Dropdown from 'react-bootstrap/Dropdown';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import { HashLink } from 'react-router-hash-link';
-
+import fontawesome from '@fortawesome/fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid'
 
 function HomeInterface() {
+
+  fontawesome.library.add(faCheckSquare, faCoffee);
 
   return (
     <div className="bg-img" id="bg_img_header">
 
       <Navbar bg="transparent" expand="lg" id="navbarTestIcons">
         <Container>
-          <Navbar.Brand href="/"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
+          <Navbar.Brand href="/">
+            <img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav"> 
+          <Navbar.Toggle aria-controls="basic-navbar-nav" >
+            <span>
+              <FontAwesomeIcon
+                icon="bars" color="white" size="10px"  />
+            </span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
 
             <Nav className="me-auto" id="HomeNav">
               <LinkContainer to="/"><Nav.Link className='Nav_home' id='NavText_home'>Acceuil</Nav.Link></LinkContainer>
