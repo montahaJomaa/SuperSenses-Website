@@ -85,9 +85,9 @@ function HomeInterface() {
             <Col>
               <h2>Bienvenue à</h2>
               <h1>Super Senses</h1>
-              <p>Super Senses est une startup Tunisienne dévoilée par une <br />équipe d’ingénieurs
-                multidisciplinaires. Notre vision est de <br />crée un outil technologique d’aide à la
-                décision capable<br /> d’ajouter un 6ieme sens utilisant l’intelligence artificielle.</p>
+              <p>Super Senses est une startup Tunisienne dévoilée par une équipe d’ingénieurs
+                multidisciplinaires. Notre vision est de crée un outil technologique d’aide à la
+                décision capable d’ajouter un 6ieme sens utilisant l’intelligence artificielle.</p>
               <LinkContainer to="/Apropos"><Button variant="outline-dark">Lire tout</Button></LinkContainer>
             </Col>
             <Col>
