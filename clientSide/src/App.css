@@ -1536,7 +1536,7 @@
   background-image: url('./components/images/Groupe_19186.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 360px;
+  height: 530px;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -1547,7 +1547,7 @@
   background-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0px 3px 6px #888992;
   border-radius: 21px;
-  opacity: 1;
+  opacity: 0.95;
   backdrop-filter: blur(7px);
   padding: 30px 10px;
   line-height: 3em;
