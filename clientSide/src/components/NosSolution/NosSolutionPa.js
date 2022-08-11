@@ -27,32 +27,34 @@ const NosSolutionPa = () => {
           <img src={video} alt="video" className="videoBorder p-2  " id="videoPicture" />
         </div>
       </div>
-      <h6> Notre solution se compose de :</h6>
-      <div className="row text-center" id="hodhodbox" >
+      <div className="container">
+        <h6> Notre solution se compose de :</h6>
+        <div className="row text-center" id="hodhodbox" >
 
-        <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
+          <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
-          <img src={kitelectronique} className="kitelectronique text-center " />
-          <h6><br></br>Capteurs embarqués / kit électronique Collecte des datas.</h6>
+            <img src={kitelectronique} className="kitelectronique text-center " />
+            <h6><br></br>Capteurs embarqués / kit électronique Collecte des datas.</h6>
+          </div>
+
+
+          <div className="col-md-3 offset-1  img-thumbnail shadow " id="compBorder2">
+
+
+            <img src={platform} className="platform text-center" />
+            <h6><br></br>Plateforme intelligente interactive.</h6>
+
+
+          </div>
+
+
+
+          <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
+            <img src={appmobile} className="appmobile text-center" />
+            <h6><br></br>Application mobile.</h6>
+          </div>
+
         </div>
-
-
-        <div className="col-md-3 offset-1  img-thumbnail shadow " id="compBorder2">
-
-
-          <img src={platform} className="platform text-center" />
-          <h6><br></br>Plateforme intelligente interactive.</h6>
-
-
-        </div>
-
-
-
-        <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
-          <img src={appmobile} className="appmobile text-center" />
-          <h6><br></br>Application mobile.</h6>
-        </div>
-
       </div>
       <div className="container text-center">
         <div className="row " id="mobSize">
@@ -82,24 +84,25 @@ const NosSolutionPa = () => {
         </div>
 
       </div>
-      <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
-      <div id="PicturesPadding">
-        <div class="row p-3">
-          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-            <img class="w-100" src={img4} id="imageSize" />
-            <h6 className="text-center" id="ImpactText"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
+      <div className="container">
+        <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
+        <div id="PicturesPadding">
+          <div class="row p-3">
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="w-100" src={img4} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
+            </div>
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="w-100" src={img2} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Lutter contre la pollution.</h6>
+              <h6 className="text-center" id="ImpactText">Préserver l’environnement.</h6>
+            </div>
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="w-100" src={img3} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Intégrer les citoyens dans l’amélioration de leurs villes</h6>
+            </div>
           </div>
-          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-            <img class="w-100" src={img2} id="imageSize" />
-            <h6 className="text-center" id="ImpactText"><br></br>Lutter contre la pollution.</h6>
-            <h6 className="text-center" id="ImpactText">Préserver l’environnement.</h6>
-          </div>
-          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-            <img class="w-100" src={img3} id="imageSize" />
-            <h6 className="text-center" id="ImpactText"><br></br>Intégrer les citoyens dans l’amélioration de leurs villes</h6>
-          </div>
-        </div>
-        {/* <div class="row p-3">
+          {/* <div class="row p-3">
           
           <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
             <img class="w-100" src={img1} id="imageSize" />
@@ -108,8 +111,8 @@ const NosSolutionPa = () => {
             <img class="w-100" src={img1} id="imageSize" />
           </div>
         </div> */}
+        </div>
       </div>
-
 
 
     </div>
