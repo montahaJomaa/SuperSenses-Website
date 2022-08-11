@@ -10,7 +10,7 @@ import mob from "../images/Groupe 14747.png";
 const NosSolutionPa = () => {
 
   return (
-    <div className="" id="hodhodP">
+    <div id="hodhodP">
 
       <div className="row mt-5">
         <div className="col p-5">
@@ -65,7 +65,7 @@ const NosSolutionPa = () => {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row" id="backgroundimg">
         <div className="row">
           <h3 className="text-center" id="deveneztitle">Devenez acteurs de votre Commune avec HODHOD</h3>
         </div>
