@@ -711,9 +711,9 @@
   #backgroundimg {
     background-image: url('./components/images/Groupe_de_masques_10117.png');
     background-size: 100% 100%;
-    width: 310px !important;
+    width: 320px !important;
     height: 100%;
-    margin-left: -5% !important;
+    margin-left: -3% !important;
     background-repeat: no-repeat;
     margin-top: 6%;
   }
