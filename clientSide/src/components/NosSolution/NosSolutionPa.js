@@ -7,19 +7,22 @@ import kitelectronique from '../images/Groupe 19574.png';
 import platform from '../images/Groupe 19575.png';
 import appmobile from '../images/Groupe 19576.png';
 import mob from "../images/Groupe 14747.png";
+import img5 from "../images/Groupe_16505.png";
+import img6 from "../images/Groupe_16506.png";
+import img7 from "../images/Groupe_19757.png";
 const NosSolutionPa = () => {
 
   return (
     <div id="hodhodP">
 
       <div className="row mt-5">
-        <div className="col p-5">
+        <div className="col p-5" id="HodhodContentParagraph">
           <h1>Hodhod</h1>
           <p>
-            Super senses fournit ses solutions innovantes à impact afin de résoudre
-            des problèmes environnemental et digitaliser les villes tunisiennes.
+            Super senses fournit ses solutions innovantes à impact afin de résoudre<br></br>
+            des problèmes environnemental et digitaliser les villes tunisiennes.<br></br>
             La ‘Hodhod’ est une solution destinée à lutter contre la pollution citadine
-            et elle permet aux municipalités d’avoir un canal de communication interactive avec
+            et<br></br> elle permet aux municipalités d’avoir un canal de communication interactive<br></br> avec
             les citoyens en particulier et tout l'écosystème en général.
           </p>
         </div>
@@ -71,7 +74,7 @@ const NosSolutionPa = () => {
         <div className="row">
           <h3 className="text-center" id="deveneztitle">Devenez acteurs de votre Commune avec HODHOD</h3>
         </div>
-        <div className="row text-center" id="devenezParag">
+        <div className="row text-center " id="devenezParag">
           <p>
             Nous avons inventé Hodhod pour booster les municipalités à automatiser leurs procédures et engager les citoyens<br></br>
             pour une ville intelligente et moderne. La solution est destinée à lutter contre la pollution citadine et
@@ -89,17 +92,32 @@ const NosSolutionPa = () => {
         <div id="PicturesPadding">
           <div class="row p-3">
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-              <img class="w-100" src={img4} id="imageSize" />
+              <img class="" src={img4} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
             </div>
+            
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-              <img class="w-100" src={img2} id="imageSize" />
+              <img class="" src={img2} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Lutter contre la pollution.</h6>
               <h6 className="text-center" id="ImpactText">Préserver l’environnement.</h6>
             </div>
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
-              <img class="w-100" src={img3} id="imageSize" />
+              <img class="" src={img3} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Intégrer les citoyens dans l’amélioration de leurs villes</h6>
+            </div>
+          </div>
+          <div className="row p-3 ">
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="" src={img5} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Dépister et analyser les réclamations des citoyens en se basant sur l’intelligence artificielle.</h6>
+            </div>
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="" src={img6} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Minimiser le budget alloué pour faire les actions de communications.</h6>
+            </div>
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="" src={img7} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Minimiser le budget alloué pour faire les interventions ici nous parlons des ressources humaines et financières…</h6>
             </div>
           </div>
           {/* <div class="row p-3">

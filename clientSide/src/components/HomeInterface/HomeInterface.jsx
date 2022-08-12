@@ -105,4 +105,4 @@ function HomeInterface() {
   );
 }
 
-export default HomeInterface
+export default HomeInterface;
