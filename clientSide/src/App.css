@@ -79,6 +79,9 @@
   #portfolio1:hover {
     transform: scale(1.3);
     z-index: 2;
+    box-shadow: 50% 50% 50% rgb(97, 96, 96);
+    border-radius: 25px;
+    filter: drop-shadow(10px 10px 10px rgb(69, 71, 69));
     width: 85% !important;
   }
 
@@ -93,13 +96,14 @@
   }
 
   .expertisets {
-    background-image: url('./components/images/Groupe_19186.png');
+    background-image: url('./components/images/Bg_expertise.jpg');
     width: 100% !important;
     margin-left: 0% !important;
     background-repeat: no-repeat;
     background-size: 100% 90%;
     height: 487px;
     padding-top: 8%;
+    
 
   }
 
@@ -378,6 +382,8 @@
     width: 340px !important;
     height: 250px !important;
     margin-left: -20px !important;
+    margin-top: 70px !important;
+    
   }
 
   .expertiseBox {
@@ -609,6 +615,7 @@
     width: 340px !important;
     height: 250px !important;
     margin-left: -20px !important;
+    margin-top: 70px !important;
   }
 
   .expertiseBox {
@@ -823,6 +830,7 @@
     width: 340px !important;
     height: 250px !important;
     margin-left: -20px !important;
+    margin-top: 70px !important;
   }
 
   .expertiseBox {
@@ -1409,7 +1417,7 @@
 }
 
 .solution {
-  margin-top: 19%;
+  margin-top: 10%;
 
 }
 
@@ -1480,6 +1488,7 @@
 #img3Solution {
   width: 70%;
   height: 326px;
+  
 }
 
 #hodhodTitle {
@@ -1533,7 +1542,7 @@
 .expertisets {
   width: 100%;
   padding-right: 60px;
-  background-image: url('./components/images/Groupe_19186.png');
+  background-image: url('./components/images/Bg_expertise.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 530px;
@@ -1541,6 +1550,7 @@
   align-items: center;
   justify-content: end;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .expertiseBox {
@@ -1551,6 +1561,8 @@
   backdrop-filter: blur(7px);
   padding: 30px 10px;
   line-height: 3em;
+  height: 370px;
+  margin-top: 60px;
 }
 
 .expertiseBox ul {
@@ -1991,6 +2003,7 @@
 #hodhod1 {
   width: 488px;
   height: 370px;
+  margin-top: 70px;
 }
 
 #LinkHome {
@@ -2001,6 +2014,9 @@
 #portfolio1:hover {
   transform: scale(1.3);
   z-index: 2;
+  box-shadow: 50% 50% 50% rgb(97, 96, 96);
+  border-radius: 25px;
+  filter: drop-shadow(10px 10px 10px rgb(69, 71, 69));
 }
 
 .Nav_itemHomeInterface {

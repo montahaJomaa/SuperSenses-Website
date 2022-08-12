@@ -21,24 +21,21 @@ const NosValeur = () => {
     <div className="part2">
       <div class="container">
         <div class="row">
-          <h1 class="text-center" id="title1">NOS VALEURS & ENGAGEMENTS</h1>
+          <h1 class="text-center" id="title1">Nos valeurs & Engagements</h1>
         </div>
         <div class="row">
           <h2 class="text-center text-sm-left" id="title2">Notre clé de réussite</h2>
         </div>
         <div class="col">
-
         </div>
       </div>
       <div className="p1">
-
-        <p>Nos engagements et nos valeurs nous définissent.<br></br>Ils sont le moteur de notre développement et la clé de notre réussite.<br></br>
+        
+        <p><br></br>Nos engagements et nos valeurs nous définissent.<br></br>Ils sont le moteur de notre développement et la clé de notre réussite.<br></br>
           Nous déposons nos savoir-faire et notre expertise au profit de nos clients.<br></br>
           Nous sommes engagés de digitaliser notre quotidien pour un avenir meilleur.</p>
       </div>
-
       <div className="images text-center">
-
         <div class="container text-center">
           <div class="row">
             <div class="col" >
@@ -73,7 +70,7 @@ const NosValeur = () => {
         <div class="container">
           <div class="col">
             <div class="row">
-              <h1 class="text-center" id="title1">NOS SOLUTIONS</h1>
+              <h1 class="text-center" id="title1">Nos Solutions</h1>
             </div>
             <div class="row">
               <h2 class="text-center text-sm-left" id="title2">Découvrir les solutions techniques</h2>
@@ -129,10 +126,11 @@ const NosValeur = () => {
 
       </div> */}
 
-      <h1 id="expertiseTitle">NOS EXPERTISE</h1><br></br><br></br>
+      <br></br><br></br><br></br><br></br>
       <div className="expertisets">
         <div className='expertiseBox'>
           <ul>
+            <li><h1 id="expertiseBoxItems">Notre Expertise</h1></li>
             <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Machine Learning</h5></li>
             <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Internet des Objets</h5></li>
             <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Intelligence Artificielle</h5></li>
@@ -142,7 +140,7 @@ const NosValeur = () => {
           </ul>
         </div>
       </div>
-
+      <br></br><br></br><br></br><br></br>
       {/* <div class="row text-center" id="portfolioBox"> */}
       <div className='container'>
         <div className='row'  >
