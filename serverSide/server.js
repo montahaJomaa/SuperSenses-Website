@@ -79,7 +79,7 @@ app.post("/ContactezNous", (req, res) => {
 });
 
 app.post("/EspaceCarriereForm", (req, res) => {
-    
+    const radioValue = req.body.radioValue;
     const nomPrenomCandidat = req.body. nomPrenomCandidat;
     const emailCandidat = req.body.emailCandidat;
     const numTelephoneCandidat = req.body.numTelephoneCandidat;
@@ -87,6 +87,7 @@ app.post("/EspaceCarriereForm", (req, res) => {
     const CVCandidat = req.body.CVCandidat;
     const LettreMotivationCandidat = req.body.LettreMotivationCandidat;
 
+    console.log(radioValue)
     console.log(nomPrenomCandidat)
     console.log(emailCandidat)
     console.log(numTelephoneCandidat)
@@ -112,8 +113,8 @@ app.post("/EspaceCarriereForm", (req, res) => {
 
         from:"info@supersenses.tn",
         to: "info@supersenses.tn",
-        subject: `Condidature spontannée pour `,
-        html:`<h3>Nom et Prenom:</h3><br/>${ nomPrenomCandidat}<br/><h3>Adresse email:</h3><br/>${emailCandidat}<br/><h3>Numero du telephone:</h3><br/>${numTelephoneCandidat}<br/><h3>Specialité</h3><br/>${selectSpecialite}`,      
+        subject: `Condidature spontannée pour ${radioValue} `,
+        html:`<h3>Nom et Prenom:</h3>${ nomPrenomCandidat}<h3>Adresse email:</h3>${emailCandidat}<h3>Numero du telephone:</h3>${numTelephoneCandidat}<h3>Specialité</h3>${selectSpecialite}`,      
         attachments: [
             {
                 filename: `${CVCandidat}`,                                         

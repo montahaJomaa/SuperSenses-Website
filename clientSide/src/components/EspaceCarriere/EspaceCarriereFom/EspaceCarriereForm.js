@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 
@@ -11,9 +13,25 @@ import Form from 'react-bootstrap/Form';
 
 
 import axios from "axios";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
 
+
+const notifySuccess = () => {
+  toast.success(' Demande envoyée!', {
+    position: "bottom-left",
+autoClose: 5000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover: true,
+draggable: true,
+progress: undefined,
+  });
+}
 function EspaceCarriereForm(props) {
-  
+
+  const navigate = useNavigate();
+
   const [form, setForm] = useState('')
   const [errors, setErrors] = useState('')
 
@@ -31,30 +49,16 @@ function EspaceCarriereForm(props) {
   }
 
   const [radioValue, setRadioValue] = useState('Embauche');
-   
-  
+
+
   const radios = [
     { name: 'Embauche', value: 'Embauche' },
     { name: 'Stage', value: 'Stage' },
   ];
-  
-  //resetForm
-    const resetForm = () => {
-    setField({
-    nomPrenomCandidat: '',
-    emailCandidat: '',
-    numTelephoneCandidat: '',
-    selectSpecialite: '',
-    CVCandidat: '',
-    LettreMotivationCandidat: ''
-
-    })
-    }
 
   const validateForm = () => {
 
     const {
-      radioValue,
       nomPrenomCandidat,
       emailCandidat,
       numTelephoneCandidat,
@@ -69,7 +73,7 @@ function EspaceCarriereForm(props) {
 
     //let formatTel = /^\w+([3-9]{2}[0-9]{3}[0-9]{3})+$/;
 
-    
+
 
 
 
@@ -110,7 +114,7 @@ function EspaceCarriereForm(props) {
     const formErrors = validateForm()
 
     //check for errors
-    
+
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors)
     } else {
@@ -118,25 +122,29 @@ function EspaceCarriereForm(props) {
       console.log('Formulaire soumis');
 
       const NewCandidat = {
-        radioValue:form.radioValue,
+        radioValue: radioValue,
+        nomPrenomCandidat: form.nomPrenomCandidat,
+        emailCandidat: form.emailCandidat,
         numTelephoneCandidat: form.numTelephoneCandidat,
         selectSpecialite: form.selectSpecialite,
-
-        nomPrenomCandidat: form.nomPrenomCandidat,
-        emailCandidat: form.emailContact,
-
         CVCandidat: form.CVCandidat,
         LettreMotivationCandidat: form.LettreMotivationCandidat
       }
-      
+
       console.log(radioValue);
       console.log(NewCandidat);
 
+
       axios.post('http://localhost:3001/EspaceCarriereForm',
-      NewCandidat).then((res) => {
+        NewCandidat).then((res) => {
           console.log(res);
 
         });
+
+      //history.go(-1);
+
+      navigate('/');
+      notifySuccess()
 
     }
   }
@@ -148,7 +156,7 @@ function EspaceCarriereForm(props) {
     <div className="ContactezNous_container">
       <Container className="bloc_welcoming_phrases">
 
-        <h3 className="welcoming_phrase" id="topEsp">
+        <h3 className="welcoming_phrase">
           Espace carrière
         </h3>
 
@@ -303,8 +311,6 @@ function EspaceCarriereForm(props) {
 
 
       </Form>
-
-
     </div >
   )
 }
