@@ -17,13 +17,14 @@ import { HashLink } from 'react-router-hash-link';
 function NavBarHeader() {
   return (
     <div className="nav-header">
-      <Navbar expand="lg"  >
+      <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="/"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
           </Navbar.Brand>
+        
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto" >
+            <Nav className="me-auto">
               <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'><h6>Acceuil</h6></Nav.Link></LinkContainer>
               <div className='btnNosSolution'>
                 <Dropdown as={ButtonGroup}>

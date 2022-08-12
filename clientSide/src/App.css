@@ -557,11 +557,11 @@
     z-index: 12;
     position: fixed;
     background-color: white;
-    width: 99% !important;
+    width: 100% !important;
     margin-top: -25px !important;
-
+    padding-right: 25px !important;
   }
-
+ 
   /*==========**/
   /**home Interface**/
   .description_img {
