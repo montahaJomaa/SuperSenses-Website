@@ -115,9 +115,7 @@ const NosValeur = () => {
                   </div>
                 </div>
               </p>
-
             </div>
-
           </div>
           <div className="col">
             <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
