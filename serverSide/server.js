@@ -1,9 +1,10 @@
-
 const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const SuperSenses = require("./models/SuperSensesModel");
+
+
 
 app.use(cors());
 app.use(express.json());
@@ -13,13 +14,22 @@ app.get('/', (req, res) => {
     res.status(200).send('Server is Running!');
 });
 
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+
 
 app.post("/ContactezNous", (req, res) => {
 
     const nomPrenomContact = req.body.nomPrenomContact;
     const emailContact = req.body.emailContact;
     const messageContact = req.body.messageContact;
+
     console.log(nomPrenomContact)
+    console.log(emailContact)
     console.log(messageContact)
 
     const NewContact = new SuperSenses({
@@ -32,33 +42,103 @@ app.post("/ContactezNous", (req, res) => {
     res.status(200).send('success');
   
     console.log(NewContact);
-});
-
-
-app.post('/EspaceCarriere', (req, res) => {
-
-    const nomPrenomCandidat = req.body.nomPrenomCandidat;
-    const emailCandidat = req.body.emailCandidat;
-    const numTelephoneCandidat = req.body.numTelephoneCandidat;
-    const CVCandidat = req.body.cvcandidat;
-    const LettreMotivationCandidat = req.body.lettreMotivationCandidat;
+   
     
-    console.log(numTelephoneCandidat)
-    console.log(nomPrenomCandidat)
+    
 
-    const NewCandidat = new SuperSenses({
-        nomPrenomCandidat,
-        emailCandidat,
-        numTelephoneCandidat,
-        CVCandidat,
-        LettreMotivationCandidat
+    let smtpTransport = nodemailer.createTransport({
+
+        host: "ssl0.ovh.net",
+        
+        secure: false,
+        auth: {
+            user: "info@supersenses.tn",
+            pass: "Super2217senses"
+        }
     });
 
-    NewCandidat.save();
-    res.status(200).send('success');
-  
-    console.log(NewCandidat);
+
+    let mailOptions = {
+
+        from:"info@supersenses.tn",
+        to: "info@supersenses.tn",
+        subject: "Demande de contact",
+        html:`<h3>Nom et Prenom:</h3><br/>${ nomPrenomContact}<br/><h3>Adresse email:</h3><br/>${emailContact}<br/><h3>Message:</h3><br/>${messageContact}`        
+       
+    };
+
+    smtpTransport.sendMail(mailOptions, function (err, response) {
+        if (err) {
+            return console.log(err);
+        
+        } else {
+            console.log('Message has been sent: ' + info.response);
+        }
+    
+    })
 });
+
+app.post("/EspaceCarriereForm", (req, res) => {
+    
+    const nomPrenomCandidat = req.body. nomPrenomCandidat;
+    const emailCandidat = req.body.emailCandidat;
+    const numTelephoneCandidat = req.body.numTelephoneCandidat;
+    const selectSpecialite = req.body.selectSpecialite;
+    const CVCandidat = req.body.CVCandidat;
+    const LettreMotivationCandidat = req.body.LettreMotivationCandidat;
+
+    console.log(nomPrenomCandidat)
+    console.log(emailCandidat)
+    console.log(numTelephoneCandidat)
+    console.log(selectSpecialite)
+    console.log(CVCandidat)
+    console.log(LettreMotivationCandidat)
+
+    
+
+    let smtpTransport = nodemailer.createTransport({
+
+        host: "ssl0.ovh.net",
+        
+        secure: false,
+        auth: {
+            user: "info@supersenses.tn",
+            pass: "Super2217senses"
+        }
+    });
+
+
+    let mailOptions = {
+
+        from:"info@supersenses.tn",
+        to: "info@supersenses.tn",
+        subject: `Condidature spontannée pour `,
+        html:`<h3>Nom et Prenom:</h3><br/>${ nomPrenomCandidat}<br/><h3>Adresse email:</h3><br/>${emailCandidat}<br/><h3>Numero du telephone:</h3><br/>${numTelephoneCandidat}<br/><h3>Specialité</h3><br/>${selectSpecialite}`,      
+        attachments: [
+            {
+                filename: `${CVCandidat}`,                                         
+                contentType: 'application/pdf'
+            },
+            {
+                filename: `${LettreMotivationCandidat}`,                                         
+                contentType: 'application/pdf'
+            }
+        ]
+    };
+
+    smtpTransport.sendMail(mailOptions, function (err, response) {
+        if (err) {
+            return console.log(err);
+        
+        } else {
+            console.log('Message has been sent: ' + info.response);
+        }
+    
+    })
+});
+
+
+
 
 
 app.listen(3001, function ()
@@ -66,5 +146,3 @@ app.listen(3001, function ()
     console.log('express server is running on port 3001')
 }
 )
-
-

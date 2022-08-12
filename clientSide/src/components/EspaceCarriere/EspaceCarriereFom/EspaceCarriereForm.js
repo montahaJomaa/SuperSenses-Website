@@ -9,24 +9,13 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-import Dropdown from 'react-bootstrap/Dropdown';
 
 import axios from "axios";
 
-function ContactezNous(props) {
-
-  //const dispatch = useDispatch()
-  const [color, setColor] = useState("#F0F8FF");
-  const [radioValue, setRadioValue] = useState('1');
-
-  const radios = [
-    { name: 'Embauche', value: '1' },
-    { name: 'Stage', value: '2' },
-
-  ];
-
-  const [form, setForm] = useState({})
-  const [errors, setErrors] = useState({})
+function EspaceCarriereForm(props) {
+  
+  const [form, setForm] = useState('')
+  const [errors, setErrors] = useState('')
 
   const setField = (field, value) => {
     setForm({
@@ -39,62 +28,117 @@ function ContactezNous(props) {
         ...errors,
         [field]: null
       })
-
   }
 
+  const [radioValue, setRadioValue] = useState('Embauche');
+   
+  
+  const radios = [
+    { name: 'Embauche', value: 'Embauche' },
+    { name: 'Stage', value: 'Stage' },
+  ];
+  
+  //resetForm
+    const resetForm = () => {
+    setField({
+    nomPrenomCandidat: '',
+    emailCandidat: '',
+    numTelephoneCandidat: '',
+    selectSpecialite: '',
+    CVCandidat: '',
+    LettreMotivationCandidat: ''
+
+    })
+    }
+
   const validateForm = () => {
-    const { nomPrenomCandidat, emailCandidat, numTelephoneCandidat, CVCandidat, LettreMotivationCandidat } = form
-    // get new errors
+
+    const {
+      radioValue,
+      nomPrenomCandidat,
+      emailCandidat,
+      numTelephoneCandidat,
+      selectSpecialite,
+      CVCandidat,
+      LettreMotivationCandidat
+    } = form
+
     const newErrors = {}
+
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
     //let formatTel = /^\w+([3-9]{2}[0-9]{3}[0-9]{3})+$/;
+
+    
+
+
 
     if (nomPrenomCandidat === '') newErrors.nomPrenomCandidat =
       'Veuillez entrer votre prénom et votre nom !';
+
     else if (nomPrenomCandidat.length > 30) newErrors.nomPrenomCandidat =
       'Merci de ne pas dépasser la longueur de 30 lettres!';
-    else if (emailCandidat === '' || !(emailCandidat.match(regexEmail))) newErrors.emailCandidat =
-      'Veuillez entrer votre adresse email!';
+
+    else if (emailCandidat === '') newErrors.emailCandidat =
+      'Veuillez entrer une adresse email  !';
+
     else if (!(emailCandidat.match(regexEmail))) newErrors.emailCandidat =
       'Veuillez entrer une adresse email correcte !';
-    else if (numTelephoneCandidat === '')
-      newErrors.numTelephoneCandidat = 'Merci d entrer un num tel valide !';
 
-    else if (CVCandidat === '') newErrors.CVCandidat = 'Veuillez entrer votre CV';
+    else if (numTelephoneCandidat === '') newErrors.numTelephoneCandidat =
+      "Merci d'entrer un num tel valide !";
 
-    else if (LettreMotivationCandidat === '') newErrors.LettreMotivationCandidat = 'Veuillez entrer votre Lettre de Motivation';
+    else if (selectSpecialite === '') newErrors.selectSpecialite =
+      'Merci de choisir une specialite !';
+
+    else if (CVCandidat === '') newErrors.CVCandidat =
+      'Veuillez entrer votre CV';
+
+    else if (LettreMotivationCandidat === '') newErrors.LettreMotivationCandidat =
+      'Veuillez entrer votre Lettre de Motivation';
 
 
     return newErrors
   }
 
+
   const handleSubmit = e => {
 
-    e.preventDefault()
+
+    e.preventDefault();
 
     const formErrors = validateForm()
+
     //check for errors
+    
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors)
     } else {
+
       console.log('Formulaire soumis');
 
       const NewCandidat = {
-        nomPrenomCandidat:        form.nomPrenomCandidat,
-        emailCandidat:             form.emailContact,
-        numTelephoneCandidat:     form.numTelephoneCandidat,
-        CVCandidat:               form.CVCandidat,
+        radioValue:form.radioValue,
+        nomPrenomCandidat: form.nomPrenomCandidat,
+        emailCandidat: form.emailCandidat,
+        numTelephoneCandidat: form.numTelephoneCandidat,
+        selectSpecialite: form.selectSpecialite,
+        CVCandidat: form.CVCandidat,
         LettreMotivationCandidat: form.LettreMotivationCandidat
       }
-      console.log(NewCandidat)
-      axios.post('http://localhost:3001/EspaceCarriere',
-        NewCandidat).then((res) => {
+      
+      console.log(radioValue);
+      console.log(NewCandidat);
+
+      axios.post('http://localhost:3001/EspaceCarriereForm',
+      NewCandidat).then((res) => {
           console.log(res);
 
         });
 
     }
   }
+
 
 
 
@@ -113,7 +157,7 @@ function ContactezNous(props) {
 
 
 
-      <Form className="Contact_form" >
+      <Form className="Contact_form" onSubmit={handleSubmit}>
 
         <Row>
           <ButtonGroup>
@@ -126,8 +170,7 @@ function ContactezNous(props) {
                 name="radio"
                 value={radio.value}
                 checked={radioValue === radio.value}
-                onChange={(e) => setRadioValue(e.currentTarget.value)}
-              >
+                onChange={(e) => setRadioValue(e.currentTarget.value)}>
                 {radio.name}
               </ToggleButton>
             ))}
@@ -142,7 +185,7 @@ function ContactezNous(props) {
               <Form.Label>Nom et Prenom :</Form.Label>
 
               <Form.Control type="text" className="Contact_input" controlId="nomPrenomCandidat"
-                required="required"
+                required
                 value={form.nomPrenomCandidat}
                 onChange={(e) => setField('nomPrenomCandidat', e.target.value)}
                 isInvalid={!!errors.nomPrenomCandidat}
@@ -162,10 +205,11 @@ function ContactezNous(props) {
               <Form.Label>Adresse email :</Form.Label>
 
               <Form.Control type="email" className="Contact_input" controlId="emailCandidat"
+
                 value={form.emailCandidat}
-                onChange={(e) => setField('email', e.target.value)}
-                isInvalid={!!errors.emailCandidat} required="required"
-              />
+                onChange={(e) => setField('emailCandidat', e.target.value)}
+                isInvalid={!!errors.emailCandidat}
+                required />
               <Form.Control.Feedback type="invalid">
                 {errors.emailCandidat}
               </Form.Control.Feedback>
@@ -178,12 +222,13 @@ function ContactezNous(props) {
           <Col>
             <Form.Group className="mb-3" controlId="formBasicText" >
 
-              <Form.Label>Num telephone:</Form.Label>
+              <Form.Label>Numéro du telephone:</Form.Label>
 
               <Form.Control type="telephone" className="Contact_input" controlId="numTelephoneCandidat"
                 value={form.numTelephoneCandidat}
                 onChange={(e) => setField('numTelephoneCandidat', e.target.value)}
-                isInvalid={!!errors.numTelephoneCandidat} required="required" />
+                isInvalid={!!errors.numTelephoneCandidat}
+                required />
 
               <Form.Control.Feedback type="invalid">
                 {errors.numTelephoneCandidat}
@@ -193,18 +238,23 @@ function ContactezNous(props) {
           </Col>
 
           <Col>
-            <Form.Label>Specialité:</Form.Label>
-            <Dropdown>
-              <Dropdown.Toggle variant="transparent" id="dropdown-basic">
-                choisissez une option
-              </Dropdown.Toggle>
-              <Dropdown.Menu required="required">
-                <Dropdown.Item href="#/action-1">Web development</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Mobile developement</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">IOT</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">AI</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+            <Form.Label>Specialité:</Form.Label><br />
+
+            <select id="selectSpecialite"
+              value={form.selectSpecialite}
+              onChange={(e) => setField('selectSpecialite', e.target.value)}
+              isInvalid={!!errors.selectSpecialite}
+              required >
+              <option></option>
+              <option >Web development</option>
+              <option >Mobile developement</option>
+              <option >IOT</option>
+              <option >AI</option>
+            </select>
+
+            <Form.Control.Feedback type="invalid">
+              {errors.selectSpecialite}
+            </Form.Control.Feedback>
           </Col>
 
         </Row>
@@ -215,7 +265,7 @@ function ContactezNous(props) {
               <Form.Control type="file" className="Contact_input" controlId="CVCandidat"
                 value={form.CVCandidat}
                 onChange={(e) => setField('CVCandidat', e.target.value)}
-                isInvalid={!!errors.CVCandidat} accept=".pdf" required="required" />
+                isInvalid={!!errors.CVCandidat} accept=".pdf" required />
               <Form.Control.Feedback type="invalid">
                 {errors.CVCandidat}
               </Form.Control.Feedback>
@@ -230,7 +280,7 @@ function ContactezNous(props) {
               <Form.Control type="file" className="Contact_input" controlId="LettreMotivationCandidat"
                 value={form.LettreMotivationCandidat}
                 onChange={(e) => setField('LettreMotivationCandidat', e.target.value)}
-                isInvalid={!!errors.LettreMotivationCandidat} accept=".pdf" required="required" />
+                isInvalid={!!errors.LettreMotivationCandidat} accept=".pdf" required />
               <Form.Control.Feedback type="invalid">
                 {errors.LettreMotivationCandidat}
               </Form.Control.Feedback>
@@ -253,7 +303,7 @@ function ContactezNous(props) {
       </Form>
 
 
-    </div>
+    </div >
   )
 }
-export default ContactezNous;
+export default EspaceCarriereForm;
