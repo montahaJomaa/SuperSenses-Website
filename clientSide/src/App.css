@@ -6,8 +6,6 @@
     url("./fonts/CaviarDreams_Bold.ttf") format("truetype");
   font-weight: bold;
 }
-
-
 /* Media Queries */
 @media screen and (min-width:980px) and (max-width:1098px){
   .images{
@@ -103,11 +101,7 @@
     background-size: 100% 90%;
     height: 487px;
     padding-top: 8%;
-    
-
   }
-
-
   .expertiseBox {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 3px 6px #888992;
@@ -144,9 +138,7 @@
     z-index: 2;
     width: 280px !important;
     height: 267px !important;
-
   }
-
   .text {
     background-color: gray;
     opacity: 0.9;
@@ -187,67 +179,48 @@
     height: 48% !important;
     margin-top: -20%;
     margin-left: 7%;
-
   }
-
-
   #findOn {
     margin-left: 2% !important;
     font-size: 15px !important;
     margin-top: 38% !important;
-
-
   }
-
   .fb_logo {
     margin-left: -3% !important;
     margin-top: 35% !important;
   }
-
   .insta_logo {
     margin-left: -160% !important;
     margin-top: 35% !important;
   }
-
   .linkedin_logo {
     margin-left: -80% !important;
     margin-top: 35% !important;
   }
-
   #logo_sup {
     margin-left: 35%;
     margin-top: 38% !important;
   }
-
 }
-
-
 /****** for screen between 980 and 1099 *******/
 @media only screen and (min-width: 980px) and (max-width:1099px) {
-
   .logo_supersenses {
     width: 107px;
     height: 76.42px;
     margin-left: 15px !important;
     margin-right: 5px;
   }
-
   #portfolioBox {
     width: 800px !important;
     margin-left: 10px !important;
   }
-
   #portfolio1 {
     width: 100%;
-
   }
-
   #img3Solution {
     width: 60% !important;
     height: 200px !important;
-
   }
-
   .img3Box {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 3px 6px #888992;
@@ -258,9 +231,7 @@
     height: 52% !important;
     margin-top: -20%;
     margin-left: 6.25%;
-
   }
-
   .box {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 3px 6px #888992;
@@ -272,13 +243,11 @@
     margin-top: -20%;
     margin-left: 5% !important;
   }
-
   #boxs {
     margin-top: 6%;
     margin-left: 50px !important;
     width: 990px !important;
   }
-
   #hodhodparagraph {
     font-size: 14px !important;
     text-align: center;
@@ -290,7 +259,6 @@
     color: #000;
     padding-left: 15%;
   }
-
   #SensiaP {
     font-size: 14px !important;
     text-align: center;
@@ -301,38 +269,30 @@
     line-height: 22px;
     color: #000;
   }
-
   .images {
     padding-top: 5%;
     margin-left: 60px;
     width: 30% !important;
   }
-
 }
-
 /*********** mobile screen between 425px and 768px**************************/
 @media only screen and (min-width:425px) and (max-width:767px) {
-
   /** footer **/
   #socialIcons {
     margin-left: 10% !important;
     margin-top: -13% !important;
   }
-
   #copyright_title {
     margin-left: -65% !important;
   }
-
   #navfooter {
     padding-top: 15% !important;
   }
-
   /*=============*/
   /* Homeinterface*/
   .description_img {
     width: 300px !important;
   }
-
   .contenuS .image {
     transform: scale(1.3);
     z-index: 2;
@@ -341,7 +301,6 @@
     margin: 30px !important;
     margin-left: -55px !important;
   }
-
   .text {
     background-color: gray;
     opacity: 1;
@@ -354,7 +313,6 @@
     padding-top: 4%;
     border-radius: 0px 0px 25px 25px;
   }
-
   .middle {
     opacity: 1 !important;
     position: absolute;
@@ -362,30 +320,24 @@
     left: 100px;
     text-align: center;
   }
-
   .image {
     opacity: 1;
     display: block;
     transition: .5s ease;
     width: 120px !important;
     height: 270px !important;
-
   }
-
   .contenuS {
     position: relative;
     width: 50%;
     margin-left: 20% !important;
   }
-
   #hodhod1 {
     width: 340px !important;
     height: 250px !important;
     margin-left: -20px !important;
-    margin-top: 70px !important;
-    
+    margin-top: 70px !important; 
   }
-
   .expertiseBox {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 3px 6px #888992;
@@ -398,16 +350,13 @@
     padding-top: 2.5%;
     line-height: 3em;
   }
-
   #expertiseBoxItems {
     font-size: 16px !important;
   }
-
   #portfolio1 {
     width: 250px !important;
     margin-left: 25px !important;
   }
-
   /*================*/
   /**Hodhod Interface **/
   #HodhodContentParagraph{
@@ -417,7 +366,6 @@
     border-radius: 25px;
     margin-top: 20px !important;
   }
-  
   #compBorder1{
     margin-bottom: 50px !important;
   }
@@ -427,18 +375,14 @@
   #videoPicture {
     width: 485px !important;
   }
-
   #hodhodbox {
     margin-left: 4% !important;
     margin-top: 4%;
     width: 80% !important;
   }
-
   #mobPicture {
     width: 280px !important;
-
   }
-
   #hodhodImage {
     width: 120px !important;
     height: 80px !important;
@@ -446,7 +390,6 @@
     margin-left: 35% !important;
     border-radius: 20px;
   }
-
   .bgSolutionImg {
     background-image: url('./components/images/bannière supersenses@2x.png');
     background-repeat: no-repeat;
@@ -454,16 +397,11 @@
     height: 487px;
     margin-top: 80px !important;
   }
-
   #googlePlay {
     width: 100px !important;
     height: 100%;
     margin-left: 35% !important;
   }
-
-  
-
-
   /*======================*/
   /**** Senses IA Interface***/
   #img-descriptionSensesIA {
@@ -471,31 +409,26 @@
     height: 90% !important;
     margin-left: 40px !important;
   }
-
   #blocComposantsSensesIA {
     margin-top: 5%;
     text-align: center;
     width: 350px !important;
     margin-left: 20px !important;
   }
-
   .img_service_AI {
     margin-left: 10%;
     border-radius: 30px;
     width: 350px !important;
   }
-
   .img_service_digital {
     margin-top: 20px;
     width: 350px !important;
   }
-
   .img_cercle_AI {
     width: 400px !important;
     margin-top: 60px !important;
     margin-left: 30px !important;
   }
-
   #etape_AI {
     width: 400px !important;
     height: 380px !important;
@@ -507,30 +440,22 @@
     transition: box-shadow .3s;
     margin-left: 60px !important;
   }
-
   /***===============***/
   /**** A propos interface ****/
   #AproposHeader {
     margin-top: 18% !important;
-
   }
-
   #AproposImgSize {
     width: 380px !important;
   }
-
   /*===========================*/
   /** espace Carriere **/
   .ContactezNous_container {
     margin-left: 10% !important;
     margin-right: 6% !important;
   }
-
   /*===================*/
-
 }
-
-
 /************************/
 
 /*********** mobile screen between 320 px and 375px ***********/
@@ -541,17 +466,13 @@
     margin-left: 4% !important;
     margin-top: -25% !important;
   }
-
   #copyright_title {
     margin-left: -65% !important;
   }
-
   #navfooter {
     padding-top: 15% !important;
   }
-
   /*==========*/
-
   /**navbar **/
   .nav-header {
     z-index: 12;
@@ -561,13 +482,11 @@
     margin-top: -25px !important;
     padding-right: 25px !important;
   }
- 
   /*==========**/
   /**home Interface**/
   .description_img {
     width: 250px !important;
   }
-
   .contenuS .image {
     transform: scale(1.3);
     z-index: 2;
@@ -576,7 +495,6 @@
     margin: 30px !important;
     margin-left: -55px !important;
   }
-
   .text {
     background-color: gray;
     opacity: 1;
@@ -589,7 +507,6 @@
     padding-top: 4%;
     border-radius: 0px 0px 25px 25px;
   }
-
   .middle {
     opacity: 1 !important;
     position: absolute;
@@ -597,30 +514,24 @@
     left: 100px;
     text-align: center;
   }
-
   .image {
     opacity: 1;
     display: block;
     transition: .5s ease;
-
     width: 120px !important;
     height: 270px !important;
-
   }
-
   .contenuS {
     position: relative;
     width: 50%;
     margin-left: 10% !important;
   }
-
   #hodhod1 {
     width: 340px !important;
     height: 250px !important;
     margin-left: -20px !important;
     margin-top: 70px !important;
   }
-
   .expertiseBox {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 3px 6px #888992;
@@ -633,33 +544,25 @@
     padding-top: 2.5%;
     line-height: 3em;
   }
-
   #expertiseBoxItems {
     font-size: 14px !important;
   }
-
   #portfolio1 {
     width: 250px !important;
     margin-left: 25px !important;
   }
-
   /**==================**/
-
   /*****A propos Interface *****/
   #AproposImgSize {
     width: 315px !important;
   }
-
   /**================**/
-
   /**Hodhod Interface **/
   .NosServices_Container {
     margin-top: 25px !important;
     margin-bottom: 100px;
     width: 100%;
-  
   }
-  
   #HodhodContentParagraph{
     margin-top: -320px !important;
   }
@@ -667,7 +570,6 @@
     border-radius: 25px;
     margin-top: 20px !important;
   }
-  
   #compBorder1{
     margin-bottom: 50px !important;
   }
@@ -1105,6 +1007,10 @@
 /*****************************/
 
 /*********Nos Solutions **********/
+#HodhodContentParagraph{
+  margin-left: 84px;
+  
+}
 .PictureContent {
   width: 80%;
   margin-left: 10%;
@@ -1123,7 +1029,7 @@
 
 #hodhodbox {
   margin-left: -10%;
-  margin-top: 4%;
+  margin-top: 2%;
 }
 
 #compBorder2 {
@@ -1217,11 +1123,6 @@
   margin-left: 43%;
 }
 
-/* #appStore {
-  width: 20%;
-  height: 65%;
-
-} */
 
 #bgPsize {
   border-radius: 25px;
@@ -1718,10 +1619,6 @@
   margin-left: 10px;
   margin-right: 5px;
 }
-
-
-
-
 #languageIcon {
   display: inline;
   margin-left: 150%;
@@ -1744,9 +1641,6 @@
   color: white;
   margin-top: -6%;
 }
-
-
-
 /***************NavBarFooter******************/
 #navfooter {
   background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
@@ -1764,7 +1658,7 @@
 }
 
 #col_nav {
-  margin-top: 12.2%;
+  margin-top: 14.6%;
   color: white;
 }
 
@@ -1825,19 +1719,16 @@
   width: 164px;
   height: 109px;
 }
-
-
-
-
 #PicturesPadding {
   margin-left: 5%;
   width: 80%;
 }
 
 #imageSize {
-  width: 450px;
-  height: 250px;
+  width: 100%;
+  height: 65% ;
 }
+
 
 .CarouselPict div {
   padding: 6px;
@@ -1847,7 +1738,7 @@
   color: white;
 }
 
-/* bouton_inscription{ inline styling } */
+
 
 
 #NosSolutionParag1 {
@@ -1909,11 +1800,6 @@
   text-align: center;
 }
 
-/* .ComposantSensesIA{ */
-/* box-shadow: inset 0 0 10px 0 #c7c7c7; */
-/* border-radius: 10px; */
-/* padding: 0; */
-/* } */
 .img-composant-sensesIA {
   width: 10%;
   height: 35%;
@@ -2105,7 +1991,7 @@
 
 .Description_supersenses {
   margin-top: 200px;
-  /* margin-left: 120px; */
+  
 
 }
 
@@ -2182,10 +2068,7 @@
 }
 
 
-/* #hoverImg3 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-} */
+
 
 .paragraph_ServiceDigital>i {
   margin-left: -10px;
@@ -2239,8 +2122,7 @@
   width: 200px;
 }
 
-/* .img_cerlce_AI{  
-inline styling } */
+
 
 .AI_slogan {
   margin-top: 110px;
