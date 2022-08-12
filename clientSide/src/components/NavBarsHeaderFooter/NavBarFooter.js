@@ -46,8 +46,11 @@ const NavbarFooter = () => {
 
                     <ul>
                         <li><h6>Trouver nous sur </h6></li>
+                        <li>&nbsp;&nbsp;</li>
                         <li> <a href="https://www.facebook.com/SuperSenses.TN/"><img src={logo_facebook} className="" /></a></li>
+                        <li>&nbsp;&nbsp;</li>
                         <li><a href="https://www.linkedin.com/company/super-senses-tn/"><img src={logo_linkedIn}  /></a></li>
+                        <li>&nbsp;&nbsp;</li>
                         <li><img src={logo_instagram} className="" /></li>
                     </ul>
 
