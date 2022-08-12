@@ -18,7 +18,7 @@ function NotreExpertise() {
     <div className="NosServices_Container">
       <div className="NosServicesTitle container">
         <div className="row">
-          <div className="col"><h1 id="NosExpertiseTitre">NOS EXPERTISES</h1></div>
+          <div className="col"><h1 id="NosExpertiseTitre">Notre Expertise</h1></div>
         </div>
       </div>
 

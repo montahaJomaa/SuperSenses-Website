@@ -74,7 +74,7 @@ const NosSolutionPa = () => {
         <div className="row">
           <h3 className="text-center" id="deveneztitle">Devenez acteurs de votre Commune avec HODHOD</h3>
         </div>
-        <div className="row text-center" id="devenezParag">
+        <div className="row text-center " id="devenezParag">
           <p>
             Nous avons inventé Hodhod pour booster les municipalités à automatiser leurs procédures et engager les citoyens<br></br>
             pour une ville intelligente et moderne. La solution est destinée à lutter contre la pollution citadine et
@@ -87,7 +87,7 @@ const NosSolutionPa = () => {
         </div>
 
       </div>
-      <div className="">
+      <div className="container">
         <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
         <div id="PicturesPadding">
           <div class="row p-3">
