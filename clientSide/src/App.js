@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import 'typeface-roboto';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
@@ -16,6 +18,11 @@ import EspaceCarriereForm from "./components/EspaceCarriere/EspaceCarriereFom/Es
 import EspaceCarriereOffre from "./components/EspaceCarriere/EspaceCarriereOffre/EspaceCarriereOffre";
 import NosSolutionSensesIA from './components/NosSolution/NosSolutionSensesIA';
 
+
+const notify = () => {
+    toast('Demande envoyée !');
+}
+  
 function App() {
 
     return (
@@ -41,6 +48,7 @@ function App() {
                 </div>
 
             </div >
+            <ToastContainer />
         </Router >
     );
 }
