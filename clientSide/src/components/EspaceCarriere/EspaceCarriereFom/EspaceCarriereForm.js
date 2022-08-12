@@ -119,10 +119,12 @@ function EspaceCarriereForm(props) {
 
       const NewCandidat = {
         radioValue:form.radioValue,
-        nomPrenomCandidat: form.nomPrenomCandidat,
-        emailCandidat: form.emailCandidat,
         numTelephoneCandidat: form.numTelephoneCandidat,
         selectSpecialite: form.selectSpecialite,
+
+        nomPrenomCandidat: form.nomPrenomCandidat,
+        emailCandidat: form.emailContact,
+
         CVCandidat: form.CVCandidat,
         LettreMotivationCandidat: form.LettreMotivationCandidat
       }
@@ -146,7 +148,7 @@ function EspaceCarriereForm(props) {
     <div className="ContactezNous_container">
       <Container className="bloc_welcoming_phrases">
 
-        <h3 className="welcoming_phrase">
+        <h3 className="welcoming_phrase" id="topEsp">
           Espace carrière
         </h3>
 

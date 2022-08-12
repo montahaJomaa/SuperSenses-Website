@@ -20,41 +20,24 @@ function NosSolutionSensesIA(props) {
                     <img src={SensesIA} alt="img-SensesIA" id="img-descriptionSensesIA" />
                 </div>
             </div>
-
-            <h4 id="ComposantsSensesIATitle">La solution senses.IA se compose de</h4>
-            
-
-
+            <div className="text-center">
+                <h4 id="ComposantsSensesIATitle">La solution senses.IA se compose de</h4>
                 <div className="row text-center" id="blocComposantsSensesIA" >
-
                     <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
                         <img src={kitElectronique} id="kitElectronique" />
-                        <h6>kit électronique<br/> Collecte des datas en temps réel</h6>
+                        <h6>kit électronique<br /> Collecte des datas en temps réel</h6>
                     </div>
-
-
                     <div className="col-md-3 offset-1  img-thumbnail shadow " id="compBorder2">
-
-
                         <img src={stockageCloud} id="stockageCloud" />
                         <h6>Stockage dans le cloud</h6>
-
-
                     </div>
-
-
-
                     <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
-
-
                         <img src={plateformeIntelligente} id="plateformeIntelligente" />
                         <h6>Plateforme intelligente de prédiction d'anomalie</h6>
-
-
                     </div>
-
                 </div>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 
   "dependencies": {
     "body-parser": "^1.20.0",
@@ -10,3 +11,12 @@
   }
 }
  
+=======
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/react-fontawesome": "^0.2.0"
+  }
+}
+>>>>>>> main

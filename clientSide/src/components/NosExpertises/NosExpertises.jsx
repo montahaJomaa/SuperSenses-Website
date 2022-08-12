@@ -32,13 +32,11 @@ function NotreExpertise() {
               entreprises et des sociétés humaines dans des domaines aussi diversifiés que la
               domotique, l’aéronautique, l’énergie (Smart Grid), la ville intelligente (Smart City),
               et l’environnement.<br /><br />
-
               Avec des expertises en Systèmes intelligents et communicants,<br />les technologies
               de communications, la conception des cartes électroniques, le développement des
               plateformes… Super SENSES se charge de réussir ses projets de la phase
               conception Hardware et prototypage jusqu’à <br />la détection des anomalies et la
               visualisation des grandeurs physique. </p></div>
-
           <div className="col"><img src={img_service_AI} alt="img_service_AI" className="img_service_AI" /></div>
         </div>
 

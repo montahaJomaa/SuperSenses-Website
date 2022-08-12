@@ -1,7 +1,8 @@
 import img1 from './images/18771.png';
 import img2 from './images/Kannan-Future-Customer-Service-AI-Artificial-Intelligence-1200x627-1200x627.png';
 import img3 from './images/Component17–6.png';
-
+import hodhod1 from "./images/hodhod1.png";
+import hodhod2 from "./images/hodhod2.png";
 import img1Solution from './images/MaskGroup10115@2x.png';
 import img2Solution from './images/Group 14382.png';
 import img3Solution from './images/senses_IA.png';
@@ -36,12 +37,12 @@ const NosValeur = () => {
           Nous sommes engagés de digitaliser notre quotidien pour un avenir meilleur.</p>
       </div>
 
-      <div className="images">
+      <div className="images text-center">
 
-        <div class="container">
+        <div class="container text-center">
           <div class="row">
             <div class="col" >
-              <div class="contenuS">
+              <div class="contenuS text-center">
                 <img src={img1} alt="Avatar" class="image" />
                 <div class="middle">
                   <div class="text">Engagements</div>
@@ -49,7 +50,7 @@ const NosValeur = () => {
               </div>
             </div>
             <div class="col" >
-              <div class="contenuS">
+              <div class="contenuS text-center">
                 <img src={img3} alt="Avatar" class="image" />
                 <div class="middle">
                   <div class="text">Savoir-Faire</div>
@@ -57,7 +58,7 @@ const NosValeur = () => {
               </div>
             </div>
             <div class="col">
-              <div class="contenuS">
+              <div class="contenuS text-center">
                 <img src={img2} alt="Avatar" class="image" />
                 <div class="middle">
                   <div class="text">Expertise </div>
@@ -82,10 +83,22 @@ const NosValeur = () => {
         </div>
       </div>
 
+      <div className='container text-center'>
+        <div className='row'>
+          <div className='col'>
+            <Link to="/Hodhod"><img src={hodhod1} id="hodhod1" /></Link>
+          </div>
+          <div className='col'>
+            <Link to="/SensesIA"><img src={hodhod2} id="hodhod1" /></Link>
+          </div>
+        </div>
+      </div>
+
+      {/* 
       <div className="container" id="boxs">
         <div class="row">
           <div class="col">
-            <img className="bgSolution img-thumbnail shadow rounded" src={img1Solution} alt="img1" />
+            <img className="bgSolution img-thumbnail shadow rounded" src={img1Solution} alt="img1" id="img3Solution" />
             <div className="box">
               <p>
                 <div class="col">
@@ -102,9 +115,7 @@ const NosValeur = () => {
                   </div>
                 </div>
               </p>
-
             </div>
-
           </div>
           <div className="col">
             <img src={img3Solution} className="img-thumbnail shadow rounded" id="img3Solution" />
@@ -116,36 +127,38 @@ const NosValeur = () => {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
       <h1 id="expertiseTitle">NOS EXPERTISE</h1><br></br><br></br>
       <div className="expertisets">
         <div className='expertiseBox'>
           <ul>
-            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Machine Learning</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Internet des Objets</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Intelligence Artificielle</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Formation technologique</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Développement web/mobile</h5></li>
-            <li><h5><i class="bi bi-check-circle-fill"></i>&nbsp;Conception et layout des cartes électroniques</h5></li>
+            <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Machine Learning</h5></li>
+            <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Internet des Objets</h5></li>
+            <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Intelligence Artificielle</h5></li>
+            <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Formation technologique</h5></li>
+            <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;&nbsp;Développement web/mobile</h5></li>
+            <li><h5 id="expertiseBoxItems"><i class="bi bi-check-circle-fill"></i>&nbsp;Conception et layout des cartes électroniques</h5></li>
           </ul>
         </div>
       </div>
 
-      <div class="row">
-        <h1 className='text-center'>Portfolio </h1>
-        <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br>
-        <div className='col mt-5'>
-          <img src={port1} alt="portfolio" id="portfolio1" />
-        </div>
-        <div className='col mt-5'>
-          <img src={port2} alt='portfolio' id="portfolio1" />
-        </div>
-        <div className='col mt-5'>
-          <img src={port3} alt='portfolio' id="portfolio1" />
+      {/* <div class="row text-center" id="portfolioBox"> */}
+      <div className='container'>
+        <div className='row'  >
+          <h1 className='text-center'>Portfolio </h1>
+          <h3 className='text-center'>L'esprit d'équipe est notre clé de réussite</h3><br></br>
+          <div className='col mt-5 text-center'>
+            <img src={port1} alt="portfolio" id="portfolio1" />
+          </div>
+          <div className='col mt-5 text-center'>
+            <img src={port2} alt='portfolio' id="portfolio1" />
+          </div>
+          <div className='col mt-5 text-center'>
+            <img src={port3} alt='portfolio' id="portfolio1" />
+          </div>
         </div>
       </div>
-
     </div>
   );
 

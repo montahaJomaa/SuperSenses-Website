@@ -7,20 +7,95 @@
   font-weight: bold;
 }
 
+
 /* Media Queries */
-@media only screen and (max-width: 1280px) and (min-width: 1100px) {
-  body {
-    width: 100%;
+@media screen and (min-width:980px) and (max-width:1098px){
+  .images{
+    margin-left: 380px !important;
+  }
+}
+@media screen and (max-width:991px) {
+  .bgTestImg {
+    content: url("./components/images/logo_supersenses_white.png") !important;
+    width: 100px !important;
+
+  }
+
+  #HomeNav {
+    background-color: rgb(45, 124, 181);
+  }
+
+}
+
+/****** navbar ****/
+@media only screen and (max-width:971px) {
+  .btnNosSolution {
+    margin-left: 7px;
+  }
+
+  .btnNosSolutionHome {
+    margin-left: -15px;
+  }
+}
+
+/** homeinterface Navbar **/
+@media screen and (min-width:1700px) and (max-width:2100) {
+  #HomeNav {
+    padding-left: 190px !important;
+  }
+}
+
+@media only screen and (min-width:2100px) {
+  #HomeNav {
+    padding-left: 500px !important;
+  }
+}
+
+/*====================*/
+
+/*********screen between 1024px and 1450px *************/
+@media only screen and (min-width: 1024px) and (max-width:1450px) {
+
+  #portfolioBox {
+    width: 97% !important;
+    margin-left: 25px !important;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 78% !important;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .Apropos {
+    margin-top: 6% !important;
+  }
+
+  #portfolio1:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    width: 85% !important;
   }
 
   #portfolio1 {
     width: 90%;
   }
 
+  #boxs {
+    margin-top: 6%;
+    margin-left: 185px !important;
+    width: 990px !important;
+  }
+
   .expertisets {
     background-image: url('./components/images/Groupe_19186.png');
-    width: 120% !important;
-    margin-left: -15% !important;
+    width: 100% !important;
+    margin-left: 0% !important;
     background-repeat: no-repeat;
     background-size: 100% 90%;
     height: 487px;
@@ -28,15 +103,16 @@
 
   }
 
+
   .expertiseBox {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 3px 6px #888992;
     border-radius: 21px;
     opacity: 1;
     backdrop-filter: blur(7px);
-    width: 2%;
-    height: 70%;
-    margin-left: 40%;
+    width: 400px !important;
+    height: 250px !important;
+    margin-left: -83% !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
@@ -62,8 +138,8 @@
   .contenuS:hover .image {
     transform: scale(1.3);
     z-index: 2;
-    width: 250px !important;
-    height: 267px;
+    width: 280px !important;
+    height: 267px !important;
 
   }
 
@@ -72,9 +148,9 @@
     opacity: 0.9;
     color: white;
     font-size: 25px;
-    width: 310px !important;
+    width: 346px !important;
     height: 81px;
-    margin-left: 13% !important;
+    margin-left: 11.5% !important;
     margin-top: 26% !important;
     padding-top: 4%;
     border-radius: 0px 0px 25px 25px;
@@ -82,7 +158,7 @@
 
   #img3Solution {
     width: 70%;
-    height: 266px !important;
+    height: 251px !important;
   }
 
   .img3Box {
@@ -110,18 +186,6 @@
 
   }
 
-
-
-  #backgroundimg {
-    background-image: url('./components/images/Groupe_de_masques_10117.png');
-    background-size: 100% 100%;
-    width: 111.3% !important;
-    height: 100%;
-    margin-left: -6% !important;
-    background-repeat: no-repeat;
-    margin-top: 6%;
-
-  }
 
   #findOn {
     margin-left: 2% !important;
@@ -154,13 +218,847 @@
 }
 
 
-/*****************/
+/****** for screen between 980 and 1099 *******/
+@media only screen and (min-width: 980px) and (max-width:1099px) {
 
-body {
-  height: 100%;
-  width: 100%;
+  .logo_supersenses {
+    width: 107px;
+    height: 76.42px;
+    margin-left: 15px !important;
+    margin-right: 5px;
+  }
+
+  #portfolioBox {
+    width: 800px !important;
+    margin-left: 10px !important;
+  }
+
+  #portfolio1 {
+    width: 100%;
+
+  }
+
+  #img3Solution {
+    width: 60% !important;
+    height: 200px !important;
+
+  }
+
+  .img3Box {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 21px;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+    width: 48% !important;
+    height: 52% !important;
+    margin-top: -20%;
+    margin-left: 6.25%;
+
+  }
+
+  .box {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 21px;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+    width: 50% !important;
+    height: 52% !important;
+    margin-top: -20%;
+    margin-left: 5% !important;
+  }
+
+  #boxs {
+    margin-top: 6%;
+    margin-left: 50px !important;
+    width: 990px !important;
+  }
+
+  #hodhodparagraph {
+    font-size: 14px !important;
+    text-align: center;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: 'Roboto';
+    line-height: 22px;
+    color: #000;
+    padding-left: 15%;
+  }
+
+  #SensiaP {
+    font-size: 14px !important;
+    text-align: center;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: medium;
+    font-family: 'Roboto';
+    line-height: 22px;
+    color: #000;
+  }
+
+  .images {
+    padding-top: 5%;
+    margin-left: 60px;
+    width: 30% !important;
+  }
+
 }
 
+/*********** mobile screen between 425px and 768px**************************/
+@media only screen and (min-width:425px) and (max-width:767px) {
+
+  /** footer **/
+  #socialIcons {
+    margin-left: 10% !important;
+    margin-top: -13% !important;
+  }
+
+  #copyright_title {
+    margin-left: -65% !important;
+  }
+
+  #navfooter {
+    padding-top: 15% !important;
+  }
+
+  /*=============*/
+  /* Homeinterface*/
+  .description_img {
+    width: 300px !important;
+  }
+
+  .contenuS .image {
+    transform: scale(1.3);
+    z-index: 2;
+    width: 240px !important;
+    height: 210px !important;
+    margin: 30px !important;
+    margin-left: -55px !important;
+  }
+
+  .text {
+    background-color: gray;
+    opacity: 1;
+    color: white;
+    font-size: 10px;
+    width: 298px !important;
+    height: 81px;
+    margin-left: -69px !important;
+    margin-top: 43px !important;
+    padding-top: 4%;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .middle {
+    opacity: 1 !important;
+    position: absolute;
+    top: 81%;
+    left: 100px;
+    text-align: center;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    width: 120px !important;
+    height: 270px !important;
+
+  }
+
+  .contenuS {
+    position: relative;
+    width: 50%;
+    margin-left: 20% !important;
+  }
+
+  #hodhod1 {
+    width: 340px !important;
+    height: 250px !important;
+    margin-left: -20px !important;
+  }
+
+  .expertiseBox {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 21px;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
+    padding-top: 2.5%;
+    line-height: 3em;
+  }
+
+  #expertiseBoxItems {
+    font-size: 16px !important;
+  }
+
+  #portfolio1 {
+    width: 250px !important;
+    margin-left: 25px !important;
+  }
+
+  /*================*/
+  /**Hodhod Interface **/
+  #bgPsize {
+    border-radius: 25px;
+    margin-top: 20px !important;
+  }
+  
+  #compBorder1{
+    margin-bottom: 50px !important;
+  }
+  #compBorder2{
+    margin-bottom: 50px !important;
+  }
+  #videoPicture {
+    width: 485px !important;
+  }
+
+  #hodhodbox {
+    margin-left: 4% !important;
+    margin-top: 4%;
+    width: 80% !important;
+  }
+
+  #mobPicture {
+    width: 280px !important;
+
+  }
+
+  #hodhodImage {
+    width: 120px !important;
+    height: 80px !important;
+    margin-top: 10%;
+    margin-left: 35% !important;
+    border-radius: 20px;
+  }
+
+  .bgSolutionImg {
+    background-image: url('./components/images/bannière supersenses@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50% !important;
+    height: 487px;
+    margin-top: 80px !important;
+  }
+
+  #googlePlay {
+    width: 100px !important;
+    height: 100%;
+    margin-left: 35% !important;
+  }
+
+  
+
+
+  /*======================*/
+  /**** Senses IA Interface***/
+  #img-descriptionSensesIA {
+    width: 400px !important;
+    height: 90% !important;
+    margin-left: 40px !important;
+  }
+
+  #blocComposantsSensesIA {
+    margin-top: 5%;
+    text-align: center;
+    width: 350px !important;
+    margin-left: 20px !important;
+  }
+
+  .img_service_AI {
+    margin-left: 10%;
+    border-radius: 30px;
+    width: 350px !important;
+  }
+
+  .img_service_digital {
+    margin-top: 20px;
+    width: 350px !important;
+  }
+
+  .img_cercle_AI {
+    width: 400px !important;
+    margin-top: 60px !important;
+    margin-left: 30px !important;
+  }
+
+  #etape_AI {
+    width: 400px !important;
+    height: 380px !important;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 40px;
+    box-shadow: 0 0 45px 0 #c7c7c7;
+    border-radius: 10px;
+    transition: box-shadow .3s;
+    margin-left: 60px !important;
+  }
+
+  /***===============***/
+  /**** A propos interface ****/
+  #AproposHeader {
+    margin-top: 18% !important;
+
+  }
+
+  #AproposImgSize {
+    width: 380px !important;
+  }
+
+  /*===========================*/
+  /** espace Carriere **/
+  .ContactezNous_container {
+    margin-left: 10% !important;
+    margin-right: 6% !important;
+  }
+
+  /*===================*/
+
+}
+
+
+/************************/
+
+/*********** mobile screen between 320 px and 375px ***********/
+@media screen and (min-width:320px) and (max-width:375px) {
+
+  /** footer **/
+  #socialIcons {
+    margin-left: 4% !important;
+    margin-top: -25% !important;
+  }
+
+  #copyright_title {
+    margin-left: -65% !important;
+  }
+
+  #navfooter {
+    padding-top: 15% !important;
+  }
+
+  /*==========*/
+
+  /**navbar **/
+  .nav-header {
+    z-index: 12;
+    position: fixed;
+    background-color: white;
+    width: 99% !important;
+    margin-top: -25px !important;
+
+  }
+
+  /*==========**/
+  /**home Interface**/
+  .description_img {
+    width: 250px !important;
+  }
+
+  .contenuS .image {
+    transform: scale(1.3);
+    z-index: 2;
+    width: 240px !important;
+    height: 210px !important;
+    margin: 30px !important;
+    margin-left: -55px !important;
+  }
+
+  .text {
+    background-color: gray;
+    opacity: 1;
+    color: white;
+    font-size: 10px;
+    width: 298px !important;
+    height: 81px;
+    margin-left: -69px !important;
+    margin-top: 43px !important;
+    padding-top: 4%;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .middle {
+    opacity: 1 !important;
+    position: absolute;
+    top: 81%;
+    left: 100px;
+    text-align: center;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+
+    width: 120px !important;
+    height: 270px !important;
+
+  }
+
+  .contenuS {
+    position: relative;
+    width: 50%;
+    margin-left: 10% !important;
+  }
+
+  #hodhod1 {
+    width: 340px !important;
+    height: 250px !important;
+    margin-left: -20px !important;
+  }
+
+  .expertiseBox {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 21px;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
+    padding-top: 2.5%;
+    line-height: 3em;
+  }
+
+  #expertiseBoxItems {
+    font-size: 14px !important;
+  }
+
+  #portfolio1 {
+    width: 250px !important;
+    margin-left: 25px !important;
+  }
+
+  /**==================**/
+
+  /*****A propos Interface *****/
+  #AproposImgSize {
+    width: 315px !important;
+  }
+
+  /**================**/
+
+  /**Hodhod Interface **/
+  #bgPsize {
+    border-radius: 25px;
+    margin-top: 20px !important;
+  }
+  
+  #compBorder1{
+    margin-bottom: 50px !important;
+  }
+  #compBorder2{
+    margin-bottom: 50px !important;
+  }
+  #videoPicture {
+    width: 300px !important;
+  }
+
+  #hodhodbox {
+    margin-left: 4% !important;
+    margin-top: 4%;
+    width: 80% !important;
+  }
+
+  #mobPicture {
+    width: 280px !important;
+
+  }
+
+  #hodhodImage {
+    width: 120px !important;
+    height: 80px !important;
+    margin-top: 10%;
+    margin-left: 35% !important;
+    border-radius: 20px;
+  }
+
+  .bgSolutionImg {
+    background-image: url('./components/images/bannière supersenses@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50% !important;
+    height: 487px;
+  }
+
+  #googlePlay {
+    width: 100px !important;
+    height: 100%;
+    margin-left: 35% !important;
+  }
+
+
+
+  /*===================*/
+  /* Senses IA interface */
+  #img-descriptionSensesIA {
+    width: 280px !important;
+    height: 90% !important;
+    margin-left: 5px !important;
+  }
+
+  #blocComposantsSensesIA {
+    margin-top: 5%;
+    text-align: center;
+    width: 280px !important;
+    margin-left: 5px !important;
+  }
+
+  /*==================*/
+  /* Nos expertise Interface */
+  .img_service_AI {
+    margin-left: 10%;
+    border-radius: 30px;
+    width: 250px !important;
+  }
+
+  .img_service_digital {
+    margin-top: 20px;
+    width: 250px !important;
+  }
+
+  .img_cercle_AI {
+    width: 318px !important;
+    margin-top: 50px !important;
+  }
+
+  #etape_AI {
+    width: 280px !important;
+    height: 550px !important;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 40px;
+    box-shadow: 0 0 45px 0 #c7c7c7;
+    border-radius: 10px;
+    transition: box-shadow .3s;
+    margin-left: 35px !important;
+  }
+
+  /*==================*/
+  /** Espace Carriere **/
+  .ContactezNous_container {
+    margin-left: 10% !important;
+    margin-right: 6% !important;
+  }
+
+  /*===================*/
+}
+
+/*****************/
+
+/***** Screen for mobile between 375px and 425 px *****************/
+@media screen and (min-width:375px) and (max-width:424px) {
+
+  /** footer **/
+  #socialIcons {
+    margin-left: 6% !important;
+    margin-top: -20% !important;
+  }
+
+  #navfooter {
+    padding-top: 15% !important;
+  }
+
+  #copyright_title {
+    margin-left: -50% !important;
+    padding-top: 5%;
+  }
+
+  /**===========**/
+  /*==Homeinterface==*/
+  .description_img {
+    width: 300px !important;
+  }
+
+  .contenuS .image {
+    transform: scale(1.3);
+    z-index: 2;
+    width: 240px !important;
+    height: 210px !important;
+    margin: 30px !important;
+    margin-left: -55px !important;
+  }
+
+  .text {
+    background-color: gray;
+    opacity: 1;
+    color: white;
+    font-size: 10px;
+    width: 298px !important;
+    height: 81px;
+    margin-left: -69px !important;
+    margin-top: 43px !important;
+    padding-top: 4%;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .middle {
+    opacity: 1 !important;
+    position: absolute;
+    top: 81%;
+    left: 100px;
+    text-align: center;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+
+    width: 120px !important;
+    height: 270px !important;
+
+  }
+
+  .contenuS {
+    position: relative;
+    width: 50%;
+    margin-left: 10% !important;
+  }
+
+  #hodhod1 {
+    width: 340px !important;
+    height: 250px !important;
+    margin-left: -20px !important;
+  }
+
+  .expertiseBox {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 21px;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+    width: 450px !important;
+    height: 280px !important;
+    margin-left: 80px !important;
+    padding-top: 2.5%;
+    line-height: 3em;
+  }
+
+  #expertiseBoxItems {
+    font-size: 16px !important;
+  }
+
+  #portfolio1 {
+    width: 250px !important;
+    margin-left: 25px !important;
+  }
+
+  /*=========*/
+  /*Hodhod interface */
+  #bgPsize {
+    border-radius: 25px;
+    margin-top: 20px !important;
+  }
+  
+ 
+  
+  #compBorder1{
+    margin-bottom: 50px !important;
+  }
+  #compBorder2{
+    margin-bottom: 50px !important;
+  }
+  #videoPicture {
+    width: 300px !important;
+  }
+
+  #hodhodbox {
+    margin-left: 4% !important;
+    margin-top: 4%;
+    width: 80% !important;
+  }
+
+  #mobPicture {
+    width: 280px !important;
+
+  }
+
+  #hodhodImage {
+    width: 120px !important;
+    height: 80px !important;
+    margin-top: 10%;
+    margin-left: 35% !important;
+    border-radius: 20px;
+  }
+
+  .bgSolutionImg {
+    background-image: url('./components/images/bannière supersenses@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50% !important;
+    height: 487px;
+    margin-top: 80px !important;
+  }
+
+  #googlePlay {
+    width: 100px !important;
+    height: 100%;
+    margin-left: 35% !important;
+  }
+
+
+
+  /*==============*/
+  /*** Senses IA Interface ***/
+  #img-descriptionSensesIA {
+    width: 280px !important;
+    height: 90% !important;
+    margin-left: 5px !important;
+  }
+
+  #blocComposantsSensesIA {
+    margin-top: 5%;
+    text-align: center;
+    width: 280px !important;
+  }
+
+  /*=================*/
+  /*Nos Expertise Interface */
+  .img_service_AI {
+    margin-left: 10%;
+    border-radius: 30px;
+    width: 250px !important;
+  }
+
+  .img_service_digital {
+    margin-top: 20px;
+    width: 250px !important;
+  }
+
+  .img_cercle_AI {
+    width: 318px !important;
+    margin-top: 50px !important;
+  }
+
+  #etape_AI {
+    width: 280px !important;
+    height: 550px !important;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 55px !important;
+    padding: 40px;
+    box-shadow: 0 0 45px 0 #c7c7c7;
+    border-radius: 10px;
+    transition: box-shadow .3s;
+  }
+
+  /*========================*/
+
+  /* A propos Interface */
+  #AproposImgSize {
+    width: 315px !important;
+  }
+
+  .Apropos {
+    margin-top: 80px !important;
+  }
+
+  /*==================*/
+  /** espace carriere **/
+  .ContactezNous_container {
+    margin-left: 10% !important;
+    margin-right: 6% !important;
+  }
+
+  /*===================*/
+}
+
+/*================================================================*/
+/**** Tablets screen between 768px and 1024px ****/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+  /**footer **/
+  #socialIcons {
+    margin-left: -10% !important;
+    margin-top: 70% !important;
+  }
+
+  #copyright_title {
+    margin-left: -3% !important;
+    margin-top: 3% !important;
+  }
+
+  #navfooter {
+    padding-top: 15% !important;
+  }
+
+  /*============*/
+
+  /**Home Interface */
+
+  .contenuS .image {
+    transform: scale(1.3);
+    z-index: 2;
+    width: 240px !important;
+    height: 210px !important;
+    margin: 30px !important;
+    margin-left: -55px !important;
+  }
+
+  .text {
+    background-color: gray;
+    opacity: 1;
+    color: white;
+    font-size: 10px;
+    width: 298px !important;
+    height: 81px;
+    margin-left: -69px !important;
+    margin-top: 43px !important;
+    padding-top: 4%;
+    border-radius: 0px 0px 25px 25px;
+  }
+
+  .middle {
+    opacity: 1 !important;
+    position: absolute;
+    top: 81%;
+    left: 100px;
+    text-align: center;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+
+    width: 120px !important;
+    height: 270px !important;
+
+  }
+
+  .contenuS {
+    position: relative;
+    width: 50%;
+    margin-left: 20% !important;
+  }
+
+  /**==================*/
+  /** HodHod interface **/
+  #hodhodbox {
+    margin-left: -1% !important;
+    margin-top: 4%;
+    width: 650px !important;
+  }
+
+  
+  #ImpactText {
+    font-size: 12px !important;
+
+  }
+
+  /*=================*/
+  /**Nos expertise Interface **/
+  #etape_AI {
+    margin-left: 120px !important;
+  }
+
+  /*==========================*/
+}
+
+/*==========================================*/
 /******Espace Carriere ********/
 .me-auto {
   margin-left: 190px;
@@ -173,7 +1071,6 @@ body {
   padding-right: 0px;
   font-size: 15px;
 }
-
 
 /*****************************/
 
@@ -239,10 +1136,9 @@ body {
 
 #backgroundimg {
   background-image: url('./components/images/Groupe_de_masques_10117.png');
-  background-size: 100% 100%;
-  width: 117.6%;
+  background-size: cover;
   height: 100%;
-  margin-left: -9%;
+  margin-left: 0%;
   background-repeat: no-repeat;
   margin-top: 6%;
 
@@ -347,7 +1243,6 @@ body {
 #AproposImg {
   margin-top: 4%;
   margin-right: 2%;
-
   height: 250px;
   border-radius: 20px;
 }
@@ -424,6 +1319,7 @@ body {
 .images {
 
   padding-top: 5%;
+  margin-left: 60px;
 }
 
 .img {
@@ -447,7 +1343,7 @@ body {
   z-index: 3;
 }
 
-/********testingOnly****/
+/********hover Images****/
 .contenuS {
   position: relative;
   width: 50%;
@@ -467,8 +1363,8 @@ body {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 80%;
-  left: 50%;
+  top: 81%;
+  left: 100px;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -500,11 +1396,6 @@ body {
 }
 
 /**********************/
-
-
-
-
-
 #hoverImg2 :hover {
   transform: scale(1.3);
   z-index: 2;
@@ -524,14 +1415,13 @@ body {
 
 #boxs {
   margin-top: 6%;
-  margin-left: 6%;
+  margin-left: 170px;
   width: 98%;
 }
 
 .bgSolution {
   width: 73%;
   height: 322px;
-
 }
 
 #SoluBorder {
@@ -646,7 +1536,7 @@ body {
   background-image: url('./components/images/Groupe_19186.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 360px;
+  height: 530px;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -654,10 +1544,10 @@ body {
 }
 
 .expertiseBox {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 3px 6px #888992;
   border-radius: 21px;
-  opacity: 1;
+  opacity: 0.85;
   backdrop-filter: blur(7px);
   padding: 30px 10px;
   line-height: 3em;
@@ -777,7 +1667,7 @@ body {
   background-color: white;
   width: 100%;
   margin-top: -85px;
-  z-index: 12;
+
 }
 
 #bg_img_header {
@@ -826,6 +1716,7 @@ body {
 #navfooter {
   background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 99.236%;
   height: 400px;
   margin-left: 0%;
@@ -842,26 +1733,11 @@ body {
   color: white;
 }
 
-.fb_logo {
-  margin-left: -25%;
-}
-
-.insta_logo {
-  margin-left: -190%;
-}
-
-.linkedin_logo {
-  margin-left: -110%;
-}
-
-#findOn {
-  margin-left: 15%;
-
-}
-
-#socialIcons {
-  margin-top: 59%;
+#SocialMediaIcons ul li {
+  display: inline-block;
   color: white;
+  margin-top: 63%;
+  justify-content: space-between;
 }
 
 #copyright_title {
@@ -1106,7 +1982,15 @@ body {
 .part2 {
   margin-top: 15%;
   width: 100%;
+}
 
+#portfolioBox {
+  width: 1530px;
+}
+
+#hodhod1 {
+  width: 488px;
+  height: 370px;
 }
 
 #LinkHome {
@@ -1136,10 +2020,17 @@ body {
   margin-right: 5px;
   margin-top: -180%;
 }
-#dropdown_Solution{
-  margin-top: -4%;
-  
+
+.bgTestImg {
+  content: url("./components/images/logo_supersenses.png");
+  width: 100px !important;
 }
+
+#dropdown_Solution {
+  margin-top: -4%;
+
+}
+
 .Nav_home {
   text-transform: uppercase;
   margin-right: 20px;
@@ -1148,6 +2039,7 @@ body {
   font-size: 15px;
   color: white;
 }
+
 #NavText_home {
   color: white;
 }
@@ -1213,9 +2105,6 @@ body {
   margin-top: 3%;
 }
 
-
-
-
 .NosServices_Container {
   margin-top: 80px;
   margin-bottom: 100px;
@@ -1241,9 +2130,6 @@ body {
 .ServiceAI_data>h5 {
   font-weight: bold;
 }
-
-
-
 
 .paragraph_ServiceAI {
   margin-top: 20px;
@@ -1385,7 +2271,6 @@ inline styling } */
 }
 
 /***********************ContactezNous*******************************/
-
 .ContactezNous_container {
   margin-left: 20%;
   margin-right: 20%;
@@ -1425,12 +2310,14 @@ inline styling } */
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
+
 #selectSpecialite{
   width: 100%;
   height: 43%;
   border-color: #bdbdbd;
   border-radius: 3px;
 }
+
 
 /*****************************NosOffres**************************/
 .NosOffres {
