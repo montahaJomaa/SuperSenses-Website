@@ -1768,7 +1768,7 @@
 }
 
 #col_nav {
-  margin-top: 12.2%;
+  margin-top: 14.6%;
   color: white;
 }
 
@@ -1838,10 +1838,10 @@
   width: 80%;
 }
 
-#imageSize {
+/* #imageSize {
   width: 450px;
   height: 250px;
-}
+} */
 
 .CarouselPict div {
   padding: 6px;
