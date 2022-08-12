@@ -410,6 +410,9 @@
 
   /*================*/
   /**Hodhod Interface **/
+  #HodhodContentParagraph{
+    margin-top: -300px !important;
+  }
   #bgPsize {
     border-radius: 25px;
     margin-top: 20px !important;
@@ -650,6 +653,16 @@
   /**================**/
 
   /**Hodhod Interface **/
+  .NosServices_Container {
+    margin-top: 25px !important;
+    margin-bottom: 100px;
+    width: 100%;
+  
+  }
+  
+  #HodhodContentParagraph{
+    margin-top: -320px !important;
+  }
   #bgPsize {
     border-radius: 25px;
     margin-top: 20px !important;
@@ -701,6 +714,12 @@
 
   /*===================*/
   /* Senses IA interface */
+  .NosSolutionsTitle {
+    margin-top: 25px !important;
+    text-align: center;
+    padding-top: 80px;
+  }
+  
   #img-descriptionSensesIA {
     width: 280px !important;
     height: 90% !important;
@@ -857,6 +876,9 @@
 
   /*=========*/
   /*Hodhod interface */
+  #HodhodContentParagraph{
+    margin-top: -320px !important;
+  }
   #bgPsize {
     border-radius: 25px;
     margin-top: 20px !important;
