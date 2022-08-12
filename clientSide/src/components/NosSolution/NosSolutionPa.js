@@ -87,7 +87,7 @@ const NosSolutionPa = () => {
         </div>
 
       </div>
-      <div className="container">
+      <div className="">
         <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
         <div id="PicturesPadding">
           <div class="row p-3">
