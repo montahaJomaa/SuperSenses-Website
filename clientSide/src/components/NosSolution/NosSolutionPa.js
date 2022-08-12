@@ -13,7 +13,7 @@ const NosSolutionPa = () => {
     <div id="hodhodP">
 
       <div className="row mt-5">
-        <div className="col p-5">
+        <div className="col p-5" id="HodhodContentParagraph">
           <h1>Hodhod</h1>
           <p>
             Super senses fournit ses solutions innovantes à impact afin de résoudre
