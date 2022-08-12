@@ -7,6 +7,9 @@ import kitelectronique from '../images/Groupe 19574.png';
 import platform from '../images/Groupe 19575.png';
 import appmobile from '../images/Groupe 19576.png';
 import mob from "../images/Groupe 14747.png";
+import img5 from "../images/Groupe_16505.png";
+import img6 from "../images/Groupe_16506.png";
+import img7 from "../images/Groupe_19757.png";
 const NosSolutionPa = () => {
 
   return (
@@ -92,6 +95,7 @@ const NosSolutionPa = () => {
               <img class="w-100" src={img4} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
             </div>
+            
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
               <img class="w-100" src={img2} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Lutter contre la pollution.</h6>
@@ -100,6 +104,20 @@ const NosSolutionPa = () => {
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
               <img class="w-100" src={img3} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Intégrer les citoyens dans l’amélioration de leurs villes</h6>
+            </div>
+          </div>
+          <div className="row p-3 ">
+          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="w-100" src={img5} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Dépister et analyser les réclamations des citoyens en se basant sur l’intelligence artificielle.</h6>
+            </div>
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="w-100" src={img6} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Minimiser le budget alloué pour faire les actions de communications.</h6>
+            </div>
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+              <img class="w-100" src={img7} id="imageSize" />
+              <h6 className="text-center" id="ImpactText"><br></br>Minimiser le budget alloué pour faire les interventions ici nous parlons des ressources humaines et financières…</h6>
             </div>
           </div>
           {/* <div class="row p-3">
