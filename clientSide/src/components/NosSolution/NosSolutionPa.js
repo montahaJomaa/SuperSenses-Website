@@ -19,10 +19,10 @@ const NosSolutionPa = () => {
         <div className="col p-5" id="HodhodContentParagraph">
           <h1>Hodhod</h1>
           <p>
-            Super senses fournit ses solutions innovantes à impact afin de résoudre
-            des problèmes environnemental et digitaliser les villes tunisiennes.
+            Super senses fournit ses solutions innovantes à impact afin de résoudre<br></br>
+            des problèmes environnemental et digitaliser les villes tunisiennes.<br></br>
             La ‘Hodhod’ est une solution destinée à lutter contre la pollution citadine
-            et elle permet aux municipalités d’avoir un canal de communication interactive avec
+            et<br></br> elle permet aux municipalités d’avoir un canal de communication interactive<br></br> avec
             les citoyens en particulier et tout l'écosystème en général.
           </p>
         </div>

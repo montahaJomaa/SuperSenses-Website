@@ -1105,6 +1105,10 @@
 /*****************************/
 
 /*********Nos Solutions **********/
+#HodhodContentParagraph{
+  margin-left: 84px;
+  
+}
 .PictureContent {
   width: 80%;
   margin-left: 10%;
@@ -1123,7 +1127,7 @@
 
 #hodhodbox {
   margin-left: -10%;
-  margin-top: 4%;
+  margin-top: 2%;
 }
 
 #compBorder2 {
