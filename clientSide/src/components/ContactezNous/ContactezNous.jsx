@@ -92,7 +92,7 @@ function ContactezNous(props) {
 
 
 
-      <Form className="Contact_form" >
+      <Form className="Contact_form" onSubmit={handleSubmit}>
 
         <Row>
           <Col>
