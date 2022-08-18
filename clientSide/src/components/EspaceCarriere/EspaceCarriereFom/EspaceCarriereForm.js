@@ -16,19 +16,38 @@ import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 
+const notifyError = () => {
+  toast.error('Veuillez vérifier vos données!', {
+    position: "bottom-left",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
+}
 
 const notifySuccess = () => {
   toast.success(' Demande envoyée!', {
     position: "bottom-left",
-autoClose: 5000,
-hideProgressBar: false,
-closeOnClick: true,
-pauseOnHover: true,
-draggable: true,
-progress: undefined,
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
   });
 }
 function EspaceCarriereForm(props) {
+
+  let formData = new FormData();
+  const onFileChange = (e) => {
+    console.log(e.target.files[0])
+    if (e.target && e.target.files[0]) {
+      formData.append('file', e.target.files[0]);
+    }
+  }
 
   const navigate = useNavigate();
 
@@ -105,18 +124,44 @@ function EspaceCarriereForm(props) {
     return newErrors
   }
 
+  const [fileData, setFileData] = useState();
 
+  const fileChangeHandler = (e) => {
+    setFileData(e.target.files[0]);
+ }
   const handleSubmit = e => {
 
 
     e.preventDefault();
 
+    //Handle file Data from the state before sending
+
+    const data = new FormData();
+    data.append('CVCandidat', fileData);
+    
+    fetch("http://localhost:3000/EspaceCarriere", {
+      method: "POST",
+      body: data,
+    })
+
+      .then((result) => {
+        console.log("File sent successfully");
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+
     const formErrors = validateForm()
+
+  
+
 
     //check for errors
 
     if (Object.keys(formErrors).length > 0) {
-      setErrors(formErrors)
+      setErrors(formErrors);
+      navigate('/EspaceCarriere');
+      notifyError()
     } else {
 
       console.log('Formulaire soumis');
@@ -167,7 +212,7 @@ function EspaceCarriereForm(props) {
 
 
 
-      <Form className="Contact_form" onSubmit={handleSubmit}>
+      <Form className="Contact_form"  onSubmit={handleSubmit}>
 
         <Row>
           <ButtonGroup>
@@ -273,8 +318,9 @@ function EspaceCarriereForm(props) {
             <Form.Group className="mb-3" controlId="formBasicText" >
               <Form.Label>Curriculum Vitae :</Form.Label>
               <Form.Control type="file" className="Contact_input" controlId="CVCandidat"
-                value={form.CVCandidat}
-                onChange={(e) => setField('CVCandidat', e.target.value)}
+                name="CVCandidat"
+                //value={form.CVCandidat}
+                onChange={fileChangeHandler}
                 isInvalid={!!errors.CVCandidat} accept=".pdf" required />
               <Form.Control.Feedback type="invalid">
                 {errors.CVCandidat}

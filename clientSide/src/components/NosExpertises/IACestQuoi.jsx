@@ -18,10 +18,10 @@ function IACestQuoi(props) {
     <div>
       <div className="bloc_intro_AI container">
 
-        <div className="row">
-          <div className="intro_AI_data col">
+        <div class="row">
+          <div className="intro_AI_data col" md={4}>
             <h5>L’IA, QU’EST-CE QUE C’EST ?</h5>
-            <p >Une IA est un programme qui repose sur des algorithmes exécutés capable de
+            <p >L'Intelligence Artificielle est un programme qui repose sur des algorithmes exécutés capable de
               traiter un grand volume de données rapidement dans un environnement
               informatique dynamique. Elle est donc plus efficace que l’Homme sur des
               applications spécifiques et permet de nombreuses automatisations et
@@ -30,7 +30,10 @@ function IACestQuoi(props) {
             </p>
           </div>
 
-          <div className="col"><img src={img_cercle_AI} alt="img_cercle_AI" className="img_cercle_AI" style={{ width: "100%", height: "100%" }} /></div>
+          <div class="col">
+            <img src={img_cercle_AI} alt="img_cercle_AI" 
+            className="img_cercle_AI" style={{ width: "100%", height: "100%" }} />
+          </div>
         </div>
       </div>
 

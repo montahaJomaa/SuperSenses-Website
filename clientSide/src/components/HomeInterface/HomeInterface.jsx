@@ -59,7 +59,7 @@ function HomeInterface() {
                   </Dropdown>
                 </div>
               </Nav.Link>
-              <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_home' id='NavText_home'><h6>Notre expertise</h6></Nav.Link></LinkContainer>
+              <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_home' id='NavText_home'><h6>Nos Expertises</h6></Nav.Link></LinkContainer>
               <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_home'><h6>A propos</h6></Nav.Link></LinkContainer>
               {/* <Nav.Link id='selectLangue'>
                 <Dropdown>

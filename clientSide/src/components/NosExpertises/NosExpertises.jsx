@@ -13,12 +13,12 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function NotreExpertise() {
+function NosExpertises() {
   return (
     <div className="NosServices_Container">
       <div className="NosServicesTitle container">
         <div className="row">
-          <div className="col"><h1 id="NosExpertiseTitre">Notre Expertise</h1></div>
+          <div className="col"><h1 id="NosExpertiseTitre">Nos Expertises</h1></div>
         </div>
       </div>
 
@@ -57,19 +57,22 @@ function NotreExpertise() {
               Avec notre savoir-faire et notre expertise dans les nouvelles technologies établies
               qui nous permet d’identifier et de booster la transformation digitale.<br /><br />
               Notre prestation de service se base sur :<br /><br />
-              <ul>
-                <i class="bi bi-check2-circle"> Booster la stratégie digitale de l’entreprise.</i><br />
-                <i class="bi bi-check2-circle"> Fournir des outils d’aide aux décisions fiables et intelligentes.</i><br />
-                <i class="bi bi-check2-circle"> Créer des plateformes interactives intelligentes en temps réelles.</i><br />
-                <i class="bi bi-check2-circle"> La mise en œuvre d’applications web et mobile mobilisant toutes les
-                  ouvelles approches méthodologiques et technologiques.</i>
+              <ul className="digitalOptions">
+                <li class="bi bi-check2-circle" style={{ listStyleType: "none" }}> Booster la stratégie digitale de l’entreprise.</li>
+                <li class="bi bi-check2-circle" style={{ listStyleType: "none" }}> Fournir des outils d’aide aux décisions fiables et intelligentes.</li>
+                <li class="bi bi-check2-circle" style={{ listStyleType: "none" }}> Créer des plateformes interactives intelligentes en temps réelles.</li>
+                <li class="bi bi-check2-circle" style={{ listStyleType: "none" }}> La mise en œuvre d’applications web et mobile mobilisant toutes les
+                  ouvelles approches méthodologiques et technologiques.</li>
               </ul>
             </p>
           </div>
         </div>
       </div>
-      <div className="AI_slogan">
-        <span > Nous créons de l’intelligence artificielle sur mesure</span>
+      <div className="AI_slogan" id="backgroundimg">
+        <p>
+          Notre vision est de crée un outil technologique<br/>
+          d’aide à la décision capable d’ajouter un 6ieme sens utilisant l’intelligence artificielle.<br/>
+          Nous créons de l’intelligence artificielle sur mesure.</p>
       </div>
       <IACestQuoi />
 
@@ -77,4 +80,4 @@ function NotreExpertise() {
   );
 }
 
-export default NotreExpertise;
+export default NosExpertises;

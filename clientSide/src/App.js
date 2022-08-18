@@ -12,11 +12,12 @@ import NosExpertises from "./components/NosExpertises/NosExpertises";
 import ContactezNous from "./components/ContactezNous/ContactezNous";
 import NosOffres from "./components/NosOffres/NosOffres";
 import NosValeur from "./components/NosValeur";
-import NosSolution from "./components/NosSolution/NosSolution";
+import NosSolution from "./components/NosSolutions/NosSolution";
 import Apropos from './components/Apropos';
 import EspaceCarriereForm from "./components/EspaceCarriere/EspaceCarriereFom/EspaceCarriereForm";
 import EspaceCarriereOffre from "./components/EspaceCarriere/EspaceCarriereOffre/EspaceCarriereOffre";
-import NosSolutionSensesIA from './components/NosSolution/NosSolutionSensesIA';
+import NosSolutionSensesIA from './components/NosSolutions/NosSolutionSensesIA';
+
 
 
 const notify = () => {
@@ -24,13 +25,13 @@ const notify = () => {
 }
   
 function App() {
-
+  
     return (
         <Router>
             <div className="App">
 
                 <div className="content">
-
+                    
                     <Routes>
                         <Route path="/" element={<HomeInterface />} />
                         <Route path="/NosExpertises" element={<><NavBarHeader /> <NosExpertises style={{ marginTop: '390px' }} /></>} />

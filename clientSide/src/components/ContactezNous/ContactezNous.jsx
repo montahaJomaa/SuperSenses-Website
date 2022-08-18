@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,6 +13,29 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
 import axios from "axios";
 
+const notifyError = () => {
+  toast.error('Veuillez vérifier vos données!', {
+    position: "bottom-left",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
+}
+
+const notifySuccess = () => {
+  toast.success(' Demande envoyée!', {
+    position: "bottom-left",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+}
 
 function ContactezNous(props) {
  
@@ -63,7 +86,9 @@ function ContactezNous(props) {
 
     const formErrors = validateForm()
     if (Object.keys(formErrors).length > 0) {
-      setErrors(formErrors)
+      setErrors(formErrors);
+      navigate('/ContactezNous');
+      notifyError()
     } else {
       console.log('Formulaire soumis');
       
@@ -79,7 +104,8 @@ function ContactezNous(props) {
         
         });
       
-        navigate('/')
+      navigate('/');
+      notifySuccess()
 
     }
 
