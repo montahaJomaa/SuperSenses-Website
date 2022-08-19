@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const SuperSenses = require("./models/SuperSensesModel");
-
+require('dotenv').config()
 
 
 app.use(cors());
@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const { response } = require('express');
-const { upload } = require('upload');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -41,13 +40,13 @@ app.post("/ContactezNous", (req, res) => {
     });
 
     NewContact.save();
-    res.status(200).send('success');
+
 
     console.log(NewContact);
 
 
 
-    // const multer = require("multer");
+
 
     // const fileStorageEngine = multer.diskStorageEngine({
     //     destination: (req, file, cb) => {
@@ -76,72 +75,73 @@ app.post("/ContactezNous", (req, res) => {
     let smtpTransport = nodemailer.createTransport({
 
         host: "ssl0.ovh.net",
-
         secure: false,
         auth: {
-            user: "info@supersenses.tn",
-            pass: "Super2217senses"
+            user: process.env.EMAIL_USERNAME,
+            pass: process.env.EMAIL_PASSWORD
         }
     });
 
 
     let mailOptions = {
 
-        from: "info@supersenses.tn",
-        to: "info@supersenses.tn",
+        from: "website@supersenses.tn",
+        to: "website@supersenses.tn",
         subject: "Demande de contact",
         html: `<h3>Nom et Prenom:</h3>${nomPrenomContact}<h3>Adresse email:</h3>${emailContact}<h3>Message:</h3>${messageContact}`
 
     };
-
     smtpTransport.sendMail(mailOptions, function (err, response) {
+        console.log('test');
+        console.log(err);
+        console.log(response);
         if (err) {
-            return console.log(err);
+            console.log(err);
 
         } else {
             console.log('Message has been sent: ' + info.response);
         }
 
-    })
+    });
+    res.status(200).send('success');
 });
 
-app.post("/EspaceCarriereForm", (req, res) => {
-    const radioValue = req.body.radioValue;
-    const nomPrenomCandidat = req.body.nomPrenomCandidat;
-    const emailCandidat = req.body.emailCandidat;
-    const numTelephoneCandidat = req.body.numTelephoneCandidat;
-    const selectSpecialite = req.body.selectSpecialite;
-    const CVCandidat = req.body.CVCandidat;
-    const LettreMotivationCandidat = req.body.LettreMotivationCandidat;
+const multer = require("multer");
+const upload = multer();
 
-    console.log(radioValue)
-    console.log(nomPrenomCandidat)
-    console.log(emailCandidat)
-    console.log(numTelephoneCandidat)
-    console.log(selectSpecialite)
-    console.log(CVCandidat)
-    console.log(LettreMotivationCandidat)
+app.post("/EspaceCarriereForm",upload.single('cv'), (req, res) => {
+
+    const radioValue = req.body.radioValue;
+    const formData = req.body;
+
+    const nomPrenomCandidat = formData.nomPrenomCandidat;
+    const emailCandidat = formData.emailCandidat;
+    const numTelephoneCandidat = formData.numTelephoneCandidat;
+    const SpecialiteCandidature = formData.SpecialiteCandidature;
+    const CVCandidat = req.file;
+    const LettreMotivationCandidat = formData.LettreMotivationCandidat;
+
+
+    console.log("form data", formData);
 
 
 
     let smtpTransport = nodemailer.createTransport({
 
         host: "ssl0.ovh.net",
-
         secure: false,
         auth: {
-            user: "info@supersenses.tn",
-            pass: "Super2217senses"
+            user: process.env.EMAIL_USERNAME,
+            pass: process.env.EMAIL_PASSWORD
         }
     });
 
-
     let mailOptions = {
 
-        from: "info@supersenses.tn",
-        to: "info@supersenses.tn",
+        from: "website@supersenses.tn",
+        to: "website@supersenses.tn",
         subject: `Condidature spontannée pour un ${radioValue} `,
-        html: `<h3>Nom et Prenom:</h3>${nomPrenomCandidat}<h3>Adresse email:</h3>${emailCandidat}<h3>Numero du telephone:</h3>${numTelephoneCandidat}<h3>Specialité</h3>${selectSpecialite}`,
+        html: `<h3>Nom et Prenom:</h3>${nomPrenomCandidat}<h3>Adresse email:</h3>${emailCandidat}<h3>Numero du telephone:</h3>${numTelephoneCandidat}<h3>Specialité</h3>${SpecialiteCandidature}`,
         attachments: [
             {
                 filename: `${CVCandidat}`,
@@ -162,7 +162,8 @@ app.post("/EspaceCarriereForm", (req, res) => {
             console.log('Message has been sent: ' + info.response);
         }
 
-    })
+    });
+    res.sendStatus(200);
 });
 
 

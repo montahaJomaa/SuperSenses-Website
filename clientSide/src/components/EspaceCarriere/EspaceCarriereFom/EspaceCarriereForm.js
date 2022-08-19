@@ -16,17 +16,6 @@ import axios from "axios";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 
-const notifyError = () => {
-  toast.error('Veuillez vérifier vos données!', {
-    position: "bottom-left",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    });
-}
 
 const notifySuccess = () => {
   toast.success(' Demande envoyée!', {
@@ -41,18 +30,19 @@ const notifySuccess = () => {
 }
 function EspaceCarriereForm(props) {
 
-  let formData = new FormData();
-  const onFileChange = (e) => {
-    console.log(e.target.files[0])
-    if (e.target && e.target.files[0]) {
-      formData.append('file', e.target.files[0]);
-    }
-  }
 
   const navigate = useNavigate();
 
   const [form, setForm] = useState('')
   const [errors, setErrors] = useState('')
+
+  const [nomPrenomCandidat, setNomPrenomCandidat] = useState('');
+  const [emailCandidat, setEmailCandidat] = useState('');
+  const [numTelephoneCandidat, setNumTelephoneCandidat] = useState('');
+  const [SpecialiteCandidature, setSpecialiteCandidature] = useState('');
+  const [CVCandidat, setCVCandidat] = useState(null);
+  const [LettreMotivationCandidat,setLettreMotivationCandidat] = useState('');
+
 
   const setField = (field, value) => {
     setForm({
@@ -77,14 +67,7 @@ function EspaceCarriereForm(props) {
 
   const validateForm = () => {
 
-    const {
-      nomPrenomCandidat,
-      emailCandidat,
-      numTelephoneCandidat,
-      selectSpecialite,
-      CVCandidat,
-      LettreMotivationCandidat
-    } = form
+    
 
     const newErrors = {}
 
@@ -111,7 +94,7 @@ function EspaceCarriereForm(props) {
     else if (numTelephoneCandidat === '') newErrors.numTelephoneCandidat =
       "Merci d'entrer un num tel valide !";
 
-    else if (selectSpecialite === '') newErrors.selectSpecialite =
+    else if (SpecialiteCandidature === '') newErrors.SpecialiteCandidature =
       'Merci de choisir une specialite !';
 
     else if (CVCandidat === '') newErrors.CVCandidat =
@@ -124,64 +107,36 @@ function EspaceCarriereForm(props) {
     return newErrors
   }
 
-  const [fileData, setFileData] = useState();
+  
 
-  const fileChangeHandler = (e) => {
-    setFileData(e.target.files[0]);
- }
   const handleSubmit = e => {
 
 
     e.preventDefault();
 
-    //Handle file Data from the state before sending
-
-    const data = new FormData();
-    data.append('CVCandidat', fileData);
-    
-    fetch("http://localhost:3000/EspaceCarriere", {
-      method: "POST",
-      body: data,
-    })
-
-      .then((result) => {
-        console.log("File sent successfully");
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-
     const formErrors = validateForm()
-
-  
-
 
     //check for errors
 
     if (Object.keys(formErrors).length > 0) {
-      setErrors(formErrors);
-      navigate('/EspaceCarriere');
-      notifyError()
+      setErrors(formErrors)
     } else {
 
       console.log('Formulaire soumis');
 
-      const NewCandidat = {
-        radioValue: radioValue,
-        nomPrenomCandidat: form.nomPrenomCandidat,
-        emailCandidat: form.emailCandidat,
-        numTelephoneCandidat: form.numTelephoneCandidat,
-        selectSpecialite: form.selectSpecialite,
-        CVCandidat: form.CVCandidat,
-        LettreMotivationCandidat: form.LettreMotivationCandidat
-      }
-
-      console.log(radioValue);
-      console.log(NewCandidat);
-
+      const formData = new FormData();
+      
+      formData.append('nomPrenomCandidat', nomPrenomCandidat);
+      formData.append('emailCandidat', emailCandidat);
+      formData.append('numTelephoneCandidat', numTelephoneCandidat);
+      formData.append('SpecialiteCandidature', SpecialiteCandidature);
+      formData.append('cv', CVCandidat);
+      formData.append('LettreMotivationCandidat', LettreMotivationCandidat);
+      
+      console.log(formData);
 
       axios.post('http://localhost:3001/EspaceCarriereForm',
-        NewCandidat).then((res) => {
+      formData).then((res) => {
           console.log(res);
 
         });
@@ -212,7 +167,7 @@ function EspaceCarriereForm(props) {
 
 
 
-      <Form className="Contact_form"  onSubmit={handleSubmit}>
+      <Form className="Contact_form" onSubmit={handleSubmit}>
 
         <Row>
           <ButtonGroup>
@@ -241,8 +196,8 @@ function EspaceCarriereForm(props) {
 
               <Form.Control type="text" className="Contact_input" controlId="nomPrenomCandidat"
                 required
-                value={form.nomPrenomCandidat}
-                onChange={(e) => setField('nomPrenomCandidat', e.target.value)}
+                value={nomPrenomCandidat}
+                onChange={(e) => setNomPrenomCandidat(e.target.value)}
                 isInvalid={!!errors.nomPrenomCandidat}
               />
 
@@ -261,8 +216,8 @@ function EspaceCarriereForm(props) {
 
               <Form.Control type="email" className="Contact_input" controlId="emailCandidat"
 
-                value={form.emailCandidat}
-                onChange={(e) => setField('emailCandidat', e.target.value)}
+                value={emailCandidat}
+                onChange={(e) => setEmailCandidat(e.target.value)}
                 isInvalid={!!errors.emailCandidat}
                 required />
               <Form.Control.Feedback type="invalid">
@@ -280,8 +235,8 @@ function EspaceCarriereForm(props) {
               <Form.Label>Numéro du telephone:</Form.Label>
 
               <Form.Control type="telephone" className="Contact_input" controlId="numTelephoneCandidat"
-                value={form.numTelephoneCandidat}
-                onChange={(e) => setField('numTelephoneCandidat', e.target.value)}
+                value={numTelephoneCandidat}
+                onChange={(e) => setNumTelephoneCandidat(e.target.value)}
                 isInvalid={!!errors.numTelephoneCandidat}
                 required />
 
@@ -295,10 +250,10 @@ function EspaceCarriereForm(props) {
           <Col>
             <Form.Label>Specialité:</Form.Label><br />
 
-            <select id="selectSpecialite"
-              value={form.selectSpecialite}
-              onChange={(e) => setField('selectSpecialite', e.target.value)}
-              isInvalid={!!errors.selectSpecialite}
+            <select id="SpecialiteCandidature"
+              value={SpecialiteCandidature}
+              onChange={(e) => setSpecialiteCandidature(e.target.value)}
+              isInvalid={!!errors.SpecialiteCandidature}
               required >
               <option></option>
               <option >Web development</option>
@@ -308,7 +263,7 @@ function EspaceCarriereForm(props) {
             </select>
 
             <Form.Control.Feedback type="invalid">
-              {errors.selectSpecialite}
+              {errors.SpecialiteCandidature}
             </Form.Control.Feedback>
           </Col>
 
@@ -318,9 +273,8 @@ function EspaceCarriereForm(props) {
             <Form.Group className="mb-3" controlId="formBasicText" >
               <Form.Label>Curriculum Vitae :</Form.Label>
               <Form.Control type="file" className="Contact_input" controlId="CVCandidat"
-                name="CVCandidat"
-                //value={form.CVCandidat}
-                onChange={fileChangeHandler}
+                value={CVCandidat}
+                onChange={(e) => setCVCandidat(e.target.files[0])}
                 isInvalid={!!errors.CVCandidat} accept=".pdf" required />
               <Form.Control.Feedback type="invalid">
                 {errors.CVCandidat}
@@ -334,8 +288,8 @@ function EspaceCarriereForm(props) {
             <Form.Group className="mb-3" controlId="formBasicText" >
               <Form.Label>Lettre de motivation :</Form.Label>
               <Form.Control type="file" className="Contact_input" controlId="LettreMotivationCandidat"
-                value={form.LettreMotivationCandidat}
-                onChange={(e) => setField('LettreMotivationCandidat', e.target.value)}
+                value={LettreMotivationCandidat}
+                onChange={(e) => setLettreMotivationCandidat(e.target.value)}
                 isInvalid={!!errors.LettreMotivationCandidat} accept=".pdf" required />
               <Form.Control.Feedback type="invalid">
                 {errors.LettreMotivationCandidat}
@@ -361,3 +315,4 @@ function EspaceCarriereForm(props) {
   )
 }
 export default EspaceCarriereForm;
+
