@@ -33,7 +33,7 @@ function App() {
                 <div className="content">
                     
                     <Routes>
-                        <Route path="/" element={<HomeInterface />} />
+                        <Route path="/Accueil" element={<HomeInterface />} />
                         <Route path="/NosExpertises" element={<><NavBarHeader /> <NosExpertises style={{ marginTop: '390px' }} /></>} />
                         <Route path="/NosOffres" element={<> <NavBarHeader /><NosOffres /></>} />
                         <Route path="/ContactezNous" element={<><NavBarHeader /> <ContactezNous /></>} />

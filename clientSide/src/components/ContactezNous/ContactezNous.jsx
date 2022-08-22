@@ -104,7 +104,7 @@ function ContactezNous(props) {
         
         });
       
-      navigate('/');
+      navigate('/Accueil');
       notifySuccess()
 
     }
@@ -119,7 +119,7 @@ function ContactezNous(props) {
           Contactez nous
         </h3>
 
-        <h5 className="welcoming_phrase">Nous sommes là pour vous!</h5>
+        {/* <h5 className="welcoming_phrase">Nous sommes là pour vous!</h5> */}
 
         <h5 className="welcoming_phrase">Merci de remplir ce formulaire </h5>
 

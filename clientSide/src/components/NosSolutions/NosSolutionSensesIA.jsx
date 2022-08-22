@@ -11,7 +11,7 @@ function NosSolutionSensesIA(props) {
             <h1 className="NosSolutionsTitle"> Nos solutions</h1>
             <div className="row" id="blocSensesIA">
                 <div className="col" id="descriptionSensesIA">
-                    <h2>Senses AI :</h2>
+                    <h2 id="SensesIATitleTxt">Senses AI :</h2>
                     <p id="p_descriptionSensesIA">Super Senses est une solution technologique permettant aux industriels la collection des données importants et des indicateurs de performances à distance et en temps réel via la technologie internet des objets.
                         Après la collection des datas nous faisons l’analyse et le traitement des données à travers des modèles basées sur l’intelligence artificielle. Les algorithmes permettant aux superviseurs de détecter les dérives des procès d’une manière anticipé et ils permettant de proposer des recommandations via des outils d’aide à la décision générés d’une manière automatique.
                     </p>
@@ -22,7 +22,9 @@ function NosSolutionSensesIA(props) {
             </div>
             <div className="text-center">
                 <h4 id="ComposantsSensesIATitle">La solution senses.IA se compose de</h4>
+                
                 <div className="row text-center" id="blocComposantsSensesIA" >
+
                     <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
                         <img src={kitElectronique} id="kitElectronique" />

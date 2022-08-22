@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useEffect, useState} from 'react';
+import { Link, useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -17,17 +17,17 @@ import { useMediaQuery } from 'react-responsive';
 
 
 function NavBarHeader() {
- 
-  
-  
+
+
+
   const isMobile = useMediaQuery({ maxWidth: 768 })
 
   const [show, setShow] = useState(false)
 
   const controlNavbar = () => {
-    if (window.innerWidth < 720 ) {
+    if (window.innerWidth < 720) {
       setShow(false)
-       
+
     } else {
       setShow(true)
     }
@@ -38,22 +38,27 @@ function NavBarHeader() {
     return () => {
       window.removeEventListener('scroll', controlNavbar)
     }
-  },[])
+  }, [])
   return (
     <div className={`${show && 'nav-header'}`}>
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="/"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
+          <Navbar.Brand href="Accueil"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
           </Navbar.Brand>
-        
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <LinkContainer to="/"><Nav.Link className='Nav_item' id='NavText_other'><h6>Acceuil</h6></Nav.Link></LinkContainer>
+              <a href="Accueil" className='Nav_item' id='NavText_other' style={{ textDecoration: 'none' }}><h6>Accueil</h6></a>
+
               <div className='btnNosSolution'>
                 <Dropdown as={ButtonGroup}>
                   {/* <Button href="/#boxs" variant="transparent">NOS SOLUTIONS</Button> */}
-                  <Button variant='transparent' ><HashLink style={{ textDecoration: "none", color: "black" }} smooth to="/#boxs"><h6>NOS SOLUTIONS</h6></HashLink></Button>
+                  <Button variant='transparent' >
+                    <HashLink style={{ textDecoration: "none", color: "black" }}
+                      smooth to="#"><h6>NOS SOLUTIONS</h6>
+                    </HashLink>
+                  </Button>
                   <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
                   <Dropdown.Menu size="sm">
                     <Dropdown.Item href="/Hodhod"><h6>Hodhod</h6></Dropdown.Item>
@@ -61,8 +66,9 @@ function NavBarHeader() {
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
-              <LinkContainer to="/NosExpertises"><Nav.Link className='Nav_item' id='NavText_other'><h6>Nos Expertises</h6></Nav.Link></LinkContainer>
-              <LinkContainer to="/Apropos"><Nav.Link className='Nav_item' id='NavText_other'><h6>A propos</h6></Nav.Link></LinkContainer>
+
+              <a href="NosExpertises" className='Nav_item' id='NavText_other' style={{ textDecoration: 'none' }}><h6>Nos Expertises</h6></a>
+              <a href="Apropos" className='Nav_item' id='NavText_other' style={{ textDecoration: 'none' }}><h6>A propos</h6></a>
               {/* <div className='dpSolution'><img src={language} id="languageIcon" /></div> */}
               {/* <Nav.Link id='selectLangue'>
 
@@ -84,9 +90,9 @@ function NavBarHeader() {
         </Container>
       </Navbar>
       <ProgressBar
-        
+
         id="ProgressBar"
-        color={isMobile ?'transparent'  : '#25ACDE'}
+        color={isMobile ? 'transparent' : '#25ACDE'}
         height={11}
         direction="right"
         position="relative"

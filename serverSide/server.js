@@ -109,19 +109,19 @@ app.post("/ContactezNous", (req, res) => {
 const multer = require("multer");
 const upload = multer();
 
-app.post("/EspaceCarriereForm",upload.single('cv'), (req, res) => {
+app.post("/EspaceCarriereForm",upload.none(), (req, res) => {
 
     const radioValue = req.body.radioValue;
+    
     const formData = req.body;
-
     const nomPrenomCandidat = formData.nomPrenomCandidat;
     const emailCandidat = formData.emailCandidat;
     const numTelephoneCandidat = formData.numTelephoneCandidat;
     const SpecialiteCandidature = formData.SpecialiteCandidature;
-    const CVCandidat = req.file;
+    const CVCandidat = formData.CVCandidat;
     const LettreMotivationCandidat = formData.LettreMotivationCandidat;
 
-
+    console.log(radioValue);
     console.log("form data", formData);
 
 

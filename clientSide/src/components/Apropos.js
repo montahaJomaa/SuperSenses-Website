@@ -4,13 +4,13 @@ const Apropos = () => {
   return (
     <div id="AproposHeader" className="Apropos">
       <div class="text-center" >
-        <h1>A Propos Nous</h1>
+        <h1 id="AproposNousHeaderTxt">A Propos Nous</h1>
       </div>
       <div class="container" id="AproposContent">
         <div class="row">
 
           <div class="col" id="AproposImg">
-            <img src={imgSensia} id="AproposImgSize" />
+            <img src={imgSensia} id="AproposImgSize"  />
           </div>
           <div class="col-sm">
             <h2 id="AproposSuperText">Super Senses</h2>
