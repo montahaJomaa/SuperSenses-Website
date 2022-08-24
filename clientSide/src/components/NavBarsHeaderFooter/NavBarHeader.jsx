@@ -13,23 +13,20 @@ import logo_supersenses from '../images/logo_supersenses.png';
 import ProgressBar from 'react-progressbar-on-scroll';
 import { HashLink } from 'react-router-hash-link';
 import { useMediaQuery } from 'react-responsive';
-
-
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function NavBarHeader() {
 
-
-
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: 428 })
 
   const [show, setShow] = useState(false)
 
   const controlNavbar = () => {
-    if (window.innerWidth < 720) {
+    if (window.innerWidth < 768) {
       setShow(false)
 
-    } else {
-      setShow(true)
+
     }
   }
 
@@ -39,36 +36,37 @@ function NavBarHeader() {
       window.removeEventListener('scroll', controlNavbar)
     }
   }, [])
+
   return (
     <div className={`${show && 'nav-header'}`}>
-      <Navbar expand="lg">
+      <Navbar bg="transparent" expand="lg" id="navbarTestIcons">
         <Container>
-          <Navbar.Brand href="Accueil"><img src={logo_supersenses} alt="logo_supersenses" className="logo_supersenses" />
+          <Navbar.Brand href="/">
+            <div className="bgTestImg"></div>
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" >
+            <span>
+              <FontAwesomeIcon icon="bars" color="black" size="lg" />
+            </span>
+          </Navbar.Toggle>
+
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <a href="Accueil" className='Nav_item' id='NavText_other' style={{ textDecoration: 'none' }}><h6>Accueil</h6></a>
-
-              <div className='btnNosSolution'>
-                <Dropdown as={ButtonGroup}>
-                  {/* <Button href="/#boxs" variant="transparent">NOS SOLUTIONS</Button> */}
-                  <Button variant='transparent' >
-                    <HashLink style={{ textDecoration: "none", color: "black" }}
-                      smooth to="#"><h6>NOS SOLUTIONS</h6>
-                    </HashLink>
-                  </Button>
-                  <Dropdown.Toggle split variant="transparent" size="sm" id="dropdown-split-basic" />
-                  <Dropdown.Menu size="sm">
-                    <Dropdown.Item href="/Hodhod"><h6>Hodhod</h6></Dropdown.Item>
-                    <Dropdown.Item href="/SensesIA"><h6>SensesIA</h6></Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-              </div>
-
-              <a href="NosExpertises" className='Nav_item' id='NavText_other' style={{ textDecoration: 'none' }}><h6>Nos Expertises</h6></a>
-              <a href="Apropos" className='Nav_item' id='NavText_other' style={{ textDecoration: 'none' }}><h6>A propos</h6></a>
+            <Nav className="ms-auto" id="HomeNav">
+              <Nav.Link className='Nav_home' id='NavText_home' href="/" style={{ color: 'black' }}>Accueil</Nav.Link>
+              
+              <NavDropdown title="NOS SOLUTIONS" id="dropdown_Solution" style={{ color: 'black' }}>
+                <NavDropdown.Item href="/Hodhod">Hodhod</NavDropdown.Item>
+                <NavDropdown.Item href="/SensesIA">SensesIA</NavDropdown.Item>
+              </NavDropdown>
+              
+              <Nav.Link href="/NosExpertises" className='Nav_home' id='NavText_home' style={{ color: 'black' }}>
+                Nos expertises
+              </Nav.Link>
+              
+              <Nav.Link href="/Apropos" className='Nav_home' id='NavText_home' style={{ color: 'black' }}>
+                A propos
+              </Nav.Link>
               {/* <div className='dpSolution'><img src={language} id="languageIcon" /></div> */}
               {/* <Nav.Link id='selectLangue'>
 
@@ -84,13 +82,11 @@ function NavBarHeader() {
                   </Dropdown.Menu>
                 </Dropdown>
               </Nav.Link> */}
-
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ProgressBar
-
+      {/* <ProgressBar
         id="ProgressBar"
         color={isMobile ? 'transparent' : '#25ACDE'}
         height={11}
@@ -98,7 +94,7 @@ function NavBarHeader() {
         position="relative"
         gradient={true}
         gradientColor={isMobile ? 'transparent' : '#eee'}
-      />
+      /> */}
     </div>
   );
 }

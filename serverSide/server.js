@@ -111,9 +111,10 @@ const upload = multer();
 
 app.post("/EspaceCarriereForm",upload.none(), (req, res) => {
 
-    const radioValue = req.body.radioValue;
+    
     
     const formData = req.body;
+    const radioValue = formData.radioValue;
     const nomPrenomCandidat = formData.nomPrenomCandidat;
     const emailCandidat = formData.emailCandidat;
     const numTelephoneCandidat = formData.numTelephoneCandidat;

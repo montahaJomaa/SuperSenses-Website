@@ -422,6 +422,9 @@
     border-radius: 25px;
 
   }
+  .paragraph_ServiceDigital{
+    margin-bottom:-60% !important;
+   }
   .AI_slogan{
     text-align: justify;
     padding-right: 3% !important;
@@ -432,13 +435,27 @@
     margin-top: 55px !important;
     margin-bottom:20px !important;
   }
+  .etape_AI{
+    width:450px !important;
+  }
+  
   /*==================*/
 
 }
 
-/*********** mobile screen between 425px and 768px**************************/
-@media only screen and (min-width:425px) and (max-width:768px) {
-
+/*********** mobile screen between 425px and 767px**************************/
+@media only screen and (min-width:425px) and (max-width:767px) {
+  #NavText_other{
+    margin-left: -350px !important;
+    text-align: center;
+    padding-top:4px !important;
+    padding-bottom: 4px !important;
+  }
+  .btnNosSolution{
+    margin-left: -350px !important;
+    text-align: center;
+  }
+  
   /** footer **/
   #socialIcons {
     margin-left: 10% !important;
@@ -665,22 +682,7 @@
     margin-left: 1% !important;
   }
 
-  .img_service_AI {
-    margin-left: 10%;
-    border-radius: 30px;
-    width: 350px !important;
-  }
 
-  .img_service_digital {
-    margin-top: 20px;
-    width: 350px !important;
-  }
-
-  .img_cercle_AI {
-    width: 400px !important;
-    margin-top: 60px !important;
-    margin-left: 30px !important;
-  }
   /***===============***/
   /**** Nos Expertises ****/
 
@@ -692,12 +694,15 @@
   }
 
   .img_service_digital {
-    margin-left: 1% !important;
-    margin-top:45% !important;
+    margin-left: 18% !important;
+    margin-top:15% !important;
     width: 250px !important;
     border-radius: 25px;
 
   }
+  .paragraph_ServiceDigital{
+    margin-bottom:-25% !important;
+   }
   .AI_slogan{
     text-align: justify;
     padding-right: 3% !important;
@@ -707,18 +712,19 @@
     height:240px !important;
     margin-top: 55px !important;
     margin-bottom:20px !important;
+    margin-left: 3% !important;
   }
   .etape_AI {
     align-items: center;
-    width: 525px !important;
-    height: 380px !important;
-    text-align: justify;
+    width: 400px !important;
+    height: 405px !important;
+    text-align: center;
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 25px;
     transition: box-shadow .3s;
     margin-bottom: 30px;
-    margin-right: 5% !important;
-    padding: 40px;
+    margin-right: 3% !important;
+    padding-bottom: 50px !important ;
   }
 
   /***===============***/
@@ -757,36 +763,48 @@
     margin-bottom:-29px;
   }
   .ServiceAI_data > h5{
-    text-align: left !important;
+    text-align: center !important;
   }
   .paragraph_ServiceAI{
-    text-align: left !important;
+    text-align: center !important;
       }
+  
   .ServiceDigital_data > h5 {
-    text-align: left !important;
+    text-align: center !important;
   }
   .paragraph_ServiceDigital{
-    text-align: left !important;
+    text-align: center !important;  
   }
   .digitalOptions > li{
-    text-align: left !important;  
+    text-align: center !important; 
+    margin-left:-10% !important; 
   }
   
   .img_service_AI {
-    margin-left: -1% !important;
+    margin-left: 4% !important;
+    margin-top: -9% !important;
     margin-bottom:-10%;
     border-radius: 25px;
-    width: 250px !important;
+    width: 275px !important;
   }
 
   .img_service_digital {
-    margin-left: -1% !important;
-    width: 250px !important;
+    margin-left: 4% !important;
+    margin-top:-22% !important;
+    width: 270px !important;
     border-radius: 25px;
   }
+  .AI_slogan{
+    padding-right:4% !important;
+    text-align: center !important;
+    margin-bottom: -10% !important;
+  }
 
+  .intro_AI_data {
+    text-align: center !important;
+  }
   .img_cercle_AI {
-    width: 300px !important;
+    width: 280px !important;
     margin-top: 60px !important;
     margin-bottom:20px !important;
   }
@@ -794,7 +812,7 @@
   .etape_AI {
     width: 280px !important;
     height: 545px !important;
-    text-align: justify !important;
+    text-align: center !important;
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 25px;
     transition: box-shadow .3s;
@@ -806,10 +824,7 @@
   .icon_etapes_AI{
     margin-right: 45% !important;
   }
-  .AI_slogan{
-    padding-right:4% !important;
-    text-align: center !important;
-  }
+ 
   /*==================*/
   /**Hodhod Interface **/
   
@@ -821,21 +836,28 @@
   }
   #HodhodContentParagraph {
     margin-top: -320px !important;
+    text-align: center !important;
+
   }
 
   #HodhodContentParagraphTitle{
    margin-left:-47% !important;
+
   }
   #HodhodContentParagraphDes{
     margin-left:-47% !important;
+    text-align: center !important;
+
   }
   #videoPicture {
     width: 350px !important;
   }
 
   #ComposantsHodhodTitle{
-    margin-left:15% !important;
+    margin-left:3% !important;
     margin-bottom: 5% !important;
+    text-align: center !important;
+
   }
   
   #hodhodbox {
@@ -858,7 +880,7 @@
 
   }
   #mobPara{
-    text-align: left;
+    text-align: center !important;
     margin-left:5% !important;
   }
   #backgroundimg{
@@ -874,7 +896,7 @@
   }
 
   #devenezParag{
-    text-align: left !important;
+    text-align: center !important;
     margin-left: -1% !important;
     margin-top: 3% !important;
   }
@@ -903,10 +925,13 @@
    #SensesIATitleTxt{
     margin-top: 5% !important;
     margin-left: 3%;
+    text-align: center !important;
   }
   #p_descriptionSensesIA{
-    margin-left: 3% !important ;
+    margin-left: 1% !important ;
     margin-bottom: 13% !important;
+    text-align: center !important;
+
   }
   #img-descriptionSensesIA {
     width: 280px !important;
@@ -939,6 +964,7 @@
   /* A propos */
   #AproposNousHeaderTxt{
     margin-top: 8% !important;
+    text-align: center !important;
   }
   #AproposImgSize {
     width: 280px !important;
@@ -947,22 +973,28 @@
 #AproposSuperText {
   margin-left: 3% !important;
   margin-top: -13% !important;
+  text-align: center !important;
+
 }
 #AproposParag{
   margin-left: 3% !important;
+  text-align: center !important;
+
 }
 /*==================*/
+/*******Espace Carriere ********/
+.bloc_welcoming_phrases{
+  margin-top: -25% !important;
+}
+.Contact_form{
+  margin-left:-28% !important;
+  margin-right:-28% !important;
+}
 }
 /************************/
 /*********** mobile screen between 321px and 375px ***********/
 @media screen and (min-width:321px) and (max-width:375px) {
-  .me-auto {
-    color: #000;
-    margin-left:10px !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
+  
   /** footer **/
   #socialIcons {
     margin-left: 4% !important;
@@ -980,7 +1012,7 @@
   /*==========*/
   /**navbar **/
   .nav-header {
-    z-index: 12;
+    z-index: 1000 !important;
     position: fixed;
     background-color: white;
     width: 100% !important;
@@ -1219,6 +1251,7 @@
   }
   /*=================*/
 
+
   /*==================*/
   /* Nos expertises Interface */
   
@@ -1240,6 +1273,7 @@
   }
   .paragraph_ServiceDigital{
     text-align: left !important;
+    margin-bottom:-25% !important;
   }
   .digitalOptions > li{
     text-align: left !important;  
@@ -1265,17 +1299,19 @@
   }
 
   .etape_AI {
-    width: 290px !important;
+    width: 309px !important;
     height: 530px !important;
     text-align: justify !important;
     margin-bottom: 30px;
     padding: 40px;
-    box-shadow: 0 0 45px 0 #c7c7c7;
+    box-shadow: 0 0 20px 0 #c7c7c7;
     border-radius: 25px;
     transition: box-shadow .3s;
-    margin-left: 20px !important;
+    margin-left: 10px !important;
   }
-
+  .etape_AI_paragraph{
+    text-align: center !important;
+  }
   .icon_etapes_AI{
     margin-right: 45% !important;
   }
@@ -1294,11 +1330,17 @@
 
 /***** Screen for mobile between 376px and 425 px *****************/
 @media screen and (min-width:376px) and (max-width:425px) {
-  
-  .me-auto {
-    margin-left:110px !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  #basic-navbar-nav{
+    border-radius:25px !important;
+  }
+  #NavText_other{
+    margin-left: -350px !important;
+    height: 40px !important;
+    text-align: center;
+  }
+  .btnNosSolution{
+    margin-left: -350px !important;
+    text-align: center;
   }
   /** footer **/
   #socialIcons {
@@ -1318,6 +1360,21 @@
   /**===========**/
   
   /*==Homeinterface==*/
+  .big-title{
+ text-align: center !important;
+  }
+  .bienvenuto{
+    text-align: center !important;
+  }
+  .bienvenuto-p{
+    text-align: center !important;
+  }
+  .p1 > p {
+    text-align: center !important;
+  }
+  .more-info-btn{
+   margin-left: 35% !important;
+  }
   .description_img {
     width: 300px !important;
   }
@@ -1365,7 +1422,8 @@
   .contenuS {
     position: relative;
     width: 50%;
-    margin-left: 10% !important;
+    margin-left: 20% !important;
+    margin-bottom: 5% !important;
   }
 
   #hodhod1 {
@@ -1382,8 +1440,7 @@
     opacity: 1;
     backdrop-filter: blur(7px);
     width: 450px !important;
-    height: 280px !important;
-    margin-left: 80px !important;
+    margin-left: 0px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
@@ -1394,34 +1451,31 @@
 
   #portfolio1 {
     width: 250px !important;
-    margin-left: 25px !important;
   }
 
   /*=========*/
   /**Hodhod Interface **/
-  .NosSolutionsTitle {
-    margin-top:-200px !important;
-    margin-bottom: 200px !important;
-    font-size:35px;
-  }
+  
   #NosSolutionsTitleHodhod{
-   margin-top:-90px;
+   margin-top:-230px;
+   margin-left: 26% !important;
   }
   .bgSolutionImg {
     background-image: url('./components/images/bannière supersenses@2x.png');
     background-repeat: no-repeat;
-    background-size: 100% 50% !important;
+    background-size: 100% !important;
     height: 487px;
     margin-bottom:-130px;
   }
-  #HodhodContentParagraph {
-    margin-top: -230px !important;
-    left: 0%;
-  }
-
+  
   #HodhodContentParagraphTitle{
    margin-left:-45% !important;
-   margin-top:40px;
+   margin-top:20px;
+  }
+  #HodhodContentParagraph {
+    text-align: center !important;
+    margin-top: -230px !important;
+    margin-left:23% !important;
   }
   #HodhodContentParagraphDes{
     margin-left:-45% !important;
@@ -1433,6 +1487,8 @@
   #ComposantsHodhodTitle{
     margin-left:2% !important;
     margin-bottom: 5% !important;
+    text-align: center !important;
+
   }
   
   #hodhodbox {
@@ -1443,27 +1499,35 @@
   }
   #compBorder1 {
     margin-bottom: 50px !important;
+    margin-left:9% !important;
   }
 
   #compBorder2 {
     margin-bottom: 50px !important;
+    padding-top: 3%;
+  }
+  #compBorder3 {
+    margin-bottom: 50px !important;
+    padding-top: 10% !important;
   }
 
   #mobPicture {
     width: 280px !important;
     margin-bottom:15% !important;
-
+    margin-left: 3% !important;
   }
   #mobPara{
-    text-align: left;
-    margin-left:3% !important;
+    text-align: center !important;
+    margin-left:5% !important;
   }
   #backgroundimg{
     margin-top: 25% !important;
   }
   #bgPsize {
+    width:98% !important;
     border-radius: 25px;
-    margin-top: 20px !important;
+    margin-top: 15px !important;
+    
   }
 
   #deveneztitle{
@@ -1471,8 +1535,8 @@
   }
 
   #devenezParag{
-    text-align: left !important;
-    margin-left: -1% !important;
+    text-align: center !important;
+    margin-left: 1% !important;
     margin-top: 3% !important;
   }
   #ImpactBox{
@@ -1496,24 +1560,36 @@
   /*==============*/
 
   /*** Senses IA Interface ***/
+
+  .NosSolutionsTitle {
+    margin-bottom: 20px !important;
+    margin-top: -18% !important;
+    font-size:35px;
+
+  }
   
   #SensesIATitleTxt{
     margin-top: 5% !important;
-    margin-left: 3%;
+    margin-left:-1% !important;
+    text-align: center !important;
   }
   #p_descriptionSensesIA{
     margin-left: 3% !important ;
+    margin-right:3% !important;
     margin-bottom: 13% !important;
+    text-align: center !important;
+    
   }
   #img-descriptionSensesIA {
-    width: 280px !important;
+    width: 330px !important;
     height: 90% !important;
-    margin-left: 13% !important;
+    margin-left: 5% !important;
     margin-bottom: 5% !important;
   }
   #ComposantsSensesIATitle{
    margin-top: 12% !important;
    margin-bottom: 10% !important;
+   font-size:16px !important;
  }
   #blocComposantsSensesIA {
     text-align: center;
@@ -1523,62 +1599,124 @@
 
   /*=================*/
   /*Nos Expertise Interface */
+
+  #NosExpertiseTitre{
+    margin-top: 5% !important;
+    margin-bottom:-10% !important;
+  }
+
+  .ServiceAI_data > h5{
+    text-align: center !important;
+    margin-left:-2% !important;
+  }
+  .ServiceDigital_data >h5{
+    text-align: center !important;
+    margin-left:-8% !important;
+  }
+  .paragraph_ServiceAI{
+    text-align: center !important;
+    margin-left:1% !important;
+  }
+   .paragraph_ServiceDigital{
+    margin-left:1% !important;
+    margin-right:2% !important;
+    margin-bottom:-25% !important;
+    text-align: center !important;
+   }
+   .digitalOptions > li{
+    text-align: center !important;
+    margin-left:-10% !important;
+   }
   .img_service_AI {
-    margin-left: 10%;
+    margin-left:9% !important;
+    margin-top:-9% !important;
     border-radius: 30px;
-    width: 250px !important;
+    width: 300px !important;
   }
 
   .img_service_digital {
-    margin-top: 20px;
-    width: 250px !important;
-  }
-
-  .img_cercle_AI {
-    width: 318px !important;
-    margin-top: 50px !important;
-    margin-left: 5%;
+    margin-top:9% !important;
+    margin-left:8% !important;
+    margin-bottom: -4% !important;
+    width: 300px !important;
   }
 
   .AI_slogan{
-    padding-right:2% !important;
+    padding-right:6% !important;
     text-align: center !important;
   }
-
+  .intro_AI_data {
+    text-align: center !important;
+    margin-top: 20% !important;
+    margin-bottom:-10% !important;
+  }
+  .img_cercle_AI {
+    width: 310px !important;
+    margin-top: -19px !important;
+    margin-bottom:25% !important;
+    margin-left:7% !important;
+  }
+  .intro_AI_data{
+    margin-left: 9% !important;
+    margin-right:9% !important;
+  }
   .etape_AI {
-    width: 280px !important;
-    height: 550px !important;
-    text-align: justify;
-    margin-bottom: 30px;
-    margin-left: 46px !important;
-    padding: 40px;
+    width: 310px !important;
+    height: 465px !important;
+    margin-bottom: 15px !important;
+    margin-left: 8% !important;
+    margin-right: 1% !important;
     box-shadow: 0 0 45px 0 #c7c7c7;
     border-radius: 25px;
     transition: box-shadow .3s;
   }
 
+  .etape_AI_paragraph{
+    text-align: center !important;
+  }
   /*========================*/
 
   /* A propos Interface */
-  #AproposImgSize {
-    width: 315px !important;
-    margin-left:3%;
-    margin-bottom: 4%;
+ 
+  .Apropos {
+    margin-top: 50px !important;
+    text-align: center !important;
+  }
+  #AproposSuperText{
+    margin-left: -23% !important;
 
   }
-
-  .Apropos {
-    margin-top: 80px !important;
-    padding-left:5% !important;
-    text-align: justify !important;
+  #AproposParag{
+    text-align: center !important;
+    margin-right:16% !important;
   }
   
- 
+  #AproposImgSize {
+    width: 340px !important;
+    margin-left:-11% !important;
+  }
+
   /*==================*/
   /** espace carriere **/
+  .Contact_form{
+    margin-left:-6% !important;
+    margin-right:-1% !important;
+  }
   .ContactezNous_container {
     margin-left: 10% !important;
     margin-right: 6% !important;
+  }
+
+  .bloc_welcoming_phrases {
+    margin-top: -50px !important;
+    margin-bottom: 40px;
+    padding-top: 100px;
+  
+  }
+  /************************************/
+  #RiseLoader{
+    margin-top: 260px !important;
+    margin-left: 110px !important;
   }
 
   /*===================*/
@@ -1588,9 +1726,16 @@
 /**** Tablets screen between 768px and 1024px ****/
 @media screen and (min-width:768px) and (max-width:1023px) {
   .me-auto {
-    margin-left:110px !important;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  #NavText_other{
+    margin-left: -350px !important;
+    text-align: center;
+  }
+  .btnNosSolution{
+    margin-left: -350px !important;
+    text-align: center;
   }
   /**footer **/
   #socialIcons {
@@ -1604,7 +1749,7 @@
   }
 
   #navfooter {
-    padding-top: 15% !important;
+    padding-top: 15% !important; 
   }
 
   /*============*/
@@ -1733,6 +1878,24 @@
 }
   
   /*=================*/
+
+  /*********Espace carriere********************/
+  .bloc_welcoming_phrases {
+    margin-top: -50px !important;
+    margin-bottom: 40px;
+    padding-top: 100px;
+  
+  }
+  .Contact_form{
+    margin-left:-8% !important;
+    margin-right:-8% !important;
+  }
+  /************************************/
+  #RiseLoader{
+    margin-top: 390px !important;
+    margin-left: 310px !important;
+  
+  }
 }
 
 /*==========================================*/
@@ -1752,9 +1915,9 @@
 /*****************************/
 
 /*********Nos Solutions **********/
+/******* Hodhod Interface *********/
 #HodhodContentParagraph {
   margin-left: 84px;
-
 }
 
 .PictureContent {
@@ -1767,41 +1930,46 @@
   height: 80%;
   width: 90%;
 }
-
-#compBorder1 {
+#NosSolutionsTitleHodhod{
+  margin-left: 35%;
+}
+#ComposantsHodhodTitle{
+  margin-top:-3%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+#compBorder1{
+  margin-left:13%;
+  margin-right:-5%;
   border-radius: 25px;
   height: 180px;
 }
-
-#hodhodbox {
-  margin-left: -10%;
-  margin-top: 2%;
-}
-
-#compBorder2 {
+#compBorder2{
+  margin-right:-5%;
   border-radius: 25px;
   height: 180px;
 }
 
 #compBorder3 {
+  padding-top: 2%;
   border-radius: 25px;
   height: 180px;
 }
-
-.appmobile {
-
-  margin-top: 8%;
+#hodhodbox {
+  margin-left: -10%;
+  margin-top: 2%;
 }
 
-.kitelectronique {
-  margin-top: 8%;
+#mobPara{
+  margin-left:-20%;
+  margin-right:7%;
+  text-align: left;
 }
 
-.platform {
-
-  margin-top: 8%;
+#mobPicture{
+  margin-top: -15%;
+  margin-left:-17%;
 }
-
 #mobSize {
   margin-top: 18%;
 }
@@ -1811,9 +1979,19 @@
   margin-bottom: 4%;
   color: white;
 }
+#devenezParag{
+  padding-left: 7%;
+  padding-right:11%;
+  padding-bottom: 5%;
+  color: white;
+}
 
-#mobPara {
-  margin-right: 4%;
+.kitelectronique {
+  margin-top: 8%;
+}
+
+.platform {
+  margin-top: 8%;
 }
 
 #backgroundimg {
@@ -1826,14 +2004,6 @@
 
 }
 
-#ImpactBox {
-  margin-top: 10%;
-}
-
-#devenezParag {
-  padding-bottom: 5%;
-  color: white;
-}
 
 #apptitle {
   margin-top: 7%;
@@ -1851,7 +2021,21 @@
   margin-left: 40%;
   border-radius: 20px;
 }
+#ImpactBox {
+  margin-top: 10%;
+}
 
+#bgPsize {
+  margin-right:-5%;
+  border-radius: 25px;
+  height:350px;
+  width:250px;
+}
+
+#imageSize {
+  width: 100%;
+  height: 65% !important;
+}
 #hodhodStatement {
   text-align: center;
   font-style: normal;
@@ -1867,17 +2051,6 @@
   width: 15%;
   height: 100%;
   margin-left: 43%;
-}
-
-
-#bgPsize {
-  border-radius: 25px;
-  height: 300px;
-}
-
-#imageSize {
-  width: 100%;
-  height: 65% !important;
 }
 
 .CarouselPict div {
@@ -1918,11 +2091,14 @@
 /*********************************/
 
 /********A PROPOS ****************/
+
+
 #AproposImg {
-  margin-top: 4%;
-  margin-right: 2%;
-  height: 250px;
+  margin-top: 2%;
+  margin-left: -5%;
+  height: 350px;
   border-radius: 20px;
+  width:400px;
 }
 
 
@@ -1935,17 +2111,19 @@
   color: #000000;
   font-size: 14px;
   line-height: 22px;
-  margin-top: 3%;
+  margin-top: 4%;
+  margin-left:-5% ;
+  margin-right: 10%;
 }
 
 #AproposContent {
   margin-top: 10%;
-
+  margin-left: 10%;
 }
 
 #AproposSuperText {
   text-decoration: underline #25ACDE;
-
+  margin-left:-5% ;
 }
 
 #AproposHeader {
@@ -2351,12 +2529,13 @@ font-style: normal;
 }
 
 .nav-header {
-  z-index: 12;
+  z-index: 1000 !important;
   position: fixed;
   background-color: white;
   width: 100%;
   margin-top: -85px;
-  box-shadow: 0 0 45px 0 #e0e0e0;
+  display: none;
+  box-shadow: 0 0 45px 0 #dfdada;
   color: #000;
 }
 
@@ -2535,28 +2714,28 @@ font-style: normal;
 
 /****************Solution SensesIA*******************/
 
-#ComposantsSensesIATitle {
-  margin-top: 10%;
-  text-align: center;
-}
-
 #img-descriptionSensesIA {
   width: 80%;
   height: 80%;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
+#SensesIATitleTxt{
+  margin-left: 8%;
+}
 #p_descriptionSensesIA {
   margin-top: 5%;
+  margin-left: 8%;
+  margin-right:-10%;
 }
 
 #ComposantsSensesIATitle {
   margin-top: -2%;
+  text-align: center;
 }
-
 #blocComposantsSensesIA {
   margin-top: 5%;
-  margin-left: -5%;
+  margin-left: -11%;
   text-align: center;
 }
 
@@ -2569,22 +2748,23 @@ font-style: normal;
 }
 
 #kitElectronique {
-  margin-top: 15%;
-  margin-bottom: 2%;
+  margin-top: 8%;
+  margin-bottom: 5%;
   height: 62px;
   width: 62px;
 }
 
 #stockageCloud {
-  margin-top: 15%;
-  margin-bottom: 2%;
+  margin-top: 9%;
+  margin-bottom: 6%;
   height: 62px;
   width: 62px;
 }
 
 #plateformeIntelligente {
-  margin-top: 15%;
-  margin-bottom: 2%;
+
+  margin-top: 4%;
+  margin-bottom: 5%;
   height: 62px;
   width: 62px;
 }
@@ -2729,10 +2909,6 @@ font-style: normal;
   width: 100px !important;
 }
 
-#dropdown_Solution {
-  margin-top: -4%;
-
-}
 
 .Nav_home {
   text-transform: uppercase;
@@ -2740,13 +2916,10 @@ font-style: normal;
   margin-left: 20px;
   padding-right: 0px;
   font-size: 15px;
-  color: white;
-  
+
 }
 
-#NavText_home {
-  color: white;
-}
+
 
 .hashLinkNavBar {
   text-decoration: none;
@@ -2855,10 +3028,8 @@ font-style: normal;
 }
 
 .NosExpertises_Container {
- 
   margin-bottom: 100px;
   width: 100%;
-
 }
 
 .ServiceAI {
@@ -2869,8 +3040,7 @@ font-style: normal;
 .NosServicesTitle {
   text-align: center;
   margin-bottom: 60px;
-  font-size: 40px;
-
+  font-size: 40px; 
 }
 
 .ServiceDigital_data>h5 {
@@ -2879,20 +3049,22 @@ font-style: normal;
 
 .ServiceAI_data>h5 {
   font-weight: bold;
+  margin-left: 10%;
+
 }
 
 .paragraph_ServiceAI {
   margin-top: 20px;
+  margin-left: 10%;
   text-align: justify;
 }
 
 
 .paragraph_ServiceDigital {
   margin-top: 20px;
+  margin-right:12%;
   text-align: justify;
 }
-
-
 
 
 .paragraph_ServiceDigital>i {
@@ -2917,22 +3089,31 @@ font-style: normal;
 }
 
 .img_service_AI {
-  margin-left: 20%;
-  margin-top:5%;
+  margin-left: 10%;
+  margin-top:7%;
   border-radius: 30px;
-  width: 75%;
+  width: 80%;
   box-shadow: 0px 0px 15px rgba(224, 240, 253);
   border-radius: 25px;
 }
 
 .img_service_digital {
   margin-top: 70px;
-  margin-left:5%;
-
-  width: 70%;
+  margin-left:10%;
+  width: 80%;
   box-shadow: 0px 0px 15px rgba(224, 240, 253);
   border-radius: 25px;
   
+}
+
+.AI_slogan {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left:20px;
+  padding-right:5%;
+  text-align: center;
+  color: white;
 }
 
 /***********************IACestQuoi*******************************/
@@ -2942,31 +3123,26 @@ font-style: normal;
   margin-top: 115px;
   align-items: center;
 }
+.img_cercle_AI{
+  margin-left: -8%;
+}
 
 .intro_AI_data {
   text-align: justify;
   background-color: rgba(224, 240, 253);
-  box-shadow: 0px 0px 15px rgba(224, 240, 253, 0.5);
-  border-radius: 10px;
-  padding-top: 60px;
-  margin-left:1%;
-  margin-right:1%;
-  width: 200px;
+  border-radius: 20px;
+  padding-top: 40px;
+  margin-left:6%;
+  margin-right: 5%;
 }
 
-
-
-.AI_slogan {
-  
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left:20px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
+.intro_AI_data >h5{
+  padding:3%;
 }
-
+.intro_AI_data >p {
+margin-top: 2%;
+padding:3%;
+}
 .bloc_etapes_AI {
   margin-top: 90px;
   width: 70%;
@@ -2988,9 +3164,11 @@ font-style: normal;
 }
 
 .etape_AI {
-  width: 540px;
-  height: 330px;
+  width: 450px;
+  height: 345px;
   text-align: justify;
+  margin-left:15%;
+  margin-right:15%;
   margin-bottom: 30px;
   padding: 40px;
   box-shadow: 0 0 45px 0 #c7c7c7;
@@ -2999,7 +3177,7 @@ font-style: normal;
 }
 
 .etape_AI:hover {
-  box-shadow: 0 0 17px rgba(33, 33, 33, .2);
+  box-shadow:0 0 0 5px rgba(239, 233, 233, 0.835);
 
 }
 
@@ -3033,7 +3211,7 @@ font-style: normal;
 }
 
 .bloc_welcoming_phrases {
-  margin-top: 80px;
+  margin-top: 10px;
   margin-bottom: 40px;
   padding-top: 100px;
 
@@ -3053,11 +3231,13 @@ font-style: normal;
 
 .Contact_form {
   padding-top: 50px;
-  box-shadow: inset 0 0 15px 0 #c7c7c7;
+  box-shadow: 0 0 15px 0 #c7c7c7;
   border-radius: 30px;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 10%;
+  margin-left:-15%;
+  margin-right:-15%;
 
 }
 
@@ -3127,7 +3307,7 @@ font-style: normal;
 
 .logo-footer {
   width: 100%;
-  max-width: 170px;
+  max-width: 150px;
 }
 
 .contact-link {
@@ -3182,26 +3362,26 @@ font-style: normal;
   #basic-navbar-nav .Nav_home,
   #basic-navbar-nav #dropdown_Solution,
   #basic-navbar-nav .dropdown-item {
-    color: black;
     text-align: center;
     width: 100%;
     padding: 1.5rem 0;
     margin-right: 0px;
     margin-left: 0px;
     background-color: white;
-    
   }
+ 
 }
 
 /***********************/
 
 /******HomeInterface************/
 .nav-header {
-  z-index: 12;
+  z-index: 1000 !important;
   position: fixed;
   background-color: white;
   width: 100%;
   margin-top: -85px;
+  box-shadow: 0 0 45px 0 #dfdada;
 
 }
 
@@ -3382,6 +3562,42 @@ font-style: normal;
 }
 
 #AproposNousHeaderTxt{
-  margin-top:5%;
+  margin-top:-3%;
   margin-bottom: -4%;
 }
+#RiseLoader{
+  margin-top: 250px;
+  margin-left: 550px;
+
+}
+
+/******* Hodhod Interface *********/
+#NosSolutionsTitleHodhod{
+  margin-left: 35%;
+}
+#ComposantsHodhodTitle{
+  margin-top:-3%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+#compBorder1{
+  margin-left:13%;
+  margin-right:-5%;
+}
+#compBorder2{
+  margin-right:-5%;
+}
+#mobPara{
+  margin-left:-20%;
+  margin-right:7%;
+  text-align: left;
+}
+#mobPicture{
+  margin-top: -15%;
+  margin-left:-17%;
+}
+#devenezParag{
+  margin-left: 1%;
+  margin-right:50%;
+}
+/*********************/

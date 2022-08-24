@@ -104,7 +104,7 @@ function ContactezNous(props) {
         
         });
       
-      navigate('/Accueil');
+      navigate('/');
       notifySuccess()
 
     }
@@ -188,7 +188,7 @@ function ContactezNous(props) {
           <Form.Control.Feedback type="invalid">
             {errors.messageContact}
           </Form.Control.Feedback>
-
+          <br/>
         </FloatingLabel>
 
 
@@ -197,7 +197,7 @@ function ContactezNous(props) {
           Super Senses n'utilisera vos informations personnelles que pour fournir le produit
           ou  le service que vous avez demandé et pour vous contacter avec un contenu connexe
           susceptible de vous intéresser.
-          Vous pouvez vous désabonner de ces communications à tout moment.<br /> <br />
+          <br/><br/>
         </Form.Text>
 
         <Button variant="primary" type="submit" id="SeSoumettre_btn"

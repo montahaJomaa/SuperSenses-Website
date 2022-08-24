@@ -16,7 +16,7 @@ const NosSolutionPa = () => {
     <div id="hodhodP">
 
       <div className="row mt-5">
-      <h1 className="NosSolutionsTitle" id="NosSolutionsTitleHodhod" style={{marginTop:'-100px',marginBottom:'50px'}}> Nos solutions</h1>
+      <h1 id="NosSolutionsTitleHodhod"> Nos solutions</h1>
 
         <div className="col p-5" id="HodhodContentParagraph">
           <h1 id="HodhodContentParagraphTitle">Hodhod</h1>
@@ -39,7 +39,7 @@ const NosSolutionPa = () => {
           <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
             <img src={kitelectronique} className="kitelectronique text-center " />
-            <h6><br></br>Capteurs embarqués / kit électronique Collecte des datas.</h6>
+            <h6><br></br>Capteurs embarqués / kit électronique Collecte des datas</h6>
           </div>
 
 
@@ -47,7 +47,7 @@ const NosSolutionPa = () => {
 
 
             <img src={platform} className="platform text-center" />
-            <h6><br></br>Plateforme intelligente interactive.</h6>
+            <h6><br></br>Plateforme intelligente interactive</h6>
 
 
           </div>
@@ -56,7 +56,7 @@ const NosSolutionPa = () => {
 
           <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
             <img src={appmobile} className="appmobile text-center" />
-            <h6><br></br>Application mobile.</h6>
+            <h6><br></br>Application mobile</h6>
           </div>
 
         </div>
@@ -92,7 +92,9 @@ const NosSolutionPa = () => {
       <div className="container">
         <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
         <div id="PicturesPadding">
+
           <div class="row p-3">
+
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
               <img class="" src={img4} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>

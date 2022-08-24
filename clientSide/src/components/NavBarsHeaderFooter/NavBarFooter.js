@@ -11,7 +11,7 @@ const NavbarFooter = () => {
                 <div className="row flex-footer">
                     
                     <div className="col-md-4 logo-footer-container align-self-end text-center">
-                        <a href="/Accueil">
+                        <a href="#top">
                             <img src={logo_supersenses} className="logo-footer" alt="Super Senses Logo" /></a>
                     </div>
                     <div className="col-md-4 contact-container align-self-end text-center">

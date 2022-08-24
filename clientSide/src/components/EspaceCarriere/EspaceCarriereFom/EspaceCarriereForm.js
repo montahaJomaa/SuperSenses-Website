@@ -129,6 +129,7 @@ function EspaceCarriereForm(props) {
       console.log(radioValue);
 
       const formData = new FormData();
+      formData.append('radioValue',radioValue);
       formData.append('nomPrenomCandidat', nomPrenomCandidat);
       formData.append('emailCandidat', emailCandidat);
       formData.append('numTelephoneCandidat', numTelephoneCandidat);
@@ -146,7 +147,7 @@ function EspaceCarriereForm(props) {
 
       //history.go(-1);
 
-      navigate('/Accueil');
+      navigate('/');
       notifySuccess()
 
     }
@@ -167,13 +168,10 @@ function EspaceCarriereForm(props) {
 
       </Container>
 
-
-
-
       <Form className="Contact_form" onSubmit={handleSubmit}>
 
         <Row>
-          <ButtonGroup>
+          <ButtonGroup >
             {radios.map((radio, idx) => (
               <ToggleButton
                 key={idx}
@@ -321,7 +319,7 @@ function EspaceCarriereForm(props) {
         Super Senses n'utilisera vos informations personnelles que pour fournir le produit
         ou  le service que vous avez demandé et pour vous contacter avec un contenu connexe
         susceptible de vous intéresser.
-        Vous pouvez vous désabonner de ces communications à tout moment.<br /> <br />
+      <br /> <br />
       </Form.Text>
 
       <Button variant="primary" type="submit" id="SeSoumettre_btn"

@@ -44,12 +44,12 @@ function HomeInterface() {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto" id="HomeNav">
-              <Nav.Link className='Nav_home' id='NavText_home' href="Accueil">Accueil</Nav.Link>
+              <Nav.Link className='Nav_home' id='NavText_home' href="/">Accueil</Nav.Link>
               <Nav.Link className='Nav_home' id='NavText_home' href="#NosValNosSolutions">Nos Solutions</Nav.Link>              
-              <Nav.Link href="/NosExpertises" className='Nav_home' id='NavText_home'>
+              <Nav.Link href="/NosExpertises" className='Nav_home' id='NavText_home' >
                 Nos expertises
               </Nav.Link>
-              <Nav.Link href="/Apropos" className='Nav_home' id='NavText_home'>
+              <Nav.Link href="/Apropos" className='Nav_home' id='NavText_home' >
                 A propos
               </Nav.Link>
             </Nav>
