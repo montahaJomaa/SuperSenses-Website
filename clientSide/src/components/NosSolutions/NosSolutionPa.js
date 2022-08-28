@@ -21,10 +21,10 @@ const NosSolutionPa = () => {
         <div className="col p-5" id="HodhodContentParagraph">
           <h1 id="HodhodContentParagraphTitle">Hodhod</h1>
           <p id="HodhodContentParagraphDes">
-            Super senses fournit ses solutions innovantes à impact afin de résoudre<br></br>
+            Super senses fournit ses solutions innovantes à impact sociales afin de résoudre<br></br>
             des problèmes environnemental et digitaliser les villes tunisiennes.<br></br>
-            La ‘Hodhod’ est une solution destinée à lutter contre la pollution citadine
-            et<br></br> elle permet aux municipalités d’avoir un canal de communication interactive<br></br> avec
+            ‘Hodhod’ est une solution destinée à lutter contre la pollution citadine
+            et<br></br> elle permet aux municipalités d’avoir un canal de communication interactif<br></br> avec
             les citoyens en particulier et tout l'écosystème en général.
           </p>
         </div>
@@ -39,7 +39,7 @@ const NosSolutionPa = () => {
           <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
             <img src={kitelectronique} className="kitelectronique text-center " />
-            <h6><br></br>Capteurs embarqués / kit électronique Collecte des datas</h6>
+            <h6><br></br>Capteurs embarqués / kit électronique collectant les données</h6>
           </div>
 
 
@@ -67,7 +67,7 @@ const NosSolutionPa = () => {
             <img src={mob} id="mobPicture" />
           </div>
           <div className="col">
-            <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonter d’une manière efficace aux divers services de la municipalité.</h6>
+            <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonte d’une manière efficace aux divers services de la municipalité.</h6>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@ const NosSolutionPa = () => {
           <p>
             Nous avons inventé Hodhod pour booster les municipalités à automatiser leurs procédures et engager les citoyens
             pour une ville intelligente et moderne. La solution est destinée à lutter contre la pollution citadine et
-            elle permet aux municipalités d’avoir un canal de communication interactive avec
+            elle permet aux municipalités d’avoir un canal de communication interactif avec
             les citoyens en particulier et tout l’écosystème en général. La collecte et la
             gestion des réclamations se fait instantanément d’une manière organisée.
             La solution Hodhod est basée sur les nouvelles technologies principalement l’intelligence artificielle et
@@ -90,7 +90,7 @@ const NosSolutionPa = () => {
 
       </div>
       <div className="container">
-        <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
+        <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts de Hodhod</h1><br></br><br></br><br></br>
         <div id="PicturesPadding">
 
           <div class="row p-3">

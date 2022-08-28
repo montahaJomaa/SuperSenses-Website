@@ -11,7 +11,6 @@ import HomeInterface from "./components/HomeInterface/HomeInterface.jsx";
 import NosExpertises from "./components/NosExpertises/NosExpertises";
 import ContactezNous from "./components/ContactezNous/ContactezNous";
 import NosOffres from "./components/NosOffres/NosOffres";
-import NosValeur from "./components/NosValeur";
 import NosSolution from "./components/NosSolutions/NosSolution";
 import Apropos from './components/Apropos';
 import EspaceCarriereForm from "./components/EspaceCarriere/EspaceCarriereFom/EspaceCarriereForm";

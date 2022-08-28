@@ -60,7 +60,7 @@ const NavbarFooter = () => {
                 </div>
 
                 <div className="copy-right">
-                    SuperSenses &copy;2022 Tous droit réservés
+                    SuperSenses &copy;2022 Tous droits réservés
                 </div>
             </div>
         </div>

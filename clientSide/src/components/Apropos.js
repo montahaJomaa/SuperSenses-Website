@@ -9,7 +9,7 @@ const Apropos = () => {
       <div class="container" id="AproposContent">
         <div class="row">
           
-          <div class="col-sm">
+          <div class="col-sm-md-2">
             <h2 id="AproposSuperText">Super Senses</h2>
             <p id="AproposParag">
               <br/>

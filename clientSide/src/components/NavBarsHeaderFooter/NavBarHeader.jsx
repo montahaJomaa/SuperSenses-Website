@@ -53,18 +53,18 @@ function NavBarHeader() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto" id="HomeNav">
-              <Nav.Link className='Nav_home' id='NavText_home' href="/" style={{ color: 'black' }}>Accueil</Nav.Link>
+              <Nav.Link className='Nav_home' href="/" style={{ color: 'black' }}>Accueil</Nav.Link>
               
-              <NavDropdown title="NOS SOLUTIONS" id="dropdown_Solution" style={{ color: 'black' }}>
+              <NavDropdown title="Nos Solutions" id="dropdown_Solution"className='Nav_homeNosSolution' style={{ color: 'black' }}>
                 <NavDropdown.Item href="/Hodhod">Hodhod</NavDropdown.Item>
                 <NavDropdown.Item href="/SensesIA">SensesIA</NavDropdown.Item>
               </NavDropdown>
               
-              <Nav.Link href="/NosExpertises" className='Nav_home' id='NavText_home' style={{ color: 'black' }}>
+              <Nav.Link href="/NosExpertises" className='Nav_home'  style={{ color: 'black' }}>
                 Nos expertises
               </Nav.Link>
               
-              <Nav.Link href="/Apropos" className='Nav_home' id='NavText_home' style={{ color: 'black' }}>
+              <Nav.Link href="/Apropos" className='Nav_home'  style={{ color: 'black' }}>
                 A propos
               </Nav.Link>
               {/* <div className='dpSolution'><img src={language} id="languageIcon" /></div> */}

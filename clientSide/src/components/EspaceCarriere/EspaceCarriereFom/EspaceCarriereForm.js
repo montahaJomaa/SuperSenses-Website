@@ -318,7 +318,7 @@ function EspaceCarriereForm(props) {
       <Form.Text className="text-muted" >
         Super Senses n'utilisera vos informations personnelles que pour fournir le produit
         ou  le service que vous avez demandé et pour vous contacter avec un contenu connexe
-        susceptible de vous intéresser.
+        susceptible de votre intérêt.
       <br /> <br />
       </Form.Text>
 

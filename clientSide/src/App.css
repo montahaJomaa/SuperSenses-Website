@@ -1,3 +1,7 @@
+.App {
+  background-color: white;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 @font-face {
@@ -8,1340 +12,27 @@
 }
 
 /* Media Queries */
-@media screen and (min-width:980px) and (max-width:1098px) {
-  .images {
-    margin-left: 380px !important;
-  }
-}
-
-@media screen and (max-width:991px) {
-  .bgTestImg {
-    content: url("./components/images/logo_supersenses_white.png") !important;
-    width: 100px !important;
-
-  }
-
-  #HomeNav {
-    background-color: rgb(45, 124, 181);
-  }
-
-}
-
-/****** navbar ****/
-@media only screen and (max-width:971px) {
-  .btnNosSolution {
-    margin-left: 7px;
-  }
-
-  .btnNosSolutionHome {
-    margin-left: -15px;
-  }
-}
-
-/** homeinterface Navbar **/
-@media screen and (min-width:1700px) and (max-width:2100) {
-  #HomeNav {
-    padding-left: 190px !important;
-  }
-}
-
-@media only screen and (min-width:2100px) {
-  #HomeNav {
-    padding-left: 500px !important;
-  }
-}
-
-/*====================*/
-
-/*********screen between 1024px and 1450px *************/
-@media only screen and (min-width: 1024px) and (max-width:1450px) {
-
-  /*homeInterface*/
-  #portfolioBox {
-    width: 97% !important;
-    margin-left: 25px !important;
-  }
-
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 78% !important;
-    left: 100px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .Apropos {
-    margin-top: 6% !important;
-  }
-
-  #portfolio1:hover {
-    transform: scale(1.3);
-    z-index: 2;
-    box-shadow: 50% 50% 50% rgb(97, 96, 96);
-    border-radius: 25px;
-    filter: drop-shadow(10px 10px 10px rgb(69, 71, 69));
-    width: 85% !important;
-  }
-
-  #portfolio1 {
-    width: 90%;
-  }
-
-  #boxs {
-    margin-top: 6%;
-    margin-left: 185px !important;
-    width: 990px !important;
-  }
-
-  .expertisets {
-    background-image: url('./components/images/Bg_expertise.jpg');
-    width: 100% !important;
-    margin-left: 0% !important;
-    background-repeat: no-repeat;
-    background-size: 100% 90%;
-    height: 487px;
-    padding-top: 8%;
-  }
-
-  .expertiseBox {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: -83% !important;
-    padding-top: 2.5%;
-    line-height: 3em;
-  }
-
-  #navfooter {
-    background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
-    background-repeat: no-repeat;
-    width: 98% !important;
-    height: 400px;
-    margin-left: 0%;
-    margin-top: 6%;
-  }
-
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    width: 280px !important;
-    height: 267px;
-  }
-
-  .contenuS:hover .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 280px !important;
-    height: 267px !important;
-  }
-
-  .text {
-    background-color: gray;
-    opacity: 0.9;
-    color: white;
-    font-size: 25px;
-    width: 346px !important;
-    height: 81px;
-    margin-left: 11.5% !important;
-    margin-top: 26% !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
-  }
-
-  #img3Solution {
-    width: 70%;
-    height: 251px !important;
-  }
-
-  .img3Box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 58%;
-    height: 50% !important;
-    margin-top: -20%;
-    margin-left: 6.25%;
-  }
-
-  .box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 58%;
-    height: 48% !important;
-    margin-top: -20%;
-    margin-left: 7%;
-  }
-
-  #findOn {
-    margin-left: 2% !important;
-    font-size: 15px !important;
-    margin-top: 38% !important;
-  }
-
-  .fb_logo {
-    margin-left: -3% !important;
-    margin-top: 35% !important;
-  }
-
-  .insta_logo {
-    margin-left: -160% !important;
-    margin-top: 35% !important;
-  }
-
-  .linkedin_logo {
-    margin-left: -80% !important;
-    margin-top: 35% !important;
-  }
-
-  #logo_sup {
-    margin-left: 35%;
-    margin-top: 38% !important;
-  }
-}
-
-/****** for screen between 800 and 1099 *******/
-@media only screen and (min-width: 800px) and (max-width:1099px) {
-  
-  .nav-header{
-    margin-top:-90px !important;
-    color: #000;
-  }
-  .logo_supersenses {
-    width: 107px;
-    height: 76.42px;
-    margin-left: 15px !important;
-    margin-right: 5px;
-  }
-
-  #portfolioBox {
-    width: 800px !important;
-    margin-left: 10px !important;
-  }
-
-  #portfolio1 {
-    width: 100%;
-  }
-
-  #img3Solution {
-    width: 60% !important;
-    height: 200px !important;
-  }
-
-  .img3Box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 48% !important;
-    height: 52% !important;
-    margin-top: -20%;
-    margin-left: 6.25%;
-  }
-
-  .box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 50% !important;
-    height: 52% !important;
-    margin-top: -20%;
-    margin-left: 5% !important;
-  }
-
-  #boxs {
-    margin-top: 6%;
-    margin-left: 50px !important;
-    width: 990px !important;
-  }
-
-  #hodhodparagraph {
-    font-size: 14px !important;
-    text-align: center;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: medium;
-    font-family: 'Roboto';
-    line-height: 22px;
-    color: #000;
-    padding-left: 15%;
-  }
-
-  #SensiaP {
-    font-size: 14px !important;
-    text-align: center;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: medium;
-    font-family: 'Roboto';
-    line-height: 22px;
-    color: #000;
-  }
-
-  .images {
-    padding-top: 5%;
-    margin-left: 60px;
-    width: 30% !important;
-  }
-  /*==================*/
-
-   /**Hodhod Interface **/
-  
- .bgSolutionImg {
-  background-image: url('./components/images/bannière supersenses@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100% 50% !important;
-  height: 487px;
-}
-#HodhodContentParagraph {
-  margin-top: -290px !important;
-}
-
-#HodhodContentParagraphTitle{
- margin-left:-30% !important;
-}
-#HodhodContentParagraphDes{
-  margin-left:-30% !important;
-}
-#videoPicture {
-  width: 390px !important;
-  height: 200px !important;
-  margin-top: -190px !important;
-}
-
-#ComposantsHodhodTitle{
-  margin-left:-3% !important;
-  margin-bottom: 7% !important;
-}
-
-#hodhodbox {
-  
-  margin-top: 4%;
-  width: 80% !important;
-}
-#compBorder1 {
-  
-  margin-left: 30% !important;
-  margin-right: 10% !important;
-  
-}
-
-#compBorder2 {
-  margin-left: 30% !important;
-  margin-right: 10% !important;
- 
-}
-
-#compBorder3 {
-  margin-left: 30% !important;
-  margin-right: 10% !important;
-  
-}
-
-#mobPicture {
-  width: 300px !important;
-  margin-bottom:15% !important;
-
-}
-#mobSize{
-  margin-bottom: -15%;
-}
-#mobPara{
-  text-align: left;
-  margin-left:5% !important;
-  margin-top: 30% !important;
-}
-#backgroundimg{
-  margin-top: 25% !important;
-}
-
-#bgPsize {
-  border-radius: 25px;
-  margin-top: 20px !important;
-  width: 25%;
-  padding-bottom: 9%;
-}
-
-#deveneztitle{
-  margin-top: 10% !important;
-}
-
-#devenezParag{
-  text-align: left !important;
-  margin-left: -1% !important;
-  margin-top: 3% !important;
-}
-#ImpactBox{
-  margin-top: 22% !important;
-  margin-bottom: -40px !important;
-}
-#hodhodImage {
-  width: 120px !important;
-  height: 80px !important;
-  margin-top: 10%;
-  margin-left: 35% !important;
-  border-radius: 20px;
-}
-
-#googlePlay {
-  width: 100px !important;
-  height: 100%;
-  margin-left: 35% !important;
-}
-
-  /*======================*/
-  /* Nos expertises Interface */
- 
-  .img_service_AI {
-    margin-left: 10% !important;
-    margin-top:45% !important;
-    border-radius: 25px;
-    width: 250px !important;
-  }
-
-  .img_service_digital {
-    margin-left: 1% !important;
-    margin-top:45% !important;
-    width: 250px !important;
-    border-radius: 25px;
-
-  }
-  .paragraph_ServiceDigital{
-    margin-bottom:-60% !important;
-   }
-  .AI_slogan{
-    text-align: justify;
-    padding-right: 3% !important;
-  }
-  .img_cercle_AI {
-    width: 370px !important;
-    height:240px !important;
-    margin-top: 55px !important;
-    margin-bottom:20px !important;
-  }
-  .etape_AI{
-    width:450px !important;
-  }
-  
-  /*==================*/
-
-}
-
-/*********** mobile screen between 425px and 767px**************************/
-@media only screen and (min-width:425px) and (max-width:767px) {
-  #NavText_other{
-    margin-left: -350px !important;
-    text-align: center;
-    padding-top:4px !important;
-    padding-bottom: 4px !important;
-  }
-  .btnNosSolution{
-    margin-left: -350px !important;
-    text-align: center;
-  }
-  
-  /** footer **/
-  #socialIcons {
-    margin-left: 10% !important;
-    margin-top: -13% !important;
-  }
-
-  #copyright_title {
-    margin-left: -65% !important;
-  }
-
-  #navfooter {
-    padding-top: 15% !important;
-  }
-
-  /*=============*/
-  /* Homeinterface*/
-  .description_img {
-    width: 300px !important;
-  }
-
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
-  }
-
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
-  }
-
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
-  }
-
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    width: 120px !important;
-    height: 270px !important;
-  }
-
-  .contenuS {
-    width: 30% !important;
-    margin-left:20% !important;
-    margin-bottom: 15% !important;
-  }
-
-  #hodhod1 {
-    width: 340px !important;
-    height: 250px !important;
-    margin-left: -20px !important;
-    margin-top: 70px !important;
-  }
-
-  .expertiseBox {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 280px !important;
-    margin-left: 10px !important;
-    padding-top: 2.5%;
-    line-height: 3em;
-  }
-
-  #expertiseBoxItems {
-    font-size: 16px !important;
-  }
-
-  #portfolio1 {
-    width: 250px !important;
-    margin-left: 25px !important;
-  }
-
-  /*================*/
-  
- /**Hodhod Interface **/
-  
- .bgSolutionImg {
-  background-image: url('./components/images/bannière supersenses@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100% 50% !important;
-  height: 487px;
-}
-#HodhodContentParagraph {
-  margin-top: -320px !important;
-}
-
-#HodhodContentParagraphTitle{
- margin-left:-35% !important;
-}
-#HodhodContentParagraphDes{
-  margin-left:-35% !important;
-}
-#videoPicture {
-  width: 350px !important;
-}
-
-#ComposantsHodhodTitle{
-  margin-left:5% !important;
-  margin-bottom: 7% !important;
-}
-
-#hodhodbox {
-  
-  margin-top: 4%;
-  width: 80% !important;
-}
-#compBorder1 {
-  
-  margin-left: 25% !important;
-  margin-right: 10% !important;
-  margin-bottom: 10% !important;
-}
-
-#compBorder2 {
-  margin-left: 25% !important;
-  margin-right: 10% !important;
-  margin-bottom: 10% !important;
-}
-
-#compBorder3 {
-  margin-left: 25% !important;
-  margin-right: 10% !important;
-  margin-bottom: 10% !important;
-}
-
-#mobPicture {
-  width: 300px !important;
-  margin-bottom:15% !important;
-
-}
-#mobSize{
-  margin-bottom: -15%;
-}
-#mobPara{
-  text-align: left;
-  margin-left:5% !important;
-}
-#backgroundimg{
-  margin-top: 25% !important;
-}
-
-#bgPsize {
-  border-radius: 25px;
-  margin-top: 20px !important;
-}
-
-#deveneztitle{
-  margin-top: 10% !important;
-}
-
-#devenezParag{
-  text-align: left !important;
-  margin-left: -1% !important;
-  margin-top: 3% !important;
-}
-#ImpactBox{
-  margin-top: 22% !important;
-  margin-bottom: -40px !important;
-}
-#hodhodImage {
-  width: 120px !important;
-  height: 80px !important;
-  margin-top: 10%;
-  margin-left: 35% !important;
-  border-radius: 20px;
-}
-
-
-
-#googlePlay {
-  width: 100px !important;
-  height: 100%;
-  margin-left: 35% !important;
-}
-
-
-
-  /*======================*/
-  /**** Senses IA Interface***/
-
-  #SensesIATitleTxt{
-    margin-top: 5% !important;
-    margin-left: 3%;
-  }
-  #p_descriptionSensesIA{
-    margin-left: 3% !important ;
-    margin-bottom: 13% !important;
-  }
-  #img-descriptionSensesIA {
-    width: 330px !important;
-    height: 90% !important;
-    margin-left: 40px !important;
-    margin-bottom: 5% !important;
-  }
-  #ComposantsSensesIATitle{
-    margin-top: 12% !important;
-    margin-bottom: 10% !important;
-  }
-  #blocComposantsSensesIA {
-    margin-top: 5%;
-    text-align: center;
-    width: 350px !important;
-    margin-left: 1% !important;
-  }
-
-
-  /***===============***/
-  /**** Nos Expertises ****/
-
-  .img_service_AI {
-    margin-left: 10% !important;
-    margin-top:45% !important;
-    border-radius: 25px;
-    width: 250px !important;
-  }
-
-  .img_service_digital {
-    margin-left: 18% !important;
-    margin-top:15% !important;
-    width: 250px !important;
-    border-radius: 25px;
-
-  }
-  .paragraph_ServiceDigital{
-    margin-bottom:-25% !important;
-   }
-  .AI_slogan{
-    text-align: justify;
-    padding-right: 3% !important;
-  }
-  .img_cercle_AI {
-    width: 370px !important;
-    height:240px !important;
-    margin-top: 55px !important;
-    margin-bottom:20px !important;
-    margin-left: 3% !important;
-  }
-  .etape_AI {
-    align-items: center;
-    width: 400px !important;
-    height: 405px !important;
-    text-align: center;
-    box-shadow: 0 0 45px 0 #c7c7c7;
-    border-radius: 25px;
-    transition: box-shadow .3s;
-    margin-bottom: 30px;
-    margin-right: 3% !important;
-    padding-bottom: 50px !important ;
-  }
-
-  /***===============***/
-  /**** A propos interface ****/
-  #AproposHeader {
-    margin-top: 18% !important;
-  }
-
-  #AproposImgSize {
-    width: 380px !important;
-    margin-bottom: 20px;
-    margin-left: 2% !important;
-  }
-#AproposSuperText {
-  margin-left: 3% !important;
-}
-#AproposParag{
-  margin-left: 3% !important;
-}
-  /*===========================*/
-  /** espace Carriere **/
-  .ContactezNous_container {
-    margin-left: 10% !important;
-    margin-right: 6% !important;
-  }
-
-  /*===================*/
-}
-
-/************************/
-
-/*********** mobile screen 320px ***********/
-@media only screen and (max-width:320px) {
-  /* Nos expertises Interface */
-  #NosExpertiseTitre{
-    margin-bottom:-29px;
-  }
-  .ServiceAI_data > h5{
-    text-align: center !important;
-  }
-  .paragraph_ServiceAI{
-    text-align: center !important;
-      }
-  
-  .ServiceDigital_data > h5 {
-    text-align: center !important;
-  }
-  .paragraph_ServiceDigital{
-    text-align: center !important;  
-  }
-  .digitalOptions > li{
-    text-align: center !important; 
-    margin-left:-10% !important; 
-  }
-  
-  .img_service_AI {
-    margin-left: 4% !important;
-    margin-top: -9% !important;
-    margin-bottom:-10%;
-    border-radius: 25px;
-    width: 275px !important;
-  }
-
-  .img_service_digital {
-    margin-left: 4% !important;
-    margin-top:-22% !important;
-    width: 270px !important;
-    border-radius: 25px;
-  }
-  .AI_slogan{
-    padding-right:4% !important;
-    text-align: center !important;
-    margin-bottom: -10% !important;
-  }
-
-  .intro_AI_data {
-    text-align: center !important;
-  }
-  .img_cercle_AI {
-    width: 280px !important;
-    margin-top: 60px !important;
-    margin-bottom:20px !important;
-  }
-
-  .etape_AI {
-    width: 280px !important;
-    height: 545px !important;
-    text-align: center !important;
-    box-shadow: 0 0 45px 0 #c7c7c7;
-    border-radius: 25px;
-    transition: box-shadow .3s;
-    margin-left:1% !important;
-    margin-bottom: 30px;
-    padding: 40px;
-  }
-
-  .icon_etapes_AI{
-    margin-right: 45% !important;
-  }
- 
-  /*==================*/
-  /**Hodhod Interface **/
-  
-  .bgSolutionImg {
-    background-image: url('./components/images/bannière supersenses@2x.png');
-    background-repeat: no-repeat;
-    background-size: 100% 50% !important;
-    height: 487px;
-  }
-  #HodhodContentParagraph {
-    margin-top: -320px !important;
-    text-align: center !important;
-
-  }
-
-  #HodhodContentParagraphTitle{
-   margin-left:-47% !important;
-
-  }
-  #HodhodContentParagraphDes{
-    margin-left:-47% !important;
-    text-align: center !important;
-
-  }
-  #videoPicture {
-    width: 350px !important;
-  }
-
-  #ComposantsHodhodTitle{
-    margin-left:3% !important;
-    margin-bottom: 5% !important;
-    text-align: center !important;
-
-  }
-  
-  #hodhodbox {
-    margin-left: 4% !important;
-    margin-top: 4%;
-    margin-bottom: 35% !important;
-    width: 80% !important;
-  }
-  #compBorder1 {
-    margin-bottom: 50px !important;
-  }
-
-  #compBorder2 {
-    margin-bottom: 50px !important;
-  }
-
-  #mobPicture {
-    width: 280px !important;
-    margin-bottom:15% !important;
-
-  }
-  #mobPara{
-    text-align: center !important;
-    margin-left:5% !important;
-  }
-  #backgroundimg{
-    margin-top: 25% !important;
-  }
-  #bgPsize {
-    border-radius: 25px;
-    margin-top: 20px !important;
-  }
-
-  #deveneztitle{
-    margin-top: 10% !important;
-  }
-
-  #devenezParag{
-    text-align: center !important;
-    margin-left: -1% !important;
-    margin-top: 3% !important;
-  }
-  #ImpactBox{
-    margin-top: 22% !important;
-    margin-bottom: -40px !important;
-  }
-  #hodhodImage {
-    width: 120px !important;
-    height: 80px !important;
-    margin-top: 10%;
-    margin-left: 35% !important;
-    border-radius: 20px;
-  }
-
-  
-
-  #googlePlay {
-    width: 100px !important;
-    height: 100%;
-    margin-left: 35% !important;
-  }
-
-
-   /*** Senses IA Interface ***/
-   #SensesIATitleTxt{
-    margin-top: 5% !important;
-    margin-left: 3%;
-    text-align: center !important;
-  }
-  #p_descriptionSensesIA{
-    margin-left: 1% !important ;
-    margin-bottom: 13% !important;
-    text-align: center !important;
-
-  }
-  #img-descriptionSensesIA {
-    width: 280px !important;
-    height: 70% !important;
-    margin-left: 3% !important;
-    margin-bottom: 5% !important;
-    margin-top: 10% !important;
-  }
-  #ComposantsSensesIATitle{
-   margin-top: 12% !important;
-   margin-bottom: 10% !important;
- }
-  #blocComposantsSensesIA {
-    text-align: center;
-    width: 280px !important;
-    margin-left: -1% !important;
-  }
-  #compBorder1{
-    width: 250px;
-    margin-bottom:15% !important;
-  }
-  #compBorder2{
-    width: 250px;
-    margin-bottom:15% !important;
-  }
-  #compBorder3{
-    width: 250px;
-  }
-  /*=================*/
-  /* A propos */
-  #AproposNousHeaderTxt{
-    margin-top: 8% !important;
-    text-align: center !important;
-  }
-  #AproposImgSize {
-    width: 280px !important;
-    margin-left: 2% !important;
-  }
-#AproposSuperText {
-  margin-left: 3% !important;
-  margin-top: -13% !important;
-  text-align: center !important;
-
-}
-#AproposParag{
-  margin-left: 3% !important;
-  text-align: center !important;
-
-}
-/*==================*/
-/*******Espace Carriere ********/
-.bloc_welcoming_phrases{
-  margin-top: -25% !important;
-}
-.Contact_form{
-  margin-left:-28% !important;
-  margin-right:-28% !important;
-}
-}
-/************************/
-/*********** mobile screen between 321px and 375px ***********/
-@media screen and (min-width:321px) and (max-width:375px) {
-  
-  /** footer **/
-  #socialIcons {
-    margin-left: 4% !important;
-    margin-top: -25% !important;
-  }
-
-  #copyright_title {
-    margin-left: -65% !important;
-  }
-
-  #navfooter {
-    padding-top: 15% !important;
-  }
-
-  /*==========*/
-  /**navbar **/
-  .nav-header {
-    z-index: 1000 !important;
-    position: fixed;
-    background-color: white;
-    width: 100% !important;
-    margin-top: -25px !important;
-    padding-right: 25px !important;
-    color:black;
-  }
-
-  /*==========**/
-  /**home Interface**/
-  .description_img {
-    margin-bottom:70px;
-    width: 250px !important;
-  }
-
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
-  }
-
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
-  }
-
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
-  }
-
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    width: 120px !important;
-    height: 270px !important;
-  }
-
-  .contenuS {
-    position: relative;
-    width: 50%;
-    margin-left: 30% !important;
-  }
-
-  #hodhod1 {
-    width: 340px !important;
-    height: 250px !important;
-    margin-left: -20px !important;
-    margin-top: 70px !important;
-  }
-
-  .expertiseBox {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 450px !important;
-    height: 280px !important;
-    margin-left: 80px !important;
-    padding-top: 2.5%;
-    line-height: 3em;
-  }
-
-  #expertiseBoxItems {
-    font-size: 14px !important;
-  }
-
-  #portfolio1 {
-    width: 250px !important;
-    margin-left: 25px !important;
-  }
-
-  /**==================**/
-
-  /*****A propos Interface *****/
-  #AproposNousHeaderTxt{
-    margin-top: 5% !important;
-  }
-  
-  #AproposImgSize {
-    width: 300px !important;
-    margin-bottom: 20px;
-    margin-left: 2% !important;
-  }
-#AproposSuperText {
-  margin-left: 3% !important;
-  margin-top: 5%;
-}
-#AproposParag{
-  margin-left: 3% !important;
-}
-  /**================**/
-  /**Hodhod Interface **/
-  
-  .bgSolutionImg {
-    background-image: url('./components/images/bannière supersenses@2x.png');
-    background-repeat: no-repeat;
-    background-size: 100% 50% !important;
-    height: 487px;
-  }
-  #HodhodContentParagraph {
-    margin-top: -320px !important;
-  }
-
-  #HodhodContentParagraphTitle{
-   margin-left:-47% !important;
-  }
-  #HodhodContentParagraphDes{
-    margin-left:-47% !important;
-  }
-  #videoPicture {
-    width: 350px !important;
-  }
-
-  #ComposantsHodhodTitle{
-    margin-left:15% !important;
-    margin-bottom: 5% !important;
-  }
-  
-  #hodhodbox {
-    margin-left: 4% !important;
-    margin-top: 4%;
-    margin-bottom: 35% !important;
-    width: 80% !important;
-  }
-  #compBorder1 {
-    margin-bottom: 50px !important;
-  }
-
-  #compBorder2 {
-    margin-bottom: 50px !important;
-  }
-
-  #mobPicture {
-    width: 280px !important;
-    margin-bottom:15% !important;
-
-  }
-  #mobPara{
-    text-align: left;
-    margin-left:5% !important;
-  }
-  #backgroundimg{
-    margin-top: 25% !important;
-  }
-  #bgPsize {
-    border-radius: 25px;
-    margin-top: 20px !important;
-  }
-
-  #deveneztitle{
-    margin-top: 10% !important;
-  }
-
-  #devenezParag{
-    text-align: left !important;
-    margin-left: -1% !important;
-    margin-top: 3% !important;
-  }
-  #ImpactBox{
-    margin-top: 22% !important;
-    margin-bottom: -40px !important;
-  }
-  #hodhodImage {
-    width: 120px !important;
-    height: 80px !important;
-    margin-top: 10%;
-    margin-left: 35% !important;
-    border-radius: 20px;
-  }
-
-  
-
-  #googlePlay {
-    width: 100px !important;
-    height: 100%;
-    margin-left: 35% !important;
-  }
-
-
-
-  /*===================*/
-  
-   /*** Senses IA Interface ***/
-  #SensesIATitleTxt{
-    margin-top: 5% !important;
-    margin-left: 3%;
-  }
-  #p_descriptionSensesIA{
-    margin-left: 3% !important ;
-    margin-bottom: 13% !important;
-  }
-  #img-descriptionSensesIA {
-    width: 298px !important;
-    height: 70% !important;
-    margin-left: 5% !important;
-    margin-bottom: 5% !important;
-    margin-top: 10% !important;
-  }
-  #ComposantsSensesIATitle{
-   margin-top: 12% !important;
-   margin-bottom: 10% !important;
-   font-size: 20px;
- }
-  #blocComposantsSensesIA {
-    text-align: center;
-    width: 280px !important;
-    margin-left: 5% !important;
-  }
-  #compBorder1{
-    width: 250px;
-    margin-bottom:15% !important;
-  }
-  #compBorder2{
-    width: 250px;
-    margin-bottom:15% !important;
-  }
-  #compBorder3{
-    width: 250px;
-  }
-  /*=================*/
-
-
-  /*==================*/
-  /* Nos expertises Interface */
-  
-  /* .NosExpertises_Container {
-    margin-top: 25px !important;
-    margin-bottom: 100px;
-    width: 100%;
-    
-  } */
-
-  .ServiceAI_data > h5{
-    text-align: left !important;
-  }
-  .paragraph_ServiceAI{
-    text-align: left !important;
-      }
-  .ServiceDigital_data > h5 {
-    text-align: left !important;
-  }
-  .paragraph_ServiceDigital{
-    text-align: left !important;
-    margin-bottom:-25% !important;
-  }
-  .digitalOptions > li{
-    text-align: left !important;  
-  }
-  
-  .img_service_AI {
-    margin-left: 12% !important;
-    margin-bottom:-10%;
-    border-radius: 25px;
-    width: 250px !important;
-  }
-
-  .img_service_digital {
-    margin-left: 12% !important;
-    width: 250px !important;
-    border-radius: 25px;
-  }
 
-  .img_cercle_AI {
-    width: 318px !important;
-    margin-top: 60px !important;
-    margin-bottom:20px !important;
-  }
+/***** Screen for mobile with max-width 487px *****************/
 
-  .etape_AI {
-    width: 309px !important;
-    height: 530px !important;
-    text-align: justify !important;
-    margin-bottom: 30px;
-    padding: 40px;
-    box-shadow: 0 0 20px 0 #c7c7c7;
-    border-radius: 25px;
-    transition: box-shadow .3s;
-    margin-left: 10px !important;
-  }
-  .etape_AI_paragraph{
-    text-align: center !important;
-  }
-  .icon_etapes_AI{
-    margin-right: 45% !important;
-  }
+@media(max-width: 487px) {
 
-  /*==================*/
-  /** Espace Carriere **/
-  .ContactezNous_container {
-    margin-left: 10% !important;
-    margin-right: 6% !important;
+  /***** Nav Bar Header ****************/
+  #basic-navbar-nav {
+    border-radius: 25px !important;
   }
 
-  /*===================*/
-}
-
-/*****************/
-
-/***** Screen for mobile between 376px and 425 px *****************/
-@media screen and (min-width:376px) and (max-width:425px) {
-  #basic-navbar-nav{
-    border-radius:25px !important;
-  }
-  #NavText_other{
+  #NavText_other {
     margin-left: -350px !important;
     height: 40px !important;
     text-align: center;
   }
-  .btnNosSolution{
+
+  .btnNosSolution {
     margin-left: -350px !important;
     text-align: center;
   }
+
   /** footer **/
   #socialIcons {
     margin-left: 6% !important;
@@ -1358,72 +49,51 @@
   }
 
   /**===========**/
-  
+
   /*==Homeinterface==*/
-  .big-title{
- text-align: center !important;
+
+  #NavText_home {
+    text-align: center !important;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 0px;
+    font-size: 15px;
+    color: black !important;
   }
-  .bienvenuto{
+
+  .big-title {
     text-align: center !important;
   }
-  .bienvenuto-p{
+
+  .bienvenuto {
     text-align: center !important;
   }
-  .p1 > p {
+
+  .bienvenuto-p {
     text-align: center !important;
   }
-  .more-info-btn{
-   margin-left: 35% !important;
+
+  .p1>p {
+    text-align: center !important;
   }
+
+  .more-info-btn {
+    margin-left: 35% !important;
+  }
+
   .description_img {
     width: 300px !important;
   }
 
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
+  .solutions-container {
+    margin-left: 10px !important;
   }
 
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
-  }
-
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
-  }
-
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-
-    width: 120px !important;
-    height: 270px !important;
-
-  }
-
-  .contenuS {
-    position: relative;
-    width: 50%;
-    margin-left: 20% !important;
-    margin-bottom: 5% !important;
+  .solution-description-container {
+    margin-left: -10px !important;
+    width: 80% !important;
+    padding: 40px 5px 20px 5px !important;
   }
 
   #hodhod1 {
@@ -1455,57 +125,63 @@
 
   /*=========*/
   /**Hodhod Interface **/
-  
-  #NosSolutionsTitleHodhod{
-   margin-top:-230px;
-   margin-left: 26% !important;
+
+  #NosSolutionsTitleHodhod {
+    margin-top: -230px;
+    margin-left: 26% !important;
   }
+
   .bgSolutionImg {
     background-image: url('./components/images/bannière supersenses@2x.png');
     background-repeat: no-repeat;
     background-size: 100% !important;
     height: 487px;
-    margin-bottom:-130px;
+    margin-bottom: -130px;
   }
-  
-  #HodhodContentParagraphTitle{
-   margin-left:-45% !important;
-   margin-top:20px;
+
+  #HodhodContentParagraphTitle {
+    margin-left: -45% !important;
+    margin-top: 20px;
   }
+
   #HodhodContentParagraph {
     text-align: center !important;
     margin-top: -230px !important;
-    margin-left:23% !important;
+    margin-left: 23% !important;
   }
-  #HodhodContentParagraphDes{
-    margin-left:-45% !important;
+
+  #HodhodContentParagraphDes {
+    margin-left: -45% !important;
   }
+
   #videoPicture {
     width: 350px !important;
   }
 
-  #ComposantsHodhodTitle{
-    margin-left:2% !important;
+  #ComposantsHodhodTitle {
+    margin-left: 2% !important;
     margin-bottom: 5% !important;
     text-align: center !important;
 
   }
-  
+
   #hodhodbox {
     margin-left: 4% !important;
     margin-top: 4%;
     margin-bottom: 35% !important;
     width: 80% !important;
   }
+
   #compBorder1 {
     margin-bottom: 50px !important;
-    margin-left:9% !important;
+    margin-left: 9% !important;
   }
 
   #compBorder2 {
     margin-bottom: 50px !important;
     padding-top: 3%;
   }
+
   #compBorder3 {
     margin-bottom: 50px !important;
     padding-top: 10% !important;
@@ -1513,36 +189,41 @@
 
   #mobPicture {
     width: 280px !important;
-    margin-bottom:15% !important;
+    margin-bottom: 15% !important;
     margin-left: 3% !important;
   }
-  #mobPara{
+
+  #mobPara {
     text-align: center !important;
-    margin-left:5% !important;
-  }
-  #backgroundimg{
-    margin-top: 25% !important;
-  }
-  #bgPsize {
-    width:98% !important;
-    border-radius: 25px;
-    margin-top: 15px !important;
-    
+    margin-left: 5% !important;
   }
 
-  #deveneztitle{
+  #backgroundimg {
+    margin-top: 25% !important;
+  }
+
+  #bgPsize {
+    width: 98% !important;
+    border-radius: 25px;
+    margin-top: 15px !important;
+
+  }
+
+  #deveneztitle {
     margin-top: 10% !important;
   }
 
-  #devenezParag{
+  #devenezParag {
     text-align: center !important;
-    margin-left: 1% !important;
+    margin-left: -3% !important;
     margin-top: 3% !important;
   }
-  #ImpactBox{
+
+  #ImpactBox {
     margin-top: 22% !important;
     margin-bottom: -40px !important;
   }
+
   #hodhodImage {
     width: 120px !important;
     height: 80px !important;
@@ -1564,33 +245,37 @@
   .NosSolutionsTitle {
     margin-bottom: 20px !important;
     margin-top: -18% !important;
-    font-size:35px;
+    font-size: 35px;
 
   }
-  
-  #SensesIATitleTxt{
+
+  #SensesIATitleTxt {
     margin-top: 5% !important;
-    margin-left:-1% !important;
+    margin-left: -1% !important;
     text-align: center !important;
   }
-  #p_descriptionSensesIA{
-    margin-left: 3% !important ;
-    margin-right:3% !important;
+
+  #p_descriptionSensesIA {
+    margin-left: 3% !important;
+    margin-right: 3% !important;
     margin-bottom: 13% !important;
     text-align: center !important;
-    
+
   }
+
   #img-descriptionSensesIA {
     width: 330px !important;
     height: 90% !important;
     margin-left: 5% !important;
     margin-bottom: 5% !important;
   }
-  #ComposantsSensesIATitle{
-   margin-top: 12% !important;
-   margin-bottom: 10% !important;
-   font-size:16px !important;
- }
+
+  #ComposantsSensesIATitle {
+    margin-top: 12% !important;
+    margin-bottom: 10% !important;
+    font-size: 16px !important;
+  }
+
   #blocComposantsSensesIA {
     text-align: center;
     width: 280px !important;
@@ -1600,66 +285,75 @@
   /*=================*/
   /*Nos Expertise Interface */
 
-  #NosExpertiseTitre{
+  #NosExpertiseTitre {
     margin-top: 5% !important;
-    margin-bottom:-10% !important;
+    margin-bottom: -10% !important;
   }
 
-  .ServiceAI_data > h5{
+  .ServiceAI_data>h5 {
     text-align: center !important;
-    margin-left:-2% !important;
+    margin-left: -2% !important;
   }
-  .ServiceDigital_data >h5{
+
+  .ServiceDigital_data>h5 {
     text-align: center !important;
-    margin-left:-8% !important;
+    margin-left: -8% !important;
   }
-  .paragraph_ServiceAI{
+
+  .paragraph_ServiceAI {
     text-align: center !important;
-    margin-left:1% !important;
+    margin-left: 1% !important;
   }
-   .paragraph_ServiceDigital{
-    margin-left:1% !important;
-    margin-right:2% !important;
-    margin-bottom:-25% !important;
+
+  .paragraph_ServiceDigital {
+    margin-left: 1% !important;
+    margin-right: 2% !important;
+    margin-bottom: -25% !important;
     text-align: center !important;
-   }
-   .digitalOptions > li{
+  }
+
+  .digitalOptions>li {
     text-align: center !important;
-    margin-left:-10% !important;
-   }
+    margin-left: -10% !important;
+  }
+
   .img_service_AI {
-    margin-left:9% !important;
-    margin-top:-9% !important;
+    margin-left: 9% !important;
+    margin-top: -9% !important;
     border-radius: 30px;
     width: 300px !important;
   }
 
   .img_service_digital {
-    margin-top:9% !important;
-    margin-left:8% !important;
+    margin-top: 9% !important;
+    margin-left: 8% !important;
     margin-bottom: -4% !important;
     width: 300px !important;
   }
 
-  .AI_slogan{
-    padding-right:6% !important;
+  .AI_slogan {
+    padding-right: 6% !important;
     text-align: center !important;
   }
+
   .intro_AI_data {
     text-align: center !important;
     margin-top: 20% !important;
-    margin-bottom:-10% !important;
+    margin-bottom: -10% !important;
   }
+
   .img_cercle_AI {
     width: 310px !important;
     margin-top: -19px !important;
-    margin-bottom:25% !important;
-    margin-left:7% !important;
+    margin-bottom: 25% !important;
+    margin-left: 7% !important;
   }
-  .intro_AI_data{
+
+  .intro_AI_data {
     margin-left: 9% !important;
-    margin-right:9% !important;
+    margin-right: 9% !important;
   }
+
   .etape_AI {
     width: 310px !important;
     height: 465px !important;
@@ -1671,37 +365,41 @@
     transition: box-shadow .3s;
   }
 
-  .etape_AI_paragraph{
+  .etape_AI_paragraph {
     text-align: center !important;
   }
+
   /*========================*/
 
   /* A propos Interface */
- 
+
   .Apropos {
     margin-top: 50px !important;
     text-align: center !important;
   }
-  #AproposSuperText{
+
+  #AproposSuperText {
     margin-left: -23% !important;
 
   }
-  #AproposParag{
+
+  #AproposParag {
     text-align: center !important;
-    margin-right:16% !important;
+    margin-left: -8% !important;
   }
-  
+
   #AproposImgSize {
     width: 340px !important;
-    margin-left:-11% !important;
+    margin-left: -11% !important;
   }
 
   /*==================*/
   /** espace carriere **/
-  .Contact_form{
-    margin-left:-6% !important;
-    margin-right:-1% !important;
+  .Contact_form {
+    margin-left: -6% !important;
+    margin-right: -1% !important;
   }
+
   .ContactezNous_container {
     margin-left: 10% !important;
     margin-right: 6% !important;
@@ -1711,10 +409,11 @@
     margin-top: -50px !important;
     margin-bottom: 40px;
     padding-top: 100px;
-  
+
   }
+
   /************************************/
-  #RiseLoader{
+  #RiseLoader {
     margin-top: 260px !important;
     margin-left: 110px !important;
   }
@@ -1722,21 +421,14 @@
   /*===================*/
 }
 
-/*================================================================*/
 /**** Tablets screen between 768px and 1024px ****/
-@media screen and (min-width:768px) and (max-width:1023px) {
-  .me-auto {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  #NavText_other{
+@media screen and (min-width:768px) and (max-width:843px) {
+  
+.btnNosSolution {
     margin-left: -350px !important;
     text-align: center;
   }
-  .btnNosSolution{
-    margin-left: -350px !important;
-    text-align: center;
-  }
+
   /**footer **/
   #socialIcons {
     margin-left: -10% !important;
@@ -1749,60 +441,40 @@
   }
 
   #navfooter {
-    padding-top: 15% !important; 
+    padding-top: 15% !important;
   }
 
   /*============*/
 
   /**Home Interface */
-
-  
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
+  #NavText_home {
+    border-radius: 30px !important;
+    text-align: center !important;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 0px;
+    font-size: 15px;
+    color: black !important;
   }
 
-
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
+  .solution-description-container {
+    width: 90% !important;
+    padding: 40px 5px 20px 5px !important;
   }
 
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
+  .solution-img {
+    width: 100% !important;
+    height: 90% !important;
   }
 
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    width: 120px !important;
-    height: 270px !important;
-
+  .expertiseBox{
+    margin-right: 80px !important;
   }
 
-  .contenuS {
-    position: relative;
-    width:100px;
-    margin-left: 10% !important;
+  .portfolio-img{
+    width: 100% !important;
   }
-
   /**==================*/
   /** HodHod interface **/
   #hodhodbox {
@@ -1817,16 +489,20 @@
 
   }
 
+  
+  
   /*=================*/
   /*** Senses IA Interface ***/
-  #SensesIATitleTxt{
+  #SensesIATitleTxt {
     margin-top: 5% !important;
     margin-left: 3%;
   }
-  #p_descriptionSensesIA{
-    margin-left: 3% !important ;
+
+  #p_descriptionSensesIA {
+    margin-left: 3% !important;
     margin-bottom: 13% !important;
   }
+
   #img-descriptionSensesIA {
     width: 280px !important;
     height: 70% !important;
@@ -1834,49 +510,58 @@
     margin-bottom: 5% !important;
     margin-top: 23% !important;
   }
-  #ComposantsSensesIATitle{
-   margin-top: 12% !important;
-   margin-bottom: 10% !important;
- }
+
+  #ComposantsSensesIATitle {
+    margin-top: 12% !important;
+    margin-bottom: 10% !important;
+  }
+
   #blocComposantsSensesIA {
     text-align: center;
     width: 280px !important;
     margin-left: 30% !important;
   }
-  #compBorder1{
+
+  #compBorder1 {
     width: 250px;
-    margin-bottom:15% !important;
+    margin-bottom: 15% !important;
   }
-  #compBorder2{
+
+  #compBorder2 {
     width: 250px;
-    margin-bottom:15% !important;
+    margin-bottom: 15% !important;
   }
-  #compBorder3{
+
+  #compBorder3 {
     width: 250px;
   }
+
   /*=================*/
   /**Nos expertise Interface **/
   .etape_AI {
     margin-left: 120px !important;
-    
+
   }
 
   /*==========================*/
   /**A propos**/
+  #AproposContent{
+    margin-top: 120px !important;
+  }
   #AproposImgSize {
     width: 380px !important;
     margin-bottom: 20px;
-    margin-left: 2% !important;
-    margin-top: 25%;
+    margin-left: 25% !important;
   }
-#AproposSuperText {
-  margin-left: 3% !important;
-}
-#AproposParag{
-  margin-left: 3% !important;
-  text-align: justify !important;
-}
-  
+
+  #AproposSuperText {
+    margin-left: 30% !important;
+  }
+
+  #AproposParag {
+    text-align: center !important;
+  }
+
   /*=================*/
 
   /*********Espace carriere********************/
@@ -1884,263 +569,192 @@
     margin-top: -50px !important;
     margin-bottom: 40px;
     padding-top: 100px;
-  
+
   }
-  .Contact_form{
-    margin-left:-8% !important;
-    margin-right:-8% !important;
+
+  .Contact_form {
+    margin-left: -8% !important;
+    margin-right: -8% !important;
   }
+
   /************************************/
-  #RiseLoader{
+  #RiseLoader {
     margin-top: 390px !important;
     margin-left: 310px !important;
-  
+
   }
 }
 
-/*==========================================*/
-/******Espace Carriere ********/
-.me-auto {
-  margin-left: 370px;
+/**************** Default version ********************/
+
+/*********Home interface*****************/
+
+/*******Navbar Header Home interface*****/
+
+.logo_supersensesHome {
+  width: 107px;
+  height: 76.42px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: -180%;
 }
 
-.Nav_item {
-  text-transform: uppercase;
+.bgTestImg {
+  content: url("./components/images/logo_supersenses.png");
+  width: 100px !important;
+}
+
+
+.Nav_home {
+  text-transform: capitalize;
   margin-right: 20px;
   margin-left: 20px;
+  padding-right: 0px;
+  font-size: 20px;
+
+}
+
+.Nav_homeNosSolution {
+  text-transform: capitalize;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 0px;
+  font-size: 20px;
+}
+
+#NavText_home {
+  text-transform: capitalize;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-right: 0px;
+  font-size: 20px;
+  color: white;
+}
+
+.Nav_itemHomeInterface {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 25px;
   padding-right: 0px;
   font-size: 15px;
 }
 
-/*****************************/
-
-/*********Nos Solutions **********/
-/******* Hodhod Interface *********/
-#HodhodContentParagraph {
-  margin-left: 84px;
-}
-
-.PictureContent {
-  width: 80%;
-  margin-left: 10%;
-}
-
-.videoBorder {
-  border-radius: 18px;
-  height: 80%;
-  width: 90%;
-}
-#NosSolutionsTitleHodhod{
-  margin-left: 35%;
-}
-#ComposantsHodhodTitle{
-  margin-top:-3%;
-  margin-left: 4%;
-  margin-bottom: 4%;
-}
-#compBorder1{
-  margin-left:13%;
-  margin-right:-5%;
-  border-radius: 25px;
-  height: 180px;
-}
-#compBorder2{
-  margin-right:-5%;
-  border-radius: 25px;
-  height: 180px;
-}
-
-#compBorder3 {
-  padding-top: 2%;
-  border-radius: 25px;
-  height: 180px;
-}
-#hodhodbox {
-  margin-left: -10%;
-  margin-top: 2%;
-}
-
-#mobPara{
-  margin-left:-20%;
-  margin-right:7%;
-  text-align: left;
-}
-
-#mobPicture{
-  margin-top: -15%;
-  margin-left:-17%;
-}
-#mobSize {
-  margin-top: 18%;
-}
-
-#deveneztitle {
-  margin-top: 4%;
-  margin-bottom: 4%;
-  color: white;
-}
-#devenezParag{
-  padding-left: 7%;
-  padding-right:11%;
-  padding-bottom: 5%;
+.hashLinkNavBar {
+  text-decoration: none;
   color: white;
 }
 
-.kitelectronique {
-  margin-top: 8%;
+.hashLinkNavBar:hover {
+  color: white;
 }
 
-.platform {
-  margin-top: 8%;
+.hashLinkNavBarDropDown {
+  text-decoration: none;
+  color: black;
 }
 
-#backgroundimg {
-  background-image: url('./components/images/Groupe_de_masques_10117.png');
-  background-size: cover;
-  height: 100%;
-  margin-left: 0%;
-  background-repeat: no-repeat;
-  margin-top: 6%;
-
+.hashLinkNavBarDropDown:hover {
+  color: black;
 }
 
-
-#apptitle {
-  margin-top: 7%;
-  margin-left: 20%;
-}
-
-#CarouselBorder {
-  border-radius: 15px;
-}
-
-#hodhodImage {
-  width: 226px;
-  height: 166px;
-  margin-top: 10%;
-  margin-left: 40%;
-  border-radius: 20px;
-}
-#ImpactBox {
-  margin-top: 10%;
-}
-
-#bgPsize {
-  margin-right:-5%;
-  border-radius: 25px;
-  height:350px;
-  width:250px;
-}
-
-#imageSize {
+.nav-header {
+  z-index: 1000 !important;
+  position: fixed;
+  background-color: white;
   width: 100%;
-  height: 65% !important;
-}
-#hodhodStatement {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  color: #000000;
-  font-size: 22px;
-  line-height: 29px;
+  margin-top: -85px;
 }
 
-#googlePlay {
-  width: 15%;
-  height: 100%;
-  margin-left: 43%;
-}
-
-.CarouselPict div {
-  padding: 6px;
-
-}
-
-#NosSolutionParag1 {
-  margin-left: 13%;
-  margin-top: 4%;
-  text-align: justify;
-  background-color: #E0F0FD;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  margin-bottom: 6%;
-}
-
-#NosSolutionVideo {
-  margin-left: 26%;
-}
-
-.NosSolution {
-  margin-top: 5%;
-}
-
-#TitleHodhod {
-  margin-top: 4%;
-
-}
-
-.bgSolutionImg {
-  background-image: url('./components/images/bannière supersenses@2x.png');
+#bg_img_header {
+  background-image: url("./components/images/bg_img_header.png");
+  background-size: 956px 400px;
   background-repeat: no-repeat;
-  background-size: 100% 90%;
-  height: 487px;
-
-}
-
-/*********************************/
-
-/********A PROPOS ****************/
-
-
-#AproposImg {
-  margin-top: 2%;
-  margin-left: -5%;
-  height: 350px;
-  border-radius: 20px;
-  width:400px;
+  background-position: top right;
 }
 
 
-#AproposParag {
-  text-align: left;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  color: #000000;
-  font-size: 14px;
-  line-height: 22px;
-  margin-top: 4%;
-  margin-left:-5% ;
-  margin-right: 10%;
+.logo_supersenses {
+  width: 107px;
+  height: 76.42px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
-#AproposContent {
-  margin-top: 10%;
-  margin-left: 10%;
-}
-
-#AproposSuperText {
-  text-decoration: underline #25ACDE;
-  margin-left:-5% ;
-}
-
-#AproposHeader {
-  padding-top: 3%;
+#languageIcon {
+  display: inline;
+  margin-left: 150%;
+  margin-top: 380%;
 
 }
 
+#selectLangue {
 
-/*********************************/
+  border-radius: 10px;
+  margin-left: 12px;
+}
 
-/***** Nos Valeurs ***************/
+#NavText_other {
+  color: black;
+}
+
+.Nav_itemHomeInterface {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 25px;
+  padding-right: 0px;
+  font-size: 15px;
+
+}
+
+/*************************/
+
+.Description_supersenses {
+  margin-top: 200px;
+
+}
+
+.Description_supersenses {
+  margin-top: 200px;
+}
+
+.bienvenuto {
+  font-size: 37px;
+  letter-spacing: -0.59px;
+  font-weight: 500;
+}
+
+.big-title {
+  font-size: 69px;
+  letter-spacing: -1.56px;
+  font-weight: 500;
+}
+
+.bienvenuto-p {
+  font-size: 18px;
+}
+
+.more-info-btn {
+  border: 1px solid black !important;
+  border-radius: 10px !important;
+  padding: 7px 30px !important;
+  font-size: 16px !important;
+  margin-bottom: 40px;
+}
+
+/*************** Nos Valeurs *******************/
+
+.part2 {
+  margin-top: 100px;
+  width: 100%;
+}
+
 #title1 {
-  margin-top: 50px;
   font-style: normal;
   font-variant: normal;
   font-weight: medium;
-  font-family: 'Roboto';
   font-size: 30px;
 
 }
@@ -2150,17 +764,19 @@
   font-style: normal;
   font-variant: normal;
   font-weight: medium;
-  font-family: 'Roboto';
   font-size: 20px;
   line-height: 30px;
 }
-#NosValNosSolutions{
-font-style: normal;
+
+#NosValNosSolutions {
+
+  font-style: normal;
   font-variant: normal;
   font-weight: medium;
   font-family: 'Roboto';
   font-size: 30px;
 }
+
 .p1 {
   display: flex;
   justify-content: center;
@@ -2171,15 +787,13 @@ font-style: normal;
   font-style: normal;
   font-variant: normal;
   font-weight: medium;
-  font-family: 'Roboto';
   font-size: 20px;
   line-height: 26px;
 }
 
 .images {
-
-  padding-top: 5%;
   margin-left: 60px;
+  margin-top: 50px;
 }
 
 .img {
@@ -2203,75 +817,13 @@ font-style: normal;
   z-index: 3;
 }
 
-/********hover Images****/
-.contenuS {
-  position: relative;
-  width: 30%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  width: 327px;
-  height: 267px;
-
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 81%;
-  left: 100px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.contenuS:hover .image {
-  transform: scale(1.3);
-  z-index: 2;
-  width: 327px;
-  height: 267px;
-
-}
-
-.contenuS:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: gray;
-  opacity: 0.9;
-  color: white;
-  font-size: 25px;
-  width: 404px;
-  height: 81px;
-  margin-left: 15.5%;
-  margin-top: 19%;
-  padding-top: 4%;
-  border-radius: 0px 0px 25px 25px;
-}
-
-/**********************/
-#hoverImg2 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-
-}
-
-#hoverImg3 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-
-}
-
 .solution {
   margin-top: 10%;
-
 }
+
+/***************************************************/
+
+/***************Comment section in the home interface*********/
 
 #boxs {
   margin-top: 6%;
@@ -2282,10 +834,6 @@ font-style: normal;
 .bgSolution {
   width: 73%;
   height: 322px;
-}
-
-#SoluBorder {
-  border-radius: 25px;
 }
 
 #chatSize {
@@ -2343,6 +891,7 @@ font-style: normal;
 
 }
 
+
 #hodhodTitle {
   font-size: 25px;
   text-align: center;
@@ -2357,9 +906,6 @@ font-style: normal;
 
 }
 
-#hodhodP {
-  width: 99%;
-}
 
 #hodhodparagraph {
   font-size: 16px;
@@ -2381,20 +927,203 @@ font-style: normal;
   position: relative;
 }
 
-#dotDesign {
-  border-style: solid;
-  border-radius: 50%;
-  width: 20%;
-  height: 40px;
-  margin-left: 45%;
-  background-color: white;
+#img1 {
+  width: 25%;
+  margin: 0.1%;
 }
 
-#savoirplusbtn {
-  width: 10%;
-  margin-top: 3%;
+/****************/
+/*************hover Images**************/
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 327px;
+  height: 267px;
 }
 
+.our-value-item {
+  position: relative;
+  text-align: center;
+}
+
+.our-value-image {
+  transition: transform .2s;
+  width: 100%;
+  max-width: 340px;
+}
+
+.our-value-text-container {
+  transition: transform .2s;
+  opacity: 0;
+  position: absolute;
+  bottom: -1px;
+  width: 106%;
+  max-width: 354px;
+  background: rgba(150, 149, 149, 0.253);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.our-value-text {
+  align-self: center;
+  font-weight: 500;
+}
+
+.our-value-item:hover .our-value-image {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.our-value-item:hover .our-value-text-container {
+  opacity: 1;
+}
+
+
+@media(max-width: 991px) {
+  .our-value-text-container {
+    opacity: 1;
+    width: 96% !important;
+    bottom: 0 !important;
+    max-width: 326px !important;
+  }
+
+  .our-value-item:hover .our-value-image {
+    transform: none !important;
+  }
+}
+
+@media(max-width: 767px) {
+  .our-value-item {
+    margin-bottom: 14px;
+  }
+}
+
+
+#hoverImg2 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
+}
+
+#hoverImg3 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
+}
+
+.solution {
+  margin-top: 120px;
+}
+
+.solutions-container {
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.link-to-solution {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -70px;
+}
+
+.solution-img {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 446px;
+  align-self: center;
+  box-shadow: 0px 3px 6px #888992;
+  border-radius: 20px;
+}
+
+.solution-description-container {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  background: rgba(150, 149, 149, 0.253);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 21px;
+  box-shadow: 0px 3px 6px #888992;
+  padding: 40px 20px 20px 20px;
+
+}
+
+.solution-title {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.solution-text {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.solution-icon {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+/**********************/
+
+.portfolio-container {
+  margin-top: 70px;
+}
+
+#portfolioBox {
+  width: 1530px;
+}
+
+#hodhod1 {
+  width: 488px;
+  height: 370px;
+  margin-top: 70px;
+}
+
+#LinkHome {
+  text-decoration: none;
+
+}
+
+#portfolioBox {
+  width: 1530px;
+}
+
+#portfolio1:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  box-shadow: 50% 50% 50% rgb(97, 96, 96);
+  border-radius: 25px;
+  filter: drop-shadow(10px 10px 10px rgb(69, 71, 69));
+}
+
+/****************/
+
+/*********************** Notre expersise Home interface ****************/
 .expertisets {
   width: 100%;
   padding-right: 60px;
@@ -2416,85 +1145,204 @@ font-style: normal;
   opacity: 0.85;
   backdrop-filter: blur(7px);
   line-height: 3em;
-  height: 410px !important;
-  margin-top: 10px !important;
+  height: 390px;
+  padding-right: 30px;
+  padding-top: 20px;
 }
 
 .expertiseBox ul {
   list-style: none;
 }
 
-#expertiseTitle {
-  font-size: 37px;
+.expertiseBoxItems {
+  font-weight: 500 !important;
+}
+
+.expertiseBox ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*********************/
+
+/******* Hodhod Interface *********/
+
+.NosSolutionsTitle {
   text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  line-height: 30px;
-  color: #000;
-  margin-top: 14%;
+  padding-top: 80px;
 }
 
-
-
-.expertiseList {
-  list-style: none;
+.bgSolutionImg {
+  background-image: url('./components/images/bannière supersenses@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 487px;
 
 }
 
-
-
-/*********************************/
-.p2 {
-  display: flex;
-  justify-content: center;
-
+#NosSolutionVideo {
+  margin-left: 26%;
 }
 
-.p2 p {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'CaviarDreams';
-  font-size: 16px;
-  line-height: 21px;
+.videoBorder {
+  border-radius: 18px;
+  height: 80%;
+  width: 90%;
 }
 
-.p3 {
-  display: flex;
-  justify-content: center;
-
+#NosSolutionsTitleHodhod {
+  margin-left: 35%;
 }
 
-/*****************************NosOffres**************************/
-
-
-/*******************************************/
-
-
-.impactTitle {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  font-size: 29px;
-  line-height: 38px;
+#hodhodP {
+  width: 99%;
 }
 
-.ImpactPictures {
+#HodhodContentParagraph {
+  margin-left: 84px;
+}
+
+#ComposantsHodhodTitle {
+  margin-top: -3%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+
+#compBorder1 {
+  margin-left: 13%;
+  margin-right: -5%;
+  border-radius: 25px;
+  height: 180px;
+}
+
+#compBorder2 {
+  margin-right: -5%;
+  border-radius: 25px;
+  height: 180px;
+}
+
+#compBorder3 {
+  padding-top: 2%;
+  border-radius: 25px;
+  height: 180px;
+}
+
+#hodhodbox {
+  margin-left: -10%;
+  margin-top: 2%;
+}
+
+#mobPara {
+  margin-left: -20%;
+  margin-right: 7%;
+  text-align: left;
+}
+
+#mobPicture {
+  margin-top: -15%;
+  margin-left: -17%;
+}
+
+#mobSize {
+  margin-top: 18%;
+}
+
+#deveneztitle {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: white;
+}
+
+#devenezParag {
+  padding-left: 13%;
+  padding-right: 11%;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.PictureContent {
   width: 80%;
-
-  padding: 3%;
   margin-left: 10%;
+}
+
+#PicturesPadding {
+  margin-left: 5%;
+  width: 80%;
+}
+
+#imageSize {
+  width: 100%;
+  height: 65%;
+}
+
+.kitelectronique {
+  margin-top: 8%;
+}
+
+.platform {
+  margin-top: 8%;
+}
+
+#backgroundimg {
+  background-image: url('./components/images/Groupe_de_masques_10117.png');
+  background-size: cover;
+  height: 100%;
+  margin-left: 0%;
+  background-repeat: no-repeat;
+  margin-top: 6%;
 
 }
 
-#img1 {
-  width: 25%;
-  margin: 0.1%;
+#apptitle {
+  margin-top: 7%;
+  margin-left: 20%;
+}
+
+.CarouselPict div {
+  padding: 6px;
+}
+
+#CarouselBorder {
+  border-radius: 15px;
+}
+
+#hodhodImage {
+  width: 226px;
+  height: 166px;
+  margin-top: 10%;
+  margin-left: 40%;
+  border-radius: 20px;
+}
+
+#ImpactBox {
+  margin-top: 10%;
+}
+
+#bgPsize {
+  margin-right: -5%;
+  border-radius: 25px;
+  height: 350px;
+  width: 250px;
+}
+
+.NosSolution {
+  margin-top: 5%;
+}
+
+#hodhodStatement {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+#googlePlay {
+  width: 15%;
+  height: 100%;
+  margin-left: 43%;
 }
 
 #CarouselPosition {
@@ -2512,207 +1360,14 @@ font-style: normal;
   width: 200px;
 }
 
+/*********************/
 
-
-/******Espace Carriere ********/
-
-
-.App {
-  background-color: white;
-}
-
-
-/***********************NavBarHeader**************/
-#HomeNav {
-  margin-left: 28%;
-
-}
-
-.nav-header {
-  z-index: 1000 !important;
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  margin-top: -85px;
-  display: none;
-  box-shadow: 0 0 45px 0 #dfdada;
-  color: #000;
-}
-
-#bg_img_header {
-  background-image: url("./components/images/bg_img_header.png");
-  background-size: 1053px 286px;
-  background-repeat: no-repeat;
-  background-position: top right;
-  
-}
-
-.logo_supersenses {
-  width: 107px;
-  height: 76.42px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-#languageIcon {
-  display: inline;
-  margin-left: 150%;
-  margin-top: 380%;
-
-}
-
-#selectLangue {
-
-  border-radius: 10px;
-  margin-left: 12px;
-}
-
-#NavText_other {
-  color: black;
-  margin-top: 7px;
-  
-}
-
-.dpSolution {
-  font-size: 15px;
-  color: white;
-  margin-top: -6%;
-}
-
-/***************NavBarFooter******************/
-#navfooter {
-  background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 99.236%;
-  height: 400px;
-  margin-left: 0%;
-  margin-top: 6%;
-}
-
-#logo_sup {
-  margin-left: 35%;
-  margin-top: 30%;
-}
-
-#col_nav {
-  margin-top: 14.6%;
-  color: white;
-}
-
-#SocialMediaIcons ul li {
-  display: inline-block;
-  color: white;
-  margin-top: 63%;
-  justify-content: space-between;
-}
-
-#copyright_title {
-  margin-left: 25%;
-}
-
-/********************************************/
-/*********Nos Solutions **********/
-.NosSolutionsTitle {
-  
-  text-align: center;
-  padding-top: 80px;
-}
-
-
-.PictureContent {
-  width: 80%;
-  margin-left: 10%;
-}
+/****************Solution SensesIA*******************/
 
 #blocSensesIA {
   margin-top: 10%;
 }
 
-#CarouselBorder {
-  border-radius: 15px;
-}
-
-#bg_img_footer {
-  background-image: url('./components/images/bg_img_footer1.png');
-  background-size: 1060px 390px;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-}
-
-
-#nav-footer {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-
-.contact_info_FooterNavBar {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 150px;
-}
-
-.logo_supersenses_white {
-  width: 164px;
-  height: 109px;
-}
-
-#PicturesPadding {
-  margin-left: 5%;
-  width: 80%;
-}
-
-#imageSize {
-  width: 100%;
-  height: 65%;
-}
-
-
-.CarouselPict div {
-  padding: 6px;
-}
-
-#NavText {
-  color: white;
-}
-
-
-
-
-#NosSolutionParag1 {
-  margin-left: 13%;
-  margin-top: 4%;
-  text-align: justify;
-  background-color: #E0F0FD;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  margin-bottom: 6%;
-}
-
-#NosSolutionVideo {
-  margin-left: 26%;
-}
-
-#TitleHodhod {
-  margin-top: 4%;
-
-}
-
-.bgSolutionImg {
-  background-image: url('./components//images/bannière supersenses@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100% 90%;
-  height: 487px;
-}
-
-
-#media_contact {
-  margin-top: 85px;
-  display: flex;
-}
-
-
-/****************Solution SensesIA*******************/
 
 #img-descriptionSensesIA {
   width: 80%;
@@ -2720,19 +1375,21 @@ font-style: normal;
   margin-left: 10%;
 }
 
-#SensesIATitleTxt{
+#SensesIATitleTxt {
   margin-left: 8%;
 }
+
 #p_descriptionSensesIA {
   margin-top: 5%;
   margin-left: 8%;
-  margin-right:-10%;
+  margin-right: -10%;
 }
 
 #ComposantsSensesIATitle {
   margin-top: -2%;
   text-align: center;
 }
+
 #blocComposantsSensesIA {
   margin-top: 5%;
   margin-left: -11%;
@@ -2769,262 +1426,12 @@ font-style: normal;
   width: 62px;
 }
 
-/*********************************/
-/******Espace Carriere ********/
-#EspaceCarriereBody {
-  width: 78%;
-  height: 909px;
-  margin-left: 11%;
-  border: 15px;
-  margin-top: -5%;
-}
+/******************/
 
-.espCarr {
-  width: 97%;
-}
+/***********************Nos expertises ***************************/
 
-#CarriereButtomSauv {
-  width: 20%;
-  margin-left: 138.5%;
-}
-
-#CarriereButtomPart {
-  width: 20%;
-  margin-left: 57%;
-}
-
-.EspaceHeader {
-  padding: 10%;
-  margin-top: 5%;
-}
-
-#boxImg {
-  width: 184px;
-  height: 209px;
-  border: 15px;
-}
-
-#boxTable {
-  width: 480px;
-  height: 201px;
-  border: 15px;
-
-}
-
-.formContent {
-  width: 80%;
-  margin-left: 10%;
-  padding-bottom: 10%;
-  padding-top: 10%;
-}
-
-   /* #SpecialiteCandidature {
-  width: 100%;
-  height: 45%;
-  padding-top:3%;
-  border-color: #bdbdbd;
-  border-radius: 3px;
-  border-color: #888992;
-}  */
-/* .LabelSpecialiteCandidature{
-  margin-bottom:10%;
-  margin-top:-50px;
-} */
- /* .align-self-center{
-  width: 100%;
-  height: 93%;
-  border-color: #bdbdbd;
-  border-radius: 3px;
- } */
-/*****************************/
-/********A PROPOS ****************/
-
-.media_text {
-  margin-right: 20px;
-  margin-left: 70px;
-  float: left;
-
-}
-
-.media_icons {
-  margin-left: 5px;
-}
-
-.copyrights {
-  margin-top: -20px;
-  text-align: center;
-  padding-bottom: 4px;
-}
-
-/*******************HomePage*********************/
-.part2 {
-  margin-top: 15%;
-  width: 100%;
-}
-
-#portfolioBox {
-  width: 1530px;
-}
-
-#hodhod1 {
-  width: 488px;
-  height: 370px;
-  margin-top: 70px;
-}
-
-#LinkHome {
-  text-decoration: none;
-
-}
-
-#portfolio1:hover {
-  transform: scale(1.3);
-  z-index: 2;
-  box-shadow: 50% 50% 50% rgb(97, 96, 96);
-  border-radius: 25px;
-  filter: drop-shadow(10px 10px 10px rgb(69, 71, 69));
-}
-
-.Nav_itemHomeInterface {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 0px;
-  margin-left: 25px;
-  padding-right: 0px;
-  font-size: 15px;
-  
-}
-
-/**navbar homeinterface ***/
-.logo_supersensesHome {
-  width: 107px;
-  height: 76.42px;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-top: -180%;
-}
-
-.bgTestImg {
-  content: url("./components/images/logo_supersenses.png");
-  width: 100px !important;
-}
-
-
-.Nav_home {
-  text-transform: uppercase;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-right: 0px;
-  font-size: 15px;
-
-}
-
-
-
-.hashLinkNavBar {
-  text-decoration: none;
-  color: white;
-}
-
-.hashLinkNavBar:hover {
-  color: white;
-}
-
-.hashLinkNavBarDropDown {
-  text-decoration: none;
-  color: black;
-}
-
-.hashLinkNavBarDropDown:hover {
-  color: black;
-}
-/*********************/
-.Description_supersenses {
-  margin-top: 200px;
-}
-
-.bienvenuto {
-  font-size: 37px;
-  letter-spacing: -0.59px;
-  font-weight: 500;
-}
-
-.big-title {
-  font-size: 69px;
-  letter-spacing: -1.56px;
-  font-weight: 500;
-}
-
-.bienvenuto-p {
-  font-size: 18px;
-}
-
-.more-info-btn {
-  border: 1px solid black !important;
-  border-radius: 10px !important;
-  padding: 7px 30px !important;
-  font-size: 16px !important;
-  margin-bottom: 40px;
-}
-
-@media(max-width: 766px) {
-  .Description_supersenses {
-    margin-top: 50px !important;
-  }
-}
-
-@media(max-width: 991px) {
-  .bienvenuto {
-    font-size: 27px;
-  }
-
-  .big-title {
-    font-size: 49px;
-  }
-
-}
-
-/*************************/
-
-.Description_supersenses {
-  margin-top: 200px;
-
-
-}
-
-.title_references {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
-}
-
-.novationCity_logo {
-  width: 205px;
-  height: 204px;
-  margin-left: 20px;
-}
-
-.smartLogger_logo {
-  width: 205px;
-  height: 204px;
-}
-
-.logoBox_Reference {
-  margin-right: 10px;
-}
-
-
-.ref-img {
-  margin-top: -60px;
-  width: 204px;
-  height: 204px;
-  margin-right: 30px;
-}
-
-
-/*************************************Nos Expertises *********************************/
 #NosExpertiseTitre {
-  margin-top:7%;
+  margin-top: 7%;
 }
 
 .NosExpertises_Container {
@@ -3033,14 +1440,14 @@ font-style: normal;
 }
 
 .ServiceAI {
-  margin-top:-1%;
+  margin-top: -1%;
   width: 80%;
 }
 
 .NosServicesTitle {
   text-align: center;
   margin-bottom: 60px;
-  font-size: 40px; 
+  font-size: 40px;
 }
 
 .ServiceDigital_data>h5 {
@@ -3062,7 +1469,7 @@ font-style: normal;
 
 .paragraph_ServiceDigital {
   margin-top: 20px;
-  margin-right:12%;
+  margin-right: 12%;
   text-align: justify;
 }
 
@@ -3084,13 +1491,13 @@ font-style: normal;
 .ServiceDigital_data {
   padding: 30px;
   /*background-color: rgba(224, 240, 253);*/
-  
-  margin-bottom:53px;
+
+  margin-bottom: 53px;
 }
 
 .img_service_AI {
   margin-left: 10%;
-  margin-top:7%;
+  margin-top: 7%;
   border-radius: 30px;
   width: 80%;
   box-shadow: 0px 0px 15px rgba(224, 240, 253);
@@ -3099,23 +1506,24 @@ font-style: normal;
 
 .img_service_digital {
   margin-top: 70px;
-  margin-left:10%;
+  margin-left: 10%;
   width: 80%;
   box-shadow: 0px 0px 15px rgba(224, 240, 253);
   border-radius: 25px;
-  
+
 }
 
 .AI_slogan {
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left:20px;
-  padding-right:5%;
+  padding-left: 20px;
+  padding-right: 5%;
   text-align: center;
   color: white;
 }
 
+/*********************/
 /***********************IACestQuoi*******************************/
 
 .bloc_intro_AI {
@@ -3123,7 +1531,8 @@ font-style: normal;
   margin-top: 115px;
   align-items: center;
 }
-.img_cercle_AI{
+
+.img_cercle_AI {
   margin-left: -8%;
 }
 
@@ -3132,17 +1541,19 @@ font-style: normal;
   background-color: rgba(224, 240, 253);
   border-radius: 20px;
   padding-top: 40px;
-  margin-left:6%;
+  margin-left: 6%;
   margin-right: 5%;
 }
 
-.intro_AI_data >h5{
-  padding:3%;
+.intro_AI_data>h5 {
+  padding: 3%;
 }
-.intro_AI_data >p {
-margin-top: 2%;
-padding:3%;
+
+.intro_AI_data>p {
+  margin-top: 2%;
+  padding: 3%;
 }
+
 .bloc_etapes_AI {
   margin-top: 90px;
   width: 70%;
@@ -3167,8 +1578,8 @@ padding:3%;
   width: 450px;
   height: 345px;
   text-align: justify;
-  margin-left:15%;
-  margin-right:15%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 30px;
   padding: 40px;
   box-shadow: 0 0 45px 0 #c7c7c7;
@@ -3177,7 +1588,7 @@ padding:3%;
 }
 
 .etape_AI:hover {
-  box-shadow:0 0 0 5px rgba(239, 233, 233, 0.835);
+  box-shadow: 0 0 0 5px rgba(239, 233, 233, 0.835);
 
 }
 
@@ -3204,50 +1615,52 @@ padding:3%;
   color: #25ACDE;
 }
 
-/***********************ContactezNous*******************************/
-.ContactezNous_container {
-  margin-left: 20%;
-  margin-right: 20%;
+
+/**********************A propos nous **********************/
+
+#AproposNousHeaderTxt {
+  margin-top: 2%;
+  margin-bottom: -4%;
 }
 
-.bloc_welcoming_phrases {
-  margin-top: 10px;
-  margin-bottom: 40px;
-  padding-top: 100px;
+#AproposImg {
+  margin-top: 3%;
+  margin-left: -5%;
+  height: 350px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+#AproposParag {
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: -1%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+#AproposContent {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+#AproposSuperText {
+  text-decoration: underline #25ACDE;
+  margin-left: 5%;
+}
+
+#AproposHeader {
+  padding-top: 3%;
 
 }
 
-.welcoming_phrase {
-  text-align: center;
-
-}
-
-#SeSoumettre_btn {
-  text-align: center;
-  width: 100%;
-  border-radius: 10px;
-  background-color: #25ACDE;
-}
-
-.Contact_form {
-  padding-top: 50px;
-  box-shadow: 0 0 15px 0 #c7c7c7;
-  border-radius: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
-  margin-left:-15%;
-  margin-right:-15%;
-
-}
-
-#Contact_input {
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-
-
+/*********************************/
 
 /*****************************NosOffres**************************/
 .NosOffres {
@@ -3280,7 +1693,52 @@ padding:3%;
   width: 180%;
 }
 
-/*****Footer*************/
+/******************************************/
+
+/***********************NavBarHeader**************/
+#HomeNav {
+  margin-left: 28%;
+
+}
+
+.nav-header {
+  z-index: 1000 !important;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  margin-top: -85px;
+  display: none;
+  box-shadow: 0 0 45px 0 #dfdada;
+  color: #000;
+}
+
+.logo_supersenses {
+  width: 107px;
+  height: 76.42px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#languageIcon {
+  display: inline;
+  margin-left: 150%;
+  margin-top: 380%;
+
+}
+
+#selectLangue {
+  border-radius: 10px;
+  margin-left: 12px;
+}
+
+.dpSolution {
+  font-size: 15px;
+  color: white;
+  margin-top: -6%;
+}
+
+/********************NavBarFooter**********************/
+
 #supersenses-footer {
   margin-top: 60px;
   background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
@@ -3329,67 +1787,89 @@ padding:3%;
   margin-right: 10px;
 }
 
-@media(max-width: 767px) {
-  #supersenses-footer {
-    height: 480px;
-    background-size: 1510px 480px;
-  }
 
-  #supersenses-footer .flex-footer {
-    padding-top: 84px;
-    padding-bottom: 30px;
-  }}
 
-  /*********************************/
-
-  /* Mobile navbar style */
-@media(max-width: 991px) {
-  #basic-navbar-nav {
-    background-color: rgba(255, 255, 255, 0.896);
-    position: absolute;
-    top: 100px;
-    left: 3%;
-    right: 3%;
-    width: 94%;
-    flex-direction: column;
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 25px;
-    backdrop-filter: blur(6px);
-    
-
-  }
-
-  #basic-navbar-nav .Nav_home,
-  #basic-navbar-nav #dropdown_Solution,
-  #basic-navbar-nav .dropdown-item {
-    text-align: center;
-    width: 100%;
-    padding: 1.5rem 0;
-    margin-right: 0px;
-    margin-left: 0px;
-    background-color: white;
-  }
- 
+/***********************/
+.bgTestImg {
+  content: url("./components/images/logo_supersenses.png");
+  width: 100px !important;
 }
+
+/************************/
+
+/***********************ContactezNous*******************************/
+.ContactezNous_container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.bloc_welcoming_phrases {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-top: 100px;
+
+}
+
+.welcoming_phrase {
+  text-align: center;
+
+}
+
+#SeSoumettre_btn {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #25ACDE;
+}
+
+.Contact_form {
+  padding-top: 50px;
+  box-shadow: 0 0 15px 0 #c7c7c7;
+  border-radius: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  margin-left: -15%;
+  margin-right: -15%;
+
+}
+
+#Contact_input {
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
 
 /***********************/
 
-/******HomeInterface************/
-.nav-header {
-  z-index: 1000 !important;
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  margin-top: -85px;
-  box-shadow: 0 0 45px 0 #dfdada;
+
+/********** loading Design***********/
+
+#RiseLoader {
+  margin-top: 250px;
+  margin-left: 550px;
 
 }
 
-#bg_img_header {
-  background-image: url("./components/images/bg_img_header.png");
-  background-size: 956px 400px;
-  background-repeat: no-repeat;
-  background-position: top right;
+/***********************/
+@media(max-width: 404px) {
+  #title1 {
+    font-size: 26px;
+  }
+}
+
+@media(max-width: 487px) {
+  .expertisets {
+    padding: 30px 20px;
+    margin-top: -5%;
+  }
+}
+
+@media(max-width: 767px) {
+  .p1 p {
+    text-align: left;
+    margin-left: 3%;
+  }
 }
 
 @media(max-width: 1144px) {
@@ -3427,177 +1907,61 @@ padding:3%;
   }
 }
 
-.logo_supersenses {
-  width: 107px;
-  height: 76.42px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-#languageIcon {
-  display: inline;
-  margin-left: 150%;
-  margin-top: 380%;
-
-}
-
-#selectLangue {
-
-  border-radius: 10px;
-  margin-left: 12px;
-}
-
-#NavText_other {
-  color: black;
-}
-
-.dpSolution {
-  font-size: 15px;
-  color: white;
-  margin-top: -6%;
-}
-
-
-
-
-/*************************/
-.bgTestImg {
-  content: url("./components/images/logo_supersenses.png");
-  width: 100px !important;
-}
-
-
-/*************************/
-
-/***** Nos Valeurs ***************/
-#title1 {
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-size: 30px;
-
-}
-
-@media(max-width: 404px) {
-  #title1 {
-    font-size: 26px;
-  }
-}
-
-
-#title2 {
-
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-
-
-.p1 p {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-size: 20px;
-  line-height: 26px;
-}
-
 @media(max-width: 767px) {
-  .p1 p {
-    text-align: left;
-    margin-left:3%;
+  #supersenses-footer {
+    height: 480px;
+    background-size: 1510px 480px;
+  }
+
+  #supersenses-footer .flex-footer {
+    padding-top: 84px;
+    padding-bottom: 30px;
   }
 }
 
 
-/**********************/
+@media(max-width: 991px) {
+  #basic-navbar-nav {
+    background-color: rgba(255, 255, 255, 0.896);
+    position: absolute;
+    top: 100px;
+    left: 3%;
+    right: 3%;
+    width: 94%;
+    flex-direction: column;
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 25px;
+    backdrop-filter: blur(6px);
 
 
+  }
 
-.expertisets {
-  margin-top: 140px;
-  width: 100%;
-  background-image: url('./components/images/Bg_expertise.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-bottom: 20px;
-  padding: 70px 60px;
+  #basic-navbar-nav .Nav_home,
+  #basic-navbar-nav #dropdown_Solution,
+  #basic-navbar-nav .dropdown-item {
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: white;
+  }
+
 }
 
-.expertiseBox {
-  background-color: rgba(255, 255, 255, 0.623);
-  border-radius: 21px;
-  backdrop-filter: blur(7px);
-  padding: 30px 20px 20px 10px;
-  line-height: 3em;
-  align-self: center;
-  height: 100%;
-}
-
-.expertiseBox ul {
-  list-style: none;
-}
-
-.expertiseBoxItems {
-  font-weight: 500 !important;
-}
-
-.expertiseBox ul li:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-
-@media(max-width: 487px) {
-  .expertisets {
-    padding: 30px 20px;
-    margin-top:-5%;
+@media(max-width: 766px) {
+  .Description_supersenses {
+    margin-top: 50px !important;
   }
 }
 
-#AproposNousHeaderTxt{
-  margin-top:-3%;
-  margin-bottom: -4%;
-}
-#RiseLoader{
-  margin-top: 250px;
-  margin-left: 550px;
+@media(max-width: 991px) {
+  .bienvenuto {
+    font-size: 27px;
+  }
+
+  .big-title {
+    font-size: 49px;
+  }
 
 }
-
-/******* Hodhod Interface *********/
-#NosSolutionsTitleHodhod{
-  margin-left: 35%;
-}
-#ComposantsHodhodTitle{
-  margin-top:-3%;
-  margin-left: 4%;
-  margin-bottom: 4%;
-}
-#compBorder1{
-  margin-left:13%;
-  margin-right:-5%;
-}
-#compBorder2{
-  margin-right:-5%;
-}
-#mobPara{
-  margin-left:-20%;
-  margin-right:7%;
-  text-align: left;
-}
-#mobPicture{
-  margin-top: -15%;
-  margin-left:-17%;
-}
-#devenezParag{
-  margin-left: 1%;
-  margin-right:50%;
-}
-/*********************/

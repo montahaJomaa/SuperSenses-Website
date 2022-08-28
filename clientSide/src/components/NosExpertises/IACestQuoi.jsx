@@ -106,8 +106,8 @@ function IACestQuoi(props) {
                 <h5 className="etape_AI_title">TÉRATIONS POUR OPTIMISER LES PERFORMANCES</h5>
               </div>
               <p className="etape_AI_paragraph"> Pour optimiser les performances
-                Suite à l’entraînement de l’algorithme, nous obtenons un modèle, une fonction
-                mathématique capable d’appliquer un traitement sur de nouvelles données. Ce
+                suite à l’entraînement de l’algorithme, nous obtenons un modèle, une fonction
+                mathématique capable d’appliquer un traitement sur les nouvelles données. Ce
                 modèle est donc testé et validé sur le jeu de données. Si les résultats ne sont pas
                 satisfaisants, il faudra retravailler les jeux de données et ré-entraîner les modèles.
               </p>

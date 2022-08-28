@@ -20,7 +20,7 @@ function NosExpertises() {
         (<div>
           <div className="NosServicesTitle container">
             <div className="row">
-              <div className="col"><h1 id="NosExpertiseTitre">Nos Expertises</h1></div>
+              <div className="col"><h1 id="NosExpertiseTitre">Nos expertises</h1></div>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ function NosExpertises() {
                   et l’environnement.<br /><br />
                   Avec des expertises en Systèmes intelligents et communicants,<br />les technologies
                   de communications, la conception des cartes électroniques, le développement des
-                  plateformes… Super SENSES se charge de réussir ses projets de la phase
+                  plateformes… SUPER SENSES se charge de réussir ses projets de la phase
                   conception Hardware et prototypage jusqu’à <br />la détection des anomalies et la
                   visualisation des grandeurs physique. </p></div>
               <div className="col"><img src={img_service_AI} alt="img_service_AI" className="img_service_AI" /></div>
@@ -73,7 +73,7 @@ function NosExpertises() {
           </div>
           <div className="AI_slogan" id="backgroundimg">
             <p>
-              Notre vision est de crée un outil technologique<br/>
+              Notre vision est de créer un outil technologique<br/>
               d’aide à la décision capable d’ajouter un 6ieme sens utilisant l’intelligence artificielle.<br />
               Nous créons de l’intelligence artificielle sur mesure !</p>
           </div>
