@@ -18,16 +18,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function NavBarHeader() {
 
-  const isMobile = useMediaQuery({ maxWidth: 428 })
-
   const [show, setShow] = useState(false)
 
   const controlNavbar = () => {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 900) {
       setShow(false)
-
-
+    } else {
+      setShow(true)
     }
+
+    
   }
 
   useEffect(() => {
@@ -38,8 +38,8 @@ function NavBarHeader() {
   }, [])
 
   return (
-    <div className={`${show && 'nav-header'}`}>
-      <Navbar bg="transparent" expand="lg" id="navbarTestIcons">
+    <div >
+      <Navbar bg="white" expand="lg" className={`${show && 'navbarTestIcons'}`}>
         <Container>
           <Navbar.Brand href="/">
             <div className="bgTestImg"></div>
@@ -55,7 +55,7 @@ function NavBarHeader() {
             <Nav className="ms-auto" id="HomeNav">
               <Nav.Link className='Nav_home' href="/" style={{ color: 'black' }}>Accueil</Nav.Link>
               
-              <NavDropdown title="Nos Solutions" id="dropdown_Solution"className='Nav_homeNosSolution' style={{ color: 'black' }}>
+              <NavDropdown title="Nos Solutions" id="dropdown_Solution" className='Nav_homeNosSolution' style={{ color: 'black' }}>
                 <NavDropdown.Item href="/Hodhod">Hodhod</NavDropdown.Item>
                 <NavDropdown.Item href="/SensesIA">SensesIA</NavDropdown.Item>
               </NavDropdown>

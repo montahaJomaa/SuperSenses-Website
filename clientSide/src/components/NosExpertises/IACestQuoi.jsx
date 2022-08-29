@@ -11,13 +11,12 @@ import icon_entrainement from '../images/icon_entrainement.png';
 import icon_iterations from '../images/icon_iterations.png';
 import icon_miseEnProduction from '../images/icon_miseEnProduction.png';
 
-import icon_entrainement_onHover from '../images/icon_entrainement_onHover.jpg';
 
 function IACestQuoi(props) {
   return (
     <div>
       <div className="bloc_intro_AI container">
-        {(window.innerWidth < 768) ?
+        {(window.innerWidth <900) ?
           (<div>
             <div class="row">
               <div class="col">

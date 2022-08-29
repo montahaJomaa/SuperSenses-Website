@@ -131,7 +131,7 @@ function HomeInterface() {
         <div className="solution">
           <div className="container">
             <div className="col">
-              <div className="row">
+              <div className="row" id="NosValNosSolutions">
                 <h1 className="text-center" id="title1">Nos Solutions</h1>
               </div>
               <div className="row">
@@ -140,7 +140,7 @@ function HomeInterface() {
             </div>
           </div>
         </div>
-        <div className='container solutions-container'>
+        <div className='container solutions-container' >
           <div className='row'>
             <div className='col-md-6'>
               <Link className='link-to-solution' to="/Hodhod">
