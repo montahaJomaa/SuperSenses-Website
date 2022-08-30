@@ -1,3 +1,7 @@
+.App {
+  background-color: white;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 @font-face {
@@ -6,680 +10,63 @@
     url("./fonts/CaviarDreams_Bold.ttf") format("truetype");
   font-weight: bold;
 }
+
 /* Media Queries */
-@media screen and (min-width:980px) and (max-width:1098px){
-  .images{
-    margin-left: 380px !important;
-  }
-}
-@media screen and (max-width:991px) {
-  .bgTestImg {
-    content: url("./components/images/logo_supersenses_white.png") !important;
-    width: 100px !important;
 
+/***** Screen for mobile with max-width 487px *****************/
+
+@media(max-width: 487px) {
+
+  /***** Nav Bar Header ****************/
+  #basic-navbar-nav {
+    border-radius: 25px !important;
   }
 
-  #HomeNav {
-    background-color: rgb(45, 124, 181);
+  #NavText_other {
+    margin-left: -350px !important;
+    height: 40px !important;
+    text-align: center;
   }
 
-}
-
-/****** navbar ****/
-@media only screen and (max-width:971px) {
   .btnNosSolution {
-    margin-left: 7px;
-  }
-
-  .btnNosSolutionHome {
-    margin-left: -15px;
-  }
-}
-
-/** homeinterface Navbar **/
-@media screen and (min-width:1700px) and (max-width:2100) {
-  #HomeNav {
-    padding-left: 190px !important;
-  }
-}
-
-@media only screen and (min-width:2100px) {
-  #HomeNav {
-    padding-left: 500px !important;
-  }
-}
-
-/*====================*/
-
-/*********screen between 1024px and 1450px *************/
-@media only screen and (min-width: 1024px) and (max-width:1450px) {
-
-  #portfolioBox {
-    width: 97% !important;
-    margin-left: 25px !important;
-  }
-
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 78% !important;
-    left: 100px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    margin-left: -350px !important;
     text-align: center;
   }
-
-  .Apropos {
-    margin-top: 6% !important;
-  }
-
-  #portfolio1:hover {
-    transform: scale(1.3);
-    z-index: 2;
-    box-shadow: 50% 50% 50% rgb(97, 96, 96);
-    border-radius: 25px;
-    filter: drop-shadow(10px 10px 10px rgb(69, 71, 69));
-    width: 85% !important;
-  }
-
-  #portfolio1 {
-    width: 90%;
-  }
-
-  #boxs {
-    margin-top: 6%;
-    margin-left: 185px !important;
-    width: 990px !important;
-  }
-
-  .expertisets {
-    background-image: url('./components/images/Bg_expertise.jpg');
-    width: 100% !important;
-    margin-left: 0% !important;
-    background-repeat: no-repeat;
-    background-size: 100% 90%;
-    height: 487px;
-    padding-top: 8%;
-  }
-  .expertiseBox {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 400px !important;
-    height: 250px !important;
-    margin-left: -83% !important;
-    padding-top: 2.5%;
-    line-height: 3em;
-  }
-
-  #navfooter {
-    background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
-    background-repeat: no-repeat;
-    width: 98% !important;
-    height: 400px;
-    margin-left: 0%;
-    margin-top: 6%;
-  }
-
-  .image {
-    opacity: 1;
+  .Nav_home:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
     display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    width: 280px !important;
-    height: 267px;
-  }
-
-  .contenuS:hover .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 280px !important;
-    height: 267px !important;
-  }
-  .text {
-    background-color: gray;
-    opacity: 0.9;
-    color: white;
-    font-size: 25px;
-    width: 346px !important;
-    height: 81px;
-    margin-left: 11.5% !important;
-    margin-top: 26% !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
-  }
-
-  #img3Solution {
-    width: 70%;
-    height: 251px !important;
-  }
-
-  .img3Box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 58%;
-    height: 50% !important;
-    margin-top: -20%;
-    margin-left: 6.25%;
-  }
-
-  .box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 58%;
-    height: 48% !important;
-    margin-top: -20%;
-    margin-left: 7%;
-  }
-  #findOn {
-    margin-left: 2% !important;
-    font-size: 15px !important;
-    margin-top: 38% !important;
-  }
-  .fb_logo {
-    margin-left: -3% !important;
-    margin-top: 35% !important;
-  }
-  .insta_logo {
-    margin-left: -160% !important;
-    margin-top: 35% !important;
-  }
-  .linkedin_logo {
-    margin-left: -80% !important;
-    margin-top: 35% !important;
-  }
-  #logo_sup {
-    margin-left: 35%;
-    margin-top: 38% !important;
-  }
-}
-/****** for screen between 980 and 1099 *******/
-@media only screen and (min-width: 980px) and (max-width:1099px) {
-  .logo_supersenses {
-    width: 107px;
-    height: 76.42px;
-    margin-left: 15px !important;
-    margin-right: 5px;
-  }
-  #portfolioBox {
-    width: 800px !important;
-    margin-left: 10px !important;
-  }
-  #portfolio1 {
-    width: 100%;
-  }
-  #img3Solution {
-    width: 60% !important;
-    height: 200px !important;
-  }
-  .img3Box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 48% !important;
-    height: 52% !important;
-    margin-top: -20%;
-    margin-left: 6.25%;
-  }
-  .box {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 50% !important;
-    height: 52% !important;
-    margin-top: -20%;
-    margin-left: 5% !important;
-  }
-  #boxs {
-    margin-top: 6%;
-    margin-left: 50px !important;
-    width: 990px !important;
-  }
-  #hodhodparagraph {
-    font-size: 14px !important;
-    text-align: center;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: medium;
-    font-family: 'Roboto';
-    line-height: 22px;
-    color: #000;
-    padding-left: 15%;
-  }
-  #SensiaP {
-    font-size: 14px !important;
-    text-align: center;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: medium;
-    font-family: 'Roboto';
-    line-height: 22px;
-    color: #000;
-  }
-  .images {
-    padding-top: 5%;
-    margin-left: 60px;
-    width: 30% !important;
-  }
-}
-/*********** mobile screen between 425px and 768px**************************/
-@media only screen and (min-width:425px) and (max-width:767px) {
-  /** footer **/
-  #socialIcons {
-    margin-left: 10% !important;
-    margin-top: -13% !important;
-  }
-  #copyright_title {
-    margin-left: -65% !important;
-  }
-  #navfooter {
-    padding-top: 15% !important;
-  }
-  /*=============*/
-  /* Homeinterface*/
-  .description_img {
-    width: 300px !important;
-  }
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
-  }
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
-  }
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
-  }
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    width: 120px !important;
-    height: 270px !important;
-  }
-  .contenuS {
+    height: 2px;
+    left: 30% !important;
     position: relative;
-    width: 50%;
-    margin-left: 20% !important;
+    background: #25ACDE;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
   }
-  #hodhod1 {
-    width: 340px !important;
-    height: 250px !important;
-    margin-left: -20px !important;
-    margin-top: 70px !important; 
-  }
-  .expertiseBox {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 450px !important;
-    height: 280px !important;
-    margin-left: 80px !important;
-    padding-top: 2.5%;
-    line-height: 3em;
-  }
-  #expertiseBoxItems {
-    font-size: 16px !important;
-  }
-  #portfolio1 {
-    width: 250px !important;
-    margin-left: 25px !important;
-  }
-  /*================*/
-  /**Hodhod Interface **/
-  #HodhodContentParagraph{
-    margin-top: -300px !important;
-  }
-  #bgPsize {
-    border-radius: 25px;
-    margin-top: 20px !important;
-  }
-  #compBorder1{
-    margin-bottom: 50px !important;
-  }
-  #compBorder2{
-    margin-bottom: 50px !important;
-  }
-  #videoPicture {
-    width: 485px !important;
-  }
-  #hodhodbox {
-    margin-left: 4% !important;
-    margin-top: 4%;
-    width: 80% !important;
-  }
-  #mobPicture {
-    width: 280px !important;
-  }
-  #hodhodImage {
-    width: 120px !important;
-    height: 80px !important;
-    margin-top: 10%;
-    margin-left: 35% !important;
-    border-radius: 20px;
-  }
-  .bgSolutionImg {
-    background-image: url('./components/images/bannière supersenses@2x.png');
-    background-repeat: no-repeat;
-    background-size: 100% 50% !important;
-    height: 487px;
-    margin-top: 80px !important;
-  }
-  #googlePlay {
-    width: 100px !important;
-    height: 100%;
-    margin-left: 35% !important;
-  }
-  /*======================*/
-  /**** Senses IA Interface***/
-  #img-descriptionSensesIA {
-    width: 400px !important;
-    height: 90% !important;
-    margin-left: 40px !important;
-  }
-  #blocComposantsSensesIA {
-    margin-top: 5%;
-    text-align: center;
-    width: 350px !important;
-    margin-left: 20px !important;
-  }
-  .img_service_AI {
-    margin-left: 10%;
-    border-radius: 30px;
-    width: 350px !important;
-  }
-  .img_service_digital {
-    margin-top: 20px;
-    width: 350px !important;
-  }
-  .img_cercle_AI {
-    width: 400px !important;
-    margin-top: 60px !important;
-    margin-left: 30px !important;
-  }
-  #etape_AI {
-    width: 400px !important;
-    height: 380px !important;
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 40px;
-    box-shadow: 0 0 45px 0 #c7c7c7;
-    border-radius: 10px;
-    transition: box-shadow .3s;
-    margin-left: 60px !important;
-  }
-  /***===============***/
-  /**** A propos interface ****/
-  #AproposHeader {
-    margin-top: 18% !important;
-  }
-  #AproposImgSize {
-    width: 380px !important;
-  }
-  /*===========================*/
-  /** espace Carriere **/
-  .ContactezNous_container {
-    margin-left: 10% !important;
-    margin-right: 6% !important;
-  }
-  /*===================*/
-}
-/************************/
-
-/*********** mobile screen between 320 px and 375px ***********/
-@media screen and (min-width:320px) and (max-width:375px) {
-
-  /** footer **/
-  #socialIcons {
-    margin-left: 4% !important;
-    margin-top: -25% !important;
-  }
-  #copyright_title {
-    margin-left: -65% !important;
-  }
-  #navfooter {
-    padding-top: 15% !important;
-  }
-  /*==========*/
-  /**navbar **/
-  .nav-header {
-    z-index: 12;
-    position: fixed;
-    background-color: white;
-    width: 100% !important;
-    margin-top: -25px !important;
-    padding-right: 25px !important;
-  }
-  /*==========**/
-  /**home Interface**/
-  .description_img {
-    width: 250px !important;
-  }
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
-  }
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
-  }
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
-  }
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    width: 120px !important;
-    height: 270px !important;
-  }
-  .contenuS {
-    position: relative;
-    width: 50%;
-    margin-left: 10% !important;
-  }
-  #hodhod1 {
-    width: 340px !important;
-    height: 250px !important;
-    margin-left: -20px !important;
-    margin-top: 70px !important;
-  }
-  .expertiseBox {
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 3px 6px #888992;
-    border-radius: 21px;
-    opacity: 1;
-    backdrop-filter: blur(7px);
-    width: 450px !important;
-    height: 280px !important;
-    margin-left: 80px !important;
-    padding-top: 2.5%;
-    line-height: 3em;
-  }
-  #expertiseBoxItems {
-    font-size: 14px !important;
-  }
-  #portfolio1 {
-    width: 250px !important;
-    margin-left: 25px !important;
-  }
-  /**==================**/
-  /*****A propos Interface *****/
-  #AproposImgSize {
-    width: 315px !important;
-  }
-  /**================**/
-  /**Hodhod Interface **/
-  .NosServices_Container {
-    margin-top: 25px !important;
-    margin-bottom: 100px;
-    width: 100%;
-  }
-  #HodhodContentParagraph{
-    margin-top: -320px !important;
-  }
-  #bgPsize {
-    border-radius: 25px;
-    margin-top: 20px !important;
-  }
-  #compBorder1{
-    margin-bottom: 50px !important;
-  }
-  #compBorder2{
-    margin-bottom: 50px !important;
-  }
-  #videoPicture {
-    width: 300px !important;
-  }
-
-  #hodhodbox {
-    margin-left: 4% !important;
-    margin-top: 4%;
-    width: 80% !important;
-  }
-
-  #mobPicture {
-    width: 280px !important;
-
-  }
-
-  #hodhodImage {
-    width: 120px !important;
-    height: 80px !important;
-    margin-top: 10%;
-    margin-left: 35% !important;
-    border-radius: 20px;
-  }
-
-  .bgSolutionImg {
-    background-image: url('./components/images/bannière supersenses@2x.png');
-    background-repeat: no-repeat;
-    background-size: 100% 50% !important;
-    height: 487px;
-  }
-
-  #googlePlay {
-    width: 100px !important;
-    height: 100%;
-    margin-left: 35% !important;
-  }
-
-
-
-  /*===================*/
-  /* Senses IA interface */
-  .NosSolutionsTitle {
-    margin-top: 25px !important;
-    text-align: center;
-    padding-top: 80px;
+  .Nav_home:hover:after {
+    width: 40% !important;
+    left: 30% !important;
   }
   
-  #img-descriptionSensesIA {
-    width: 280px !important;
-    height: 90% !important;
-    margin-left: 5px !important;
+  .Nav_homeNosSolution:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 25% !important;
+    position: relative;
+    background: #25ACDE;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-top:-27px !important;
   }
-
-  #blocComposantsSensesIA {
-    margin-top: 5%;
-    text-align: center;
-    width: 280px !important;
-    margin-left: 5px !important;
+  .Nav_homeNosSolution:hover:after {
+    width: 50% !important;
+    left: 25% !important;
+    
   }
-
-  /*==================*/
-  /* Nos expertise Interface */
-  .img_service_AI {
-    margin-left: 10%;
-    border-radius: 30px;
-    width: 250px !important;
-  }
-
-  .img_service_digital {
-    margin-top: 20px;
-    width: 250px !important;
-  }
-
-  .img_cercle_AI {
-    width: 318px !important;
-    margin-top: 50px !important;
-  }
-
-  #etape_AI {
-    width: 280px !important;
-    height: 550px !important;
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 40px;
-    box-shadow: 0 0 45px 0 #c7c7c7;
-    border-radius: 10px;
-    transition: box-shadow .3s;
-    margin-left: 35px !important;
-  }
-
-  /*==================*/
-  /** Espace Carriere **/
-  .ContactezNous_container {
-    margin-left: 10% !important;
-    margin-right: 6% !important;
-  }
-
-  /*===================*/
-}
-
-/*****************/
-
-/***** Screen for mobile between 375px and 425 px *****************/
-@media screen and (min-width:375px) and (max-width:424px) {
-
   /** footer **/
   #socialIcons {
     margin-left: 6% !important;
@@ -696,55 +83,56 @@
   }
 
   /**===========**/
+
   /*==Homeinterface==*/
+
+  #NavText_home {
+    text-align: center !important;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 0px;
+    font-size: 15px;
+    color: black !important;
+  }
+
+  .big-title {
+    text-align: center !important;
+  }
+
+  .bienvenuto {
+    text-align: center !important;
+  }
+
+  .bienvenuto-p {
+    text-align: center !important;
+  }
+
+  .p1>p {
+    text-align: center !important;
+  }
+
+  .more-info-btn {
+    margin-left: 35% !important;
+  }
+
   .description_img {
     width: 300px !important;
   }
 
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
+  .solutions-container {
+    margin-left: 10px !important;
+    margin-top: -30px !important;
   }
 
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
+  .solution-description-container {
+    margin-left: -10px !important;
+    width: 80% !important;
+    padding: 40px 5px 20px 5px !important;
   }
-
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
-  }
-
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-
-    width: 120px !important;
-    height: 270px !important;
-
-  }
-
-  .contenuS {
-    position: relative;
-    width: 50%;
-    margin-left: 10% !important;
+  
+  .link-to-solution{
+  margin-bottom: 20px !important;
   }
 
   #hodhod1 {
@@ -761,8 +149,7 @@
     opacity: 1;
     backdrop-filter: blur(7px);
     width: 450px !important;
-    height: 280px !important;
-    margin-left: 80px !important;
+    margin-left: 0px !important;
     padding-top: 2.5%;
     line-height: 3em;
   }
@@ -773,40 +160,107 @@
 
   #portfolio1 {
     width: 250px !important;
-    margin-left: 25px !important;
   }
 
   /*=========*/
-  /*Hodhod interface */
-  #HodhodContentParagraph{
-    margin-top: -320px !important;
+  /**Hodhod Interface **/
+
+  #NosSolutionsTitleHodhod {
+    margin-top: -230px;
+    margin-left: 26% !important;
   }
-  #bgPsize {
-    border-radius: 25px;
-    margin-top: 20px !important;
+
+  .bgSolutionImg {
+    background-image: url('./components/images/bannière supersenses@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+    height: 487px;
+    margin-bottom: -130px;
   }
-  
- 
-  
-  #compBorder1{
-    margin-bottom: 50px !important;
+
+  #HodhodContentParagraphTitle {
+    margin-left: -45% !important;
+    margin-top: 20px;
   }
-  #compBorder2{
-    margin-bottom: 50px !important;
+
+  #HodhodContentParagraph {
+    text-align: center !important;
+    margin-top: -230px !important;
+    margin-left: 23% !important;
   }
+
+  #HodhodContentParagraphDes {
+    margin-left: -45% !important;
+  }
+
   #videoPicture {
-    width: 300px !important;
+    width: 350px !important;
+  }
+
+  #ComposantsHodhodTitle {
+    margin-left: 2% !important;
+    margin-bottom: 5% !important;
+    text-align: center !important;
+
   }
 
   #hodhodbox {
     margin-left: 4% !important;
     margin-top: 4%;
+    margin-bottom: 35% !important;
     width: 80% !important;
+  }
+
+  #compBorder1 {
+    margin-bottom: 50px !important;
+    margin-left: 9% !important;
+  }
+
+  #compBorder2 {
+    margin-bottom: 50px !important;
+    padding-top: 3%;
+  }
+
+  #compBorder3 {
+    margin-bottom: 50px !important;
+    padding-top: 10% !important;
   }
 
   #mobPicture {
     width: 280px !important;
+    margin-bottom: 15% !important;
+    margin-left: 3% !important;
+  }
 
+  #mobPara {
+    text-align: center !important;
+    margin-left: 5% !important;
+  }
+
+  #backgroundimg {
+    margin-top: 25% !important;
+  }
+
+  #bgPsize {
+    width: 98% !important;
+    border-radius: 25px;
+    margin-top: 15px !important;
+
+  }
+
+  #deveneztitle {
+    margin-top: 10% !important;
+  }
+
+  #devenezParag {
+    text-align: center !important;
+    margin-left: -3% !important;
+    margin-top: 3% !important;
+  }
+
+  #ImpactBox {
+    margin-top: 22% !important;
+    margin-bottom: -40px !important;
   }
 
   #hodhodImage {
@@ -817,91 +271,237 @@
     border-radius: 20px;
   }
 
-  .bgSolutionImg {
-    background-image: url('./components/images/bannière supersenses@2x.png');
-    background-repeat: no-repeat;
-    background-size: 100% 50% !important;
-    height: 487px;
-    margin-top: 80px !important;
-  }
-
   #googlePlay {
     width: 100px !important;
     height: 100%;
     margin-left: 35% !important;
   }
 
-
-
   /*==============*/
+
   /*** Senses IA Interface ***/
+
+  .NosSolutionsTitle {
+    margin-bottom: 20px !important;
+    margin-top: 10% !important;
+    font-size: 35px;
+
+  }
+
+  #SensesIATitleTxt {
+    margin-top: 5% !important;
+    margin-left: -1% !important;
+    text-align: center !important;
+  }
+
+  #p_descriptionSensesIA {
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+    margin-bottom: 13% !important;
+    text-align: center !important;
+
+  }
+
   #img-descriptionSensesIA {
-    width: 280px !important;
+    width: 330px !important;
     height: 90% !important;
-    margin-left: 5px !important;
+    margin-left: 5% !important;
+    margin-bottom: 5% !important;
+  }
+
+  #ComposantsSensesIATitle {
+    margin-top: 12% !important;
+    margin-bottom: 10% !important;
+    font-size: 16px !important;
   }
 
   #blocComposantsSensesIA {
-    margin-top: 5%;
     text-align: center;
     width: 280px !important;
+    margin-left: 5% !important;
   }
 
   /*=================*/
   /*Nos Expertise Interface */
+
+  #NosExpertiseTitre {
+    margin-top: 5% !important;
+    margin-bottom: -10% !important;
+  }
+
+  .ServiceAI_data>h5 {
+    text-align: center !important;
+    margin-left: -2% !important;
+  }
+
+  .ServiceDigital_data>h5 {
+    text-align: center !important;
+    margin-left: -8% !important;
+  }
+
+  .paragraph_ServiceAI {
+    text-align: center !important;
+    margin-left: 1% !important;
+  }
+
+  .paragraph_ServiceDigital {
+    margin-left: 1% !important;
+    margin-right: 2% !important;
+    margin-bottom: -25% !important;
+    text-align: center !important;
+  }
+
+  .digitalOptions>li {
+    text-align: center !important;
+    margin-left: -10% !important;
+  }
+
   .img_service_AI {
-    margin-left: 10%;
+    margin-left: 9% !important;
+    margin-top: -9% !important;
     border-radius: 30px;
-    width: 250px !important;
+    width: 300px !important;
   }
 
   .img_service_digital {
-    margin-top: 20px;
-    width: 250px !important;
+    margin-top: 9% !important;
+    margin-left: 8% !important;
+    margin-bottom: -4% !important;
+    width: 300px !important;
+  }
+
+  .AI_slogan {
+    padding-right: 6% !important;
+    text-align: center !important;
+  }
+
+  .intro_AI_data {
+    text-align: center !important;
+    margin-top: 20% !important;
+    margin-bottom: -10% !important;
   }
 
   .img_cercle_AI {
-    width: 318px !important;
-    margin-top: 50px !important;
+    width: 310px !important;
+    margin-top: -19px !important;
+    margin-bottom: 25% !important;
+    margin-left: 7% !important;
   }
 
-  #etape_AI {
-    width: 280px !important;
-    height: 550px !important;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-left: 55px !important;
-    padding: 40px;
+  .intro_AI_data {
+    margin-left: 9% !important;
+    margin-right: 9% !important;
+  }
+
+  .etape_AI {
+    width: 310px !important;
+    height: 465px !important;
+    margin-bottom: 15px !important;
+    margin-left: 8% !important;
+    margin-right: 1% !important;
     box-shadow: 0 0 45px 0 #c7c7c7;
-    border-radius: 10px;
+    border-radius: 25px;
     transition: box-shadow .3s;
+  }
+
+  .etape_AI_paragraph {
+    text-align: center !important;
   }
 
   /*========================*/
 
   /* A propos Interface */
-  #AproposImgSize {
-    width: 315px !important;
-  }
 
   .Apropos {
-    margin-top: 80px !important;
+    margin-top:-5% !important;
+    text-align: center !important;
+  }
+
+  #AproposSuperText {
+    margin-left: -23% !important;
+
+  }
+
+  #AproposParag {
+    text-align: center !important;
+    margin-left: -8% !important;
+  }
+
+  #AproposImgSize {
+    width: 340px !important;
+    margin-left: -11% !important;
   }
 
   /*==================*/
   /** espace carriere **/
+  .Contact_form {
+    margin-left: -6% !important;
+    margin-right: -1% !important;
+  }
+
   .ContactezNous_container {
     margin-left: 10% !important;
     margin-right: 6% !important;
   }
 
+  .bloc_welcoming_phrases {
+    margin-top: -50px !important;
+    margin-bottom: 40px;
+    padding-top: 100px;
+
+  }
+
+  /************************************/
+  #RiseLoader {
+    margin-top: 260px !important;
+    margin-left: 110px !important;
+  }
+
   /*===================*/
 }
 
-/*================================================================*/
-/**** Tablets screen between 768px and 1024px ****/
-@media screen and (min-width:768px) and (max-width:1023px) {
-
+/**** Tablets screen between 768px and 900px ****/
+@media screen and (min-width:768px) and (max-width:900px) {
+  
+.btnNosSolution {
+    margin-left: -350px !important;
+    text-align: center;
+  }
+  .Nav_home:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 40% !important;
+    position: relative;
+    background: #25ACDE;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .Nav_home:hover:after {
+    width: 20% !important;
+    left: 40% !important;
+  }
+  
+  .Nav_homeNosSolution:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 40% !important;
+    position: relative;
+    background: #25ACDE;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    margin-top:-27px !important;
+  }
+  .Nav_homeNosSolution:hover:after {
+    width: 20% !important;
+    left: 40% !important;
+    
+  }
   /**footer **/
   #socialIcons {
     margin-left: -10% !important;
@@ -920,305 +520,405 @@
   /*============*/
 
   /**Home Interface */
-
-  .contenuS .image {
-    transform: scale(1.3);
-    z-index: 2;
-    width: 240px !important;
-    height: 210px !important;
-    margin: 30px !important;
-    margin-left: -55px !important;
+  #NavText_home {
+    border-radius: 30px !important;
+    text-align: center !important;
+    text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 0px;
+    font-size: 15px;
+    color: black !important;
   }
 
-  .text {
-    background-color: gray;
-    opacity: 1;
-    color: white;
-    font-size: 10px;
-    width: 298px !important;
-    height: 81px;
-    margin-left: -69px !important;
-    margin-top: 43px !important;
-    padding-top: 4%;
-    border-radius: 0px 0px 25px 25px;
+  .solution-description-container {
+    width: 90% !important;
+    padding: 40px 5px 20px 5px !important;
   }
 
-  .middle {
-    opacity: 1 !important;
-    position: absolute;
-    top: 81%;
-    left: 100px;
-    text-align: center;
+  .solution-img {
+    width: 100% !important;
+    height: 90% !important;
   }
 
-  .image {
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-
-    width: 120px !important;
-    height: 270px !important;
-
+  .expertiseBox{
+    margin-right: 80px !important;
   }
 
-  .contenuS {
-    position: relative;
-    width: 50%;
-    margin-left: 20% !important;
+  .portfolio-img{
+    width: 100% !important;
   }
-
   /**==================*/
+  
   /** HodHod interface **/
+
+  #HodhodContentParagraphTitle{
+    margin-left:-50px !important;
+  }
+  #HodhodContentParagraphDes{
+  margin-left: -50px !important;
+  margin-right:-90px !important;
+  }
+
+  #videoPicture{
+    margin-top:70px !important;
+    width: 450px !important;
+    margin-right:-15% !important;
+  }
+
+  #ComposantsHodhodTitle{
+    margin-top: 50px !important;
+  }
   #hodhodbox {
-    margin-left: -1% !important;
+    margin-left: 1% !important;
     margin-top: 4%;
     width: 650px !important;
   }
 
-  
-  #ImpactText {
-    font-size: 12px !important;
-
+  #compBorder1 {
+    width: 30% !important;
+    margin-bottom: 50px !important;
+    margin-left: 3% !important;
   }
+
+  #compBorder2 {
+    width: 30% !important;
+    margin-bottom: 50px !important;
+  }
+
+  #compBorder3 {
+    width: 30% !important;
+    margin-bottom: 50px !important;
+    padding-top: 5% !important;
+    
+  }
+  #mobPicture {
+    width: 280px !important;
+    margin-bottom: 15% !important;
+    margin-left: 3% !important;
+  }
+
+  #mobPara {
+    text-align: center !important;
+    margin-left: -1% !important;
+  }
+  
+  #ImpactBox{
+    margin-bottom: -30px !important;
+  }
+  #bgPsize {
+    width: 65% !important;
+    border-radius: 25px;
+    margin-top: 15px !important;
+    margin-left:140px !important;
+  }
+
+  #hodhodImage{
+    margin-left: 250px !important;
+  }
+  /*=================*/
+  
+  /*** Senses IA Interface ***/
+  #SensesIATitleTxt {
+    margin-top: 5% !important;
+    margin-left: 3%;
+  }
+
+  #p_descriptionSensesIA {
+    margin-left: 3% !important;
+    margin-bottom: 13% !important;
+  }
+
+  #img-descriptionSensesIA {
+    width: 280px !important;
+    height: 70% !important;
+    margin-left: 13% !important;
+    margin-bottom: 5% !important;
+    margin-top: 23% !important;
+  }
+
+  #ComposantsSensesIATitle {
+    margin-top: 12% !important;
+    margin-bottom: 10% !important;
+  }
+
+  #blocComposantsSensesIA {
+    text-align: center;
+    width: 100% !important;
+    margin-left: -1% !important;
+  }
+
 
   /*=================*/
+
   /**Nos expertise Interface **/
-  #etape_AI {
+
+  .img_service_AI{
+    margin-top: 160px !important;
+  }
+  
+  .img_service_digital{
+   margin-top: 200px !important;
+   }
+  .etape_AI {
     margin-left: 120px !important;
+
   }
 
+  .img_cercle_AI{
+    margin-left: 20px !important;
+    margin-bottom: 50px !important;
+    width: 700px !important;
+  }
+
+  .intro_AI_data{
+    margin-top: 30px !important;
+  }
+
+
   /*==========================*/
+
+  /* A propos Interface */
+
+  .Apropos {
+    margin-top:-5% !important;
+    text-align: left !important;
+  }
+
+  #AproposSuperText {
+    margin-left: -6% !important;
+  }
+
+  #AproposParag {
+    text-align: left !important;
+    margin-left: -8% !important;
+  }
+
+  #AproposImgSize {
+    width: 340px !important;
+    margin-left: 1% !important;
+    margin-top: 23% !important;
+  }
+
+  /*==================*/
+  
+  /*********Espace carriere********************/
+  .bloc_welcoming_phrases {
+    margin-top: -50px !important;
+    margin-bottom: 40px;
+    padding-top: 100px;
+
+  }
+
+  .Contact_form {
+    margin-left: -8% !important;
+    margin-right: -8% !important;
+  }
+
+  /************************************/
+  #RiseLoader {
+    margin-top: 410px !important;
+    margin-left: 350px !important;
+
+  }
 }
 
-/*==========================================*/
-/******Espace Carriere ********/
-.me-auto {
-  margin-left: 190px;
+/**************** Default version ********************/
+
+/*********Home interface*****************/
+
+/*******Navbar Header Home interface*****/
+
+.logo_supersensesHome {
+  width: 107px;
+  height: 76.42px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: -180%;
 }
 
-.Nav_item {
-  text-transform: uppercase;
+.bgTestImg {
+  content: url("./components/images/logo_supersenses.png");
+  width: 100px !important;
+}
+
+
+.Nav_home {
+  text-transform: capitalize;
   margin-right: 20px;
   margin-left: 20px;
+  padding-right: 0px;
+  font-size: 20px;
+
+}
+
+.Nav_home:after{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 10%;
+	position: relative;
+	background: #25ACDE;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+.Nav_home:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+.Nav_homeNosSolution:after{
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 10%;
+	position: relative;
+	background: #25ACDE;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+  margin-top:-7px;
+}
+.Nav_homeNosSolution:hover:after {
+	width: 100%;
+	left: 0;
+}
+.Nav_homeNosSolution {
+  text-transform: capitalize;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 0px;
+  font-size: 20px;
+}
+
+#NavText_home {
+  text-transform: capitalize;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-right: 0px;
+  font-size: 20px;
+  color: white;
+}
+
+.Nav_itemHomeInterface {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 25px;
   padding-right: 0px;
   font-size: 15px;
 }
 
-/*****************************/
-
-/*********Nos Solutions **********/
-#HodhodContentParagraph{
-  margin-left: 84px;
-  
-}
-.PictureContent {
-  width: 80%;
-  margin-left: 10%;
-}
-
-.videoBorder {
-  border-radius: 18px;
-  height: 80%;
-  width: 90%;
-}
-
-#compBorder1 {
-  border-radius: 25px;
-  height: 180px;
-}
-
-#hodhodbox {
-  margin-left: -10%;
-  margin-top: 2%;
-}
-
-#compBorder2 {
-  border-radius: 25px;
-  height: 180px;
-}
-
-#compBorder3 {
-  border-radius: 25px;
-  height: 180px;
-}
-
-.appmobile {
-
-  margin-top: 8%;
-}
-
-.kitelectronique {
-  margin-top: 8%;
-}
-
-.platform {
-
-  margin-top: 8%;
-}
-
-#mobSize {
-  margin-top: 18%;
-}
-
-#deveneztitle {
-  margin-top: 4%;
-  margin-bottom: 4%;
+.hashLinkNavBar {
+  text-decoration: none;
   color: white;
 }
 
-#mobPara {
-  margin-right: 4%;
+.hashLinkNavBar:hover {
+  color: white;
 }
 
-#backgroundimg {
-  background-image: url('./components/images/Groupe_de_masques_10117.png');
-  background-size: cover;
-  height: 100%;
-  margin-left: 0%;
+.hashLinkNavBarDropDown {
+  text-decoration: none;
+  color: black;
+}
+
+.hashLinkNavBarDropDown:hover {
+  color: black;
+}
+
+#bg_img_header {
+  background-image: url("./components/images/bg_img_header.png");
+  background-size: 956px 400px;
   background-repeat: no-repeat;
-  margin-top: 6%;
-
-}
-
-#ImpactBox {
-  margin-top: 10%;
-}
-
-#devenezParag {
-  padding-bottom: 5%;
-  color: white;
-}
-
-#apptitle {
-  margin-top: 7%;
-  margin-left: 20%;
-}
-
-#CarouselBorder {
-  border-radius: 15px;
-}
-
-#hodhodImage {
-  width: 226px;
-  height: 166px;
-  margin-top: 10%;
-  margin-left: 40%;
-  border-radius: 20px;
-}
-
-#hodhodStatement {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  color: #000000;
-  font-size: 22px;
-  line-height: 29px;
-}
-
-#googlePlay {
-  width: 15%;
-  height: 100%;
-  margin-left: 43%;
+  background-position: top right;
 }
 
 
-#bgPsize {
-  border-radius: 25px;
-  height: 300px ;
+.logo_supersenses {
+  width: 107px;
+  height: 76.42px;
+  margin-left: 10px;
+  margin-right: 5px;
 }
 
-#imageSize {
+#languageIcon {
+  display: inline;
+  margin-left: 150%;
+  margin-top: 380%;
+
+}
+
+#selectLangue {
+
+  border-radius: 10px;
+  margin-left: 12px;
+}
+
+#NavText_other {
+  color: black;
+}
+
+.Nav_itemHomeInterface {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 25px;
+  padding-right: 0px;
+  font-size: 15px;
+
+}
+
+/*************************/
+
+.Description_supersenses {
+  margin-top: 200px;
+
+}
+
+.Description_supersenses {
+  margin-top: 200px;
+}
+
+.bienvenuto {
+  font-size: 37px;
+  letter-spacing: -0.59px;
+  font-weight: 500;
+}
+
+.big-title {
+  font-size: 69px;
+  letter-spacing: -1.56px;
+  font-weight: 500;
+}
+
+.bienvenuto-p {
+  font-size: 18px;
+}
+
+.more-info-btn {
+  border: 1px solid black !important;
+  border-radius: 10px !important;
+  padding: 7px 30px !important;
+  font-size: 16px !important;
+  margin-bottom: 40px;
+}
+
+/*************** Nos Valeurs *******************/
+
+.part2 {
+  margin-top: 100px;
   width: 100%;
-  height: 65% !important;
 }
 
-.CarouselPict div {
-  padding: 6px;
-
-}
-
-#NosSolutionParag1 {
-  margin-left: 13%;
-  margin-top: 4%;
-  text-align: justify;
-  background-color: #E0F0FD;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  margin-bottom: 6%;
-}
-
-#NosSolutionVideo {
-  margin-left: 26%;
-}
-
-.NosSolution {
-  margin-top: 5%;
-}
-
-#TitleHodhod {
-  margin-top: 4%;
-
-}
-
-.bgSolutionImg {
-  background-image: url('./components/images/bannière supersenses@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100% 90%;
-  height: 487px;
-
-}
-
-/*********************************/
-
-/********A PROPOS ****************/
-#AproposImg {
-  margin-top: 4%;
-  margin-right: 2%;
-  height: 250px;
-  border-radius: 20px;
-}
-
-.Apropos {
-  margin-top: 5%;
-}
-
-#AproposParag {
-  text-align: left;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  color: #000000;
-  font-size: 14px;
-  line-height: 22px;
-  margin-top: 3%;
-}
-
-#AproposContent {
-  margin-top: 10%;
-
-}
-
-#AproposSuperText {
-  text-decoration: underline #25ACDE;
-
-}
-
-#AproposHeader {
-  padding-top: 3%;
-
-}
-
-
-/*********************************/
-
-/***** Nos Valeurs ***************/
 #title1 {
   font-style: normal;
   font-variant: normal;
   font-weight: medium;
-  font-family: 'Roboto';
   font-size: 30px;
 
 }
@@ -1228,9 +928,17 @@
   font-style: normal;
   font-variant: normal;
   font-weight: medium;
-  font-family: 'Roboto';
   font-size: 20px;
   line-height: 30px;
+}
+
+#NosValNosSolutions {
+
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  font-size: 30px;
 }
 
 .p1 {
@@ -1243,15 +951,13 @@
   font-style: normal;
   font-variant: normal;
   font-weight: medium;
-  font-family: 'Roboto';
   font-size: 20px;
   line-height: 26px;
 }
 
 .images {
-
-  padding-top: 5%;
   margin-left: 60px;
+  margin-top: 50px;
 }
 
 .img {
@@ -1275,75 +981,13 @@
   z-index: 3;
 }
 
-/********hover Images****/
-.contenuS {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  width: 327px;
-  height: 267px;
-
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 81%;
-  left: 100px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.contenuS:hover .image {
-  transform: scale(1.3);
-  z-index: 2;
-  width: 327px;
-  height: 267px;
-
-}
-
-.contenuS:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  background-color: gray;
-  opacity: 0.9;
-  color: white;
-  font-size: 25px;
-  width: 404px;
-  height: 81px;
-  margin-left: 15.5%;
-  margin-top: 19%;
-  padding-top: 4%;
-  border-radius: 0px 0px 25px 25px;
-}
-
-/**********************/
-#hoverImg2 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-
-}
-
-#hoverImg3 :hover {
-  transform: scale(1.3);
-  z-index: 2;
-
-}
-
 .solution {
   margin-top: 10%;
-
 }
+
+/***************************************************/
+
+/***************Comment section in the home interface*********/
 
 #boxs {
   margin-top: 6%;
@@ -1354,10 +998,6 @@
 .bgSolution {
   width: 73%;
   height: 322px;
-}
-
-#SoluBorder {
-  border-radius: 25px;
 }
 
 #chatSize {
@@ -1412,8 +1052,9 @@
 #img3Solution {
   width: 70%;
   height: 326px;
-  
+
 }
+
 
 #hodhodTitle {
   font-size: 25px;
@@ -1428,9 +1069,8 @@
   padding-top: 6%;
 
 }
-#hodhodP{
-  width: 99%;
-}
+
+
 #hodhodparagraph {
   font-size: 16px;
   text-align: center;
@@ -1451,460 +1091,171 @@
   position: relative;
 }
 
-#dotDesign {
-  border-style: solid;
-  border-radius: 50%;
-  width: 20%;
-  height: 40px;
-  margin-left: 45%;
-  background-color: white;
-}
-
-#savoirplusbtn {
-  width: 10%;
-  margin-top: 3%;
-}
-
-.expertisets {
-  width: 100%;
-  padding-right: 60px;
-  background-image: url('./components/images/Bg_expertise.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 530px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-.expertiseBox {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 3px 6px #888992;
-  border-radius: 21px;
-  opacity: 0.85;
-  backdrop-filter: blur(7px);
-  padding: 30px 10px;
-  line-height: 3em;
-  height: 370px;
-  margin-top: 60px;
-}
-
-.expertiseBox ul {
-  list-style: none;
-}
-
-#expertiseTitle {
-  font-size: 37px;
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'Roboto';
-  line-height: 30px;
-  color: #000;
-  margin-top: 14%;
-}
-
-
-
-.expertiseList {
-  list-style: none;
-
-}
-
-
-
-/*********************************/
-.p2 {
-  display: flex;
-  justify-content: center;
-
-}
-
-.p2 p {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: medium;
-  font-family: 'CaviarDreams';
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.p3 {
-  display: flex;
-  justify-content: center;
-
-}
-
-/*****************************NosOffres**************************/
-
-
-/*******************************************/
-
-
-.impactTitle {
-  text-align: center;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  font-family: 'Roboto';
-  font-size: 29px;
-  line-height: 38px;
-}
-
-.ImpactPictures {
-  width: 80%;
-
-  padding: 3%;
-  margin-left: 10%;
-
-}
-
 #img1 {
   width: 25%;
   margin: 0.1%;
 }
 
-#CarouselPosition {
-  margin-left: 35%;
-  width: 30%;
-  padding-top: 3%;
+/****************/
+/*************hover Images**************/
 
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  width: 327px;
+  height: 267px;
 }
 
-#sizeImg {
-  height: 100px;
-}
-
-#CarouselPicture {
-  width: 200px;
-}
-
-
-
-/******Espace Carriere ********/
-
-
-.App {
-  background-color: white;
-}
-
-
-/***********************NavBarHeader**************/
-#HomeNav {
-  margin-left: 28%;
-
-}
-
-.nav-header {
-  z-index: 12;
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  margin-top: -85px;
-
-}
-
-#bg_img_header {
-  background-image: url("./components/images/bg_img_header.png");
-  background-size: 1053px 286px;
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
-.logo_supersenses {
-  width: 107px;
-  height: 76.42px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-#languageIcon {
-  display: inline;
-  margin-left: 150%;
-  margin-top: 380%;
-
-}
-
-#selectLangue {
-
-  border-radius: 10px;
-  margin-left: 12px;
-}
-
-#NavText_other {
-  color: black;
-}
-
-.dpSolution {
-  font-size: 15px;
-  color: white;
-  margin-top: -6%;
-}
-/***************NavBarFooter******************/
-#navfooter {
-  background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 99.236%;
-  height: 400px;
-  margin-left: 0%;
-  margin-top: 6%;
-}
-
-#logo_sup {
-  margin-left: 35%;
-  margin-top: 30%;
-}
-
-#col_nav {
-  margin-top: 14.6%;
-  color: white;
-}
-
-#SocialMediaIcons ul li {
-  display: inline-block;
-  color: white;
-  margin-top: 63%;
-  justify-content: space-between;
-}
-
-#copyright_title {
-  margin-left: 25%;
-}
-
-/********************************************/
-/*********Nos Solutions **********/
-.NosSolutionsTitle {
-  margin-top: 85px;
+.our-value-item {
+  position: relative;
   text-align: center;
-  padding-top: 80px;
 }
 
-
-.PictureContent {
-  width: 80%;
-  margin-left: 10%;
-}
-
-#blocSensesIA {
-  margin-top: 10%;
-}
-
-#CarouselBorder {
-  border-radius: 15px;
-}
-
-#bg_img_footer {
-  background-image: url('./components/images/bg_img_footer1.png');
-  background-size: 1060px 390px;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-}
-
-
-#nav-footer {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
-}
-
-
-.contact_info_FooterNavBar {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 150px;
-}
-
-.logo_supersenses_white {
-  width: 164px;
-  height: 109px;
-}
-#PicturesPadding {
-  margin-left: 5%;
-  width: 80%;
-}
-
-#imageSize {
+.our-value-image {
+  transition: transform .2s;
   width: 100%;
-  height: 65% ;
+  max-width: 340px;
 }
 
-
-.CarouselPict div {
-  padding: 6px;
-}
-
-#NavText {
-  color: white;
-}
-
-
-
-
-#NosSolutionParag1 {
-  margin-left: 13%;
-  margin-top: 4%;
-  text-align: justify;
-  background-color: #E0F0FD;
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-  margin-bottom: 6%;
-}
-
-#NosSolutionVideo {
-  margin-left: 26%;
-}
-
-#TitleHodhod {
-  margin-top: 4%;
-
-}
-
-.bgSolutionImg {
-  background-image: url('./components//images/bannière supersenses@2x.png');
-  background-repeat: no-repeat;
-  background-size: 100% 90%;
-  height: 487px;
-}
-
-
-#media_contact {
-  margin-top: 85px;
+.our-value-text-container {
+  transition: transform .2s;
+  opacity: 0;
+  position: absolute;
+  bottom: -1px;
+  width: 106%;
+  max-width: 354px;
+  background: rgba(150, 149, 149, 0.253);
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  height: 60px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.our-value-text {
+  align-self: center;
+  font-weight: 500;
+}
+
+.our-value-item:hover .our-value-image {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.our-value-item:hover .our-value-text-container {
+  opacity: 1;
 }
 
 
-/****************Solution SensesIA*******************/
+@media(max-width: 991px) {
+  .our-value-text-container {
+    opacity: 1;
+    width: 96% !important;
+    bottom: 0 !important;
+    max-width: 326px !important;
+  }
 
-#ComposantsSensesIATitle {
-  margin-top: 10%;
-  text-align: center;
+  .our-value-item:hover .our-value-image {
+    transform: none !important;
+  }
 }
 
-#img-descriptionSensesIA {
-  width: 80%;
-  height: 80%;
-  margin-left: 20%;
-}
-
-#p_descriptionSensesIA {
-  margin-top: 5%;
-}
-
-#ComposantsSensesIATitle {
-  margin-top: -2%;
-}
-
-#blocComposantsSensesIA {
-  margin-top: 5%;
-  margin-left: -5%;
-  text-align: center;
-}
-
-.img-composant-sensesIA {
-  width: 10%;
-  height: 35%;
-  margin-bottom: 2%;
-  border-radius: 10%;
-
-}
-
-#kitElectronique {
-  margin-top: 15%;
-  margin-bottom: 2%;
-  height: 62px;
-  width: 62px;
-}
-
-#stockageCloud {
-  margin-top: 15%;
-  margin-bottom: 2%;
-  height: 62px;
-  width: 62px;
-}
-
-#plateformeIntelligente {
-  margin-top: 15%;
-  margin-bottom: 2%;
-  height: 62px;
-  width: 62px;
-}
-
-/*********************************/
-/******Espace Carriere ********/
-#EspaceCarriereBody {
-  width: 78%;
-  height: 909px;
-  margin-left: 11%;
-  border: 15px;
-  margin-top: -5%;
-}
-
-.espCarr {
-  width: 97%;
-}
-
-#CarriereButtomSauv {
-  width: 20%;
-  margin-left: 138.5%;
-}
-
-#CarriereButtomPart {
-  width: 20%;
-  margin-left: 57%;
-}
-
-.EspaceHeader {
-  padding: 10%;
-  margin-top: 5%;
-}
-
-#boxImg {
-  width: 184px;
-  height: 209px;
-  border: 15px;
-}
-
-#boxTable {
-  width: 480px;
-  height: 201px;
-  border: 15px;
-
-}
-
-.formContent {
-  width: 80%;
-  margin-left: 10%;
-  padding-bottom: 10%;
-  padding-top: 10%;
+@media(max-width: 767px) {
+  .our-value-item {
+    margin-bottom: 14px;
+  }
 }
 
 
-/*****************************/
-/********A PROPOS ****************/
-
-.media_text {
-  margin-right: 20px;
-  margin-left: 70px;
-  float: left;
+#hoverImg2 :hover {
+  transform: scale(1.3);
+  z-index: 2;
 
 }
 
-.media_icons {
-  margin-left: 5px;
+#hoverImg3 :hover {
+  transform: scale(1.3);
+  z-index: 2;
+
 }
 
-.copyrights {
-  margin-top: -20px;
-  text-align: center;
-  padding-bottom: 4px;
+.solution {
+  margin-top: 120px;
 }
 
-/*******************HomePage*********************/
-.part2 {
-  margin-top: 15%;
+.solutions-container {
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.link-to-solution {
   width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -70px;
+}
+
+.solution-img {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 446px;
+  align-self: center;
+  box-shadow: 0px 3px 6px #888992;
+  border-radius: 20px;
+}
+
+.solution-description-container {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  background: rgba(150, 149, 149, 0.253);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 21px;
+  box-shadow: 0px 3px 6px #888992;
+  padding: 40px 20px 20px 20px;
+
+}
+
+.solution-title {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.solution-text {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.solution-icon {
+  position: absolute;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+/**********************/
+
+.portfolio-container {
+  margin-top: 70px;
 }
 
 #portfolioBox {
@@ -1922,6 +1273,10 @@
 
 }
 
+#portfolioBox {
+  width: 1530px;
+}
+
 #portfolio1:hover {
   transform: scale(1.3);
   z-index: 2;
@@ -1930,116 +1285,326 @@
   filter: drop-shadow(10px 10px 10px rgb(69, 71, 69));
 }
 
-.Nav_itemHomeInterface {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 0px;
-  margin-left: 25px;
-  padding-right: 0px;
-  font-size: 15px;
+/****************/
+
+/*********************** Notre expersise Home interface ****************/
+.expertisets {
+  width: 100%;
+  padding-right: 60px;
+  background-image: url('./components/images/Bg_expertise.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
-/**navbar homeinterface ***/
-.logo_supersensesHome {
-  width: 107px;
-  height: 76.42px;
-  margin-left: 10px;
-  margin-right: 5px;
-  margin-top: -180%;
+.expertiseBox {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 6px #888992;
+  border-radius: 21px;
+  opacity: 0.85;
+  backdrop-filter: blur(7px);
+  line-height: 3em;
+  height: 390px;
+  padding-right: 30px;
+  padding-top: 20px;
 }
 
-.bgTestImg {
-  content: url("./components/images/logo_supersenses.png");
-  width: 100px !important;
+.expertiseBox ul {
+  list-style: none;
 }
 
-#dropdown_Solution {
-  margin-top: -4%;
-
+.expertiseBoxItems {
+  font-weight: 500 !important;
 }
 
-.Nav_home {
-  text-transform: uppercase;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-right: 0px;
-  font-size: 15px;
-  color: white;
+.expertiseBox ul li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-#NavText_home {
-  color: white;
-}
+/*********************/
 
-.hashLinkNavBar {
-  text-decoration: none;
-  color: white;
-}
+/******* Hodhod Interface *********/
 
-.hashLinkNavBar:hover {
-  color: white;
-}
-
-.hashLinkNavBarDropDown {
-  text-decoration: none;
-  color: black;
-}
-
-.hashLinkNavBarDropDown:hover {
-  color: black;
-}
-
-/*************************/
-
-.Description_supersenses {
-  margin-top: 200px;
-  
-
-}
-
-.title_references {
+.NosSolutionsTitle {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 10%;
 }
 
-.novationCity_logo {
-  width: 205px;
-  height: 204px;
-  margin-left: 20px;
+.bgSolutionImg {
+  background-image: url('./components/images/bannière supersenses@2x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 487px;
+
 }
 
-.smartLogger_logo {
-  width: 205px;
-  height: 204px;
+#NosSolutionVideo {
+  margin-left: 26%;
 }
 
-.logoBox_Reference {
-  margin-right: 10px;
+.videoBorder {
+  border-radius: 18px;
+  height: 80%;
+  width: 90%;
+}
+
+#NosSolutionsTitleHodhod {
+  margin-left: 35%;
+}
+
+#hodhodP {
+  width: 99%;
+}
+
+#HodhodContentParagraph {
+  margin-left: 84px;
+}
+
+#ComposantsHodhodTitle {
+  margin-top: -3%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+
+#compBorder1 {
+  margin-left: 13%;
+  margin-right: -5%;
+  border-radius: 25px;
+  height: 180px;
+}
+
+#compBorder2 {
+  margin-right: -5%;
+  border-radius: 25px;
+  height: 180px;
+}
+
+#compBorder3 {
+  padding-top: 2%;
+  border-radius: 25px;
+  height: 180px;
+}
+
+#hodhodbox {
+  margin-left: -10%;
+  margin-top: 2%;
+}
+
+#mobPara {
+  margin-left: -20%;
+  margin-right: 7%;
+  text-align: left;
+}
+
+#mobPicture {
+  margin-top: -15%;
+  margin-left: -17%;
+}
+
+#mobSize {
+  margin-top: 18%;
+}
+
+#deveneztitle {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color: white;
+}
+
+#devenezParag {
+  padding-left: 13%;
+  padding-right: 11%;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.PictureContent {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#PicturesPadding {
+  margin-left: 5%;
+  width: 80%;
+}
+
+#imageSize {
+  width: 100%;
+  height: 65%;
+}
+
+.kitelectronique {
+  margin-top: 8%;
+}
+
+.platform {
+  margin-top: 8%;
+}
+
+#backgroundimg {
+  background-image: url('./components/images/Groupe_de_masques_10117.png');
+  background-size: cover;
+  height: 100%;
+  margin-left: 0%;
+  background-repeat: no-repeat;
+  margin-top: 6%;
+
+}
+
+#apptitle {
+  margin-top: 7%;
+  margin-left: 20%;
+}
+
+.CarouselPict div {
+  padding: 6px;
+}
+
+#CarouselBorder {
+  border-radius: 15px;
+}
+
+#hodhodImage {
+  width: 226px;
+  height: 166px;
+  margin-top: 10%;
+  margin-left: 40%;
+  border-radius: 20px;
+}
+
+#ImpactBox {
+  margin-top: 10%;
+}
+
+#bgPsize {
+  margin-right: -5%;
+  border-radius: 25px;
+  height: 350px;
+  width: 250px;
+}
+
+.NosSolution {
+  margin-top: 5%;
+}
+
+#hodhodStatement {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: medium;
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+#googlePlay {
+  width: 15%;
+  height: 100%;
+  margin-left: 43%;
+}
+
+#CarouselPosition {
+  margin-left: 35%;
+  width: 30%;
+  padding-top: 3%;
+
+}
+
+#sizeImg {
+  height: 100px;
+}
+
+#CarouselPicture {
+  width: 200px;
+}
+
+/*********************/
+
+/****************Solution SensesIA*******************/
+
+#blocSensesIA {
+  margin-top: 10%;
 }
 
 
-.ref-img {
-  margin-top: -60px;
-  width: 204px;
-  height: 204px;
-  margin-right: 30px;
+#img-descriptionSensesIA {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
 }
 
+#SensesIATitleTxt {
+  margin-left: 8%;
+}
 
-/*************************************Notre Expertise *********************************/
+#p_descriptionSensesIA {
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: -10%;
+}
+
+#ComposantsSensesIATitle {
+  margin-top: -2%;
+  text-align: center;
+}
+
+#blocComposantsSensesIA {
+  margin-top: 5%;
+  margin-left: -11%;
+  text-align: center;
+}
+
+.img-composant-sensesIA {
+  width: 10%;
+  height: 35%;
+  margin-bottom: 2%;
+  border-radius: 10%;
+
+}
+
+#kitElectronique {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  height: 62px;
+  width: 62px;
+}
+
+#stockageCloud {
+  margin-top: 9%;
+  margin-bottom: 6%;
+  height: 62px;
+  width: 62px;
+}
+
+#plateformeIntelligente {
+
+  margin-top: 4%;
+  margin-bottom: 5%;
+  height: 62px;
+  width: 62px;
+}
+
+/******************/
+
+/***********************Nos expertises ***************************/
+
 #NosExpertiseTitre {
-  margin-top: 3%;
+  margin-top: 10%;
 }
 
-.NosServices_Container {
-  margin-top: 80px;
+.NosExpertises_Container {
   margin-bottom: 100px;
   width: 100%;
-
 }
 
 .ServiceAI {
+  margin-top: -1%;
   width: 80%;
 }
 
@@ -2047,7 +1612,6 @@
   text-align: center;
   margin-bottom: 60px;
   font-size: 40px;
-
 }
 
 .ServiceDigital_data>h5 {
@@ -2056,20 +1620,22 @@
 
 .ServiceAI_data>h5 {
   font-weight: bold;
+  margin-left: 10%;
+
 }
 
 .paragraph_ServiceAI {
   margin-top: 20px;
+  margin-left: 10%;
   text-align: justify;
 }
 
 
 .paragraph_ServiceDigital {
   margin-top: 20px;
+  margin-right: 12%;
   text-align: justify;
 }
-
-
 
 
 .paragraph_ServiceDigital>i {
@@ -2082,56 +1648,74 @@
 }
 
 .ServiceAI_data {
-  padding: 30px;
-  background-color: rgba(224, 240, 253);
-  box-shadow: 0px 0px 15px rgba(224, 240, 253);
-  border-radius: 10px;
+  padding: 40px 10PX;
+  /*background-color: rgba(224, 240, 253);*/
 }
 
 .ServiceDigital_data {
   padding: 30px;
-  background-color: rgba(224, 240, 253);
-  box-shadow: 0px 0px 15px rgba(224, 240, 253);
-  border-radius: 10px;
+  /*background-color: rgba(224, 240, 253);*/
+
+  margin-bottom: 53px;
 }
 
 .img_service_AI {
   margin-left: 10%;
+  margin-top: 7%;
   border-radius: 30px;
-  width: 75%;
+  width: 80%;
+  box-shadow: 0px 0px 15px rgba(224, 240, 253);
+  border-radius: 25px;
 }
 
 .img_service_digital {
-  margin-top: 20px;
-  width: 70%;
+  margin-top: 70px;
+  margin-left: 10%;
+  width: 80%;
+  box-shadow: 0px 0px 15px rgba(224, 240, 253);
+  border-radius: 25px;
+
 }
 
+.AI_slogan {
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 5%;
+  text-align: center;
+  color: white;
+}
+
+/*********************/
 /***********************IACestQuoi*******************************/
 
 .bloc_intro_AI {
   width: 20%;
-  margin-top: 160px;
+  margin-top: 115px;
+  align-items: center;
+}
 
+.img_cercle_AI {
+  margin-left: -8%;
 }
 
 .intro_AI_data {
   text-align: justify;
   background-color: rgba(224, 240, 253);
-  box-shadow: 0px 0px 15px rgba(224, 240, 253, 0.5);
-  border-radius: 10px;
-  padding: 30px;
-  padding-top: 60px;
-  width: 200px;
+  border-radius: 20px;
+  padding-top: 30px;
+  margin-left: 6%;
+  margin-right: 5%;
 }
 
+.intro_AI_data>h5 {
+  padding: 3%;
+}
 
-
-.AI_slogan {
-  margin-top: 110px;
-  margin-bottom: -10px;
-  text-align: center;
-  color: #25ACDE;
-  font-size: 25px;
+.intro_AI_data>p {
+  padding: 3%;
+  margin-top: -20px !important;
 }
 
 .bloc_etapes_AI {
@@ -2141,12 +1725,12 @@
 
 .bloc_etapes_AI_title {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 120px;
   margin-bottom: 60px;
   font-size: 20px;
 }
 
-#etape_AI_title {
+.etape_AI_title {
   margin-bottom: 25px;
   margin-top: 15px;
   text-align: center;
@@ -2154,26 +1738,28 @@
   margin-top: 10px;
 }
 
-#etape_AI {
-  width: 540px;
-  height: 330px;
-  text-align: center;
+.etape_AI {
+  width: 450px;
+  height: 345px;
+  text-align: justify;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 30px;
   padding: 40px;
   box-shadow: 0 0 45px 0 #c7c7c7;
-  border-radius: 10px;
+  border-radius: 25px;
   transition: box-shadow .3s;
 }
 
-#etape_AI:hover {
-  box-shadow: 0 0 17px rgba(33, 33, 33, .2);
+.etape_AI:hover {
+  box-shadow: 0 0 0 5px rgba(239, 233, 233, 0.835);
 
 }
 
 .icon_etapes_AI {
   width: 20px;
   height: 30px;
-
+  margin-left: 45%;
 }
 
 
@@ -2193,54 +1779,52 @@
   color: #25ACDE;
 }
 
-/***********************ContactezNous*******************************/
-.ContactezNous_container {
-  margin-left: 20%;
-  margin-right: 20%;
+
+/**********************A propos nous **********************/
+
+#AproposNousHeaderTxt {
+  margin-top: 10%;
+  margin-bottom: -4%;
 }
 
-.bloc_welcoming_phrases {
-  margin-top: 80px;
-  margin-bottom: 40px;
-  padding-top: 100px;
+#AproposImg {
+  margin-top: 3%;
+  margin-left: -5%;
+  height: 350px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+#AproposParag {
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-family: 'Roboto';
+  color: #000000;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: -1%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+#AproposContent {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+#AproposSuperText {
+  text-decoration: underline #25ACDE;
+  margin-left: 5%;
+}
+
+#AproposHeader {
+  padding-top: 3%;
 
 }
 
-.welcoming_phrase {
-  text-align: center;
-
-}
-
-#SeSoumettre_btn {
-  text-align: center;
-  width: 100%;
-  border-radius: 10px;
-  background-color: #25ACDE;
-}
-
-.Contact_form {
-  padding-top: 50px;
-  box-shadow: inset 0 0 15px 0 #c7c7c7;
-  border-radius: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
-
-}
-
-#Contact_input {
-  border-radius: 15px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
-}
-
-
-#selectSpecialite{
-  width: 100%;
-  height: 43%;
-  border-color: #bdbdbd;
-  border-radius: 3px;
-}
-
+/*********************************/
 
 /*****************************NosOffres**************************/
 .NosOffres {
@@ -2271,4 +1855,274 @@
 
 #infoOffre {
   width: 180%;
+}
+
+/******************************************/
+
+/***********************NavBarHeader**************/
+#HomeNav {
+  margin-left: 28%;
+
+}
+
+.navbarTestIcons{
+  box-shadow: 2px 2px 10px 1px rgba(200, 196, 196, 0.745);
+  position: fixed !important;
+  width: 100%;
+  color: #000; 
+  top: 0%;
+}
+
+.logo_supersenses {
+  width: 107px;
+  height: 76.42px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#languageIcon {
+  display: inline;
+  margin-left: 150%;
+  margin-top: 380%;
+
+}
+
+#selectLangue {
+  border-radius: 10px;
+  margin-left: 12px;
+}
+
+.dpSolution {
+  font-size: 15px;
+  color: white;
+  margin-top: -6%;
+}
+
+/********************NavBarFooter**********************/
+
+#supersenses-footer {
+  margin-top: 60px;
+  background-image: url('../src/components/images/bg_img_footer1_1_1510x400.png');
+  background-repeat: no-repeat;
+  background-size: 1510px 400px;
+  background-position: bottom left;
+  height: 400px;
+}
+
+#supersenses-footer .container {
+  height: 100%;
+}
+
+#supersenses-footer .flex-footer {
+  height: 90%;
+  padding-bottom: 50px;
+}
+
+#supersenses-footer .copy-right {
+  height: 10%;
+  color: white;
+  text-align: center;
+}
+
+.logo-footer {
+  width: 100%;
+  max-width: 150px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.footer-socials-title {
+  color: white;
+  margin-right: 10px;
+}
+
+.footer-social-icon {
+  margin-right: 10px;
+}
+
+
+
+/***********************/
+.bgTestImg {
+  content: url("./components/images/logo_supersenses.png");
+  width: 100px !important;
+}
+
+/************************/
+
+/***********************ContactezNous*******************************/
+.ContactezNous_container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.bloc_welcoming_phrases {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-top: 100px;
+
+}
+
+.welcoming_phrase {
+  text-align: center;
+
+}
+
+#SeSoumettre_btn {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #25ACDE;
+}
+
+.Contact_form {
+  padding-top: 50px;
+  box-shadow: 0 0 15px 0 #c7c7c7;
+  border-radius: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  margin-left: -15%;
+  margin-right: -15%;
+
+}
+
+#Contact_input {
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+/***********************/
+
+
+/********** loading Design***********/
+
+#RiseLoader {
+  margin-top: 250px;
+  margin-left: 550px;
+
+}
+
+/***********************/
+@media(max-width: 404px) {
+  #title1 {
+    font-size: 26px;
+  }
+}
+
+@media(max-width: 487px) {
+  .expertisets {
+    padding: 30px 20px;
+    margin-top: -5%;
+  }
+}
+
+@media(max-width: 767px) {
+  .p1 p {
+    text-align: left;
+    margin-left: 3%;
+  }
+}
+
+@media(max-width: 1144px) {
+  #bg_img_header {
+    background-size: 800px 335px;
+  }
+}
+
+@media(max-width: 991px) {
+  #bg_img_header {
+    background-size: 500px 209px;
+  }
+
+  .Description_supersenses {
+    margin-top: 100px !important;
+  }
+}
+
+@media(max-width: 666px) {
+  #bg_img_header {
+    background-size: 400px 167px;
+  }
+}
+
+
+@media(max-width: 483px) {
+  #bg_img_header {
+    background-size: 300px 125px;
+  }
+}
+
+@media(max-width: 389px) {
+  #bg_img_header {
+    background-size: 230px 96px;
+  }
+}
+
+@media(max-width: 767px) {
+  #supersenses-footer {
+    height: 480px;
+    background-size: 1510px 480px;
+  }
+
+  #supersenses-footer .flex-footer {
+    padding-top: 84px;
+    padding-bottom: 30px;
+  }
+}
+
+
+@media(max-width: 991px) {
+  #basic-navbar-nav {
+    background-color: rgba(255, 255, 255, 0.896);
+    position: absolute;
+    top: 100px;
+    left: 3%;
+    right: 3%;
+    width: 94%;
+    flex-direction: column;
+    box-shadow: 0px 3px 6px #888992;
+    border-radius: 25px;
+    backdrop-filter: blur(6px);
+
+
+  }
+
+  #basic-navbar-nav .Nav_home,
+  #basic-navbar-nav #dropdown_Solution,
+  #basic-navbar-nav .dropdown-item {
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: white;
+  }
+
+}
+
+@media(max-width: 766px) {
+  .Description_supersenses {
+    margin-top: 50px !important;
+  }
+}
+
+@media(max-width: 991px) {
+  .bienvenuto {
+    font-size: 27px;
+  }
+
+  .big-title {
+    font-size: 49px;
+  }
+
 }

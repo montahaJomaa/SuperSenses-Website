@@ -16,13 +16,15 @@ const NosSolutionPa = () => {
     <div id="hodhodP">
 
       <div className="row mt-5">
+      <h1 id="NosSolutionsTitleHodhod"> Nos solutions</h1>
+
         <div className="col p-5" id="HodhodContentParagraph">
-          <h1>Hodhod</h1>
-          <p>
-            Super senses fournit ses solutions innovantes à impact afin de résoudre<br></br>
+          <h1 id="HodhodContentParagraphTitle">Hodhod</h1>
+          <p id="HodhodContentParagraphDes">
+            Super senses fournit ses solutions innovantes à impact sociales afin de résoudre<br></br>
             des problèmes environnemental et digitaliser les villes tunisiennes.<br></br>
-            La ‘Hodhod’ est une solution destinée à lutter contre la pollution citadine
-            et<br></br> elle permet aux municipalités d’avoir un canal de communication interactive<br></br> avec
+            ‘Hodhod’ est une solution destinée à lutter contre la pollution citadine
+            et<br></br> elle permet aux municipalités d’avoir un canal de communication interactif<br></br> avec
             les citoyens en particulier et tout l'écosystème en général.
           </p>
         </div>
@@ -31,13 +33,13 @@ const NosSolutionPa = () => {
         </div>
       </div>
       <div className="container">
-        <h6> Notre solution se compose de :</h6>
+        <h6 id="ComposantsHodhodTitle"> Notre solution se compose de :</h6>
         <div className="row text-center" id="hodhodbox" >
 
           <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder1">
 
             <img src={kitelectronique} className="kitelectronique text-center " />
-            <h6><br></br>Capteurs embarqués / kit électronique Collecte des datas.</h6>
+            <h6><br></br>Capteurs embarqués / kit électronique collectant les données</h6>
           </div>
 
 
@@ -45,7 +47,7 @@ const NosSolutionPa = () => {
 
 
             <img src={platform} className="platform text-center" />
-            <h6><br></br>Plateforme intelligente interactive.</h6>
+            <h6><br></br>Plateforme intelligente interactive</h6>
 
 
           </div>
@@ -54,7 +56,7 @@ const NosSolutionPa = () => {
 
           <div className="col-md-3 offset-1 img-thumbnail shadow" id="compBorder3">
             <img src={appmobile} className="appmobile text-center" />
-            <h6><br></br>Application mobile.</h6>
+            <h6><br></br>Application mobile</h6>
           </div>
 
         </div>
@@ -65,7 +67,7 @@ const NosSolutionPa = () => {
             <img src={mob} id="mobPicture" />
           </div>
           <div className="col">
-            <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonter d’une manière efficace aux divers services de la municipalité.</h6>
+            <h6 id="mobPara">L’application exploite tous les capteurs embarqué sur le Smartphone qui sera un outil de collecte des données sur terrain et remonte d’une manière efficace aux divers services de la municipalité.</h6>
           </div>
         </div>
       </div>
@@ -76,9 +78,9 @@ const NosSolutionPa = () => {
         </div>
         <div className="row text-center " id="devenezParag">
           <p>
-            Nous avons inventé Hodhod pour booster les municipalités à automatiser leurs procédures et engager les citoyens<br></br>
+            Nous avons inventé Hodhod pour booster les municipalités à automatiser leurs procédures et engager les citoyens
             pour une ville intelligente et moderne. La solution est destinée à lutter contre la pollution citadine et
-            elle permet aux municipalités d’avoir un canal de communication interactive avec
+            elle permet aux municipalités d’avoir un canal de communication interactif avec
             les citoyens en particulier et tout l’écosystème en général. La collecte et la
             gestion des réclamations se fait instantanément d’une manière organisée.
             La solution Hodhod est basée sur les nouvelles technologies principalement l’intelligence artificielle et
@@ -88,14 +90,16 @@ const NosSolutionPa = () => {
 
       </div>
       <div className="container">
-        <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts du Hodhod</h1><br></br><br></br><br></br>
+        <h1 class="d-flex justify-content-center " id="ImpactBox">Les Impacts de Hodhod</h1><br></br><br></br><br></br>
         <div id="PicturesPadding">
+
           <div class="row p-3">
+
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
               <img class="" src={img4} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Informer les citoyens avec les nouveautés de leurs communes.</h6>
             </div>
-            
+
             <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
               <img class="" src={img2} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Lutter contre la pollution.</h6>
@@ -107,7 +111,7 @@ const NosSolutionPa = () => {
             </div>
           </div>
           <div className="row p-3 ">
-          <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
+            <div class="col-md-3 offset-1 img-thumbnail shadow" id="bgPsize">
               <img class="" src={img5} id="imageSize" />
               <h6 className="text-center" id="ImpactText"><br></br>Dépister et analyser les réclamations des citoyens en se basant sur l’intelligence artificielle.</h6>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,6 +13,29 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
 import axios from "axios";
 
+const notifyError = () => {
+  toast.error('Veuillez vérifier vos données!', {
+    position: "bottom-left",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
+}
+
+const notifySuccess = () => {
+  toast.success(' Demande envoyée!', {
+    position: "bottom-left",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
+}
 
 function ContactezNous(props) {
  
@@ -63,7 +86,9 @@ function ContactezNous(props) {
 
     const formErrors = validateForm()
     if (Object.keys(formErrors).length > 0) {
-      setErrors(formErrors)
+      setErrors(formErrors);
+      navigate('/ContactezNous');
+      notifyError()
     } else {
       console.log('Formulaire soumis');
       
@@ -79,7 +104,8 @@ function ContactezNous(props) {
         
         });
       
-        navigate('/')
+      navigate('/');
+      notifySuccess()
 
     }
 
@@ -93,7 +119,7 @@ function ContactezNous(props) {
           Contactez nous
         </h3>
 
-        <h5 className="welcoming_phrase">Nous sommes là pour vous!</h5>
+        {/* <h5 className="welcoming_phrase">Nous sommes là pour vous!</h5> */}
 
         <h5 className="welcoming_phrase">Merci de remplir ce formulaire </h5>
 
@@ -162,7 +188,7 @@ function ContactezNous(props) {
           <Form.Control.Feedback type="invalid">
             {errors.messageContact}
           </Form.Control.Feedback>
-
+          <br/>
         </FloatingLabel>
 
 
@@ -170,8 +196,8 @@ function ContactezNous(props) {
         <Form.Text className="text-muted" >
           Super Senses n'utilisera vos informations personnelles que pour fournir le produit
           ou  le service que vous avez demandé et pour vous contacter avec un contenu connexe
-          susceptible de vous intéresser.
-          Vous pouvez vous désabonner de ces communications à tout moment.<br /> <br />
+          susceptible de votre intérêt.
+          <br/><br/>
         </Form.Text>
 
         <Button variant="primary" type="submit" id="SeSoumettre_btn"
